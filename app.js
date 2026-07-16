@@ -45,6 +45,24 @@ const FALLBACK_ITEMS = [
   'こだわりスカーフ', 'とつげきチョッキ', 'ひかりのねんど', 'くろいヘドロ',
   'クリアチャーム', 'メンタルハーブ', 'しめったいわ', 'あついいわ'
 ];
+/** Season M-4 (Reg M-B) 使用率上位を自動編成で優先 */
+const META_PRIORITY = {
+  doubles: [
+    'garchomp', 'kingambit', 'incineroar', 'mega-charizard-y', 'charizard',
+    'sinistcha', 'basculegion', 'whimsicott', 'farigiraf', 'sylveon',
+    'sneasler', 'mega-aerodactyl', 'aerodactyl', 'mega-staraptor', 'staraptor',
+    'archaludon', 'pelipper', 'venusaur', 'grimmsnarl', 'mega-raichu-y', 'raichu',
+    'torkoal', 'mega-swampert', 'swampert', 'mega-metagross', 'metagross',
+    'mega-floette', 'floette', 'gholdengo', 'annihilape', 'mega-mawile', 'mawile'
+  ],
+  singles: [
+    'garchomp', 'mimikyu', 'archaludon', 'mega-metagross', 'metagross',
+    'hippowdon', 'primarina', 'meowscarada', 'mega-gyarados', 'gyarados',
+    'mega-blaziken', 'blaziken', 'mega-charizard-y', 'charizard',
+    'mega-delphox', 'delphox', 'greninja', 'hydreigon', 'corviknight',
+    'glimmora', 'basculegion', 'mega-raichu-y', 'kingambit', 'gholdengo'
+  ]
+};
 const SPRITE_BASE =
   'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork';
 
@@ -248,7 +266,9 @@ function scoreCore(core, selected) {
     if (ids.includes(id) || ids.includes(baseFormId(id))) score += 10;
   });
   if (core.format.includes(battleFormat)) score += 3;
-  if (core.rating === 'おすすめ') score += 2;
+  if (core.rating === '環境テンプレ') score += 4;
+  else if (core.rating === 'おすすめ' || core.rating === '実戦テンプレ') score += 2;
+  ids.forEach((id) => { score += Math.min(metaPriorityScore(id), 8) * 0.1; });
   return score;
 }
 
@@ -284,18 +304,35 @@ function resistsAttack(types, attackType) {
   return defenseMultiplier(attackType, types) < 1;
 }
 
+function metaPriorityScore(pokemonId) {
+  const list = META_PRIORITY[battleFormat] || META_PRIORITY.doubles;
+  const idx = list.indexOf(pokemonId);
+  if (idx >= 0) return 40 - Math.min(idx, 39);
+  const base = baseFormId(pokemonId);
+  const baseIdx = list.indexOf(base);
+  if (baseIdx >= 0) return 30 - Math.min(baseIdx, 29);
+  return 0;
+}
+
+function speciesKey(id) {
+  return baseFormId(id);
+}
+
 function pickFallbackTeammates(selected, neededRoles) {
   const used = new Set(selected);
+  const usedSpecies = new Set(selected.map(speciesKey));
   const picks = [];
   const pool = [...pokemonList]
-    .filter((p) => !used.has(p.id))
+    .filter((p) => !used.has(p.id) && !usedSpecies.has(speciesKey(p.id)))
     .sort((a, b) => {
       const score = (p) =>
+        metaPriorityScore(p.id) +
         (p.roles.includes('support') ? 3 : 0) +
         (p.roles.includes('wall') ? 2 : 0) +
         (p.roles.includes('attacker') ? 2 : 0) +
         (p.roles.includes('fast') ? 1 : 0) +
-        (p.mega ? 1 : 0);
+        (p.mega ? 1 : 0) -
+        (p.isMegaForm ? 0.5 : 0);
       return score(b) - score(a);
     });
 
@@ -303,31 +340,34 @@ function pickFallbackTeammates(selected, neededRoles) {
   const weakTo = weakTypesForTeam(selectedTypes);
 
   neededRoles.forEach((role) => {
-    let candidates = pool.filter((p) => !used.has(p.id) && p.roles.includes(role));
+    let candidates = pool.filter((p) => !used.has(p.id) && !usedSpecies.has(speciesKey(p.id)) && p.roles.includes(role));
     if (weakTo.length) {
       const cover = candidates.filter((p) =>
         weakTo.slice(0, 3).some((atk) => resistsAttack(p.types, atk))
       );
       if (cover.length) candidates = cover;
     }
-    // diversify types vs selected
     const selTypeSet = new Set(selectedTypes.flat());
     candidates.sort((a, b) => {
+      const meta = metaPriorityScore(b.id) - metaPriorityScore(a.id);
+      if (meta !== 0) return meta;
       const ua = a.types.filter((t) => selTypeSet.has(t)).length;
       const ub = b.types.filter((t) => selTypeSet.has(t)).length;
       return ua - ub;
     });
-    const pick = candidates[0] || pool.find((p) => !used.has(p.id));
+    const pick = candidates[0] || pool.find((p) => !used.has(p.id) && !usedSpecies.has(speciesKey(p.id)));
     if (pick) {
       used.add(pick.id);
+      usedSpecies.add(speciesKey(pick.id));
       picks.push(pick.id);
     }
   });
 
   while (picks.length + selected.length < 6) {
-    const next = pool.find((p) => !used.has(p.id));
+    const next = pool.find((p) => !used.has(p.id) && !usedSpecies.has(speciesKey(p.id)));
     if (!next) break;
     used.add(next.id);
+    usedSpecies.add(speciesKey(next.id));
     picks.push(next.id);
   }
 
@@ -404,6 +444,7 @@ function suggestTeams(selected) {
   if (!selected.length) return [];
   const curated = findCuratedCores(selected).map((core) => ({
     ...core,
+    slots: assignItemsWithoutDup(core.slots),
     source: core.source && core.source !== 'curated' ? core.source : (core.source || '環境テンプレ')
   }));
   const fallback = buildFallbackTeams(selected);

@@ -1,8 +1,10 @@
 {
   "regulation": "M-B",
+  "season": "M-4",
   "rosterCount": 207,
   "megaFormCount": 75,
   "searchableCount": 282,
-  "source": "Emieeel/poke-mcp-tool regulations/m-b.json + pokemon-champions-data + PokeAPI",
-  "generatedAt": "2026-07-16T15:20:52.833Z"
+  "metaNote": "cores/builds prioritize Season M-4 usage (doubles: Garchomp/Kingambit/Incineroar/Charizard/Sinistcha; singles: Garchomp/Mimikyu/Archaludon/Mega Metagross)",
+  "source": "champs.pokedb Season M-4 + yakkun singles ranking + Pikalytics Reg M-B",
+  "generatedAt": "2026-07-16T15:40:00.000Z"
 }

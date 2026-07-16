@@ -680,7 +680,7 @@
     "pokemonId": "mega-metagross",
     "label": "メガ",
     "item": "メタグロスナイト",
-    "ability": "クリアボディ",
+    "ability": "かたいツメ",
     "role": "物理エース",
     "moves": [
       "コメットパンチ",
@@ -704,7 +704,7 @@
     "note": "硬い爪メガ。雨パの二枚目メガとしても採用。",
     "itemEffect": "メガシンカ用メガストーン（メタグロス）。",
     "abilityOptions": [
-      "—"
+      "かたいツメ"
     ]
   },
   "farigiraf-tr": {
@@ -1445,7 +1445,7 @@
     "pokemonId": "mega-blaziken",
     "label": "メガ",
     "item": "バシャーモナイト",
-    "ability": "もうか",
+    "ability": "かそく",
     "role": "物理エース",
     "moves": [
       "フレアドライブ",
@@ -1469,7 +1469,7 @@
     "note": "メガで速度上昇。シングル展開エースとしても強い。",
     "itemEffect": "メガシンカ用メガストーン（バシャーモ）。",
     "abilityOptions": [
-      "—"
+      "かそく"
     ]
   },
   "scizor-mega": {
@@ -7201,6 +7201,354 @@
       "かんろなミツ",
       "さいせいりょく",
       "ねんちゃく"
+    ]
+  },
+  "mimikyu-sd": {
+    "pokemonId": "mimikyu",
+    "label": "つるぎのまい",
+    "item": "いのちのたま",
+    "ability": "ばけのかわ",
+    "role": "物理エース",
+    "moves": [
+      "シャドークロー",
+      "じゃれつく",
+      "かげうち",
+      "つるぎのまい"
+    ],
+    "sp": {
+      "hp": 4,
+      "atk": 32,
+      "def": 0,
+      "spa": 0,
+      "spd": 0,
+      "spe": 30
+    },
+    "nature": {
+      "name": "ようき",
+      "up": "spe",
+      "down": "spa"
+    },
+    "note": "シングル使用率上位。ばけのかわで1回耐えてつるぎのまいから全抜き。",
+    "itemEffect": "技の威力1.3倍。攻撃するたび最大HPの1/10ダメージ。",
+    "abilityOptions": [
+      "ばけのかわ"
+    ]
+  },
+  "mimikyu-sash": {
+    "pokemonId": "mimikyu",
+    "label": "タスキ",
+    "item": "きあいのタスキ",
+    "ability": "ばけのかわ",
+    "role": "物理エース",
+    "moves": [
+      "シャドークロー",
+      "じゃれつく",
+      "かげうち",
+      "のろい"
+    ],
+    "sp": {
+      "hp": 4,
+      "atk": 32,
+      "def": 0,
+      "spa": 0,
+      "spd": 0,
+      "spe": 30
+    },
+    "nature": {
+      "name": "いじっぱり",
+      "up": "atk",
+      "down": "spa"
+    },
+    "note": "タスキ＋ばけのかわで行動保証を厚くする型。",
+    "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
+    "abilityOptions": [
+      "ばけのかわ"
+    ]
+  },
+  "gyarados-mega": {
+    "pokemonId": "mega-gyarados",
+    "label": "メガ",
+    "item": "ギャラドスナイト",
+    "ability": "かたやぶり",
+    "role": "物理エース",
+    "moves": [
+      "ウォーターフォール",
+      "かみくだく",
+      "じしん",
+      "りゅうのまい"
+    ],
+    "sp": {
+      "hp": 4,
+      "atk": 32,
+      "def": 0,
+      "spa": 0,
+      "spd": 0,
+      "spe": 30
+    },
+    "nature": {
+      "name": "ようき",
+      "up": "spe",
+      "down": "spa"
+    },
+    "note": "シングル上位メガ。りゅうのまいからかたやぶりで押し切る。",
+    "itemEffect": "メガシンカ用メガストーン（ギャラドス）。",
+    "abilityOptions": [
+      "かたやぶり"
+    ]
+  },
+  "delphox-mega": {
+    "pokemonId": "mega-delphox",
+    "label": "メガ",
+    "item": "マフォクシーナイト",
+    "ability": "ふゆう",
+    "role": "特殊エース",
+    "moves": [
+      "かえんほうしゃ",
+      "サイコキネシス",
+      "わるだくみ",
+      "まもる"
+    ],
+    "sp": {
+      "hp": 4,
+      "atk": 0,
+      "def": 0,
+      "spa": 32,
+      "spd": 0,
+      "spe": 30
+    },
+    "nature": {
+      "name": "おくびょう",
+      "up": "spe",
+      "down": "atk"
+    },
+    "note": "メガ後ふゆう＋高速特殊。わるだくみから全抜きも狙える。",
+    "itemEffect": "メガシンカ用メガストーン（マフォクシー）。",
+    "abilityOptions": [
+      "ふゆう"
+    ]
+  },
+  "primarina-choice": {
+    "pokemonId": "primarina",
+    "label": "こだわりメガネ",
+    "item": "こだわりメガネ",
+    "ability": "うるおいボイス",
+    "role": "特殊エース",
+    "moves": [
+      "ハイパーボイス",
+      "ムーンフォース",
+      "ハイドロポンプ",
+      "クイックターン"
+    ],
+    "sp": {
+      "hp": 20,
+      "atk": 0,
+      "def": 0,
+      "spa": 32,
+      "spd": 14,
+      "spe": 0
+    },
+    "nature": {
+      "name": "ひかえめ",
+      "up": "spa",
+      "down": "atk"
+    },
+    "note": "シングル使用率上位。うるおいボイス＋ハイパーボイスで広範囲。",
+    "itemEffect": "特攻1.5倍。同じ技しか出せない。",
+    "abilityOptions": [
+      "げきりゅう",
+      "うるおいボイス"
+    ]
+  },
+  "primarina-bulk": {
+    "pokemonId": "primarina",
+    "label": "たべのこし",
+    "item": "たべのこし",
+    "ability": "うるおいボイス",
+    "role": "特殊耐久",
+    "moves": [
+      "ハイパーボイス",
+      "ムーンフォース",
+      "めいそう",
+      "ねっとう"
+    ],
+    "sp": {
+      "hp": 32,
+      "atk": 0,
+      "def": 0,
+      "spa": 20,
+      "spd": 14,
+      "spe": 0
+    },
+    "nature": {
+      "name": "おだやか",
+      "up": "spd",
+      "down": "atk"
+    },
+    "note": "めいそう耐久。ガブやカバルドンに対して粘る。",
+    "itemEffect": "毎ターン最大HPの1/16回復。",
+    "abilityOptions": [
+      "げきりゅう",
+      "うるおいボイス"
+    ]
+  },
+  "meowscarada-sash": {
+    "pokemonId": "meowscarada",
+    "label": "タスキ",
+    "item": "きあいのタスキ",
+    "ability": "へんげんじざい",
+    "role": "高速物理",
+    "moves": [
+      "トリックフラワー",
+      "はたきおとす",
+      "とんぼがえり",
+      "ふいうち"
+    ],
+    "sp": {
+      "hp": 4,
+      "atk": 32,
+      "def": 0,
+      "spa": 0,
+      "spd": 0,
+      "spe": 30
+    },
+    "nature": {
+      "name": "ようき",
+      "up": "spe",
+      "down": "spa"
+    },
+    "note": "シングル高速アタッカー。へんげんじざい＋トリックフラワーで安定火力。",
+    "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
+    "abilityOptions": [
+      "しんりょく",
+      "へんげんじざい"
+    ]
+  },
+  "meowscarada-scarf": {
+    "pokemonId": "meowscarada",
+    "label": "スカーフ",
+    "item": "こだわりスカーフ",
+    "ability": "へんげんじざい",
+    "role": "高速物理",
+    "moves": [
+      "トリックフラワー",
+      "はたきおとす",
+      "とんぼがえり",
+      "ふいうち"
+    ],
+    "sp": {
+      "hp": 4,
+      "atk": 32,
+      "def": 0,
+      "spa": 0,
+      "spd": 0,
+      "spe": 30
+    },
+    "nature": {
+      "name": "いじっぱり",
+      "up": "atk",
+      "down": "spa"
+    },
+    "note": "スカーフで上から押す型。",
+    "itemEffect": "素早さ1.5倍。同じ技しか出せない。",
+    "abilityOptions": [
+      "しんりょく",
+      "へんげんじざい"
+    ]
+  },
+  "archaludon-singles": {
+    "pokemonId": "archaludon",
+    "label": "チョッキ",
+    "item": "とつげきチョッキ",
+    "ability": "じきゅうりょく",
+    "role": "特殊耐久",
+    "moves": [
+      "エレクトロビーム",
+      "りゅうせいぐん",
+      "フラッシュキャノン",
+      "ボディプレス"
+    ],
+    "sp": {
+      "hp": 32,
+      "atk": 0,
+      "def": 20,
+      "spa": 14,
+      "spd": 0,
+      "spe": 0
+    },
+    "nature": {
+      "name": "ひかえめ",
+      "up": "spa",
+      "down": "atk"
+    },
+    "note": "シングル使用率上位。耐久と火力を両立したサイクルエース。",
+    "itemEffect": "特防1.5倍。変化技が出せない。",
+    "abilityOptions": [
+      "じきゅうりょく",
+      "がんじょう",
+      "すじがねいり"
+    ]
+  },
+  "incineroar-support-alt": {
+    "pokemonId": "incineroar",
+    "label": "威嚇サポート（調整）",
+    "item": "たべのこし",
+    "ability": "いかく",
+    "role": "サポート",
+    "moves": [
+      "ねこだまし",
+      "すてゼリフ",
+      "フレアドライブ",
+      "ＤＤラリアット"
+    ],
+    "sp": {
+      "hp": 32,
+      "atk": 4,
+      "def": 20,
+      "spa": 0,
+      "spd": 10,
+      "spe": 0
+    },
+    "nature": {
+      "name": "しんちょう",
+      "up": "spd",
+      "down": "spa"
+    },
+    "note": "ダブル定番。ねこだまし＋すてゼリフ＋威嚇の三点セット。 ※持ち物重複回避。",
+    "itemEffect": "毎ターン最大HPの1/16回復。",
+    "abilityOptions": [
+      "もうか",
+      "いかく"
+    ]
+  },
+  "hydreigon-scarf-alt": {
+    "pokemonId": "hydreigon",
+    "label": "スカーフ（調整）",
+    "item": "こだわりメガネ",
+    "ability": "ふゆう",
+    "role": "高速特殊",
+    "moves": [
+      "あくのはどう",
+      "りゅうせいぐん",
+      "バークアウト",
+      "とんぼがえり"
+    ],
+    "sp": {
+      "hp": 4,
+      "atk": 0,
+      "def": 0,
+      "spa": 32,
+      "spd": 0,
+      "spe": 30
+    },
+    "nature": {
+      "name": "おくびょう",
+      "up": "spe",
+      "down": "atk"
+    },
+    "note": "雨パのスカーフ枠。上からあく／ドラゴン。 ※持ち物重複回避。",
+    "itemEffect": "特攻1.5倍。同じ技しか出せない。",
+    "abilityOptions": [
+      "ふゆう"
     ]
   }
 }

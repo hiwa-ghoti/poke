@@ -1766,8 +1766,13 @@
     "abilities": [
       {
         "slot": "特性1",
-        "name": "—",
-        "nameEn": ""
+        "name": "もうか",
+        "nameEn": "Blaze"
+      },
+      {
+        "slot": "隠れ",
+        "name": "かそく",
+        "nameEn": "Speed Boost"
       }
     ]
   },
@@ -8405,8 +8410,8 @@
     "abilities": [
       {
         "slot": "特性1",
-        "name": "—",
-        "nameEn": ""
+        "name": "かそく",
+        "nameEn": "Speed Boost"
       }
     ]
   },
