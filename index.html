@@ -3,487 +3,86 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#0f1419">
-<title>タイプ相性クイズ</title>
+<meta name="theme-color" content="#f5f6f8">
+<title>ポケチャン編成支援</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --bg: #0f1419;
-    --bg-elevated: #1a222c;
-    --surface: #222c38;
-    --surface-2: #2a3644;
-    --border: rgba(255, 255, 255, 0.08);
-    --text: #f4f7fb;
-    --text-muted: #9aa8b8;
-    --accent: #3dd68c;
-    --accent-dim: rgba(61, 214, 140, 0.16);
-    --danger: #ff6b7a;
-    --warning: #ffc857;
-    --radius: 18px;
-    --radius-sm: 12px;
-    --shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
-    --safe-bottom: env(safe-area-inset-bottom, 0px);
-    --safe-top: env(safe-area-inset-top, 0px);
-    --app-width: 430px;
-  }
-
-  * { box-sizing: border-box; }
-
-  html, body {
-    margin: 0;
-    min-height: 100%;
-  }
-
-  body {
-    font-family: "M PLUS Rounded 1c", sans-serif;
-    background:
-      radial-gradient(120% 80% at 10% -10%, #1e3a2f 0%, transparent 55%),
-      radial-gradient(90% 60% at 100% 0%, #243049 0%, transparent 50%),
-      var(--bg);
-    color: var(--text);
-    -webkit-tap-highlight-color: transparent;
-  }
-
-  .app {
-    width: min(100%, var(--app-width));
-    margin: 0 auto;
-    min-height: 100dvh;
-    padding: calc(16px + var(--safe-top)) 16px calc(24px + var(--safe-bottom));
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .topbar {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 12px;
-  }
-
-  .brand {
-    text-align: left;
-  }
-
-  .brand-kicker {
-    margin: 0 0 4px;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    color: var(--accent);
-    text-transform: uppercase;
-  }
-
-  h1 {
-    margin: 0;
-    font-size: clamp(1.45rem, 5vw, 1.75rem);
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    line-height: 1.25;
-  }
-
-  .icon-btn {
-    width: 44px;
-    height: 44px;
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    background: var(--surface);
-    color: var(--text);
-    font-size: 20px;
-    cursor: pointer;
-    display: grid;
-    place-items: center;
-    flex-shrink: 0;
-    transition: background 0.2s, transform 0.15s;
-  }
-  .icon-btn:hover { background: var(--surface-2); }
-  .icon-btn:active { transform: scale(0.96); }
-
-  .panel {
-    background: linear-gradient(180deg, rgba(255,255,255,0.03), transparent 40%), var(--bg-elevated);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 16px;
-    box-shadow: var(--shadow);
-  }
-
-  .segmented {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4px;
-    padding: 4px;
-    background: var(--surface);
-    border-radius: 14px;
-    border: 1px solid var(--border);
-  }
-
-  .segmented button {
-    appearance: none;
-    border: none;
-    background: transparent;
-    color: var(--text-muted);
-    font: inherit;
-    font-weight: 700;
-    font-size: 14px;
-    min-height: 40px;
-    border-radius: 11px;
-    cursor: pointer;
-    transition: background 0.2s, color 0.2s, transform 0.15s;
-  }
-  .segmented button[aria-pressed="true"] {
-    background: var(--surface-2);
-    color: var(--text);
-    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.06);
-  }
-  .segmented button:active { transform: scale(0.98); }
-
-  .opponent {
-    text-align: center;
-    padding: 20px 16px;
-  }
-
-  .opponent-label {
-    margin: 0 0 12px;
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--text-muted);
-  }
-
-  .type-chips {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    min-height: 40px;
-  }
-
-  .type-chip {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 96px;
-    min-height: 40px;
-    padding: 0 16px;
-    border-radius: 999px;
-    font-weight: 800;
-    font-size: 15px;
-    color: #fff;
-    text-shadow: 0 1px 1px rgba(0,0,0,0.25);
-    box-shadow: inset 0 -2px 0 rgba(0,0,0,0.18);
-  }
-
-  .actions {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
-
-  .btn {
-    appearance: none;
-    border: none;
-    font: inherit;
-    font-weight: 800;
-    font-size: 14px;
-    min-height: 48px;
-    padding: 0 14px;
-    border-radius: 14px;
-    cursor: pointer;
-    transition: transform 0.15s, filter 0.2s, background 0.2s;
-  }
-  .btn:active { transform: scale(0.98); }
-  .btn-primary {
-    background: var(--accent);
-    color: #062416;
-  }
-  .btn-primary:hover { filter: brightness(1.05); }
-  .btn-secondary {
-    background: var(--surface);
-    color: var(--text);
-    border: 1px solid var(--border);
-  }
-  .btn-secondary:hover { background: var(--surface-2); }
-  .btn-ghost {
-    background: var(--accent-dim);
-    color: var(--accent);
-    border: 1px solid rgba(61, 214, 140, 0.28);
-  }
-  .btn[aria-pressed="true"] {
-    box-shadow: 0 0 0 2px var(--accent);
-  }
-
-  .section-title {
-    margin: 4px 0 0;
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--text-muted);
-    text-align: left;
-  }
-
-  .types-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-  }
-
-  .type-btn {
-    appearance: none;
-    border: none;
-    position: relative;
-    min-height: 52px;
-    padding: 10px 6px;
-    border-radius: var(--radius-sm);
-    font: inherit;
-    font-weight: 800;
-    font-size: clamp(12px, 3.4vw, 14px);
-    color: #fff;
-    text-shadow: 0 1px 1px rgba(0,0,0,0.28);
-    cursor: pointer;
-    box-shadow: inset 0 -2px 0 rgba(0,0,0,0.2);
-    transition: transform 0.15s, filter 0.2s, opacity 0.2s, outline 0.2s;
-  }
-  .type-btn:hover { filter: brightness(1.08); }
-  .type-btn:active { transform: scale(0.97); }
-  .type-btn:focus-visible {
-    outline: 2px solid #fff;
-    outline-offset: 2px;
-  }
-
-  .type-btn .mult-badge {
-    position: absolute;
-    top: 4px;
-    right: 4px;
-    min-width: 28px;
-    height: 18px;
-    padding: 0 5px;
-    border-radius: 999px;
-    background: rgba(0,0,0,0.45);
-    font-size: 10px;
-    font-weight: 800;
-    display: grid;
-    place-items: center;
-    text-shadow: none;
-  }
-
-  .type-btn.is-best {
-    outline: 2px solid #fff;
-    outline-offset: 1px;
-    box-shadow:
-      0 0 0 3px rgba(61, 214, 140, 0.55),
-      inset 0 -2px 0 rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  .type-btn.is-dimmed {
-    opacity: 0.32;
-    filter: grayscale(0.35);
-  }
-
-  .result {
-    min-height: 72px;
-    border-radius: var(--radius);
-    background: var(--surface);
-    border: 1px solid var(--border);
-    padding: 14px 16px;
-    text-align: left;
-  }
-  .result:empty::before {
-    content: "技を選んで相性を確認しよう";
-    color: var(--text-muted);
-    font-size: 14px;
-    font-weight: 700;
-  }
-  .result-title {
-    margin: 0 0 4px;
-    font-size: 16px;
-    font-weight: 800;
-  }
-  .result-mult {
-    color: var(--danger);
-    font-weight: 800;
-  }
-  .result-msg {
-    margin: 0;
-    color: var(--text-muted);
-    font-size: 14px;
-    font-weight: 700;
-  }
-
-  .hint {
-    margin: 0;
-    font-size: 12px;
-    color: var(--text-muted);
-    text-align: center;
-    line-height: 1.5;
-  }
-  .hint kbd {
-    display: inline-block;
-    padding: 1px 6px;
-    border-radius: 6px;
-    border: 1px solid var(--border);
-    background: var(--surface);
-    font-family: inherit;
-    font-size: 11px;
-  }
-
-  /* Bottom sheet (Mobbin pattern) */
-  .sheet-backdrop {
-    position: fixed;
-    inset: 0;
-    z-index: 100;
-    background: rgba(5, 8, 12, 0.62);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.25s ease;
-  }
-  .sheet-backdrop.is-open {
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  .sheet {
-    position: fixed;
-    left: 50%;
-    bottom: 0;
-    z-index: 101;
-    width: min(100%, var(--app-width));
-    max-height: min(88dvh, 760px);
-    transform: translate(-50%, 110%);
-    transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
-    background: var(--bg-elevated);
-    border: 1px solid var(--border);
-    border-bottom: none;
-    border-radius: 24px 24px 0 0;
-    box-shadow: 0 -20px 60px rgba(0,0,0,0.45);
-    display: flex;
-    flex-direction: column;
-    padding-bottom: var(--safe-bottom);
-  }
-  .sheet-backdrop.is-open .sheet,
-  .sheet.is-open {
-    transform: translate(-50%, 0);
-  }
-
-  .sheet-handle {
-    width: 42px;
-    height: 4px;
-    border-radius: 999px;
-    background: rgba(255,255,255,0.18);
-    margin: 10px auto 4px;
-  }
-
-  .sheet-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    padding: 8px 16px 12px;
-    border-bottom: 1px solid var(--border);
-  }
-  .sheet-header h2 {
-    margin: 0;
-    font-size: 18px;
-    font-weight: 800;
-  }
-
-  .sheet-body {
-    overflow: auto;
-    padding: 12px 16px 20px;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .legend {
-    font-size: 12px;
-    color: var(--text-muted);
-    line-height: 1.6;
-    margin-bottom: 12px;
-  }
-  .legend strong { color: var(--text); }
-
-  .chart-scroll {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    border-radius: 12px;
-    border: 1px solid var(--border);
-  }
-
-  table {
-    border-collapse: collapse;
-    width: max-content;
-    min-width: 100%;
-    font-size: 11px;
-    white-space: nowrap;
-  }
-  th, td {
-    border: 1px solid rgba(255,255,255,0.06);
-    padding: 6px 5px;
-    text-align: center;
-  }
-  th {
-    background: #1c2530;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    font-weight: 800;
-  }
-  th:first-child {
-    left: 0;
-    z-index: 2;
-    text-align: left;
-    padding-left: 8px;
-  }
-  td:first-child, th:first-child {
-    position: sticky;
-    left: 0;
-    background: #1c2530;
-  }
-  .eff-2 { color: #ff8a95; font-weight: 800; background: rgba(255,107,122,0.12); }
-  .eff-05 { color: #7eb6ff; background: rgba(126,182,255,0.12); }
-  .eff-0 { color: #8b96a3; background: rgba(255,255,255,0.04); }
-
-  @media (min-width: 480px) {
-    .types-grid { gap: 10px; }
-    .type-btn { min-height: 56px; font-size: 14px; }
-    .actions { gap: 12px; }
-  }
-
-  @media (max-width: 360px) {
-    .types-grid { grid-template-columns: repeat(3, 1fr); gap: 6px; }
-    .type-btn { min-height: 48px; font-size: 11px; padding: 8px 4px; }
-    .actions { grid-template-columns: 1fr; }
-  }
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="app">
     <header class="topbar">
       <div class="brand">
-        <p class="brand-kicker">Type Quiz</p>
-        <h1>タイプ相性クイズ</h1>
+        <p class="brand-kicker">Pokémon Champions</p>
+        <h1 id="page-title">編成支援</h1>
       </div>
-      <button type="button" class="icon-btn" id="show-chart-btn" aria-label="タイプ相性表を開く" title="相性表">☰</button>
+      <button type="button" class="icon-btn" id="show-chart-btn" aria-label="タイプ相性表を開く" title="相性表" hidden>☰</button>
     </header>
 
-    <div class="segmented" role="group" aria-label="相手のタイプ数">
-      <button type="button" id="mode-single" aria-pressed="false">1タイプ</button>
-      <button type="button" id="mode-dual" aria-pressed="true">2タイプ</button>
+    <div class="tabs" role="tablist" aria-label="メイン切替">
+      <button type="button" role="tab" id="tab-team" aria-selected="true" aria-controls="view-team">編成</button>
+      <button type="button" role="tab" id="tab-quiz" aria-selected="false" aria-controls="view-quiz">相性クイズ</button>
     </div>
 
-    <section class="panel opponent" aria-live="polite">
-      <p class="opponent-label">相手のタイプ</p>
-      <div class="type-chips" id="opponent-chips"></div>
+    <!-- ===== 編成ビュー ===== -->
+    <section class="view" id="view-team" role="tabpanel" aria-labelledby="tab-team">
+      <p class="rule-note">
+        Bring 6想定。持ち物重複不可（Item Clause）。育成は SP（合計66 / 1ステ上限32）。データはサンプルで、メタの完全再現ではありません。
+      </p>
+
+      <div class="panel">
+        <label class="field-label" for="poke-search">軸ポケモン（1〜2体）</label>
+        <div class="search-wrap">
+          <input id="poke-search" class="search-input" type="search" placeholder="名前で検索（例: ガブリアス）" autocomplete="off">
+          <div class="search-results" id="search-results" role="listbox"></div>
+        </div>
+        <div class="selected-row" id="selected-pokemon"></div>
+      </div>
+
+      <div class="segmented" role="group" aria-label="対戦形式">
+        <button type="button" id="format-singles" aria-pressed="true">シングル（3選出）</button>
+        <button type="button" id="format-doubles" aria-pressed="false">ダブル（4選出）</button>
+      </div>
+
+      <div class="actions">
+        <button type="button" class="btn btn-primary" id="suggest-btn" disabled>編成候補を見る</button>
+      </div>
+
+      <p class="section-title">編成候補</p>
+      <div class="core-list" id="core-list">
+        <p class="empty-state">ポケモンを選んで候補を表示できます</p>
+      </div>
+
+      <div id="team-detail" hidden>
+        <p class="section-title" id="detail-title">詳細</p>
+        <p class="item-warn" id="item-warn" hidden></p>
+        <div class="member-list" id="member-list"></div>
+      </div>
     </section>
 
-    <div class="actions">
-      <button type="button" class="btn btn-primary" id="generate-btn">ランダム生成</button>
-      <button type="button" class="btn btn-ghost" id="reveal-btn" aria-pressed="false">正解を見る</button>
-    </div>
+    <!-- ===== 相性クイズ ===== -->
+    <section class="view" id="view-quiz" role="tabpanel" aria-labelledby="tab-quiz" hidden>
+      <div class="segmented" role="group" aria-label="相手のタイプ数">
+        <button type="button" id="mode-single" aria-pressed="false">1タイプ</button>
+        <button type="button" id="mode-dual" aria-pressed="true">2タイプ</button>
+      </div>
 
-    <p class="section-title">どのタイプの技で攻撃する？</p>
-    <div class="types-grid" id="attack-buttons"></div>
+      <section class="panel opponent" aria-live="polite">
+        <p class="opponent-label">相手のタイプ</p>
+        <div class="type-chips" id="opponent-chips"></div>
+      </section>
 
-    <div class="result" id="result-area" aria-live="polite"></div>
-    <p class="hint">相性表は右上メニュー、<kbd>Esc</kbd> で閉じる</p>
+      <div class="quiz-actions">
+        <button type="button" class="btn btn-primary" id="generate-btn">ランダム生成</button>
+        <button type="button" class="btn btn-ghost" id="reveal-btn" aria-pressed="false">正解を見る</button>
+      </div>
+
+      <p class="section-title">どのタイプの技で攻撃する？</p>
+      <div class="types-grid" id="attack-buttons"></div>
+      <div class="result" id="result-area" aria-live="polite"></div>
+      <p class="hint">相性表は右上メニュー、<kbd>Esc</kbd> で閉じる / <kbd>R</kbd> 再生成 / <kbd>A</kbd> 正解</p>
+    </section>
   </div>
 
   <div class="sheet-backdrop" id="chart-modal" aria-hidden="true">
@@ -496,9 +95,9 @@
       <div class="sheet-body">
         <div class="legend">
           <strong>見方：</strong> 行が攻撃側、列が防御側。<br>
-          <span style="color:#ff8a95;font-weight:800;">◯</span> ばつぐん(x2) /
-          <span style="color:#7eb6ff;">△</span> いまひとつ(x0.5) /
-          <span style="color:#8b96a3;">×</span> 無効(x0) /
+          <span style="color:#c62828;font-weight:800;">◯</span> ばつぐん(x2) /
+          <span style="color:#1565c0;">△</span> いまひとつ(x0.5) /
+          <span style="color:#757575;">×</span> 無効(x0) /
           - 等倍
         </div>
         <div class="chart-scroll" id="chart-container"></div>
@@ -506,287 +105,6 @@
     </div>
   </div>
 
-<script>
-const TYPES = [
-  'ノーマル', 'ほのお', 'みず', 'くさ', 'でんき', 'こおり',
-  'かくとう', 'どく', 'じめん', 'ひこう', 'エスパー', 'むし',
-  'いわ', 'ゴースト', 'ドラゴン', 'あく', 'はがね', 'フェアリー'
-];
-
-const TYPE_COLORS = {
-  'ノーマル': '#A8A878',
-  'ほのお': '#F08030',
-  'みず': '#6890F0',
-  'くさ': '#78C850',
-  'でんき': '#F8D030',
-  'こおり': '#98D8D8',
-  'かくとう': '#C03028',
-  'どく': '#A040A0',
-  'じめん': '#E0C068',
-  'ひこう': '#A890F0',
-  'エスパー': '#F85888',
-  'むし': '#A8B820',
-  'いわ': '#B8A038',
-  'ゴースト': '#705898',
-  'ドラゴン': '#7038F8',
-  'あく': '#705848',
-  'はがね': '#B8B8D0',
-  'フェアリー': '#EE99AC'
-};
-
-const MATCHUPS = {
-  'ノーマル': { 'いわ': 0.5, 'ゴースト': 0, 'はがね': 0.5 },
-  'ほのお': { 'ほのお': 0.5, 'みず': 0.5, 'くさ': 2, 'こおり': 2, 'むし': 2, 'いわ': 0.5, 'ドラゴン': 0.5, 'はがね': 2 },
-  'みず': { 'ほのお': 2, 'みず': 0.5, 'くさ': 0.5, 'じめん': 2, 'いわ': 2, 'ドラゴン': 0.5 },
-  'くさ': { 'ほのお': 0.5, 'みず': 2, 'くさ': 0.5, 'どく': 0.5, 'じめん': 2, 'ひこう': 0.5, 'むし': 0.5, 'いわ': 2, 'ドラゴン': 0.5, 'はがね': 0.5 },
-  'でんき': { 'みず': 2, 'くさ': 0.5, 'でんき': 0.5, 'じめん': 0, 'ひこう': 2, 'ドラゴン': 0.5 },
-  'こおり': { 'ほのお': 0.5, 'みず': 0.5, 'くさ': 2, 'こおり': 0.5, 'じめん': 2, 'ひこう': 2, 'ドラゴン': 2, 'はがね': 0.5 },
-  'かくとう': { 'ノーマル': 2, 'こおり': 2, 'どく': 0.5, 'ひこう': 0.5, 'エスパー': 0.5, 'むし': 0.5, 'いわ': 2, 'ゴースト': 0, 'あく': 2, 'はがね': 2, 'フェアリー': 0.5 },
-  'どく': { 'くさ': 2, 'どく': 0.5, 'じめん': 0.5, 'いわ': 0.5, 'ゴースト': 0.5, 'はがね': 0, 'フェアリー': 2 },
-  'じめん': { 'ほのお': 2, 'くさ': 0.5, 'でんき': 2, 'どく': 2, 'ひこう': 0, 'むし': 0.5, 'いわ': 2, 'はがね': 2 },
-  'ひこう': { 'くさ': 2, 'でんき': 0.5, 'かくとう': 2, 'むし': 2, 'いわ': 0.5, 'はがね': 0.5 },
-  'エスパー': { 'かくとう': 2, 'どく': 2, 'エスパー': 0.5, 'あく': 0, 'はがね': 0.5 },
-  'むし': { 'ほのお': 0.5, 'くさ': 2, 'かくとう': 0.5, 'どく': 0.5, 'ひこう': 0.5, 'エスパー': 2, 'ゴースト': 0.5, 'あく': 2, 'はがね': 0.5, 'フェアリー': 0.5 },
-  'いわ': { 'ほのお': 2, 'こおり': 2, 'かくとう': 0.5, 'じめん': 0.5, 'ひこう': 2, 'むし': 2, 'はがね': 0.5 },
-  'ゴースト': { 'ノーマル': 0, 'エスパー': 2, 'ゴースト': 2, 'あく': 0.5 },
-  'ドラゴン': { 'ドラゴン': 2, 'はがね': 0.5, 'フェアリー': 0 },
-  'あく': { 'かくとう': 0.5, 'エスパー': 2, 'ゴースト': 2, 'あく': 0.5, 'フェアリー': 0.5 },
-  'はがね': { 'ほのお': 0.5, 'みず': 0.5, 'でんき': 0.5, 'こおり': 2, 'いわ': 2, 'はがね': 0.5, 'フェアリー': 2 },
-  'フェアリー': { 'ほのお': 0.5, 'かくとう': 2, 'どく': 0.5, 'ドラゴン': 2, 'あく': 2, 'はがね': 0.5 }
-};
-
-let currentOpponentTypes = [];
-let dualMode = true;
-let revealAnswers = false;
-let lastFocusedBeforeModal = null;
-
-const btnGenerate = document.getElementById('generate-btn');
-const btnReveal = document.getElementById('reveal-btn');
-const btnShowChart = document.getElementById('show-chart-btn');
-const btnCloseModal = document.getElementById('close-modal-btn');
-const btnModeSingle = document.getElementById('mode-single');
-const btnModeDual = document.getElementById('mode-dual');
-const modal = document.getElementById('chart-modal');
-const sheet = document.getElementById('chart-sheet');
-const chartContainer = document.getElementById('chart-container');
-const opponentChips = document.getElementById('opponent-chips');
-const attackButtonsDiv = document.getElementById('attack-buttons');
-const resultArea = document.getElementById('result-area');
-
-function getMultiplier(attackType, defenseType) {
-  const table = MATCHUPS[attackType];
-  return table[defenseType] !== undefined ? table[defenseType] : 1.0;
-}
-
-function totalMultiplier(attackType) {
-  return currentOpponentTypes.reduce(
-    (acc, defType) => acc * getMultiplier(attackType, defType),
-    1
-  );
-}
-
-function formatMult(mult) {
-  if (mult === 0.25) return 'x¼';
-  if (mult === 0.5) return 'x½';
-  if (Number.isInteger(mult)) return `x${mult}`;
-  return `x${mult}`;
-}
-
-function createTypeChip(typeName) {
-  const chip = document.createElement('span');
-  chip.className = 'type-chip';
-  chip.textContent = typeName;
-  chip.style.background = TYPE_COLORS[typeName] || '#666';
-  return chip;
-}
-
-function renderOpponent() {
-  opponentChips.replaceChildren();
-  currentOpponentTypes.forEach((type) => {
-    opponentChips.appendChild(createTypeChip(type));
-  });
-}
-
-function clearRevealStyles() {
-  attackButtonsDiv.querySelectorAll('.type-btn').forEach((btn) => {
-    btn.classList.remove('is-best', 'is-dimmed');
-    const badge = btn.querySelector('.mult-badge');
-    if (badge) badge.remove();
-  });
-}
-
-function updateRevealUI() {
-  clearRevealStyles();
-  btnReveal.setAttribute('aria-pressed', revealAnswers ? 'true' : 'false');
-  btnReveal.textContent = revealAnswers ? '正解を隠す' : '正解を見る';
-
-  if (!revealAnswers || currentOpponentTypes.length === 0) return;
-
-  const scores = TYPES.map((type) => ({
-    type,
-    mult: totalMultiplier(type)
-  }));
-  const best = Math.max(...scores.map((s) => s.mult));
-  const hasSuper = best >= 2;
-
-  scores.forEach(({ type, mult }) => {
-    const btn = attackButtonsDiv.querySelector(`[data-type="${type}"]`);
-    if (!btn) return;
-
-    const badge = document.createElement('span');
-    badge.className = 'mult-badge';
-    badge.textContent = formatMult(mult);
-    btn.appendChild(badge);
-
-    const isBest = hasSuper ? mult >= 2 && mult === best : mult === best && best > 0;
-    if (isBest && best > 1) {
-      btn.classList.add('is-best');
-    } else if (hasSuper && mult < 2) {
-      btn.classList.add('is-dimmed');
-    } else if (!hasSuper && mult < best) {
-      btn.classList.add('is-dimmed');
-    }
-  });
-}
-
-function setMode(isDual) {
-  dualMode = isDual;
-  btnModeSingle.setAttribute('aria-pressed', isDual ? 'false' : 'true');
-  btnModeDual.setAttribute('aria-pressed', isDual ? 'true' : 'false');
-  generateOpponentTypes();
-}
-
-function generateOpponentTypes() {
-  resultArea.replaceChildren();
-  const shuffled = [...TYPES].sort(() => Math.random() - 0.5);
-  currentOpponentTypes = dualMode ? [shuffled[0], shuffled[1]] : [shuffled[0]];
-  renderOpponent();
-  updateRevealUI();
-}
-
-function attack(attackType) {
-  if (currentOpponentTypes.length === 0) {
-    alert('先に相手のタイプを生成してください！');
-    return;
-  }
-
-  const total = totalMultiplier(attackType);
-  const title = document.createElement('p');
-  title.className = 'result-title';
-  title.innerHTML = `${attackType}技で攻撃！ 倍率: <span class="result-mult">${formatMult(total)}</span>`;
-
-  const msg = document.createElement('p');
-  msg.className = 'result-msg';
-
-  if (total >= 4) {
-    msg.textContent = '効果はちょうバツグンだ！';
-  } else if (total >= 2) {
-    msg.textContent = '効果はばつぐんだ！';
-  } else if (total > 0 && total < 1) {
-    msg.textContent = '効果はいまひとつだ...';
-  } else if (total === 0) {
-    msg.textContent = '効果はないみたいだ...';
-  }
-
-  resultArea.replaceChildren(title);
-  if (msg.textContent) resultArea.appendChild(msg);
-}
-
-function buildTypeChart() {
-  let tableHTML = '<table><tr><th>攻撃＼防御</th>';
-  TYPES.forEach((defType) => {
-    tableHTML += `<th>${defType.substring(0, 2)}</th>`;
-  });
-  tableHTML += '</tr>';
-
-  TYPES.forEach((atkType) => {
-    tableHTML += `<tr><th>${atkType}</th>`;
-    TYPES.forEach((defType) => {
-      const mult = getMultiplier(atkType, defType);
-      let mark = '-';
-      let cssClass = '';
-      if (mult === 2) { mark = '◯'; cssClass = 'eff-2'; }
-      if (mult === 0.5) { mark = '△'; cssClass = 'eff-05'; }
-      if (mult === 0) { mark = '×'; cssClass = 'eff-0'; }
-      tableHTML += `<td class="${cssClass}">${mark}</td>`;
-    });
-    tableHTML += '</tr>';
-  });
-
-  tableHTML += '</table>';
-  chartContainer.innerHTML = tableHTML;
-}
-
-function openModal() {
-  lastFocusedBeforeModal = document.activeElement;
-  modal.classList.add('is-open');
-  sheet.classList.add('is-open');
-  modal.setAttribute('aria-hidden', 'false');
-  btnCloseModal.focus();
-}
-
-function closeModal() {
-  modal.classList.remove('is-open');
-  sheet.classList.remove('is-open');
-  modal.setAttribute('aria-hidden', 'true');
-  if (lastFocusedBeforeModal && typeof lastFocusedBeforeModal.focus === 'function') {
-    lastFocusedBeforeModal.focus();
-  }
-}
-
-function isModalOpen() {
-  return modal.classList.contains('is-open');
-}
-
-TYPES.forEach((type) => {
-  const btn = document.createElement('button');
-  btn.type = 'button';
-  btn.className = 'type-btn';
-  btn.dataset.type = type;
-  btn.textContent = type;
-  btn.style.background = TYPE_COLORS[type];
-  btn.addEventListener('click', () => attack(type));
-  attackButtonsDiv.appendChild(btn);
-});
-
-btnGenerate.addEventListener('click', generateOpponentTypes);
-btnReveal.addEventListener('click', () => {
-  revealAnswers = !revealAnswers;
-  updateRevealUI();
-});
-btnModeSingle.addEventListener('click', () => setMode(false));
-btnModeDual.addEventListener('click', () => setMode(true));
-btnShowChart.addEventListener('click', openModal);
-btnCloseModal.addEventListener('click', closeModal);
-
-modal.addEventListener('click', (event) => {
-  if (event.target === modal) closeModal();
-});
-
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape' && isModalOpen()) {
-    event.preventDefault();
-    closeModal();
-    return;
-  }
-
-  if (isModalOpen()) return;
-
-  if (event.key === 'r' || event.key === 'R') {
-    if (event.target.matches('input, textarea, select')) return;
-    generateOpponentTypes();
-  }
-  if (event.key === 'a' || event.key === 'A') {
-    if (event.target.matches('input, textarea, select')) return;
-    revealAnswers = !revealAnswers;
-    updateRevealUI();
-  }
-  if (event.key === '1') setMode(false);
-  if (event.key === '2') setMode(true);
-});
-
-buildTypeChart();
-generateOpponentTypes();
-</script>
+  <script src="app.js"></script>
 </body>
 </html>

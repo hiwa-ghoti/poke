@@ -1,0 +1,682 @@
+/* Pokémon Champions team helper + type quiz */
+
+const TYPES = [
+  'ノーマル', 'ほのお', 'みず', 'くさ', 'でんき', 'こおり',
+  'かくとう', 'どく', 'じめん', 'ひこう', 'エスパー', 'むし',
+  'いわ', 'ゴースト', 'ドラゴン', 'あく', 'はがね', 'フェアリー'
+];
+
+const TYPE_COLORS = {
+  'ノーマル': '#A8A878', 'ほのお': '#F08030', 'みず': '#6890F0', 'くさ': '#78C850',
+  'でんき': '#F8D030', 'こおり': '#98D8D8', 'かくとう': '#C03028', 'どく': '#A040A0',
+  'じめん': '#E0C068', 'ひこう': '#A890F0', 'エスパー': '#F85888', 'むし': '#A8B820',
+  'いわ': '#B8A038', 'ゴースト': '#705898', 'ドラゴン': '#7038F8', 'あく': '#705848',
+  'はがね': '#B8B8D0', 'フェアリー': '#EE99AC'
+};
+
+const MATCHUPS = {
+  'ノーマル': { 'いわ': 0.5, 'ゴースト': 0, 'はがね': 0.5 },
+  'ほのお': { 'ほのお': 0.5, 'みず': 0.5, 'くさ': 2, 'こおり': 2, 'むし': 2, 'いわ': 0.5, 'ドラゴン': 0.5, 'はがね': 2 },
+  'みず': { 'ほのお': 2, 'みず': 0.5, 'くさ': 0.5, 'じめん': 2, 'いわ': 2, 'ドラゴン': 0.5 },
+  'くさ': { 'ほのお': 0.5, 'みず': 2, 'くさ': 0.5, 'どく': 0.5, 'じめん': 2, 'ひこう': 0.5, 'むし': 0.5, 'いわ': 2, 'ドラゴン': 0.5, 'はがね': 0.5 },
+  'でんき': { 'みず': 2, 'くさ': 0.5, 'でんき': 0.5, 'じめん': 0, 'ひこう': 2, 'ドラゴン': 0.5 },
+  'こおり': { 'ほのお': 0.5, 'みず': 0.5, 'くさ': 2, 'こおり': 0.5, 'じめん': 2, 'ひこう': 2, 'ドラゴン': 2, 'はがね': 0.5 },
+  'かくとう': { 'ノーマル': 2, 'こおり': 2, 'どく': 0.5, 'ひこう': 0.5, 'エスパー': 0.5, 'むし': 0.5, 'いわ': 2, 'ゴースト': 0, 'あく': 2, 'はがね': 2, 'フェアリー': 0.5 },
+  'どく': { 'くさ': 2, 'どく': 0.5, 'じめん': 0.5, 'いわ': 0.5, 'ゴースト': 0.5, 'はがね': 0, 'フェアリー': 2 },
+  'じめん': { 'ほのお': 2, 'くさ': 0.5, 'でんき': 2, 'どく': 2, 'ひこう': 0, 'むし': 0.5, 'いわ': 2, 'はがね': 2 },
+  'ひこう': { 'くさ': 2, 'でんき': 0.5, 'かくとう': 2, 'むし': 2, 'いわ': 0.5, 'はがね': 0.5 },
+  'エスパー': { 'かくとう': 2, 'どく': 2, 'エスパー': 0.5, 'あく': 0, 'はがね': 0.5 },
+  'むし': { 'ほのお': 0.5, 'くさ': 2, 'かくとう': 0.5, 'どく': 0.5, 'ひこう': 0.5, 'エスパー': 2, 'ゴースト': 0.5, 'あく': 2, 'はがね': 0.5, 'フェアリー': 0.5 },
+  'いわ': { 'ほのお': 2, 'こおり': 2, 'かくとう': 0.5, 'じめん': 0.5, 'ひこう': 2, 'むし': 2, 'はがね': 0.5 },
+  'ゴースト': { 'ノーマル': 0, 'エスパー': 2, 'ゴースト': 2, 'あく': 0.5 },
+  'ドラゴン': { 'ドラゴン': 2, 'はがね': 0.5, 'フェアリー': 0 },
+  'あく': { 'かくとう': 0.5, 'エスパー': 2, 'ゴースト': 2, 'あく': 0.5, 'フェアリー': 0.5 },
+  'はがね': { 'ほのお': 0.5, 'みず': 0.5, 'でんき': 0.5, 'こおり': 2, 'いわ': 2, 'はがね': 0.5, 'フェアリー': 2 },
+  'フェアリー': { 'ほのお': 0.5, 'かくとう': 2, 'どく': 0.5, 'ドラゴン': 2, 'あく': 2, 'はがね': 0.5 }
+};
+
+const SP_LABELS = { hp: 'H', atk: 'A', def: 'B', spa: 'C', spd: 'D', spe: 'S' };
+const FALLBACK_ITEMS = [
+  'オボンのみ', 'たべのこし', 'きあいのタスキ', 'いのちのたま',
+  'こだわりスカーフ', 'とつげきチョッキ', 'ひかりのねんど', 'くろいヘドロ',
+  'クリアチャーム', 'メンタルハーブ', 'しめったいわ', 'あついいわ'
+];
+
+let pokemonList = [];
+let buildsMap = {};
+let coresList = [];
+let pokemonById = {};
+
+let selectedIds = [];
+let battleFormat = 'singles';
+let activeCore = null;
+let currentSuggestions = [];
+
+let dualMode = true;
+let revealAnswers = false;
+let currentOpponentTypes = [];
+let lastFocusedBeforeModal = null;
+
+const $ = (id) => document.getElementById(id);
+
+async function loadData() {
+  const [pokemon, builds, cores] = await Promise.all([
+    fetch('data/pokemon.json').then((r) => r.json()),
+    fetch('data/builds.json').then((r) => r.json()),
+    fetch('data/cores.json').then((r) => r.json())
+  ]);
+  pokemonList = pokemon;
+  buildsMap = builds;
+  coresList = cores;
+  pokemonById = Object.fromEntries(pokemon.map((p) => [p.id, p]));
+}
+
+function getMultiplier(attackType, defenseType) {
+  const table = MATCHUPS[attackType];
+  return table[defenseType] !== undefined ? table[defenseType] : 1.0;
+}
+
+function defenseMultiplier(attackType, types) {
+  return types.reduce((acc, t) => acc * getMultiplier(attackType, t), 1);
+}
+
+function buildsForPokemon(pokemonId) {
+  return Object.entries(buildsMap)
+    .filter(([, b]) => b.pokemonId === pokemonId)
+    .map(([id, b]) => ({ id, ...b }));
+}
+
+function defaultBuildId(pokemonId) {
+  const list = buildsForPokemon(pokemonId);
+  return list[0] ? list[0].id : null;
+}
+
+function requirementMatch(requiresAny, selected) {
+  const set = new Set(selected);
+  return requiresAny.some((req) => req.every((id) => set.has(id)));
+}
+
+function scoreCore(core, selected) {
+  const ids = core.slots.map((s) => s.pokemonId);
+  let score = 0;
+  selected.forEach((id) => {
+    if (ids.includes(id)) score += 10;
+  });
+  if (core.format.includes(battleFormat)) score += 3;
+  if (core.rating === 'おすすめ') score += 2;
+  return score;
+}
+
+function findCuratedCores(selected) {
+  return coresList
+    .filter((core) => requirementMatch(core.requiresAny, selected))
+    .filter((core) => core.format.includes(battleFormat) || core.format.length === 2)
+    .map((core) => ({ ...core, source: 'curated', score: scoreCore(core, selected) }))
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 3);
+}
+
+function weakTypesForTeam(typeLists) {
+  const weaknessScore = {};
+  TYPES.forEach((atk) => {
+    let hits = 0;
+    typeLists.forEach((types) => {
+      if (defenseMultiplier(atk, types) >= 2) hits += 1;
+    });
+    if (hits > 0) weaknessScore[atk] = hits;
+  });
+  return Object.entries(weaknessScore)
+    .sort((a, b) => b[1] - a[1])
+    .map(([t]) => t);
+}
+
+function resistsAttack(types, attackType) {
+  return defenseMultiplier(attackType, types) < 1;
+}
+
+function pickFallbackTeammates(selected, neededRoles) {
+  const used = new Set(selected);
+  const picks = [];
+  const pool = pokemonList.filter((p) => !used.has(p.id));
+
+  const selectedTypes = selected.map((id) => pokemonById[id]?.types || []);
+  const weakTo = weakTypesForTeam(selectedTypes);
+
+  neededRoles.forEach((role) => {
+    let candidates = pool.filter((p) => !used.has(p.id) && p.roles.includes(role));
+    if (weakTo.length) {
+      const cover = candidates.filter((p) =>
+        weakTo.slice(0, 3).some((atk) => resistsAttack(p.types, atk))
+      );
+      if (cover.length) candidates = cover;
+    }
+    const pick = candidates[0] || pool.find((p) => !used.has(p.id));
+    if (pick) {
+      used.add(pick.id);
+      picks.push(pick.id);
+    }
+  });
+
+  while (picks.length + selected.length < 6) {
+    const next = pool.find((p) => !used.has(p.id));
+    if (!next) break;
+    used.add(next.id);
+    picks.push(next.id);
+  }
+
+  return picks;
+}
+
+function assignItemsWithoutDup(slots) {
+  const usedItems = new Set();
+  let itemIdx = 0;
+  return slots.map((slot) => {
+    const build = buildsMap[slot.buildId];
+    if (!build) return slot;
+    let item = build.item;
+    if (usedItems.has(item)) {
+      while (itemIdx < FALLBACK_ITEMS.length && usedItems.has(FALLBACK_ITEMS[itemIdx])) {
+        itemIdx += 1;
+      }
+      item = FALLBACK_ITEMS[itemIdx] || `${item}（要変更）`;
+      itemIdx += 1;
+      return {
+        ...slot,
+        buildOverride: { ...build, item, note: `${build.note} ※持ち物重複回避のため変更案。` }
+      };
+    }
+    usedItems.add(item);
+    return slot;
+  });
+}
+
+function buildFallbackTeams(selected) {
+  const concepts = [
+    {
+      name: 'バランス自動案',
+      rating: '自動',
+      concept: '役割とタイプ相性から穴埋めした汎用案。データ未収録時の参考用。',
+      roles: ['support', 'wall', 'attacker', 'fast']
+    },
+    {
+      name: '攻め自動案',
+      rating: '自動',
+      concept: 'アタッカー多め。サポートを最低限足した攻め寄り。',
+      roles: ['attacker', 'attacker', 'fast', 'support']
+    },
+    {
+      name: '受け・崩し自動案',
+      rating: '自動',
+      concept: '耐久枠を厚くし、崩し役を後続に置く案。',
+      roles: ['wall', 'wall', 'support', 'attacker']
+    }
+  ];
+
+  return concepts.map((c, index) => {
+    const teammates = pickFallbackTeammates(selected, c.roles);
+    const order = [...selected, ...teammates].slice(0, 6);
+    let slots = order.map((pokemonId) => ({
+      pokemonId,
+      buildId: defaultBuildId(pokemonId)
+    })).filter((s) => s.buildId);
+    slots = assignItemsWithoutDup(slots);
+    return {
+      id: `fallback-${index}`,
+      name: c.name,
+      concept: c.concept,
+      rating: c.rating,
+      format: [battleFormat],
+      source: 'fallback',
+      slots
+    };
+  });
+}
+
+function suggestTeams(selected) {
+  if (!selected.length) return [];
+  const curated = findCuratedCores(selected);
+  if (curated.length >= 3) return curated.slice(0, 3);
+  const fallback = buildFallbackTeams(selected);
+  const merged = [...curated];
+  for (const fb of fallback) {
+    if (merged.length >= 3) break;
+    merged.push(fb);
+  }
+  return merged.slice(0, 3);
+}
+
+function resolveSlot(slot) {
+  const poke = pokemonById[slot.pokemonId];
+  const build = slot.buildOverride || buildsMap[slot.buildId];
+  return { poke, build, slot };
+}
+
+function findDuplicateItems(slots) {
+  const counts = {};
+  slots.forEach((slot) => {
+    const build = slot.buildOverride || buildsMap[slot.buildId];
+    if (!build) return;
+    counts[build.item] = (counts[build.item] || 0) + 1;
+  });
+  return Object.entries(counts)
+    .filter(([, n]) => n > 1)
+    .map(([item]) => item);
+}
+
+/* ---------- Team UI ---------- */
+
+function renderSelected() {
+  const row = $('selected-pokemon');
+  row.replaceChildren();
+  selectedIds.forEach((id) => {
+    const p = pokemonById[id];
+    if (!p) return;
+    const chip = document.createElement('span');
+    chip.className = 'selected-chip';
+    chip.textContent = p.name;
+    const remove = document.createElement('button');
+    remove.type = 'button';
+    remove.setAttribute('aria-label', `${p.name}を外す`);
+    remove.textContent = '×';
+    remove.addEventListener('click', () => {
+      selectedIds = selectedIds.filter((x) => x !== id);
+      renderSelected();
+      updateSuggestButton();
+      clearSuggestions();
+    });
+    chip.appendChild(remove);
+    row.appendChild(chip);
+  });
+  updateSuggestButton();
+}
+
+function updateSuggestButton() {
+  $('suggest-btn').disabled = selectedIds.length === 0;
+}
+
+function clearSuggestions() {
+  currentSuggestions = [];
+  activeCore = null;
+  $('core-list').innerHTML = '<p class="empty-state">ポケモンを選んで候補を表示できます</p>';
+  $('team-detail').hidden = true;
+}
+
+function renderSearchResults(query) {
+  const box = $('search-results');
+  const q = query.trim();
+  if (!q || selectedIds.length >= 2) {
+    box.classList.remove('is-open');
+    box.replaceChildren();
+    return;
+  }
+  const results = pokemonList
+    .filter((p) => !selectedIds.includes(p.id) && p.name.includes(q))
+    .slice(0, 8);
+  box.replaceChildren();
+  if (!results.length) {
+    box.classList.remove('is-open');
+    return;
+  }
+  results.forEach((p) => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'search-item';
+    btn.setAttribute('role', 'option');
+    const name = document.createElement('span');
+    name.textContent = p.name;
+    btn.appendChild(name);
+    p.types.forEach((t) => {
+      const mini = document.createElement('span');
+      mini.className = 'type-mini';
+      mini.textContent = t.substring(0, 2);
+      mini.style.background = TYPE_COLORS[t];
+      btn.appendChild(mini);
+    });
+    btn.addEventListener('click', () => {
+      selectedIds.push(p.id);
+      $('poke-search').value = '';
+      box.classList.remove('is-open');
+      renderSelected();
+      clearSuggestions();
+    });
+    box.appendChild(btn);
+  });
+  box.classList.add('is-open');
+}
+
+function renderCoreList(list) {
+  const el = $('core-list');
+  el.replaceChildren();
+  if (!list.length) {
+    el.innerHTML = '<p class="empty-state">候補が見つかりませんでした</p>';
+    return;
+  }
+  list.forEach((core, index) => {
+    const card = document.createElement('button');
+    card.type = 'button';
+    card.className = 'core-card' + (activeCore === core.id ? ' is-active' : '');
+
+    card.innerHTML = `
+      <div class="core-card-top">
+        <p class="core-name">${core.name}</p>
+        <span class="core-badge">${core.rating}${core.source === 'fallback' ? ' · 自動' : ''}</span>
+      </div>
+      <p class="core-desc">${core.concept}</p>
+      <div class="core-names">${core.slots.map((s) => {
+        const n = pokemonById[s.pokemonId]?.name || s.pokemonId;
+        return `<span>${n}</span>`;
+      }).join('')}</div>
+    `;
+    card.addEventListener('click', () => {
+      activeCore = core.id;
+      renderCoreList(list);
+      renderTeamDetail(core);
+    });
+    el.appendChild(card);
+  });
+}
+
+function renderTeamDetail(core) {
+  const detail = $('team-detail');
+  const list = $('member-list');
+  const warn = $('item-warn');
+  detail.hidden = false;
+  $('detail-title').textContent = `${core.name}の詳細`;
+
+  const dups = findDuplicateItems(core.slots);
+  if (dups.length) {
+    warn.hidden = false;
+    warn.textContent = `持ち物が重複しています: ${dups.join('、')}（Item Clause違反）`;
+  } else {
+    warn.hidden = true;
+  }
+
+  list.replaceChildren();
+  core.slots.forEach((slot) => {
+    const { poke, build } = resolveSlot(slot);
+    if (!poke || !build) return;
+
+    const card = document.createElement('article');
+    card.className = 'member-card';
+
+    const typesHtml = poke.types.map((t) =>
+      `<span class="type-mini" style="background:${TYPE_COLORS[t]}">${t.substring(0, 2)}</span>`
+    ).join('');
+
+    const spHtml = Object.entries(build.sp).map(([k, v]) =>
+      `<div class="sp-cell"><span class="sp-stat">${SP_LABELS[k]}</span><span class="sp-num">${v}</span></div>`
+    ).join('');
+
+    const movesHtml = build.moves.map((m) => `<div class="move-chip">${m}</div>`).join('');
+    const spTotal = Object.values(build.sp).reduce((a, b) => a + b, 0);
+
+    card.innerHTML = `
+      <div class="member-head">
+        <div>
+          <p class="member-name">${poke.name}</p>
+          <p class="member-role">${build.role} · ${build.label}</p>
+        </div>
+        <div class="member-types">${typesHtml}</div>
+      </div>
+      <div class="meta-row">
+        <div class="meta-block">
+          <p class="meta-label">持ち物</p>
+          <p class="meta-value">${build.item}</p>
+        </div>
+        <div class="meta-block">
+          <p class="meta-label">特性</p>
+          <p class="meta-value">${build.ability}</p>
+        </div>
+      </div>
+      <p class="meta-label" style="margin-bottom:6px">技</p>
+      <div class="moves">${movesHtml}</div>
+      <p class="meta-label" style="margin-bottom:6px">育成 SP（合計 ${spTotal} / 66）</p>
+      <div class="sp-grid">${spHtml}</div>
+      <p class="note">${build.note}</p>
+    `;
+    list.appendChild(card);
+  });
+}
+
+function runSuggest() {
+  currentSuggestions = suggestTeams(selectedIds);
+  activeCore = currentSuggestions[0]?.id || null;
+  renderCoreList(currentSuggestions);
+  if (currentSuggestions[0]) renderTeamDetail(currentSuggestions[0]);
+  else $('team-detail').hidden = true;
+}
+
+/* ---------- Quiz ---------- */
+
+function totalMultiplier(attackType) {
+  return currentOpponentTypes.reduce(
+    (acc, defType) => acc * getMultiplier(attackType, defType),
+    1
+  );
+}
+
+function formatMult(mult) {
+  if (mult === 0.25) return 'x¼';
+  if (mult === 0.5) return 'x½';
+  if (Number.isInteger(mult)) return `x${mult}`;
+  return `x${mult}`;
+}
+
+function createTypeChip(typeName) {
+  const chip = document.createElement('span');
+  chip.className = 'type-chip';
+  chip.textContent = typeName;
+  chip.style.background = TYPE_COLORS[typeName] || '#666';
+  return chip;
+}
+
+function renderOpponent() {
+  const el = $('opponent-chips');
+  el.replaceChildren();
+  currentOpponentTypes.forEach((type) => el.appendChild(createTypeChip(type)));
+}
+
+function clearRevealStyles() {
+  $('attack-buttons').querySelectorAll('.type-btn').forEach((btn) => {
+    btn.classList.remove('is-best', 'is-dimmed');
+    const badge = btn.querySelector('.mult-badge');
+    if (badge) badge.remove();
+  });
+}
+
+function updateRevealUI() {
+  clearRevealStyles();
+  $('reveal-btn').setAttribute('aria-pressed', revealAnswers ? 'true' : 'false');
+  $('reveal-btn').textContent = revealAnswers ? '正解を隠す' : '正解を見る';
+  if (!revealAnswers || !currentOpponentTypes.length) return;
+
+  const scores = TYPES.map((type) => ({ type, mult: totalMultiplier(type) }));
+  const best = Math.max(...scores.map((s) => s.mult));
+  const hasSuper = best >= 2;
+
+  scores.forEach(({ type, mult }) => {
+    const btn = $('attack-buttons').querySelector(`[data-type="${type}"]`);
+    if (!btn) return;
+    const badge = document.createElement('span');
+    badge.className = 'mult-badge';
+    badge.textContent = formatMult(mult);
+    btn.appendChild(badge);
+    const isBest = hasSuper ? mult >= 2 && mult === best : mult === best && best > 0;
+    if (isBest && best > 1) btn.classList.add('is-best');
+    else if (hasSuper && mult < 2) btn.classList.add('is-dimmed');
+    else if (!hasSuper && mult < best) btn.classList.add('is-dimmed');
+  });
+}
+
+function setTypeMode(isDual) {
+  dualMode = isDual;
+  $('mode-single').setAttribute('aria-pressed', isDual ? 'false' : 'true');
+  $('mode-dual').setAttribute('aria-pressed', isDual ? 'true' : 'false');
+  generateOpponentTypes();
+}
+
+function generateOpponentTypes() {
+  $('result-area').replaceChildren();
+  const shuffled = [...TYPES].sort(() => Math.random() - 0.5);
+  currentOpponentTypes = dualMode ? [shuffled[0], shuffled[1]] : [shuffled[0]];
+  renderOpponent();
+  updateRevealUI();
+}
+
+function attack(attackType) {
+  if (!currentOpponentTypes.length) {
+    alert('先に相手のタイプを生成してください！');
+    return;
+  }
+  const total = totalMultiplier(attackType);
+  const title = document.createElement('p');
+  title.className = 'result-title';
+  title.innerHTML = `${attackType}技で攻撃！ 倍率: <span class="result-mult">${formatMult(total)}</span>`;
+  const msg = document.createElement('p');
+  msg.className = 'result-msg';
+  if (total >= 4) msg.textContent = '効果はちょうバツグンだ！';
+  else if (total >= 2) msg.textContent = '効果はばつぐんだ！';
+  else if (total > 0 && total < 1) msg.textContent = '効果はいまひとつだ...';
+  else if (total === 0) msg.textContent = '効果はないみたいだ...';
+  $('result-area').replaceChildren(title);
+  if (msg.textContent) $('result-area').appendChild(msg);
+}
+
+function buildTypeChart() {
+  let html = '<table><tr><th>攻撃＼防御</th>';
+  TYPES.forEach((defType) => {
+    html += `<th>${defType.substring(0, 2)}</th>`;
+  });
+  html += '</tr>';
+  TYPES.forEach((atkType) => {
+    html += `<tr><th>${atkType}</th>`;
+    TYPES.forEach((defType) => {
+      const mult = getMultiplier(atkType, defType);
+      let mark = '-';
+      let cssClass = '';
+      if (mult === 2) { mark = '◯'; cssClass = 'eff-2'; }
+      if (mult === 0.5) { mark = '△'; cssClass = 'eff-05'; }
+      if (mult === 0) { mark = '×'; cssClass = 'eff-0'; }
+      html += `<td class="${cssClass}">${mark}</td>`;
+    });
+    html += '</tr>';
+  });
+  html += '</table>';
+  $('chart-container').innerHTML = html;
+}
+
+function openModal() {
+  lastFocusedBeforeModal = document.activeElement;
+  $('chart-modal').classList.add('is-open');
+  $('chart-sheet').classList.add('is-open');
+  $('chart-modal').setAttribute('aria-hidden', 'false');
+  $('close-modal-btn').focus();
+}
+
+function closeModal() {
+  $('chart-modal').classList.remove('is-open');
+  $('chart-sheet').classList.remove('is-open');
+  $('chart-modal').setAttribute('aria-hidden', 'true');
+  if (lastFocusedBeforeModal?.focus) lastFocusedBeforeModal.focus();
+}
+
+function isModalOpen() {
+  return $('chart-modal').classList.contains('is-open');
+}
+
+function setTab(which) {
+  const team = which === 'team';
+  $('tab-team').setAttribute('aria-selected', team ? 'true' : 'false');
+  $('tab-quiz').setAttribute('aria-selected', team ? 'false' : 'true');
+  $('view-team').hidden = !team;
+  $('view-quiz').hidden = team;
+  $('show-chart-btn').hidden = team;
+  $('page-title').textContent = team ? '編成支援' : 'タイプ相性クイズ';
+}
+
+function initQuizButtons() {
+  TYPES.forEach((type) => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'type-btn';
+    btn.dataset.type = type;
+    btn.textContent = type;
+    btn.style.background = TYPE_COLORS[type];
+    btn.addEventListener('click', () => attack(type));
+    $('attack-buttons').appendChild(btn);
+  });
+}
+
+function bindEvents() {
+  $('tab-team').addEventListener('click', () => setTab('team'));
+  $('tab-quiz').addEventListener('click', () => setTab('quiz'));
+
+  $('poke-search').addEventListener('input', (e) => renderSearchResults(e.target.value));
+  $('poke-search').addEventListener('focus', (e) => renderSearchResults(e.target.value));
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.search-wrap')) {
+      $('search-results').classList.remove('is-open');
+    }
+  });
+
+  $('format-singles').addEventListener('click', () => {
+    battleFormat = 'singles';
+    $('format-singles').setAttribute('aria-pressed', 'true');
+    $('format-doubles').setAttribute('aria-pressed', 'false');
+    if (selectedIds.length) runSuggest();
+  });
+  $('format-doubles').addEventListener('click', () => {
+    battleFormat = 'doubles';
+    $('format-singles').setAttribute('aria-pressed', 'false');
+    $('format-doubles').setAttribute('aria-pressed', 'true');
+    if (selectedIds.length) runSuggest();
+  });
+
+  $('suggest-btn').addEventListener('click', runSuggest);
+
+  $('generate-btn').addEventListener('click', generateOpponentTypes);
+  $('reveal-btn').addEventListener('click', () => {
+    revealAnswers = !revealAnswers;
+    updateRevealUI();
+  });
+  $('mode-single').addEventListener('click', () => setTypeMode(false));
+  $('mode-dual').addEventListener('click', () => setTypeMode(true));
+  $('show-chart-btn').addEventListener('click', openModal);
+  $('close-modal-btn').addEventListener('click', closeModal);
+  $('chart-modal').addEventListener('click', (e) => {
+    if (e.target === $('chart-modal')) closeModal();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && isModalOpen()) {
+      e.preventDefault();
+      closeModal();
+      return;
+    }
+    if ($('view-quiz').hidden || isModalOpen()) return;
+    if (e.target.matches('input, textarea, select')) return;
+    if (e.key === 'r' || e.key === 'R') generateOpponentTypes();
+    if (e.key === 'a' || e.key === 'A') {
+      revealAnswers = !revealAnswers;
+      updateRevealUI();
+    }
+    if (e.key === '1') setTypeMode(false);
+    if (e.key === '2') setTypeMode(true);
+  });
+}
+
+async function main() {
+  try {
+    await loadData();
+  } catch (err) {
+    console.error(err);
+    $('core-list').innerHTML = '<p class="empty-state">データの読み込みに失敗しました。ローカルで開く場合は簡易サーバーが必要です。</p>';
+  }
+  initQuizButtons();
+  bindEvents();
+  buildTypeChart();
+  generateOpponentTypes();
+  setTab('team');
+}
+
+main();

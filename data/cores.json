@@ -1,0 +1,194 @@
+[
+  {
+    "id": "core-garchomp-excadrill",
+    "name": "砂バランス",
+    "concept": "バンギで砂を起こし、ドリュ・ガブで押し切るバランス編成。",
+    "format": ["singles", "doubles"],
+    "requiresAny": [["garchomp"], ["excadrill"], ["tyranitar"], ["garchomp", "excadrill"]],
+    "rating": "おすすめ",
+    "slots": [
+      {"pokemonId": "tyranitar", "buildId": "tyranitar-sand"},
+      {"pokemonId": "excadrill", "buildId": "excadrill-sand"},
+      {"pokemonId": "garchomp", "buildId": "garchomp-scarf"},
+      {"pokemonId": "rotom-wash", "buildId": "rotom-wash"},
+      {"pokemonId": "amoonguss", "buildId": "amoonguss"},
+      {"pokemonId": "corviknight", "buildId": "corviknight"}
+    ]
+  },
+  {
+    "id": "core-garchomp-mega",
+    "name": "砂積みエース",
+    "concept": "メガガブをエースに置き、砂下で積み切る編成。",
+    "format": ["singles", "doubles"],
+    "requiresAny": [["garchomp"], ["garchomp", "tyranitar"]],
+    "rating": "攻め",
+    "slots": [
+      {"pokemonId": "tyranitar", "buildId": "tyranitar-sand"},
+      {"pokemonId": "garchomp", "buildId": "garchomp-mega"},
+      {"pokemonId": "excadrill", "buildId": "excadrill-sand"},
+      {"pokemonId": "grimmsnarl", "buildId": "grimmsnarl"},
+      {"pokemonId": "toxapex", "buildId": "toxapex"},
+      {"pokemonId": "dragapult", "buildId": "dragapult"}
+    ]
+  },
+  {
+    "id": "core-charizard-sun",
+    "name": "晴れアタッカー",
+    "concept": "コータス起点の晴れ。メガリザYとくさ打点で押し切る。",
+    "format": ["singles", "doubles"],
+    "requiresAny": [["charizard"], ["torkoal"], ["charizard", "torkoal"], ["venusaur"]],
+    "rating": "おすすめ",
+    "slots": [
+      {"pokemonId": "torkoal", "buildId": "torkoal"},
+      {"pokemonId": "charizard", "buildId": "charizard-y"},
+      {"pokemonId": "venusaur", "buildId": "venusaur-mega"},
+      {"pokemonId": "incineroar", "buildId": "incineroar"},
+      {"pokemonId": "rillaboom", "buildId": "rillaboom"},
+      {"pokemonId": "manectric", "buildId": "manectric-mega"}
+    ]
+  },
+  {
+    "id": "core-charizard-x",
+    "name": "物理晴れ寄り",
+    "concept": "メガリザX中心の物理突破。壁で起点を作る。",
+    "format": ["singles"],
+    "requiresAny": [["charizard"]],
+    "rating": "攻め",
+    "slots": [
+      {"pokemonId": "charizard", "buildId": "charizard-x"},
+      {"pokemonId": "grimmsnarl", "buildId": "grimmsnarl"},
+      {"pokemonId": "torkoal", "buildId": "torkoal"},
+      {"pokemonId": "metagross", "buildId": "metagross-band"},
+      {"pokemonId": "gholdengo", "buildId": "gholdengo"},
+      {"pokemonId": "rotom-wash", "buildId": "rotom-wash"}
+    ]
+  },
+  {
+    "id": "core-rain",
+    "name": "雨スイマー",
+    "concept": "ペリッパー雨展開。水エースとサポートで押し込む。",
+    "format": ["singles", "doubles"],
+    "requiresAny": [["pelipper"], ["blastoise"], ["greninja"], ["pelipper", "blastoise"]],
+    "rating": "おすすめ",
+    "slots": [
+      {"pokemonId": "pelipper", "buildId": "pelipper"},
+      {"pokemonId": "blastoise", "buildId": "blastoise-mega"},
+      {"pokemonId": "greninja", "buildId": "greninja-mega"},
+      {"pokemonId": "amoonguss", "buildId": "amoonguss"},
+      {"pokemonId": "incineroar", "buildId": "incineroar"},
+      {"pokemonId": "garchomp", "buildId": "garchomp-scarf"}
+    ]
+  },
+  {
+    "id": "core-gengar-fast",
+    "name": "高速特殊",
+    "concept": "メガゲンガーと高速枠で上から削る。",
+    "format": ["singles", "doubles"],
+    "requiresAny": [["gengar"], ["dragapult"], ["gengar", "dragapult"]],
+    "rating": "攻め",
+    "slots": [
+      {"pokemonId": "gengar", "buildId": "gengar-mega"},
+      {"pokemonId": "dragapult", "buildId": "dragapult"},
+      {"pokemonId": "rotom-wash", "buildId": "rotom-wash"},
+      {"pokemonId": "amoonguss", "buildId": "amoonguss"},
+      {"pokemonId": "scizor", "buildId": "scizor-mega"},
+      {"pokemonId": "metagross", "buildId": "metagross-assault"}
+    ]
+  },
+  {
+    "id": "core-lucario-setup",
+    "name": "壁積み",
+    "concept": "壁展開からメガルカリオで積み切る。",
+    "format": ["singles", "doubles"],
+    "requiresAny": [["lucario"], ["grimmsnarl"], ["lucario", "grimmsnarl"], ["hawlucha"]],
+    "rating": "攻め",
+    "slots": [
+      {"pokemonId": "grimmsnarl", "buildId": "grimmsnarl"},
+      {"pokemonId": "lucario", "buildId": "lucario-mega"},
+      {"pokemonId": "hawlucha", "buildId": "hawlucha-mega"},
+      {"pokemonId": "incineroar", "buildId": "incineroar"},
+      {"pokemonId": "gholdengo", "buildId": "gholdengo"},
+      {"pokemonId": "rotom-wash", "buildId": "rotom-wash"}
+    ]
+  },
+  {
+    "id": "core-balance-incin",
+    "name": "ダブル汎用",
+    "concept": "ガオガエン＋モロバレルの定番サポート軸。",
+    "format": ["doubles"],
+    "requiresAny": [["incineroar"], ["amoonguss"], ["incineroar", "amoonguss"], ["rillaboom"]],
+    "rating": "おすすめ",
+    "slots": [
+      {"pokemonId": "incineroar", "buildId": "incineroar"},
+      {"pokemonId": "amoonguss", "buildId": "amoonguss"},
+      {"pokemonId": "rillaboom", "buildId": "rillaboom"},
+      {"pokemonId": "gardevoir", "buildId": "gardevoir-mega"},
+      {"pokemonId": "dragonite", "buildId": "dragonite-multi"},
+      {"pokemonId": "garchomp", "buildId": "garchomp-scarf"}
+    ]
+  },
+  {
+    "id": "core-tr-ursaluna",
+    "name": "トリル崩し",
+    "concept": "イエッサンからトリルを張り、ガチグマで崩す。",
+    "format": ["doubles"],
+    "requiresAny": [["ursaluna"], ["indeedee-f"], ["ursaluna", "indeedee-f"]],
+    "rating": "受け・崩し",
+    "slots": [
+      {"pokemonId": "indeedee-f", "buildId": "indeedee-f"},
+      {"pokemonId": "ursaluna", "buildId": "ursaluna"},
+      {"pokemonId": "amoonguss", "buildId": "amoonguss"},
+      {"pokemonId": "kingambit", "buildId": "kingambit"},
+      {"pokemonId": "blastoise", "buildId": "blastoise-mega"},
+      {"pokemonId": "incineroar", "buildId": "incineroar"}
+    ]
+  },
+  {
+    "id": "core-bulk",
+    "name": "受けサイクル",
+    "concept": "アーマーガアとドヒドでサイクルし、後続で切り返す。",
+    "format": ["singles"],
+    "requiresAny": [["corviknight"], ["toxapex"], ["corviknight", "toxapex"], ["annihilape"]],
+    "rating": "受け・崩し",
+    "slots": [
+      {"pokemonId": "corviknight", "buildId": "corviknight"},
+      {"pokemonId": "toxapex", "buildId": "toxapex"},
+      {"pokemonId": "annihilape", "buildId": "annihilape"},
+      {"pokemonId": "gholdengo", "buildId": "gholdengo"},
+      {"pokemonId": "dragonite", "buildId": "dragonite-multi"},
+      {"pokemonId": "rotom-wash", "buildId": "rotom-wash"}
+    ]
+  },
+  {
+    "id": "core-gardevoir",
+    "name": "フェアリー特殊",
+    "concept": "メガサーナイトを中心にフェアリー打点で通す。",
+    "format": ["singles", "doubles"],
+    "requiresAny": [["gardevoir"], ["altaria"], ["gardevoir", "altaria"]],
+    "rating": "おすすめ",
+    "slots": [
+      {"pokemonId": "gardevoir", "buildId": "gardevoir-mega"},
+      {"pokemonId": "altaria", "buildId": "altaria-mega"},
+      {"pokemonId": "incineroar", "buildId": "incineroar"},
+      {"pokemonId": "garchomp", "buildId": "garchomp-scarf"},
+      {"pokemonId": "amoonguss", "buildId": "amoonguss"},
+      {"pokemonId": "manectric", "buildId": "manectric-mega"}
+    ]
+  },
+  {
+    "id": "core-chandelure",
+    "name": "ゴースト特殊",
+    "concept": "メガシャンデラの高火力で対面を割る。",
+    "format": ["singles", "doubles"],
+    "requiresAny": [["chandelure"], ["gengar"], ["chandelure", "gengar"]],
+    "rating": "攻め",
+    "slots": [
+      {"pokemonId": "chandelure", "buildId": "chandelure-mega"},
+      {"pokemonId": "gengar", "buildId": "gengar-mega"},
+      {"pokemonId": "rotom-wash", "buildId": "rotom-wash"},
+      {"pokemonId": "metagross", "buildId": "metagross-band"},
+      {"pokemonId": "grimmsnarl", "buildId": "grimmsnarl"},
+      {"pokemonId": "scizor", "buildId": "scizor-band"}
+    ]
+  }
+]
