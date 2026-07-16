@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>タイプ相性シミュレーター</title>
+<style>
+  body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    padding: 20px;
+    margin: 0;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  h1 { font-size: 24px; color: #333; }
+  
+  .header-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  #generate-btn { background-color: #007bff; }
+  #generate-btn:hover { background-color: #0056b3; }
+  
+  #show-chart-btn { background-color: #4caf50; }
+  #show-chart-btn:hover { background-color: #388e3c; }
+
+  #opponent-area {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #e3f2fd;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .types-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .type-btn {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .type-btn:hover { background-color: #f0f0f0; }
+
+  #result-area {
+    font-size: 22px;
+    font-weight: bold;
+    min-height: 60px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .result-text { color: #d32f2f; }
+
+  /* ====== 相性表のポップアップ（モーダル）設定 ====== */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+  }
+
+  .modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+  }
+
+  .close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .close-btn:hover { color: black; }
+
+  .legend {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+  }
+  th {
+    background-color: #f0f0f0;
+    position: sticky;
+    top: 0;
+  }
+  th:first-child {
+    left: 0;
+    z-index: 2;
+  }
+  .eff-2 { color: #d32f2f; font-weight: bold; background-color: #ffebee; }
+  .eff-05 { color: #1976d2; background-color: #e3f2fd; }
+  .eff-0 { color: #757575; background-color: #eeeeee; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>タイプ相性クイズ</h1>
+  
+  <div class="header-buttons">
+    <button id="generate-btn">相手のタイプをランダム生成</button>
+    <button id="show-chart-btn">タイプ相性表を見る</button>
+  </div>
+  
+  <div id="opponent-area">
+    相手のタイプ： <span id="opp-type1">？</span> / <span id="opp-type2">？</span>
+  </div>
+
+  <p>どのタイプの技で攻撃する？</p>
+  <div class="types-grid" id="attack-buttons">
+    <!-- ボタンはJavaScriptで自動生成 -->
+  </div>
+
+  <div id="result-area"></div>
+</div>
+
+<!-- 相性表を表示するポップアップエリア -->
+<div id="chart-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" id="close-modal-btn">&times;</span>
+    <h2>タイプ相性表</h2>
+    <div class="legend">
+      <strong>見方：</strong> 行(縦)が攻撃側の技タイプ、列(横)が防御側のポケモンタイプです。<br>
+      <span style="color:#d32f2f; font-weight:bold;">◯</span> = ばつぐん (x2) / 
+      <span style="color:#1976d2;">△</span> = いまひとつ (x0.5) / 
+      <span style="color:#757575;">×</span> = 効果なし (x0) / 
+      - = 通常 (x1)
+    </div>
+    <div id="chart-container" style="overflow-x: auto;">
+      <!-- 表はJavaScriptで自動生成 -->
+    </div>
+  </div>
+</div>
+
+<script>
+// 18種類のタイプ
+const TYPES = [
+  'ノーマル', 'ほのお', 'みず', 'くさ', 'でんき', 'こおり', 
+  'かくとう', 'どく', 'じめん', 'ひこう', 'エスパー', 'むし', 
+  'いわ', 'ゴースト', 'ドラゴン', 'あく', 'はがね', 'フェアリー'
+];
+
+// 攻撃側のタイプから見た相性倍率（記載がないものは1.0倍）
+const MATCHUPS = {
+  "ノーマル": { "いわ": 0.5, "ゴースト": 0, "はがね": 0.5 },
+  "ほのお": { "ほのお": 0.5, "みず": 0.5, "くさ": 2, "こおり": 2, "むし": 2, "いわ": 0.5, "ドラゴン": 0.5, "はがね": 2 },
+  "みず": { "ほのお": 2, "みず": 0.5, "くさ": 0.5, "じめん": 2, "いわ": 2, "ドラゴン": 0.5 },
+  "くさ": { "ほのお": 0.5, "みず": 2, "くさ": 0.5, "どく": 0.5, "じめん": 2, "ひこう": 0.5, "むし": 0.5, "いわ": 2, "ドラゴン": 0.5, "はがね": 0.5 },
+  "でんき": { "みず": 2, "くさ": 0.5, "でんき": 0.5, "じめん": 0, "ひこう": 2, "ドラゴン": 0.5 },
+  "こおり": { "ほのお": 0.5, "みず": 0.5, "くさ": 2, "こおり": 0.5, "じめん": 2, "ひこう": 2, "ドラゴン": 2, "はがね": 0.5 },
+  "かくとう": { "ノーマル": 2, "こおり": 2, "どく": 0.5, "ひこう": 0.5, "エスパー": 0.5, "むし": 0.5, "いわ": 2, "ゴースト": 0, "あく": 2, "はがね": 2, "フェアリー": 0.5 },
+  "どく": { "くさ": 2, "どく": 0.5, "じめん": 0.5, "いわ": 0.5, "ゴースト": 0.5, "はがね": 0, "フェアリー": 2 },
+  "じめん": { "ほのお": 2, "くさ": 0.5, "でんき": 2, "どく": 2, "ひこう": 0, "むし": 0.5, "いわ": 2, "はがね": 2 },
+  "ひこう": { "くさ": 2, "でんき": 0.5, "かくとう": 2, "むし": 2, "いわ": 0.5, "はがね": 0.5 },
+  "エスパー": { "かくとう": 2, "どく": 2, "エスパー": 0.5, "あく": 0, "はがね": 0.5 },
+  "むし": { "ほのお": 0.5, "くさ": 2, "かくとう": 0.5, "どく": 0.5, "ひこう": 0.5, "エスパー": 2, "ゴースト": 0.5, "あく": 2, "はがね": 0.5, "フェアリー": 0.5 },
+  "いわ": { "ほのお": 2, "こおり": 2, "かくとう": 0.5, "じめん": 0.5, "ひこう": 2, "むし": 2, "はがね": 0.5 },
+  "ゴースト": { "ノーマル": 0, "エスパー": 2, "ゴースト": 2, "あく": 0.5 },
+  "ドラゴン": { "ドラゴン": 2, "はがね": 0.5, "フェアリー": 0 },
+  "あく": { "かくとう": 0.5, "エスパー": 2, "ゴースト": 2, "あく": 0.5, "フェアリー": 0.5 },
+  "はがね": { "ほのお": 0.5, "みず": 0.5, "でんき": 0.5, "こおり": 2, "いわ": 2, "はがね": 0.5, "フェアリー": 2 },
+  "フェアリー": { "ほのお": 0.5, "かくとう": 2, "どく": 0.5, "ドラゴン": 2, "あく": 2, "はがね": 0.5 }
+};
+
+let currentOpponentTypes = [];
+
+const btnGenerate = document.getElementById('generate-btn');
+const btnShowChart = document.getElementById('show-chart-btn');
+const btnCloseModal = document.getElementById('close-modal-btn');
+const modal = document.getElementById('chart-modal');
+const chartContainer = document.getElementById('chart-container');
+const oppType1Span = document.getElementById('opp-type1');
+const oppType2Span = document.getElementById('opp-type2');
+const attackButtonsDiv = document.getElementById('attack-buttons');
+const resultArea = document.getElementById('result-area');
+
+function generateOpponentTypes() {
+  resultArea.innerHTML = "";
+  const shuffled = [...TYPES].sort(() => 0.5 - Math.random());
+  currentOpponentTypes = [shuffled[0], shuffled[1]];
+  oppType1Span.textContent = currentOpponentTypes[0];
+  oppType2Span.textContent = currentOpponentTypes[1];
+}
+
+function attack(attackType) {
+  if (currentOpponentTypes.length === 0) {
+    alert("先に相手のタイプを生成してください！");
+    return;
+  }
+  const mult1 = MATCHUPS[attackType][currentOpponentTypes[0]] !== undefined ? MATCHUPS[attackType][currentOpponentTypes[0]] : 1.0;
+  const mult2 = MATCHUPS[attackType][currentOpponentTypes[1]] !== undefined ? MATCHUPS[attackType][currentOpponentTypes[1]] : 1.0;
+  const totalMultiplier = mult1 * mult2;
+
+  let message = `${attackType}技で攻撃！<br>`;
+  message += `倍率: <span class="result-text">x${totalMultiplier}</span><br>`;
+  
+  if (totalMultiplier >= 4) {
+    message += "効果はちょうバツグンだ！";
+  } else if (totalMultiplier >= 2) {
+    message += "効果はばつぐんだ！";
+  } else if (totalMultiplier === 1) {
+    // 1倍は表記なし
+  } else if (totalMultiplier > 0 && totalMultiplier < 1) {
+    message += "効果はいまひとつだ...";
+  } else if (totalMultiplier === 0) {
+    message += "効果はないみたいだ...";
+  }
+
+  resultArea.innerHTML = message;
+}
+
+function buildTypeChart() {
+  let tableHTML = '<table>';
+  
+  tableHTML += '<tr><th>攻撃＼防御</th>';
+  TYPES.forEach(defType => {
+    tableHTML += `<th>${defType.substring(0, 2)}</th>`;
+  });
+  tableHTML += '</tr>';
+
+  TYPES.forEach(atkType => {
+    tableHTML += `<tr><th>${atkType}</th>`;
+    TYPES.forEach(defType => {
+      const mult = MATCHUPS[atkType][defType] !== undefined ? MATCHUPS[atkType][defType] : 1.0;
+      
+      let mark = '-';
+      let cssClass = '';
+      if (mult === 2) { mark = '◯'; cssClass = 'eff-2'; }
+      if (mult === 0.5) { mark = '△'; cssClass = 'eff-05'; }
+      if (mult === 0) { mark = '×'; cssClass = 'eff-0'; }
+
+      tableHTML += `<td class="${cssClass}">${mark}</td>`;
+    });
+    tableHTML += '</tr>';
+  });
+  
+  tableHTML += '</table>';
+  chartContainer.innerHTML = tableHTML;
+}
+
+TYPES.forEach(type => {
+  const btn = document.createElement('button');
+  btn.className = 'type-btn';
+  btn.textContent = type;
+  btn.onclick = () => attack(type);
+  attackButtonsDiv.appendChild(btn);
+});
+
+btnGenerate.addEventListener('click', generateOpponentTypes);
+
+btnShowChart.addEventListener('click', () => {
+  modal.style.display = 'block';
+});
+
+btnCloseModal.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+});
+
+buildTypeChart();
+generateOpponentTypes();
+</script>
+</body>
+</html>
