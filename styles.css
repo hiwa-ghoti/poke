@@ -483,6 +483,157 @@ h1 {
   text-align: center;
 }
 
+.poke-thumb {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+  image-rendering: auto;
+}
+
+.search-item .poke-thumb {
+  width: 36px;
+  height: 36px;
+}
+
+.poke-art {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  flex-shrink: 0;
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 4px;
+}
+
+.member-identity {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.core-poke {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 4px;
+}
+
+.core-poke .poke-thumb {
+  width: 24px;
+  height: 24px;
+}
+
+.selected-chip {
+  padding-left: 8px;
+}
+
+.train-panel {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding: 12px;
+  border-radius: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.train-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.train-budget {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.nature-block {
+  margin-bottom: 10px;
+  background: #fff;
+}
+
+.train-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.train-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4px;
+}
+
+.train-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.train-sp {
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+.train-sp small {
+  font-size: 10px;
+  margin-left: 2px;
+}
+
+.train-bar {
+  height: 8px;
+  border-radius: 999px;
+  background: #dde3ea;
+  overflow: hidden;
+}
+
+.train-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #2bb673, #1f9d63);
+}
+
+.train-row.is-up .train-fill {
+  background: linear-gradient(90deg, #5b9dff, #2f6fed);
+}
+.train-row.is-down .train-fill {
+  background: linear-gradient(90deg, #c9a0a8, #a86b76);
+}
+.train-row.is-up .train-label span:first-child::after {
+  content: ' ↑';
+  color: #2f6fed;
+}
+.train-row.is-down .train-label span:first-child::after {
+  content: ' ↓';
+  color: #a86b76;
+}
+
+.train-final {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 13px;
+  font-weight: 800;
+}
+.train-final-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.train-footnote {
+  margin: 10px 0 0;
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
 .sp-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

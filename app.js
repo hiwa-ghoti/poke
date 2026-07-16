@@ -35,12 +35,18 @@ const MATCHUPS = {
   'フェアリー': { 'ほのお': 0.5, 'かくとう': 2, 'どく': 0.5, 'ドラゴン': 2, 'あく': 2, 'はがね': 0.5 }
 };
 
-const SP_LABELS = { hp: 'H', atk: 'A', def: 'B', spa: 'C', spd: 'D', spe: 'S' };
+const SP_ORDER = ['hp', 'atk', 'def', 'spa', 'spd', 'spe'];
+const SP_LABELS = {
+  hp: 'HP', atk: '攻撃', def: '防御', spa: '特攻', spd: '特防', spe: '素早'
+};
+const SP_SHORT = { hp: 'H', atk: 'A', def: 'B', spa: 'C', spd: 'D', spe: 'S' };
 const FALLBACK_ITEMS = [
   'オボンのみ', 'たべのこし', 'きあいのタスキ', 'いのちのたま',
   'こだわりスカーフ', 'とつげきチョッキ', 'ひかりのねんど', 'くろいヘドロ',
   'クリアチャーム', 'メンタルハーブ', 'しめったいわ', 'あついいわ'
 ];
+const SPRITE_BASE =
+  'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork';
 
 let pokemonList = [];
 let buildsMap = {};
@@ -69,6 +75,35 @@ async function loadData() {
   buildsMap = builds;
   coresList = cores;
   pokemonById = Object.fromEntries(pokemon.map((p) => [p.id, p]));
+}
+
+function spriteUrl(poke) {
+  if (!poke?.dex) return '';
+  return `${SPRITE_BASE}/${poke.dex}.png`;
+}
+
+function natureFactor(nature, statKey) {
+  if (!nature || statKey === 'hp') return 1;
+  if (nature.up === statKey) return 1.1;
+  if (nature.down === statKey) return 0.9;
+  return 1;
+}
+
+/** Champions Lv50 / IV31 / SP 公式（pkmnchamps準拠） */
+function calcFinalStat(base, sp, nature, statKey) {
+  const iv = 31;
+  const pre = Math.floor((2 * base + iv + sp * 2) / 2);
+  if (statKey === 'hp') return pre + 60;
+  return Math.floor((pre + 5) * natureFactor(nature, statKey));
+}
+
+function calcAllFinalStats(poke, build) {
+  const nature = build.nature || null;
+  const out = {};
+  SP_ORDER.forEach((key) => {
+    out[key] = calcFinalStat(poke.base[key], build.sp[key] || 0, nature, key);
+  });
+  return out;
 }
 
 function getMultiplier(attackType, defenseType) {
@@ -273,7 +308,17 @@ function renderSelected() {
     if (!p) return;
     const chip = document.createElement('span');
     chip.className = 'selected-chip';
-    chip.textContent = p.name;
+    const img = document.createElement('img');
+    img.className = 'poke-thumb';
+    img.src = spriteUrl(p);
+    img.alt = '';
+    img.loading = 'lazy';
+    img.width = 28;
+    img.height = 28;
+    chip.appendChild(img);
+    const label = document.createElement('span');
+    label.textContent = p.name;
+    chip.appendChild(label);
     const remove = document.createElement('button');
     remove.type = 'button';
     remove.setAttribute('aria-label', `${p.name}を外す`);
@@ -322,6 +367,14 @@ function renderSearchResults(query) {
     btn.type = 'button';
     btn.className = 'search-item';
     btn.setAttribute('role', 'option');
+    const img = document.createElement('img');
+    img.className = 'poke-thumb';
+    img.src = spriteUrl(p);
+    img.alt = '';
+    img.loading = 'lazy';
+    img.width = 36;
+    img.height = 36;
+    btn.appendChild(img);
     const name = document.createElement('span');
     name.textContent = p.name;
     btn.appendChild(name);
@@ -363,8 +416,10 @@ function renderCoreList(list) {
       </div>
       <p class="core-desc">${core.concept}</p>
       <div class="core-names">${core.slots.map((s) => {
-        const n = pokemonById[s.pokemonId]?.name || s.pokemonId;
-        return `<span>${n}</span>`;
+        const poke = pokemonById[s.pokemonId];
+        const n = poke?.name || s.pokemonId;
+        const src = poke ? spriteUrl(poke) : '';
+        return `<span class="core-poke"><img class="poke-thumb" src="${src}" alt="" loading="lazy" width="24" height="24">${n}</span>`;
       }).join('')}</div>
     `;
     card.addEventListener('click', () => {
@@ -403,20 +458,46 @@ function renderTeamDetail(core) {
       `<span class="type-mini" style="background:${TYPE_COLORS[t]}">${t.substring(0, 2)}</span>`
     ).join('');
 
-    const spHtml = Object.entries(build.sp).map(([k, v]) =>
-      `<div class="sp-cell"><span class="sp-stat">${SP_LABELS[k]}</span><span class="sp-num">${v}</span></div>`
-    ).join('');
-
     const movesHtml = build.moves.map((m) => `<div class="move-chip">${m}</div>`).join('');
-    const spTotal = Object.values(build.sp).reduce((a, b) => a + b, 0);
+    const spTotal = SP_ORDER.reduce((a, k) => a + (build.sp[k] || 0), 0);
+    const finals = calcAllFinalStats(poke, build);
+    const nature = build.nature;
+    const natureText = nature
+      ? `${nature.name}（${SP_SHORT[nature.up]}↑ / ${SP_SHORT[nature.down]}↓）`
+      : '—';
+
+    const trainRows = SP_ORDER.map((key) => {
+      const sp = build.sp[key] || 0;
+      const pct = (sp / 32) * 100;
+      let mark = '';
+      if (nature?.up === key) mark = ' is-up';
+      if (nature?.down === key) mark = ' is-down';
+      return `
+        <div class="train-row${mark}">
+          <div class="train-label">
+            <span>${SP_LABELS[key]}</span>
+            <span class="train-sp">${sp}<small>/32</small></span>
+          </div>
+          <div class="train-bar" aria-hidden="true">
+            <div class="train-fill" style="width:${pct}%"></div>
+          </div>
+          <div class="train-final">
+            <span class="train-final-label">Lv50</span>
+            <strong>${finals[key]}</strong>
+          </div>
+        </div>`;
+    }).join('');
 
     card.innerHTML = `
       <div class="member-head">
-        <div>
-          <p class="member-name">${poke.name}</p>
-          <p class="member-role">${build.role} · ${build.label}</p>
+        <div class="member-identity">
+          <img class="poke-art" src="${spriteUrl(poke)}" alt="${poke.name}" loading="lazy" width="72" height="72">
+          <div>
+            <p class="member-name">${poke.name}</p>
+            <p class="member-role">${build.role} · ${build.label}</p>
+            <div class="member-types" style="justify-content:flex-start;margin-top:6px">${typesHtml}</div>
+          </div>
         </div>
-        <div class="member-types">${typesHtml}</div>
       </div>
       <div class="meta-row">
         <div class="meta-block">
@@ -430,8 +511,18 @@ function renderTeamDetail(core) {
       </div>
       <p class="meta-label" style="margin-bottom:6px">技</p>
       <div class="moves">${movesHtml}</div>
-      <p class="meta-label" style="margin-bottom:6px">育成 SP（合計 ${spTotal} / 66）</p>
-      <div class="sp-grid">${spHtml}</div>
+      <div class="train-panel">
+        <div class="train-head">
+          <p class="meta-label" style="margin:0">育成（Stat Points）</p>
+          <p class="train-budget">SP ${spTotal} / 66 · IV 全31 · Lv50</p>
+        </div>
+        <div class="meta-block nature-block">
+          <p class="meta-label">性格（Stat Alignment）</p>
+          <p class="meta-value">${natureText}</p>
+        </div>
+        <div class="train-list">${trainRows}</div>
+        <p class="train-footnote">1ステ上限32 / 合計66。実数値はチャンピオンズ計算式で算出。</p>
+      </div>
       <p class="note">${build.note}</p>
     `;
     list.appendChild(card);
