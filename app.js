@@ -81,6 +81,37 @@ async function loadData() {
   if (countEl) countEl.textContent = String(pokemon.length);
 }
 
+function isMegaFormId(id) {
+  return Boolean(pokemonById[id]?.isMegaForm);
+}
+
+function baseFormId(id) {
+  return pokemonById[id]?.baseFormId || id;
+}
+
+function expandSelectedIds(selected) {
+  const expanded = new Set(selected);
+  selected.forEach((id) => {
+    expanded.add(id);
+    const poke = pokemonById[id];
+    if (poke?.baseFormId) expanded.add(poke.baseFormId);
+    if (poke && !poke.baseFormId) {
+      pokemonList
+        .filter((p) => p.baseFormId === id)
+        .forEach((p) => expanded.add(p.id));
+    }
+  });
+  return expanded;
+}
+
+function matchesSearchQuery(poke, query) {
+  const q = query.trim().toLowerCase();
+  if (!q) return false;
+  if (poke.name.toLowerCase().includes(q)) return true;
+  if (poke.nameEn && poke.nameEn.toLowerCase().includes(q)) return true;
+  return false;
+}
+
 function spriteUrl(poke) {
   if (!poke?.dex) return '';
   return `${SPRITE_BASE}/${poke.dex}.png`;
@@ -120,15 +151,34 @@ function defenseMultiplier(attackType, types) {
 }
 
 function buildsForPokemon(pokemonId) {
+  const poke = pokemonById[pokemonId];
+  const ids = new Set([pokemonId]);
+  if (poke?.baseFormId) ids.add(poke.baseFormId);
   return Object.entries(buildsMap)
-    .filter(([, b]) => b.pokemonId === pokemonId)
+    .filter(([, b]) => ids.has(b.pokemonId))
     .map(([id, b]) => ({ id, ...b }));
 }
 
+function isMegaBuild(build) {
+  return /ナイト|メガストーン/.test(build.item || '')
+    || (build.label && build.label.includes('メガ'))
+    || (build.itemEffect && build.itemEffect.includes('メガシンカ'));
+}
+
 function defaultBuildId(pokemonId) {
+  const poke = pokemonById[pokemonId];
   const list = buildsForPokemon(pokemonId);
-  const curated = list.find((b) => !b.auto);
-  return (curated || list[0]) ? (curated || list[0]).id : null;
+  if (!list.length) return null;
+  if (poke?.isMegaForm) {
+    const mega = list.find((b) => !b.auto && (b.pokemonId === pokemonId || isMegaBuild(b)));
+    if (mega) return mega.id;
+  }
+  const curated = list.find((b) => !b.auto && !isMegaBuild(b));
+  const nonMega = list.find((b) => !isMegaBuild(b));
+  const pick = poke?.isMegaForm
+    ? (list.find((b) => !b.auto && isMegaBuild(b)) || list.find((b) => isMegaBuild(b)))
+    : (curated || nonMega || list[0]);
+  return (pick || list[0]).id;
 }
 
 function generateRuntimeBuild(pokemonId) {
@@ -148,10 +198,13 @@ function generateRuntimeBuild(pokemonId) {
       : { hp: 4, atk: 0, def: 0, spa: 0, spd: 0, spe: 30, [offensive]: 32 };
   SP_ORDER.forEach((k) => { if (sp[k] == null) sp[k] = 0; });
   const id = `${pokemonId}-runtime`;
+  const item = poke.isMegaForm
+    ? `メガシンカ用メガストーン（${poke.name.replace(/^メガ/, '')}）`
+    : FALLBACK_ITEMS[Math.abs(pokemonId.length * 7) % FALLBACK_ITEMS.length];
   buildsMap[id] = {
     pokemonId,
-    label: '自動提案',
-    item: FALLBACK_ITEMS[Math.abs(pokemonId.length * 7) % FALLBACK_ITEMS.length],
+    label: poke.isMegaForm ? 'メガ' : '自動提案',
+    item,
     ability: poke.abilities?.[0]?.name || '—',
     abilityOptions: (poke.abilities || []).map((a) => a.name),
     role: poke.roles.includes('support') ? 'サポート' : poke.roles.includes('wall') ? '耐久' : 'アタッカー',
@@ -171,15 +224,28 @@ function ensureBuildId(pokemonId) {
 }
 
 function requirementMatch(requiresAny, selected) {
-  const set = new Set(selected);
-  return requiresAny.some((req) => req.every((id) => set.has(id)));
+  const expanded = expandSelectedIds(selected);
+  return requiresAny.some((req) => req.every((id) => expanded.has(id)));
+}
+
+function upgradeSlotsForSelection(slots, selected) {
+  return slots.map((slot) => {
+    const selMega = selected.find((id) => baseFormId(id) === slot.pokemonId && isMegaFormId(id));
+    if (!selMega) return slot;
+    return {
+      ...slot,
+      pokemonId: selMega,
+      buildId: ensureBuildId(selMega)
+    };
+  });
 }
 
 function scoreCore(core, selected) {
   const ids = core.slots.map((s) => s.pokemonId);
+  const expanded = expandSelectedIds(selected);
   let score = 0;
-  selected.forEach((id) => {
-    if (ids.includes(id)) score += 10;
+  expanded.forEach((id) => {
+    if (ids.includes(id) || ids.includes(baseFormId(id))) score += 10;
   });
   if (core.format.includes(battleFormat)) score += 3;
   if (core.rating === 'おすすめ') score += 2;
@@ -190,7 +256,12 @@ function findCuratedCores(selected) {
   return coresList
     .filter((core) => requirementMatch(core.requiresAny, selected))
     .filter((core) => core.format.includes(battleFormat) || core.format.length === 2)
-    .map((core) => ({ ...core, source: 'curated', score: scoreCore(core, selected) }))
+    .map((core) => ({
+      ...core,
+      slots: upgradeSlotsForSelection(core.slots, selected),
+      source: 'curated',
+      score: scoreCore(core, selected)
+    }))
     .sort((a, b) => b.score - a.score)
     .slice(0, 3);
 }
@@ -425,7 +496,15 @@ function renderSearchResults(query) {
   const results = pokemonList
     .filter((p) => {
       if (selectedIds.includes(p.id)) return false;
-      return p.name.includes(q) || (p.nameEn && p.nameEn.toLowerCase().includes(q.toLowerCase()));
+      return matchesSearchQuery(p, q);
+    })
+    .sort((a, b) => {
+      const aMega = a.isMegaForm ? 0 : 1;
+      const bMega = b.isMegaForm ? 0 : 1;
+      if (aMega !== bMega && (q.startsWith('メガ') || q.toLowerCase().startsWith('mega'))) {
+        return aMega - bMega;
+      }
+      return a.dex - b.dex || a.name.localeCompare(b.name, 'ja');
     })
     .slice(0, 12);
   box.replaceChildren();

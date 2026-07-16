@@ -1,46 +1,5 @@
 [
   {
-    "id": "pyroar",
-    "name": "カエンジシ",
-    "nameEn": "Pyroar",
-    "types": [
-      "ほのお",
-      "ノーマル"
-    ],
-    "roles": [
-      "attacker",
-      "mega",
-      "fast"
-    ],
-    "mega": true,
-    "dex": 668,
-    "base": {
-      "hp": 86,
-      "atk": 68,
-      "def": 72,
-      "spa": 109,
-      "spd": 66,
-      "spe": 106
-    },
-    "abilities": [
-      {
-        "slot": "特性1",
-        "name": "とうそうしん",
-        "nameEn": "Rivalry"
-      },
-      {
-        "slot": "特性2",
-        "name": "きんちょうかん",
-        "nameEn": "Unnerve"
-      },
-      {
-        "slot": "隠れ",
-        "name": "じしんかじょう",
-        "nameEn": "Moxie"
-      }
-    ]
-  },
-  {
     "id": "venusaur",
     "name": "フシギバナ",
     "nameEn": "Venusaur",
@@ -423,13 +382,8 @@
     "abilities": [
       {
         "slot": "特性1",
-        "name": "ようりょくそ",
-        "nameEn": "Chlorophyll"
-      },
-      {
-        "slot": "隠れ",
-        "name": "ほうし",
-        "nameEn": "Effect Spore"
+        "name": "—",
+        "nameEn": ""
       }
     ]
   },
@@ -1558,18 +1512,8 @@
     "abilities": [
       {
         "slot": "特性1",
-        "name": "どくのトゲ",
-        "nameEn": "Poison Point"
-      },
-      {
-        "slot": "特性2",
-        "name": "すいすい",
-        "nameEn": "Swift Swim"
-      },
-      {
-        "slot": "隠れ",
-        "name": "いかく",
-        "nameEn": "Intimidate"
+        "name": "—",
+        "nameEn": ""
       }
     ]
   },
@@ -1793,13 +1737,8 @@
     "abilities": [
       {
         "slot": "特性1",
-        "name": "しんりょく",
-        "nameEn": "Overgrow"
-      },
-      {
-        "slot": "隠れ",
-        "name": "かるわざ",
-        "nameEn": "Unburden"
+        "name": "—",
+        "nameEn": ""
       }
     ]
   },
@@ -1827,13 +1766,8 @@
     "abilities": [
       {
         "slot": "特性1",
-        "name": "もうか",
-        "nameEn": "Blaze"
-      },
-      {
-        "slot": "隠れ",
-        "name": "かそく",
-        "nameEn": "Speed Boost"
+        "name": "—",
+        "nameEn": ""
       }
     ]
   },
@@ -1862,13 +1796,8 @@
     "abilities": [
       {
         "slot": "特性1",
-        "name": "げきりゅう",
-        "nameEn": "Torrent"
-      },
-      {
-        "slot": "隠れ",
-        "name": "しめりけ",
-        "nameEn": "Damp"
+        "name": "—",
+        "nameEn": ""
       }
     ]
   },
@@ -2015,18 +1944,8 @@
     "abilities": [
       {
         "slot": "特性1",
-        "name": "かいりきバサミ",
-        "nameEn": "Hyper Cutter"
-      },
-      {
-        "slot": "特性2",
-        "name": "いかく",
-        "nameEn": "Intimidate"
-      },
-      {
-        "slot": "隠れ",
-        "name": "ちからずく",
-        "nameEn": "Sheer Force"
+        "name": "—",
+        "nameEn": ""
       }
     ]
   },
@@ -2532,13 +2451,8 @@
     "abilities": [
       {
         "slot": "特性1",
-        "name": "クリアボディ",
-        "nameEn": "Clear Body"
-      },
-      {
-        "slot": "隠れ",
-        "name": "ライトメタル",
-        "nameEn": "Light Metal"
+        "name": "—",
+        "nameEn": ""
       }
     ]
   },
@@ -2671,13 +2585,8 @@
     "abilities": [
       {
         "slot": "特性1",
-        "name": "いかく",
-        "nameEn": "Intimidate"
-      },
-      {
-        "slot": "隠れ",
-        "name": "すてみ",
-        "nameEn": "Reckless"
+        "name": "—",
+        "nameEn": ""
       }
     ]
   },
@@ -3717,18 +3626,8 @@
     "abilities": [
       {
         "slot": "特性1",
-        "name": "よちむ",
-        "nameEn": "Forewarn"
-      },
-      {
-        "slot": "特性2",
-        "name": "シンクロ",
-        "nameEn": "Synchronize"
-      },
-      {
-        "slot": "隠れ",
-        "name": "テレパシー",
-        "nameEn": "Telepathy"
+        "name": "—",
+        "nameEn": ""
       }
     ]
   },
@@ -3877,18 +3776,8 @@
     "abilities": [
       {
         "slot": "特性1",
-        "name": "どくのトゲ",
-        "nameEn": "Poison Point"
-      },
-      {
-        "slot": "特性2",
-        "name": "むしのしらせ",
-        "nameEn": "Swarm"
-      },
-      {
-        "slot": "隠れ",
-        "name": "かそく",
-        "nameEn": "Speed Boost"
+        "name": "—",
+        "nameEn": ""
       }
     ]
   },
@@ -3995,18 +3884,8 @@
     "abilities": [
       {
         "slot": "特性1",
-        "name": "だっぴ",
-        "nameEn": "Shed Skin"
-      },
-      {
-        "slot": "特性2",
-        "name": "じしんかじょう",
-        "nameEn": "Moxie"
-      },
-      {
-        "slot": "隠れ",
-        "name": "いかく",
-        "nameEn": "Intimidate"
+        "name": "—",
+        "nameEn": ""
       }
     ]
   },
@@ -4240,8 +4119,8 @@
     "abilities": [
       {
         "slot": "特性1",
-        "name": "ふゆう",
-        "nameEn": "Levitate"
+        "name": "—",
+        "nameEn": ""
       }
     ]
   },
@@ -4690,11 +4569,12 @@
     ]
   },
   {
-    "id": "floette",
-    "name": "フラエッテ(えいえんのはな)",
-    "nameEn": "Floette",
+    "id": "pyroar",
+    "name": "カエンジシ",
+    "nameEn": "Pyroar",
     "types": [
-      "フェアリー"
+      "ほのお",
+      "ノーマル"
     ],
     "roles": [
       "attacker",
@@ -4702,25 +4582,20 @@
       "fast"
     ],
     "mega": true,
-    "dex": 10061,
+    "dex": 668,
     "base": {
-      "hp": 74,
-      "atk": 65,
-      "def": 67,
-      "spa": 125,
-      "spd": 128,
-      "spe": 92
+      "hp": 86,
+      "atk": 68,
+      "def": 72,
+      "spa": 109,
+      "spd": 66,
+      "spe": 106
     },
     "abilities": [
       {
         "slot": "特性1",
-        "name": "フラワーベール",
-        "nameEn": "Flower Veil"
-      },
-      {
-        "slot": "隠れ",
-        "name": "きょうせい",
-        "nameEn": "Symbiosis"
+        "name": "—",
+        "nameEn": ""
       }
     ]
   },
@@ -4986,18 +4861,8 @@
     "abilities": [
       {
         "slot": "特性1",
-        "name": "あまのじゃく",
-        "nameEn": "Contrary"
-      },
-      {
-        "slot": "特性2",
-        "name": "きゅうばん",
-        "nameEn": "Suction Cups"
-      },
-      {
-        "slot": "隠れ",
-        "name": "すりぬけ",
-        "nameEn": "Infiltrator"
+        "name": "—",
+        "nameEn": ""
       }
     ]
   },
@@ -5025,18 +4890,8 @@
     "abilities": [
       {
         "slot": "特性1",
-        "name": "かたいツメ",
-        "nameEn": "Tough Claws"
-      },
-      {
-        "slot": "特性2",
-        "name": "スナイパー",
-        "nameEn": "Sniper"
-      },
-      {
-        "slot": "隠れ",
-        "name": "わるいてぐせ",
-        "nameEn": "Pickpocket"
+        "name": "—",
+        "nameEn": ""
       }
     ]
   },
@@ -5064,18 +4919,8 @@
     "abilities": [
       {
         "slot": "特性1",
-        "name": "どくのトゲ",
-        "nameEn": "Poison Point"
-      },
-      {
-        "slot": "特性2",
-        "name": "どくしゅ",
-        "nameEn": "Poison Touch"
-      },
-      {
-        "slot": "隠れ",
-        "name": "てきおうりょく",
-        "nameEn": "Adaptability"
+        "name": "—",
+        "nameEn": ""
       }
     ]
   },
@@ -6408,18 +6253,8 @@
     "abilities": [
       {
         "slot": "特性1",
-        "name": "いたずらごころ",
-        "nameEn": "Prankster"
-      },
-      {
-        "slot": "特性2",
-        "name": "おみとおし",
-        "nameEn": "Frisk"
-      },
-      {
-        "slot": "隠れ",
-        "name": "わるいてぐせ",
-        "nameEn": "Pickpocket"
+        "name": "—",
+        "nameEn": ""
       }
     ]
   },
@@ -6508,13 +6343,8 @@
     "abilities": [
       {
         "slot": "特性1",
-        "name": "カブトアーマー",
-        "nameEn": "Battle Armor"
-      },
-      {
-        "slot": "隠れ",
-        "name": "まけんき",
-        "nameEn": "Defiant"
+        "name": "—",
+        "nameEn": ""
       }
     ]
   },
@@ -6769,18 +6599,8 @@
     "abilities": [
       {
         "slot": "特性1",
-        "name": "どくのトゲ",
-        "nameEn": "Poison Point"
-      },
-      {
-        "slot": "特性2",
-        "name": "すいすい",
-        "nameEn": "Swift Swim"
-      },
-      {
-        "slot": "隠れ",
-        "name": "いかく",
-        "nameEn": "Intimidate"
+        "name": "—",
+        "nameEn": ""
       }
     ]
   },
@@ -7311,13 +7131,8 @@
     "abilities": [
       {
         "slot": "特性1",
-        "name": "すなかき",
-        "nameEn": "Sand Rush"
-      },
-      {
-        "slot": "隠れ",
-        "name": "もふもふ",
-        "nameEn": "Fluffy"
+        "name": "—",
+        "nameEn": ""
       }
     ]
   },
@@ -7346,18 +7161,8 @@
     "abilities": [
       {
         "slot": "特性1",
-        "name": "やるき",
-        "nameEn": "Vital Spirit"
-      },
-      {
-        "slot": "特性2",
-        "name": "せいしんりょく",
-        "nameEn": "Inner Focus"
-      },
-      {
-        "slot": "隠れ",
-        "name": "まけんき",
-        "nameEn": "Defiant"
+        "name": "—",
+        "nameEn": ""
       }
     ]
   },
@@ -7466,8 +7271,8 @@
     "abilities": [
       {
         "slot": "特性1",
-        "name": "おうごんのからだ",
-        "nameEn": "Good as Gold"
+        "name": "—",
+        "nameEn": ""
       }
     ]
   },
@@ -7584,6 +7389,2494 @@
         "slot": "隠れ",
         "name": "ねんちゃく",
         "nameEn": "Sticky Hold"
+      }
+    ]
+  },
+  {
+    "id": "floette",
+    "name": "フラエッテ(えいえんのはな)",
+    "nameEn": "Floette",
+    "types": [
+      "フェアリー"
+    ],
+    "roles": [
+      "attacker",
+      "mega",
+      "fast"
+    ],
+    "mega": true,
+    "dex": 10061,
+    "base": {
+      "hp": 74,
+      "atk": 65,
+      "def": 67,
+      "spa": 125,
+      "spd": 128,
+      "spe": 92
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "フラワーベール",
+        "nameEn": "Flower Veil"
+      },
+      {
+        "slot": "隠れ",
+        "name": "きょうせい",
+        "nameEn": "Symbiosis"
+      }
+    ]
+  },
+  {
+    "id": "mega-venusaur",
+    "name": "メガフシギバナ",
+    "nameEn": "Mega Venusaur",
+    "types": [
+      "くさ",
+      "どく"
+    ],
+    "roles": [
+      "mega",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "venusaur",
+    "dex": 3,
+    "base": {
+      "hp": 80,
+      "atk": 100,
+      "def": 123,
+      "spa": 122,
+      "spd": 120,
+      "spe": 80
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "あついしぼう",
+        "nameEn": "Thick Fat"
+      }
+    ]
+  },
+  {
+    "id": "mega-charizard-x",
+    "name": "メガリザードンX",
+    "nameEn": "Mega Charizard X",
+    "types": [
+      "ほのお",
+      "ドラゴン"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "charizard",
+    "dex": 6,
+    "base": {
+      "hp": 78,
+      "atk": 130,
+      "def": 111,
+      "spa": 130,
+      "spd": 85,
+      "spe": 100
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "かたいツメ",
+        "nameEn": "Tough Claws"
+      }
+    ]
+  },
+  {
+    "id": "mega-charizard-y",
+    "name": "メガリザードンY",
+    "nameEn": "Mega Charizard Y",
+    "types": [
+      "ほのお",
+      "ひこう"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "charizard",
+    "dex": 6,
+    "base": {
+      "hp": 78,
+      "atk": 104,
+      "def": 78,
+      "spa": 159,
+      "spd": 115,
+      "spe": 100
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ひでり",
+        "nameEn": "Drought"
+      }
+    ]
+  },
+  {
+    "id": "mega-blastoise",
+    "name": "メガカメックス",
+    "nameEn": "Mega Blastoise",
+    "types": [
+      "みず"
+    ],
+    "roles": [
+      "mega",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "blastoise",
+    "dex": 9,
+    "base": {
+      "hp": 79,
+      "atk": 103,
+      "def": 120,
+      "spa": 135,
+      "spd": 115,
+      "spe": 78
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "メガランチャー",
+        "nameEn": "Mega Launcher"
+      }
+    ]
+  },
+  {
+    "id": "mega-beedrill",
+    "name": "メガスピアー",
+    "nameEn": "Mega Beedrill",
+    "types": [
+      "むし",
+      "どく"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "beedrill",
+    "dex": 15,
+    "base": {
+      "hp": 65,
+      "atk": 150,
+      "def": 40,
+      "spa": 15,
+      "spd": 80,
+      "spe": 145
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "てきおうりょく",
+        "nameEn": "Adaptability"
+      }
+    ]
+  },
+  {
+    "id": "mega-pidgeot",
+    "name": "メガピジョット",
+    "nameEn": "Mega Pidgeot",
+    "types": [
+      "ノーマル",
+      "ひこう"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "pidgeot",
+    "dex": 18,
+    "base": {
+      "hp": 83,
+      "atk": 80,
+      "def": 80,
+      "spa": 135,
+      "spd": 80,
+      "spe": 121
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ノーガード",
+        "nameEn": "No Guard"
+      }
+    ]
+  },
+  {
+    "id": "mega-raichu-x",
+    "name": "メガライチュウX",
+    "nameEn": "Mega Raichu X",
+    "types": [
+      "でんき"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "raichu",
+    "dex": 26,
+    "base": {
+      "hp": 60,
+      "atk": 135,
+      "def": 95,
+      "spa": 90,
+      "spd": 95,
+      "spe": 110
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "—",
+        "nameEn": ""
+      }
+    ]
+  },
+  {
+    "id": "mega-raichu-y",
+    "name": "メガライチュウY",
+    "nameEn": "Mega Raichu Y",
+    "types": [
+      "でんき"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "raichu",
+    "dex": 26,
+    "base": {
+      "hp": 60,
+      "atk": 100,
+      "def": 55,
+      "spa": 160,
+      "spd": 80,
+      "spe": 130
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "—",
+        "nameEn": ""
+      }
+    ]
+  },
+  {
+    "id": "mega-clefable",
+    "name": "メガピクシー",
+    "nameEn": "Mega Clefable",
+    "types": [
+      "フェアリー",
+      "ひこう"
+    ],
+    "roles": [
+      "mega",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "clefable",
+    "dex": 36,
+    "base": {
+      "hp": 95,
+      "atk": 80,
+      "def": 93,
+      "spa": 135,
+      "spd": 110,
+      "spe": 70
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "マジックミラー",
+        "nameEn": "Magic Bounce"
+      }
+    ]
+  },
+  {
+    "id": "mega-alakazam",
+    "name": "メガフーディン",
+    "nameEn": "Mega Alakazam",
+    "types": [
+      "エスパー"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "alakazam",
+    "dex": 65,
+    "base": {
+      "hp": 55,
+      "atk": 50,
+      "def": 65,
+      "spa": 175,
+      "spd": 105,
+      "spe": 150
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "トレース",
+        "nameEn": "Trace"
+      }
+    ]
+  },
+  {
+    "id": "mega-victreebel",
+    "name": "メガウツボット",
+    "nameEn": "Mega Victreebel",
+    "types": [
+      "くさ",
+      "どく"
+    ],
+    "roles": [
+      "mega",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "victreebel",
+    "dex": 71,
+    "base": {
+      "hp": 80,
+      "atk": 125,
+      "def": 85,
+      "spa": 135,
+      "spd": 95,
+      "spe": 70
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "とびだすなかみ",
+        "nameEn": "Innards Out"
+      }
+    ]
+  },
+  {
+    "id": "mega-slowbro",
+    "name": "メガヤドラン",
+    "nameEn": "Mega Slowbro",
+    "types": [
+      "みず",
+      "エスパー"
+    ],
+    "roles": [
+      "mega",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "slowbro",
+    "dex": 80,
+    "base": {
+      "hp": 95,
+      "atk": 75,
+      "def": 180,
+      "spa": 130,
+      "spd": 80,
+      "spe": 30
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "シェルアーマー",
+        "nameEn": "Shell Armor"
+      }
+    ]
+  },
+  {
+    "id": "mega-gengar",
+    "name": "メガゲンガー",
+    "nameEn": "Mega Gengar",
+    "types": [
+      "ゴースト",
+      "どく"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "gengar",
+    "dex": 94,
+    "base": {
+      "hp": 60,
+      "atk": 65,
+      "def": 80,
+      "spa": 170,
+      "spd": 95,
+      "spe": 130
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "かげふみ",
+        "nameEn": "Shadow Tag"
+      }
+    ]
+  },
+  {
+    "id": "mega-kangaskhan",
+    "name": "メガガルーラ",
+    "nameEn": "Mega Kangaskhan",
+    "types": [
+      "ノーマル"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "kangaskhan",
+    "dex": 115,
+    "base": {
+      "hp": 105,
+      "atk": 125,
+      "def": 100,
+      "spa": 60,
+      "spd": 100,
+      "spe": 100
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "おやこあい",
+        "nameEn": "Parental Bond"
+      }
+    ]
+  },
+  {
+    "id": "mega-starmie",
+    "name": "メガスターミー",
+    "nameEn": "Mega Starmie",
+    "types": [
+      "みず",
+      "エスパー"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "starmie",
+    "dex": 121,
+    "base": {
+      "hp": 60,
+      "atk": 100,
+      "def": 105,
+      "spa": 130,
+      "spd": 105,
+      "spe": 120
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ちからもち",
+        "nameEn": "Huge Power"
+      }
+    ]
+  },
+  {
+    "id": "mega-pinsir",
+    "name": "メガカイロス",
+    "nameEn": "Mega Pinsir",
+    "types": [
+      "むし",
+      "ひこう"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "pinsir",
+    "dex": 127,
+    "base": {
+      "hp": 65,
+      "atk": 155,
+      "def": 120,
+      "spa": 65,
+      "spd": 90,
+      "spe": 105
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "スカイスキン",
+        "nameEn": "Aerilate"
+      }
+    ]
+  },
+  {
+    "id": "mega-gyarados",
+    "name": "メガギャラドス",
+    "nameEn": "Mega Gyarados",
+    "types": [
+      "みず",
+      "あく"
+    ],
+    "roles": [
+      "mega",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "gyarados",
+    "dex": 130,
+    "base": {
+      "hp": 95,
+      "atk": 155,
+      "def": 109,
+      "spa": 70,
+      "spd": 130,
+      "spe": 81
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "かたやぶり",
+        "nameEn": "Mold Breaker"
+      }
+    ]
+  },
+  {
+    "id": "mega-aerodactyl",
+    "name": "メガプテラ",
+    "nameEn": "Mega Aerodactyl",
+    "types": [
+      "いわ",
+      "ひこう"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "aerodactyl",
+    "dex": 142,
+    "base": {
+      "hp": 80,
+      "atk": 135,
+      "def": 85,
+      "spa": 70,
+      "spd": 95,
+      "spe": 150
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "かたいツメ",
+        "nameEn": "Tough Claws"
+      }
+    ]
+  },
+  {
+    "id": "mega-dragonite",
+    "name": "メガカイリュー",
+    "nameEn": "Mega Dragonite",
+    "types": [
+      "ドラゴン",
+      "ひこう"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "dragonite",
+    "dex": 149,
+    "base": {
+      "hp": 91,
+      "atk": 124,
+      "def": 115,
+      "spa": 145,
+      "spd": 125,
+      "spe": 100
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "マルチスケイル",
+        "nameEn": "Multiscale"
+      }
+    ]
+  },
+  {
+    "id": "mega-meganium",
+    "name": "メガメガニウム",
+    "nameEn": "Mega Meganium",
+    "types": [
+      "くさ",
+      "フェアリー"
+    ],
+    "roles": [
+      "mega",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "meganium",
+    "dex": 154,
+    "base": {
+      "hp": 80,
+      "atk": 92,
+      "def": 115,
+      "spa": 143,
+      "spd": 115,
+      "spe": 80
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "メガソーラー",
+        "nameEn": "Mega Sol"
+      }
+    ]
+  },
+  {
+    "id": "mega-feraligatr",
+    "name": "メガオーダイル",
+    "nameEn": "Mega Feraligatr",
+    "types": [
+      "みず",
+      "ドラゴン"
+    ],
+    "roles": [
+      "mega",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "feraligatr",
+    "dex": 160,
+    "base": {
+      "hp": 85,
+      "atk": 160,
+      "def": 125,
+      "spa": 89,
+      "spd": 93,
+      "spe": 78
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ドラゴンスキン",
+        "nameEn": "Dragonize"
+      }
+    ]
+  },
+  {
+    "id": "mega-ampharos",
+    "name": "メガデンリュウ",
+    "nameEn": "Mega Ampharos",
+    "types": [
+      "でんき",
+      "ドラゴン"
+    ],
+    "roles": [
+      "mega",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "ampharos",
+    "dex": 181,
+    "base": {
+      "hp": 90,
+      "atk": 95,
+      "def": 105,
+      "spa": 165,
+      "spd": 110,
+      "spe": 45
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "かたやぶり",
+        "nameEn": "Mold Breaker"
+      }
+    ]
+  },
+  {
+    "id": "mega-steelix",
+    "name": "メガハガネール",
+    "nameEn": "Mega Steelix",
+    "types": [
+      "はがね",
+      "じめん"
+    ],
+    "roles": [
+      "mega",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "steelix",
+    "dex": 208,
+    "base": {
+      "hp": 75,
+      "atk": 125,
+      "def": 230,
+      "spa": 55,
+      "spd": 95,
+      "spe": 30
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "すなのちから",
+        "nameEn": "Sand Force"
+      }
+    ]
+  },
+  {
+    "id": "mega-scizor",
+    "name": "メガハッサム",
+    "nameEn": "Mega Scizor",
+    "types": [
+      "むし",
+      "はがね"
+    ],
+    "roles": [
+      "mega",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "scizor",
+    "dex": 212,
+    "base": {
+      "hp": 70,
+      "atk": 150,
+      "def": 140,
+      "spa": 65,
+      "spd": 100,
+      "spe": 75
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "テクニシャン",
+        "nameEn": "Technician"
+      }
+    ]
+  },
+  {
+    "id": "mega-heracross",
+    "name": "メガヘラクロス",
+    "nameEn": "Mega Heracross",
+    "types": [
+      "むし",
+      "かくとう"
+    ],
+    "roles": [
+      "mega",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "heracross",
+    "dex": 214,
+    "base": {
+      "hp": 80,
+      "atk": 185,
+      "def": 115,
+      "spa": 40,
+      "spd": 105,
+      "spe": 75
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "スキルリンク",
+        "nameEn": "Skill Link"
+      }
+    ]
+  },
+  {
+    "id": "mega-skarmory",
+    "name": "メガエアームド",
+    "nameEn": "Mega Skarmory",
+    "types": [
+      "はがね",
+      "ひこう"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "skarmory",
+    "dex": 227,
+    "base": {
+      "hp": 65,
+      "atk": 140,
+      "def": 110,
+      "spa": 40,
+      "spd": 100,
+      "spe": 110
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "すじがねいり",
+        "nameEn": "Stalwart"
+      }
+    ]
+  },
+  {
+    "id": "mega-houndoom",
+    "name": "メガヘルガー",
+    "nameEn": "Mega Houndoom",
+    "types": [
+      "あく",
+      "ほのお"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "houndoom",
+    "dex": 229,
+    "base": {
+      "hp": 75,
+      "atk": 90,
+      "def": 90,
+      "spa": 140,
+      "spd": 90,
+      "spe": 115
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "サンパワー",
+        "nameEn": "Solar Power"
+      }
+    ]
+  },
+  {
+    "id": "mega-tyranitar",
+    "name": "メガバンギラス",
+    "nameEn": "Mega Tyranitar",
+    "types": [
+      "いわ",
+      "あく"
+    ],
+    "roles": [
+      "mega",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "tyranitar",
+    "dex": 248,
+    "base": {
+      "hp": 100,
+      "atk": 164,
+      "def": 150,
+      "spa": 95,
+      "spd": 120,
+      "spe": 71
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "すなおこし",
+        "nameEn": "Sand Stream"
+      }
+    ]
+  },
+  {
+    "id": "mega-sceptile",
+    "name": "メガジュカイン",
+    "nameEn": "Mega Sceptile",
+    "types": [
+      "くさ",
+      "ドラゴン"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "sceptile",
+    "dex": 254,
+    "base": {
+      "hp": 70,
+      "atk": 110,
+      "def": 75,
+      "spa": 145,
+      "spd": 85,
+      "spe": 145
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "—",
+        "nameEn": ""
+      }
+    ]
+  },
+  {
+    "id": "mega-blaziken",
+    "name": "メガバシャーモ",
+    "nameEn": "Mega Blaziken",
+    "types": [
+      "ほのお",
+      "かくとう"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "blaziken",
+    "dex": 257,
+    "base": {
+      "hp": 80,
+      "atk": 160,
+      "def": 80,
+      "spa": 130,
+      "spd": 80,
+      "spe": 100
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "—",
+        "nameEn": ""
+      }
+    ]
+  },
+  {
+    "id": "mega-swampert",
+    "name": "メガラグラージ",
+    "nameEn": "Mega Swampert",
+    "types": [
+      "みず",
+      "じめん"
+    ],
+    "roles": [
+      "mega",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "swampert",
+    "dex": 260,
+    "base": {
+      "hp": 100,
+      "atk": 150,
+      "def": 110,
+      "spa": 95,
+      "spd": 110,
+      "spe": 70
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "—",
+        "nameEn": ""
+      }
+    ]
+  },
+  {
+    "id": "mega-gardevoir",
+    "name": "メガサーナイト",
+    "nameEn": "Mega Gardevoir",
+    "types": [
+      "エスパー",
+      "フェアリー"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "gardevoir",
+    "dex": 282,
+    "base": {
+      "hp": 68,
+      "atk": 85,
+      "def": 65,
+      "spa": 165,
+      "spd": 135,
+      "spe": 100
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "フェアリースキン",
+        "nameEn": "Pixilate"
+      }
+    ]
+  },
+  {
+    "id": "mega-sableye",
+    "name": "メガヤミラミ",
+    "nameEn": "Mega Sableye",
+    "types": [
+      "あく",
+      "ゴースト"
+    ],
+    "roles": [
+      "mega",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "sableye",
+    "dex": 302,
+    "base": {
+      "hp": 50,
+      "atk": 85,
+      "def": 125,
+      "spa": 85,
+      "spd": 115,
+      "spe": 20
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "マジックミラー",
+        "nameEn": "Magic Bounce"
+      }
+    ]
+  },
+  {
+    "id": "mega-mawile",
+    "name": "メガクチート",
+    "nameEn": "Mega Mawile",
+    "types": [
+      "はがね",
+      "フェアリー"
+    ],
+    "roles": [
+      "mega",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "mawile",
+    "dex": 303,
+    "base": {
+      "hp": 50,
+      "atk": 105,
+      "def": 125,
+      "spa": 55,
+      "spd": 95,
+      "spe": 50
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "—",
+        "nameEn": ""
+      }
+    ]
+  },
+  {
+    "id": "mega-aggron",
+    "name": "メガボスゴドラ",
+    "nameEn": "Mega Aggron",
+    "types": [
+      "はがね"
+    ],
+    "roles": [
+      "mega",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "aggron",
+    "dex": 306,
+    "base": {
+      "hp": 70,
+      "atk": 140,
+      "def": 230,
+      "spa": 60,
+      "spd": 80,
+      "spe": 50
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "フィルター",
+        "nameEn": "Filter"
+      }
+    ]
+  },
+  {
+    "id": "mega-medicham",
+    "name": "メガチャーレム",
+    "nameEn": "Mega Medicham",
+    "types": [
+      "かくとう",
+      "エスパー"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "medicham",
+    "dex": 308,
+    "base": {
+      "hp": 60,
+      "atk": 100,
+      "def": 85,
+      "spa": 80,
+      "spd": 85,
+      "spe": 100
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ヨガパワー",
+        "nameEn": "Pure Power"
+      }
+    ]
+  },
+  {
+    "id": "mega-manectric",
+    "name": "メガライボルト",
+    "nameEn": "Mega Manectric",
+    "types": [
+      "でんき"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "manectric",
+    "dex": 310,
+    "base": {
+      "hp": 70,
+      "atk": 75,
+      "def": 80,
+      "spa": 135,
+      "spd": 80,
+      "spe": 135
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "いかく",
+        "nameEn": "Intimidate"
+      }
+    ]
+  },
+  {
+    "id": "mega-sharpedo",
+    "name": "メガサメハダー",
+    "nameEn": "Mega Sharpedo",
+    "types": [
+      "みず",
+      "あく"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "sharpedo",
+    "dex": 319,
+    "base": {
+      "hp": 70,
+      "atk": 140,
+      "def": 70,
+      "spa": 110,
+      "spd": 65,
+      "spe": 105
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "がんじょうあご",
+        "nameEn": "Strong Jaw"
+      }
+    ]
+  },
+  {
+    "id": "mega-camerupt",
+    "name": "メガバクーダ",
+    "nameEn": "Mega Camerupt",
+    "types": [
+      "ほのお",
+      "じめん"
+    ],
+    "roles": [
+      "mega",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "camerupt",
+    "dex": 323,
+    "base": {
+      "hp": 70,
+      "atk": 120,
+      "def": 100,
+      "spa": 145,
+      "spd": 105,
+      "spe": 20
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ちからずく",
+        "nameEn": "Sheer Force"
+      }
+    ]
+  },
+  {
+    "id": "mega-altaria",
+    "name": "メガチルタリス",
+    "nameEn": "Mega Altaria",
+    "types": [
+      "ドラゴン",
+      "フェアリー"
+    ],
+    "roles": [
+      "mega",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "altaria",
+    "dex": 334,
+    "base": {
+      "hp": 75,
+      "atk": 110,
+      "def": 110,
+      "spa": 110,
+      "spd": 105,
+      "spe": 80
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "フェアリースキン",
+        "nameEn": "Pixilate"
+      }
+    ]
+  },
+  {
+    "id": "mega-banette",
+    "name": "メガジュペッタ",
+    "nameEn": "Mega Banette",
+    "types": [
+      "ゴースト"
+    ],
+    "roles": [
+      "mega",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "banette",
+    "dex": 354,
+    "base": {
+      "hp": 64,
+      "atk": 165,
+      "def": 75,
+      "spa": 93,
+      "spd": 83,
+      "spe": 75
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "いたずらごころ",
+        "nameEn": "Prankster"
+      }
+    ]
+  },
+  {
+    "id": "mega-chimecho",
+    "name": "メガチリーン",
+    "nameEn": "Mega Chimecho",
+    "types": [
+      "エスパー",
+      "はがね"
+    ],
+    "roles": [
+      "mega",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "chimecho",
+    "dex": 358,
+    "base": {
+      "hp": 75,
+      "atk": 50,
+      "def": 110,
+      "spa": 135,
+      "spd": 120,
+      "spe": 65
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ふゆう",
+        "nameEn": "Levitate"
+      }
+    ]
+  },
+  {
+    "id": "mega-absol",
+    "name": "メガアブソル",
+    "nameEn": "Mega Absol",
+    "types": [
+      "あく"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "absol",
+    "dex": 359,
+    "base": {
+      "hp": 65,
+      "atk": 150,
+      "def": 60,
+      "spa": 115,
+      "spd": 60,
+      "spe": 115
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "マジックミラー",
+        "nameEn": "Magic Bounce"
+      }
+    ]
+  },
+  {
+    "id": "mega-glalie",
+    "name": "メガオニゴーリ",
+    "nameEn": "Mega Glalie",
+    "types": [
+      "こおり"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "glalie",
+    "dex": 362,
+    "base": {
+      "hp": 80,
+      "atk": 120,
+      "def": 80,
+      "spa": 120,
+      "spd": 80,
+      "spe": 100
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "フリーズスキン",
+        "nameEn": "Refrigerate"
+      }
+    ]
+  },
+  {
+    "id": "mega-metagross",
+    "name": "メガメタグロス",
+    "nameEn": "Mega Metagross",
+    "types": [
+      "はがね",
+      "エスパー"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "metagross",
+    "dex": 376,
+    "base": {
+      "hp": 80,
+      "atk": 145,
+      "def": 150,
+      "spa": 105,
+      "spd": 110,
+      "spe": 110
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "—",
+        "nameEn": ""
+      }
+    ]
+  },
+  {
+    "id": "mega-staraptor",
+    "name": "メガムクホーク",
+    "nameEn": "Mega Staraptor",
+    "types": [
+      "かくとう",
+      "ひこう"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "staraptor",
+    "dex": 398,
+    "base": {
+      "hp": 85,
+      "atk": 140,
+      "def": 100,
+      "spa": 60,
+      "spd": 90,
+      "spe": 110
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "—",
+        "nameEn": ""
+      }
+    ]
+  },
+  {
+    "id": "mega-lopunny",
+    "name": "メガミミロップ",
+    "nameEn": "Mega Lopunny",
+    "types": [
+      "ノーマル",
+      "かくとう"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "lopunny",
+    "dex": 428,
+    "base": {
+      "hp": 65,
+      "atk": 136,
+      "def": 94,
+      "spa": 54,
+      "spd": 96,
+      "spe": 135
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "きもったま",
+        "nameEn": "Scrappy"
+      }
+    ]
+  },
+  {
+    "id": "mega-garchomp",
+    "name": "メガガブリアス",
+    "nameEn": "Mega Garchomp",
+    "types": [
+      "ドラゴン",
+      "じめん"
+    ],
+    "roles": [
+      "mega",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "garchomp",
+    "dex": 445,
+    "base": {
+      "hp": 108,
+      "atk": 170,
+      "def": 115,
+      "spa": 120,
+      "spd": 95,
+      "spe": 92
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "すなのちから",
+        "nameEn": "Sand Force"
+      }
+    ]
+  },
+  {
+    "id": "mega-lucario",
+    "name": "メガルカリオ",
+    "nameEn": "Mega Lucario",
+    "types": [
+      "かくとう",
+      "はがね"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "lucario",
+    "dex": 448,
+    "base": {
+      "hp": 70,
+      "atk": 145,
+      "def": 88,
+      "spa": 140,
+      "spd": 70,
+      "spe": 112
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "てきおうりょく",
+        "nameEn": "Adaptability"
+      }
+    ]
+  },
+  {
+    "id": "mega-abomasnow",
+    "name": "メガユキノオー",
+    "nameEn": "Mega Abomasnow",
+    "types": [
+      "くさ",
+      "こおり"
+    ],
+    "roles": [
+      "mega",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "abomasnow",
+    "dex": 460,
+    "base": {
+      "hp": 90,
+      "atk": 132,
+      "def": 105,
+      "spa": 132,
+      "spd": 105,
+      "spe": 30
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ゆきふらし",
+        "nameEn": "Snow Warning"
+      }
+    ]
+  },
+  {
+    "id": "mega-gallade",
+    "name": "メガエルレイド",
+    "nameEn": "Mega Gallade",
+    "types": [
+      "エスパー",
+      "かくとう"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "gallade",
+    "dex": 475,
+    "base": {
+      "hp": 68,
+      "atk": 165,
+      "def": 95,
+      "spa": 65,
+      "spd": 115,
+      "spe": 110
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "せいしんりょく",
+        "nameEn": "Inner Focus"
+      }
+    ]
+  },
+  {
+    "id": "mega-froslass",
+    "name": "メガユキメノコ",
+    "nameEn": "Mega Froslass",
+    "types": [
+      "こおり",
+      "ゴースト"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "froslass",
+    "dex": 478,
+    "base": {
+      "hp": 70,
+      "atk": 80,
+      "def": 70,
+      "spa": 140,
+      "spd": 100,
+      "spe": 120
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ゆきふらし",
+        "nameEn": "Snow Warning"
+      }
+    ]
+  },
+  {
+    "id": "mega-emboar",
+    "name": "メガエンブオー",
+    "nameEn": "Mega Emboar",
+    "types": [
+      "ほのお",
+      "かくとう"
+    ],
+    "roles": [
+      "mega",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "emboar",
+    "dex": 500,
+    "base": {
+      "hp": 110,
+      "atk": 148,
+      "def": 75,
+      "spa": 110,
+      "spd": 110,
+      "spe": 75
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "かたやぶり",
+        "nameEn": "Mold Breaker"
+      }
+    ]
+  },
+  {
+    "id": "mega-excadrill",
+    "name": "メガドリュウズ",
+    "nameEn": "Mega Excadrill",
+    "types": [
+      "じめん",
+      "はがね"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "excadrill",
+    "dex": 530,
+    "base": {
+      "hp": 110,
+      "atk": 165,
+      "def": 100,
+      "spa": 65,
+      "spd": 65,
+      "spe": 103
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "かんつうドリル",
+        "nameEn": "Piercing Drill"
+      }
+    ]
+  },
+  {
+    "id": "mega-audino",
+    "name": "メガタブンネ",
+    "nameEn": "Mega Audino",
+    "types": [
+      "ノーマル",
+      "フェアリー"
+    ],
+    "roles": [
+      "mega",
+      "wall",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "audino",
+    "dex": 531,
+    "base": {
+      "hp": 103,
+      "atk": 60,
+      "def": 126,
+      "spa": 80,
+      "spd": 126,
+      "spe": 50
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "いやしのこころ",
+        "nameEn": "Healer"
+      }
+    ]
+  },
+  {
+    "id": "mega-scolipede",
+    "name": "メガペンドラー",
+    "nameEn": "Mega Scolipede",
+    "types": [
+      "むし",
+      "どく"
+    ],
+    "roles": [
+      "mega",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "scolipede",
+    "dex": 545,
+    "base": {
+      "hp": 60,
+      "atk": 140,
+      "def": 149,
+      "spa": 75,
+      "spd": 99,
+      "spe": 62
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "—",
+        "nameEn": ""
+      }
+    ]
+  },
+  {
+    "id": "mega-scrafty",
+    "name": "メガズルズキン",
+    "nameEn": "Mega Scrafty",
+    "types": [
+      "あく",
+      "かくとう"
+    ],
+    "roles": [
+      "mega",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "scrafty",
+    "dex": 560,
+    "base": {
+      "hp": 65,
+      "atk": 130,
+      "def": 135,
+      "spa": 55,
+      "spd": 135,
+      "spe": 68
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "—",
+        "nameEn": ""
+      }
+    ]
+  },
+  {
+    "id": "mega-eelektross",
+    "name": "メガシビルドン",
+    "nameEn": "Mega Eelektross",
+    "types": [
+      "でんき"
+    ],
+    "roles": [
+      "mega",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "eelektross",
+    "dex": 604,
+    "base": {
+      "hp": 85,
+      "atk": 145,
+      "def": 80,
+      "spa": 135,
+      "spd": 90,
+      "spe": 80
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "—",
+        "nameEn": ""
+      }
+    ]
+  },
+  {
+    "id": "mega-chandelure",
+    "name": "メガシャンデラ",
+    "nameEn": "Mega Chandelure",
+    "types": [
+      "ゴースト",
+      "ほのお"
+    ],
+    "roles": [
+      "mega",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "chandelure",
+    "dex": 609,
+    "base": {
+      "hp": 60,
+      "atk": 75,
+      "def": 110,
+      "spa": 175,
+      "spd": 110,
+      "spe": 90
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "すりぬけ",
+        "nameEn": "Infiltrator"
+      }
+    ]
+  },
+  {
+    "id": "mega-golurk",
+    "name": "メガゴルーグ",
+    "nameEn": "Mega Golurk",
+    "types": [
+      "じめん",
+      "ゴースト"
+    ],
+    "roles": [
+      "mega",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "golurk",
+    "dex": 623,
+    "base": {
+      "hp": 89,
+      "atk": 159,
+      "def": 105,
+      "spa": 70,
+      "spd": 105,
+      "spe": 55
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ふかしのこぶし",
+        "nameEn": "Unseen Fist"
+      }
+    ]
+  },
+  {
+    "id": "mega-chesnaught",
+    "name": "メガブリガロン",
+    "nameEn": "Mega Chesnaught",
+    "types": [
+      "くさ",
+      "かくとう"
+    ],
+    "roles": [
+      "mega",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "chesnaught",
+    "dex": 652,
+    "base": {
+      "hp": 88,
+      "atk": 137,
+      "def": 172,
+      "spa": 74,
+      "spd": 115,
+      "spe": 44
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ぼうだん",
+        "nameEn": "Bulletproof"
+      }
+    ]
+  },
+  {
+    "id": "mega-delphox",
+    "name": "メガマフォクシー",
+    "nameEn": "Mega Delphox",
+    "types": [
+      "ほのお",
+      "エスパー"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "delphox",
+    "dex": 655,
+    "base": {
+      "hp": 75,
+      "atk": 69,
+      "def": 72,
+      "spa": 159,
+      "spd": 125,
+      "spe": 134
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ふゆう",
+        "nameEn": "Levitate"
+      }
+    ]
+  },
+  {
+    "id": "mega-greninja",
+    "name": "メガゲッコウガ",
+    "nameEn": "Mega Greninja",
+    "types": [
+      "みず",
+      "あく"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "greninja",
+    "dex": 658,
+    "base": {
+      "hp": 72,
+      "atk": 125,
+      "def": 77,
+      "spa": 133,
+      "spd": 81,
+      "spe": 142
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "へんげんじざい",
+        "nameEn": "Protean"
+      }
+    ]
+  },
+  {
+    "id": "mega-pyroar",
+    "name": "メガカエンジシ",
+    "nameEn": "Mega Pyroar",
+    "types": [
+      "ほのお",
+      "ノーマル"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "pyroar",
+    "dex": 668,
+    "base": {
+      "hp": 86,
+      "atk": 88,
+      "def": 92,
+      "spa": 129,
+      "spd": 86,
+      "spe": 126
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "—",
+        "nameEn": ""
+      }
+    ]
+  },
+  {
+    "id": "mega-meowstic",
+    "name": "メガニャオニクス",
+    "nameEn": "Mega Meowstic",
+    "types": [
+      "エスパー"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "meowstic",
+    "dex": 678,
+    "base": {
+      "hp": 74,
+      "atk": 48,
+      "def": 76,
+      "spa": 143,
+      "spd": 101,
+      "spe": 124
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "トレース",
+        "nameEn": "Trace"
+      }
+    ]
+  },
+  {
+    "id": "mega-malamar",
+    "name": "メガカラマネロ",
+    "nameEn": "Mega Malamar",
+    "types": [
+      "あく",
+      "エスパー"
+    ],
+    "roles": [
+      "mega",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "malamar",
+    "dex": 687,
+    "base": {
+      "hp": 86,
+      "atk": 102,
+      "def": 88,
+      "spa": 98,
+      "spd": 120,
+      "spe": 88
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "—",
+        "nameEn": ""
+      }
+    ]
+  },
+  {
+    "id": "mega-barbaracle",
+    "name": "メガガメノデス",
+    "nameEn": "Mega Barbaracle",
+    "types": [
+      "いわ",
+      "かくとう"
+    ],
+    "roles": [
+      "mega",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "barbaracle",
+    "dex": 689,
+    "base": {
+      "hp": 72,
+      "atk": 140,
+      "def": 130,
+      "spa": 64,
+      "spd": 106,
+      "spe": 88
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "—",
+        "nameEn": ""
+      }
+    ]
+  },
+  {
+    "id": "mega-dragalge",
+    "name": "メガドラミドロ",
+    "nameEn": "Mega Dragalge",
+    "types": [
+      "どく",
+      "ドラゴン"
+    ],
+    "roles": [
+      "mega",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "dragalge",
+    "dex": 691,
+    "base": {
+      "hp": 65,
+      "atk": 85,
+      "def": 105,
+      "spa": 132,
+      "spd": 163,
+      "spe": 44
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "—",
+        "nameEn": ""
+      }
+    ]
+  },
+  {
+    "id": "mega-hawlucha",
+    "name": "メガルチャブル",
+    "nameEn": "Mega Hawlucha",
+    "types": [
+      "かくとう",
+      "ひこう"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "hawlucha",
+    "dex": 701,
+    "base": {
+      "hp": 78,
+      "atk": 137,
+      "def": 100,
+      "spa": 74,
+      "spd": 93,
+      "spe": 118
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ノーガード",
+        "nameEn": "No Guard"
+      }
+    ]
+  },
+  {
+    "id": "mega-crabominable",
+    "name": "メガケケンカニ",
+    "nameEn": "Mega Crabominable",
+    "types": [
+      "かくとう",
+      "こおり"
+    ],
+    "roles": [
+      "mega",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "crabominable",
+    "dex": 740,
+    "base": {
+      "hp": 97,
+      "atk": 157,
+      "def": 122,
+      "spa": 62,
+      "spd": 107,
+      "spe": 33
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "てつのこぶし",
+        "nameEn": "Iron Fist"
+      }
+    ]
+  },
+  {
+    "id": "mega-drampa",
+    "name": "メガジジーロン",
+    "nameEn": "Mega Drampa",
+    "types": [
+      "ノーマル",
+      "ドラゴン"
+    ],
+    "roles": [
+      "mega",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "drampa",
+    "dex": 780,
+    "base": {
+      "hp": 78,
+      "atk": 85,
+      "def": 110,
+      "spa": 160,
+      "spd": 116,
+      "spe": 36
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ぎゃくじょう",
+        "nameEn": "Berserk"
+      }
+    ]
+  },
+  {
+    "id": "mega-falinks",
+    "name": "メガタイレーツ",
+    "nameEn": "Mega Falinks",
+    "types": [
+      "かくとう"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "falinks",
+    "dex": 870,
+    "base": {
+      "hp": 65,
+      "atk": 135,
+      "def": 135,
+      "spa": 70,
+      "spd": 65,
+      "spe": 100
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "—",
+        "nameEn": ""
+      }
+    ]
+  },
+  {
+    "id": "mega-scovillain",
+    "name": "メガスコヴィラン",
+    "nameEn": "Mega Scovillain",
+    "types": [
+      "くさ",
+      "ほのお"
+    ],
+    "roles": [
+      "mega",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "scovillain",
+    "dex": 952,
+    "base": {
+      "hp": 65,
+      "atk": 138,
+      "def": 85,
+      "spa": 138,
+      "spd": 85,
+      "spe": 75
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "とびだすハバネロ",
+        "nameEn": "Spicy Spray"
+      }
+    ]
+  },
+  {
+    "id": "mega-glimmora",
+    "name": "メガキラフロル",
+    "nameEn": "Mega Glimmora",
+    "types": [
+      "いわ",
+      "どく"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "glimmora",
+    "dex": 970,
+    "base": {
+      "hp": 83,
+      "atk": 90,
+      "def": 105,
+      "spa": 150,
+      "spd": 96,
+      "spe": 101
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "てきおうりょく",
+        "nameEn": "Adaptability"
+      }
+    ]
+  },
+  {
+    "id": "mega-floette",
+    "name": "メガフラエッテ(えいえんのはな)",
+    "nameEn": "Mega Floette",
+    "types": [
+      "フェアリー"
+    ],
+    "roles": [
+      "mega",
+      "fast",
+      "attacker",
+      "wall"
+    ],
+    "mega": true,
+    "isMegaForm": true,
+    "baseFormId": "floette",
+    "dex": 10061,
+    "base": {
+      "hp": 74,
+      "atk": 85,
+      "def": 87,
+      "spa": 155,
+      "spd": 148,
+      "spe": 102
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "フェアリーオーラ",
+        "nameEn": "Fairy Aura"
       }
     ]
   }

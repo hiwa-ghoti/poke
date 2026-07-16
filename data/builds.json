@@ -326,7 +326,7 @@
     ]
   },
   "staraptor-mega": {
-    "pokemonId": "staraptor",
+    "pokemonId": "mega-staraptor",
     "label": "メガ",
     "item": "ムクホークナイト",
     "ability": "いかく",
@@ -353,8 +353,7 @@
     "note": "Reg M-B新メガ。威嚇＋高速物理＋おいかぜも可能。",
     "itemEffect": "メガシンカ用メガストーン（ムクホーク）。",
     "abilityOptions": [
-      "いかく",
-      "すてみ"
+      "—"
     ]
   },
   "incineroar-support": {
@@ -390,7 +389,7 @@
     ]
   },
   "charizard-y": {
-    "pokemonId": "charizard",
+    "pokemonId": "mega-charizard-y",
     "label": "メガY",
     "item": "リザードナイトY",
     "ability": "もうか",
@@ -417,12 +416,11 @@
     "note": "メガYで日照り。ガブリアスと並ぶ最頻出コア。",
     "itemEffect": "メガシンカ用メガストーン（リザードンY）。",
     "abilityOptions": [
-      "もうか",
-      "サンパワー"
+      "ひでり"
     ]
   },
   "raichu-y": {
-    "pokemonId": "raichu",
+    "pokemonId": "mega-raichu-y",
     "label": "メガY",
     "item": "ライチュウナイトY",
     "ability": "せいでんき",
@@ -449,8 +447,7 @@
     "note": "メガライチュウY。電＋格闘＋草の特殊エース。",
     "itemEffect": "メガシンカ用メガストーン（ライチュウY）。",
     "abilityOptions": [
-      "せいでんき",
-      "ひらいしん"
+      "—"
     ]
   },
   "pelipper-rain": {
@@ -613,9 +610,7 @@
     "note": "先制壁＋すてゼリフ。メガエースを通す定番。",
     "itemEffect": "リフレクター／ひかりのかべのターン延長。",
     "abilityOptions": [
-      "いたずらごころ",
-      "おみとおし",
-      "わるいてぐせ"
+      "—"
     ]
   },
   "sylveon-pixilate": {
@@ -651,7 +646,7 @@
     ]
   },
   "swampert-mega": {
-    "pokemonId": "swampert",
+    "pokemonId": "mega-swampert",
     "label": "メガ",
     "item": "ラグラージナイト",
     "ability": "げきりゅう",
@@ -678,12 +673,11 @@
     "note": "雨下すいすい（メガ後）で最速級。雨パの主砲。",
     "itemEffect": "メガシンカ用メガストーン（ラグラージ）。",
     "abilityOptions": [
-      "げきりゅう",
-      "しめりけ"
+      "—"
     ]
   },
   "metagross-mega": {
-    "pokemonId": "metagross",
+    "pokemonId": "mega-metagross",
     "label": "メガ",
     "item": "メタグロスナイト",
     "ability": "クリアボディ",
@@ -710,8 +704,7 @@
     "note": "硬い爪メガ。雨パの二枚目メガとしても採用。",
     "itemEffect": "メガシンカ用メガストーン（メタグロス）。",
     "abilityOptions": [
-      "クリアボディ",
-      "ライトメタル"
+      "—"
     ]
   },
   "farigiraf-tr": {
@@ -748,7 +741,7 @@
     ]
   },
   "floette-mega": {
-    "pokemonId": "floette",
+    "pokemonId": "mega-floette",
     "label": "メガ",
     "item": "フラエッテナイト",
     "ability": "フラワーベール",
@@ -775,8 +768,7 @@
     "note": "はめつのうた高火力フェアリー。おいかぜと相性良し。",
     "itemEffect": "メガシンカ用メガストーン（フラエッテ）。",
     "abilityOptions": [
-      "フラワーベール",
-      "きょうせい"
+      "フェアリーオーラ"
     ]
   },
   "gholdengo-lo": {
@@ -807,11 +799,11 @@
     "note": "状態異常無効の特殊枠。砂パ・バランスに入る。",
     "itemEffect": "技の威力1.3倍。攻撃するたび最大HPの1/10ダメージ。",
     "abilityOptions": [
-      "おうごんのからだ"
+      "—"
     ]
   },
   "aerodactyl-mega": {
-    "pokemonId": "aerodactyl",
+    "pokemonId": "mega-aerodactyl",
     "label": "メガ",
     "item": "プテラナイト",
     "ability": "プレッシャー",
@@ -838,9 +830,7 @@
     "note": "高速岩雪崩＋おいかぜ。リザY軸のサポートメガにも。",
     "itemEffect": "メガシンカ用メガストーン（プテラ）。",
     "abilityOptions": [
-      "いしあたま",
-      "プレッシャー",
-      "きんちょうかん"
+      "かたいツメ"
     ]
   },
   "excadrill-sand": {
@@ -877,7 +867,7 @@
     ]
   },
   "tyranitar-mega": {
-    "pokemonId": "tyranitar",
+    "pokemonId": "mega-tyranitar",
     "label": "メガ砂",
     "item": "バンギラスナイト",
     "ability": "すなおこし",
@@ -904,8 +894,7 @@
     "note": "砂起動兼攻撃。ドリュウズと砂パの軸。",
     "itemEffect": "メガシンカ用メガストーン（バンギラス）。",
     "abilityOptions": [
-      "すなおこし",
-      "きんちょうかん"
+      "すなおこし"
     ]
   },
   "milotic-bulk": {
@@ -942,7 +931,7 @@
     ]
   },
   "venusaur-mega": {
-    "pokemonId": "venusaur",
+    "pokemonId": "mega-venusaur",
     "label": "メガ",
     "item": "フシギバナイト",
     "ability": "しんりょく",
@@ -969,8 +958,7 @@
     "note": "厚い脂肪メガ。雨・サイクルのくさ枠。",
     "itemEffect": "メガシンカ用メガストーン（フシギバナ）。",
     "abilityOptions": [
-      "しんりょく",
-      "ようりょくそ"
+      "あついしぼう"
     ]
   },
   "venusaur-sash": {
@@ -1037,7 +1025,7 @@
     ]
   },
   "mawile-mega": {
-    "pokemonId": "mawile",
+    "pokemonId": "mega-mawile",
     "label": "メガ",
     "item": "クチートナイト",
     "ability": "ちからずく",
@@ -1064,9 +1052,7 @@
     "note": "メガでヒュージパワー級。リザYとの二枚メガも。",
     "itemEffect": "メガシンカ用メガストーン（クチート）。",
     "abilityOptions": [
-      "かいりきバサミ",
-      "いかく",
-      "ちからずく"
+      "—"
     ]
   },
   "torkoal-sun": {
@@ -1135,7 +1121,7 @@
     ]
   },
   "pyroar-mega": {
-    "pokemonId": "pyroar",
+    "pokemonId": "mega-pyroar",
     "label": "メガ",
     "item": "カエンジシナイト",
     "ability": "とうそうしん",
@@ -1162,9 +1148,7 @@
     "note": "晴れ特殊エース。キュウコンとセットで使われる。",
     "itemEffect": "メガシンカ用メガストーン（カエンジシ）。",
     "abilityOptions": [
-      "とうそうしん",
-      "きんちょうかん",
-      "じしんかじょう"
+      "—"
     ]
   },
   "ceruledge-lo": {
@@ -1454,13 +1438,11 @@
     "note": "削り勝ち型。トリル・サイクルに入る。",
     "itemEffect": "毎ターン最大HPの1/16回復。",
     "abilityOptions": [
-      "やるき",
-      "せいしんりょく",
-      "まけんき"
+      "—"
     ]
   },
   "blaziken-mega": {
-    "pokemonId": "blaziken",
+    "pokemonId": "mega-blaziken",
     "label": "メガ",
     "item": "バシャーモナイト",
     "ability": "もうか",
@@ -1487,12 +1469,11 @@
     "note": "メガで速度上昇。シングル展開エースとしても強い。",
     "itemEffect": "メガシンカ用メガストーン（バシャーモ）。",
     "abilityOptions": [
-      "もうか",
-      "かそく"
+      "—"
     ]
   },
   "scizor-mega": {
-    "pokemonId": "scizor",
+    "pokemonId": "mega-scizor",
     "label": "メガ",
     "item": "ハッサムナイト",
     "ability": "テクニシャン",
@@ -1519,9 +1500,7 @@
     "note": "先制バレットで詰め。サイクル・対面の鋼枠。",
     "itemEffect": "メガシンカ用メガストーン（ハッサム）。",
     "abilityOptions": [
-      "むしのしらせ",
-      "テクニシャン",
-      "ライトメタル"
+      "テクニシャン"
     ]
   },
   "blastoise-auto": {
@@ -1754,8 +1733,7 @@
     "auto": true,
     "itemEffect": "みず技の威力1.2倍。",
     "abilityOptions": [
-      "ようりょくそ",
-      "ほうし"
+      "—"
     ]
   },
   "arcanine-auto": {
@@ -2757,9 +2735,7 @@
     "auto": true,
     "itemEffect": "こうかはばつぐんのみず技のダメージ半減。",
     "abilityOptions": [
-      "どくのトゲ",
-      "すいすい",
-      "いかく"
+      "—"
     ]
   },
   "heracross-auto": {
@@ -2893,8 +2869,7 @@
     "auto": true,
     "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
     "abilityOptions": [
-      "しんりょく",
-      "かるわざ"
+      "—"
     ]
   },
   "gardevoir-auto": {
@@ -4328,9 +4303,7 @@
     "auto": true,
     "itemEffect": "メロメロ／アンコール等を1回解除。",
     "abilityOptions": [
-      "よちむ",
-      "シンクロ",
-      "テレパシー"
+      "—"
     ]
   },
   "audino-auto": {
@@ -4430,9 +4403,7 @@
     "auto": true,
     "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
     "abilityOptions": [
-      "どくのトゲ",
-      "むしのしらせ",
-      "かそく"
+      "—"
     ]
   },
   "krookodile-auto": {
@@ -4498,9 +4469,7 @@
     "auto": true,
     "itemEffect": "でんき技の威力1.2倍。",
     "abilityOptions": [
-      "だっぴ",
-      "じしんかじょう",
-      "いかく"
+      "—"
     ]
   },
   "cofagrigus-auto": {
@@ -4731,7 +4700,7 @@
     "auto": true,
     "itemEffect": "こうかはばつぐんのひこう技のダメージ半減。",
     "abilityOptions": [
-      "ふゆう"
+      "—"
     ]
   },
   "chandelure-auto": {
@@ -5396,9 +5365,7 @@
     "auto": true,
     "itemEffect": "こうかはばつぐんのひこう技のダメージ半減。",
     "abilityOptions": [
-      "あまのじゃく",
-      "きゅうばん",
-      "すりぬけ"
+      "—"
     ]
   },
   "barbaracle-auto": {
@@ -5430,9 +5397,7 @@
     "auto": true,
     "itemEffect": "こうかはばつぐんのみず技のダメージ半減。",
     "abilityOptions": [
-      "かたいツメ",
-      "スナイパー",
-      "わるいてぐせ"
+      "—"
     ]
   },
   "dragalge-auto": {
@@ -5464,9 +5429,7 @@
     "auto": true,
     "itemEffect": "HPが半分以下で最大HPの1/4回復。",
     "abilityOptions": [
-      "どくのトゲ",
-      "どくしゅ",
-      "てきおうりょく"
+      "—"
     ]
   },
   "clawitzer-auto": {
@@ -6638,8 +6601,7 @@
     "auto": true,
     "itemEffect": "こうかはばつぐんのゴースト技のダメージ半減。",
     "abilityOptions": [
-      "カブトアーマー",
-      "まけんき"
+      "—"
     ]
   },
   "morpeko-auto": {
@@ -6771,9 +6733,7 @@
     "auto": true,
     "itemEffect": "こうかはばつぐんのみず技のダメージ半減。",
     "abilityOptions": [
-      "どくのトゲ",
-      "すいすい",
-      "いかく"
+      "—"
     ]
   },
   "meowscarada-auto": {
@@ -7206,8 +7166,7 @@
     "auto": true,
     "itemEffect": "メロメロ／アンコール等を1回解除。",
     "abilityOptions": [
-      "すなかき",
-      "もふもふ"
+      "—"
     ]
   },
   "hydrapple-auto": {
