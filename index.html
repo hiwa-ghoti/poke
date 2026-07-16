@@ -28,13 +28,13 @@
     <!-- ===== 編成ビュー ===== -->
     <section class="view" id="view-team" role="tabpanel" aria-labelledby="tab-team">
       <p class="rule-note">
-        Regulation Set M-B 準拠。編成・型は大会／使用率データ（Pikalytics等）を基にした実戦向けです。持ち物重複不可。育成は SP66・性格・Lv50実数値。
+        Regulation Set <strong>M-B</strong> 全参戦 <span id="roster-count">—</span>体から構築可能。環境上位は大会データを優先し、それ以外は役割・相性から自動編成します。
       </p>
 
       <div class="panel">
         <label class="field-label" for="poke-search">軸ポケモン（1〜2体）</label>
         <div class="search-wrap">
-          <input id="poke-search" class="search-input" type="search" placeholder="名前で検索（例: ガブリアス）" autocomplete="off">
+          <input id="poke-search" class="search-input" type="search" placeholder="名前で検索（日本語 / 英語）" autocomplete="off">
           <div class="search-results" id="search-results" role="listbox"></div>
         </div>
         <div class="selected-row" id="selected-pokemon"></div>

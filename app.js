@@ -75,6 +75,8 @@ async function loadData() {
   buildsMap = builds;
   coresList = cores;
   pokemonById = Object.fromEntries(pokemon.map((p) => [p.id, p]));
+  const countEl = $('roster-count');
+  if (countEl) countEl.textContent = String(pokemon.length);
 }
 
 function spriteUrl(poke) {
@@ -123,7 +125,46 @@ function buildsForPokemon(pokemonId) {
 
 function defaultBuildId(pokemonId) {
   const list = buildsForPokemon(pokemonId);
-  return list[0] ? list[0].id : null;
+  const curated = list.find((b) => !b.auto);
+  return (curated || list[0]) ? (curated || list[0]).id : null;
+}
+
+function generateRuntimeBuild(pokemonId) {
+  const poke = pokemonById[pokemonId];
+  if (!poke) return null;
+  const phys = poke.base.atk >= poke.base.spa;
+  const nature = poke.roles.includes('fast')
+    ? (phys ? { name: 'ようき', up: 'spe', down: 'spa' } : { name: 'おくびょう', up: 'spe', down: 'atk' })
+    : poke.roles.includes('wall')
+      ? { name: 'わんぱく', up: 'def', down: 'spa' }
+      : (phys ? { name: 'いじっぱり', up: 'atk', down: 'spa' } : { name: 'ひかえめ', up: 'spa', down: 'atk' });
+  const offensive = phys ? 'atk' : 'spa';
+  const sp = poke.roles.includes('wall')
+    ? { hp: 32, atk: 0, def: 32, spa: 0, spd: 0, spe: 2 }
+    : poke.roles.includes('support')
+      ? { hp: 32, atk: 0, def: 20, spa: 0, spd: 14, spe: 0 }
+      : { hp: 4, atk: 0, def: 0, spa: 0, spd: 0, spe: 30, [offensive]: 32 };
+  SP_ORDER.forEach((k) => { if (sp[k] == null) sp[k] = 0; });
+  const id = `${pokemonId}-runtime`;
+  buildsMap[id] = {
+    pokemonId,
+    label: '自動提案',
+    item: FALLBACK_ITEMS[Math.abs(pokemonId.length * 7) % FALLBACK_ITEMS.length],
+    ability: '—',
+    role: poke.roles.includes('support') ? 'サポート' : poke.roles.includes('wall') ? '耐久' : 'アタッカー',
+    moves: phys
+      ? ['じしん', 'インファイト', 'いわなだれ', 'まもる']
+      : ['シャドーボール', 'かえんほうしゃ', '10まんボルト', 'まもる'],
+    sp,
+    nature,
+    note: '全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。',
+    auto: true
+  };
+  return id;
+}
+
+function ensureBuildId(pokemonId) {
+  return defaultBuildId(pokemonId) || generateRuntimeBuild(pokemonId);
 }
 
 function requirementMatch(requiresAny, selected) {
@@ -172,7 +213,17 @@ function resistsAttack(types, attackType) {
 function pickFallbackTeammates(selected, neededRoles) {
   const used = new Set(selected);
   const picks = [];
-  const pool = pokemonList.filter((p) => !used.has(p.id));
+  const pool = [...pokemonList]
+    .filter((p) => !used.has(p.id))
+    .sort((a, b) => {
+      const score = (p) =>
+        (p.roles.includes('support') ? 3 : 0) +
+        (p.roles.includes('wall') ? 2 : 0) +
+        (p.roles.includes('attacker') ? 2 : 0) +
+        (p.roles.includes('fast') ? 1 : 0) +
+        (p.mega ? 1 : 0);
+      return score(b) - score(a);
+    });
 
   const selectedTypes = selected.map((id) => pokemonById[id]?.types || []);
   const weakTo = weakTypesForTeam(selectedTypes);
@@ -185,6 +236,13 @@ function pickFallbackTeammates(selected, neededRoles) {
       );
       if (cover.length) candidates = cover;
     }
+    // diversify types vs selected
+    const selTypeSet = new Set(selectedTypes.flat());
+    candidates.sort((a, b) => {
+      const ua = a.types.filter((t) => selTypeSet.has(t)).length;
+      const ub = b.types.filter((t) => selTypeSet.has(t)).length;
+      return ua - ub;
+    });
     const pick = candidates[0] || pool.find((p) => !used.has(p.id));
     if (pick) {
       used.add(pick.id);
@@ -217,7 +275,7 @@ function assignItemsWithoutDup(slots) {
       itemIdx += 1;
       return {
         ...slot,
-        buildOverride: { ...build, item, note: `${build.note} ※持ち物重複回避のため変更案。` }
+        buildOverride: { ...build, item, note: `${build.note || ''} ※持ち物重複回避のため変更案。` }
       };
     }
     usedItems.add(item);
@@ -228,22 +286,22 @@ function assignItemsWithoutDup(slots) {
 function buildFallbackTeams(selected) {
   const concepts = [
     {
-      name: 'バランス自動案',
+      name: 'バランス自動編成',
       rating: '自動',
-      concept: '役割とタイプ相性から穴埋めした汎用案。データ未収録時の参考用。',
+      concept: '選出軸を残し、サポート／耐久／攻撃／速度で穴埋めした実戦用たたき台。',
       roles: ['support', 'wall', 'attacker', 'fast']
     },
     {
-      name: '攻め自動案',
+      name: '攻め自動編成',
       rating: '自動',
-      concept: 'アタッカー多め。サポートを最低限足した攻め寄り。',
-      roles: ['attacker', 'attacker', 'fast', 'support']
+      concept: 'アタッカーを厚くした押し切り案。おいかぜ／ねこだまし役も確保。',
+      roles: ['attacker', 'fast', 'support', 'attacker']
     },
     {
-      name: '受け・崩し自動案',
+      name: '耐久・崩し自動編成',
       rating: '自動',
-      concept: '耐久枠を厚くし、崩し役を後続に置く案。',
-      roles: ['wall', 'wall', 'support', 'attacker']
+      concept: '耐久とサポートを厚くし、後続で崩す安定寄り案。',
+      roles: ['wall', 'support', 'wall', 'attacker']
     }
   ];
 
@@ -252,16 +310,17 @@ function buildFallbackTeams(selected) {
     const order = [...selected, ...teammates].slice(0, 6);
     let slots = order.map((pokemonId) => ({
       pokemonId,
-      buildId: defaultBuildId(pokemonId)
+      buildId: ensureBuildId(pokemonId)
     })).filter((s) => s.buildId);
     slots = assignItemsWithoutDup(slots);
+    const names = order.map((id) => pokemonById[id]?.name || id).join(' / ');
     return {
-      id: `fallback-${index}`,
+      id: `fallback-${index}-${order.join('-')}`,
       name: c.name,
-      concept: c.concept,
+      concept: `${c.concept}（${names}）`,
       rating: c.rating,
       format: [battleFormat],
-      source: 'fallback',
+      source: '役割・タイプ相性からの自動提案（要調整）',
       slots
     };
   });
@@ -269,15 +328,21 @@ function buildFallbackTeams(selected) {
 
 function suggestTeams(selected) {
   if (!selected.length) return [];
-  const curated = findCuratedCores(selected);
-  if (curated.length >= 3) return curated.slice(0, 3);
+  const curated = findCuratedCores(selected).map((core) => ({
+    ...core,
+    source: core.source && core.source !== 'curated' ? core.source : (core.source || '環境テンプレ')
+  }));
   const fallback = buildFallbackTeams(selected);
-  const merged = [...curated];
-  for (const fb of fallback) {
+  const merged = [];
+  const seen = new Set();
+  for (const team of [...curated, ...fallback]) {
+    const key = team.slots.map((s) => s.pokemonId).sort().join('|');
+    if (seen.has(key)) continue;
+    seen.add(key);
+    merged.push(team);
     if (merged.length >= 3) break;
-    merged.push(fb);
   }
-  return merged.slice(0, 3);
+  return merged;
 }
 
 function resolveSlot(slot) {
@@ -355,8 +420,11 @@ function renderSearchResults(query) {
     return;
   }
   const results = pokemonList
-    .filter((p) => !selectedIds.includes(p.id) && p.name.includes(q))
-    .slice(0, 8);
+    .filter((p) => {
+      if (selectedIds.includes(p.id)) return false;
+      return p.name.includes(q) || (p.nameEn && p.nameEn.toLowerCase().includes(q.toLowerCase()));
+    })
+    .slice(0, 12);
   box.replaceChildren();
   if (!results.length) {
     box.classList.remove('is-open');
@@ -415,7 +483,7 @@ function renderCoreList(list) {
         <span class="core-badge">${core.rating}${core.source === 'fallback' ? ' · 自動' : ''}</span>
       </div>
       <p class="core-desc">${core.concept}</p>
-      ${core.source && core.source !== 'fallback' ? `<p class="core-source">${core.source}${core.replicaCode ? ` · Replica: <code>${core.replicaCode}</code>` : ''}</p>` : ''}
+      ${core.source ? `<p class="core-source">${core.source === 'fallback' ? '役割・タイプ相性からの自動提案（要調整）' : core.source}${core.replicaCode ? ` · Replica: <code>${core.replicaCode}</code>` : ''}</p>` : ''}
       <div class="core-names">${core.slots.map((s) => {
         const poke = pokemonById[s.pokemonId];
         const n = poke?.name || s.pokemonId;

@@ -1,42 +1,4641 @@
 [
-  {"id":"garchomp","name":"ガブリアス","types":["ドラゴン","じめん"],"roles":["attacker","fast"],"mega":false,"dex":445,"base":{"hp":108,"atk":130,"def":95,"spa":80,"spd":85,"spe":102}},
-  {"id":"sinistcha","name":"ヤバソチャ","types":["くさ","ゴースト"],"roles":["support","wall"],"mega":false,"dex":1013,"base":{"hp":71,"atk":60,"def":106,"spa":121,"spd":80,"spe":70}},
-  {"id":"basculegion","name":"イダイトウ","types":["みず","ゴースト"],"roles":["attacker"],"mega":false,"dex":902,"base":{"hp":120,"atk":112,"def":65,"spa":80,"spd":75,"spe":78}},
-  {"id":"whimsicott","name":"エルフーン","types":["くさ","フェアリー"],"roles":["support","fast"],"mega":false,"dex":547,"base":{"hp":60,"atk":67,"def":85,"spa":77,"spd":75,"spe":116}},
-  {"id":"kingambit","name":"ドドゲザン","types":["あく","はがね"],"roles":["attacker"],"mega":false,"dex":983,"base":{"hp":100,"atk":135,"def":120,"spa":60,"spd":85,"spe":50}},
-  {"id":"staraptor","name":"ムクホーク","types":["ノーマル","ひこう"],"roles":["attacker","mega","fast"],"mega":true,"dex":398,"base":{"hp":85,"atk":120,"def":70,"spa":50,"spd":60,"spe":100}},
-  {"id":"incineroar","name":"ガオガエン","types":["ほのお","あく"],"roles":["support","wall"],"mega":false,"dex":727,"base":{"hp":95,"atk":115,"def":90,"spa":80,"spd":90,"spe":60}},
-  {"id":"charizard","name":"リザードン","types":["ほのお","ひこう"],"roles":["attacker","mega"],"mega":true,"dex":6,"base":{"hp":78,"atk":84,"def":78,"spa":109,"spd":85,"spe":100}},
-  {"id":"raichu","name":"ライチュウ","types":["でんき"],"roles":["attacker","mega","fast"],"mega":true,"dex":26,"base":{"hp":60,"atk":90,"def":55,"spa":90,"spd":80,"spe":110}},
-  {"id":"pelipper","name":"ペリッパー","types":["みず","ひこう"],"roles":["support"],"mega":false,"dex":279,"base":{"hp":60,"atk":50,"def":100,"spa":95,"spd":70,"spe":65}},
-  {"id":"sneasler","name":"オオニューラ","types":["かくとう","どく"],"roles":["attacker","fast"],"mega":false,"dex":903,"base":{"hp":80,"atk":130,"def":60,"spa":40,"spd":80,"spe":120}},
-  {"id":"archaludon","name":"ブリジュラス","types":["はがね","ドラゴン"],"roles":["attacker","wall"],"mega":false,"dex":1018,"base":{"hp":90,"atk":105,"def":130,"spa":125,"spd":65,"spe":85}},
-  {"id":"grimmsnarl","name":"オーロンゲ","types":["あく","フェアリー"],"roles":["support"],"mega":false,"dex":861,"base":{"hp":95,"atk":120,"def":65,"spa":95,"spd":75,"spe":60}},
-  {"id":"sylveon","name":"ニンフィア","types":["フェアリー"],"roles":["attacker","support"],"mega":false,"dex":700,"base":{"hp":95,"atk":65,"def":65,"spa":110,"spd":130,"spe":60}},
-  {"id":"swampert","name":"ラグラージ","types":["みず","じめん"],"roles":["attacker","mega"],"mega":true,"dex":260,"base":{"hp":100,"atk":110,"def":90,"spa":85,"spd":90,"spe":60}},
-  {"id":"metagross","name":"メタグロス","types":["はがね","エスパー"],"roles":["attacker","mega","wall"],"mega":true,"dex":376,"base":{"hp":80,"atk":135,"def":130,"spa":95,"spd":90,"spe":70}},
-  {"id":"farigiraf","name":"リキキリン","types":["ノーマル","エスパー"],"roles":["support"],"mega":false,"dex":981,"base":{"hp":120,"atk":90,"def":70,"spa":110,"spd":70,"spe":60}},
-  {"id":"floette-eternal","name":"フラエッテ(えいえんのはな)","types":["フェアリー"],"roles":["attacker","mega"],"mega":true,"dex":10061,"base":{"hp":74,"atk":65,"def":67,"spa":125,"spd":128,"spe":92}},
-  {"id":"gholdengo","name":"サーフゴー","types":["はがね","ゴースト"],"roles":["attacker","wall"],"mega":false,"dex":1000,"base":{"hp":87,"atk":60,"def":95,"spa":133,"spd":91,"spe":84}},
-  {"id":"aerodactyl","name":"プテラ","types":["いわ","ひこう"],"roles":["attacker","mega","fast"],"mega":true,"dex":142,"base":{"hp":80,"atk":105,"def":65,"spa":60,"spd":75,"spe":130}},
-  {"id":"excadrill","name":"ドリュウズ","types":["じめん","はがね"],"roles":["attacker","fast","mega"],"mega":true,"dex":530,"base":{"hp":110,"atk":135,"def":60,"spa":50,"spd":65,"spe":88}},
-  {"id":"tyranitar","name":"バンギラス","types":["いわ","あく"],"roles":["attacker","mega","wall"],"mega":true,"dex":248,"base":{"hp":100,"atk":134,"def":110,"spa":95,"spd":100,"spe":61}},
-  {"id":"milotic","name":"ミロカロス","types":["みず"],"roles":["wall","support"],"mega":false,"dex":350,"base":{"hp":95,"atk":60,"def":79,"spa":100,"spd":125,"spe":81}},
-  {"id":"venusaur","name":"フシギバナ","types":["くさ","どく"],"roles":["attacker","mega","wall"],"mega":true,"dex":3,"base":{"hp":80,"atk":82,"def":83,"spa":100,"spd":100,"spe":80}},
-  {"id":"hydreigon","name":"サザンドラ","types":["あく","ドラゴン"],"roles":["attacker","fast"],"mega":false,"dex":635,"base":{"hp":92,"atk":105,"def":90,"spa":125,"spd":90,"spe":98}},
-  {"id":"mawile","name":"クチート","types":["はがね","フェアリー"],"roles":["attacker","mega"],"mega":true,"dex":303,"base":{"hp":50,"atk":85,"def":85,"spa":55,"spd":55,"spe":50}},
-  {"id":"torkoal","name":"コータス","types":["ほのお"],"roles":["support","wall"],"mega":false,"dex":324,"base":{"hp":70,"atk":85,"def":140,"spa":85,"spd":70,"spe":20}},
-  {"id":"ninetales","name":"キュウコン","types":["ほのお"],"roles":["support"],"mega":false,"dex":38,"base":{"hp":73,"atk":76,"def":75,"spa":81,"spd":100,"spe":100}},
-  {"id":"pyroar","name":"カエンジシ","types":["ほのお","ノーマル"],"roles":["attacker","mega"],"mega":true,"dex":668,"base":{"hp":86,"atk":68,"def":72,"spa":109,"spd":66,"spe":106}},
-  {"id":"ceruledge","name":"ソウブレイズ","types":["ほのお","ゴースト"],"roles":["attacker"],"mega":false,"dex":937,"base":{"hp":75,"atk":125,"def":80,"spa":60,"spd":100,"spe":85}},
-  {"id":"amoonguss","name":"モロバレル","types":["くさ","どく"],"roles":["support","wall"],"mega":false,"dex":591,"base":{"hp":114,"atk":85,"def":70,"spa":85,"spd":80,"spe":30}},
-  {"id":"rillaboom","name":"ゴリランダー","types":["くさ"],"roles":["attacker","support"],"mega":false,"dex":812,"base":{"hp":100,"atk":125,"def":90,"spa":60,"spd":70,"spe":85}},
-  {"id":"glimmora","name":"キラフロル","types":["いわ","どく"],"roles":["support","mega"],"mega":true,"dex":970,"base":{"hp":83,"atk":55,"def":90,"spa":130,"spd":81,"spe":91}},
-  {"id":"hippowdon","name":"カバルドン","types":["じめん"],"roles":["wall","support"],"mega":false,"dex":450,"base":{"hp":108,"atk":112,"def":118,"spa":68,"spd":72,"spe":47}},
-  {"id":"dragapult","name":"ドラパルト","types":["ドラゴン","ゴースト"],"roles":["attacker","fast"],"mega":false,"dex":887,"base":{"hp":88,"atk":120,"def":75,"spa":100,"spd":75,"spe":142}},
-  {"id":"corviknight","name":"アーマーガア","types":["ひこう","はがね"],"roles":["wall"],"mega":false,"dex":823,"base":{"hp":98,"atk":87,"def":105,"spa":53,"spd":85,"spe":67}},
-  {"id":"annihilape","name":"コノヨザル","types":["かくとう","ゴースト"],"roles":["attacker"],"mega":false,"dex":979,"base":{"hp":110,"atk":115,"def":80,"spa":50,"spd":90,"spe":90}},
-  {"id":"blaziken","name":"バシャーモ","types":["ほのお","かくとう"],"roles":["attacker","mega","fast"],"mega":true,"dex":257,"base":{"hp":80,"atk":120,"def":70,"spa":110,"spd":70,"spe":80}},
-  {"id":"scizor","name":"ハッサム","types":["むし","はがね"],"roles":["attacker","mega"],"mega":true,"dex":212,"base":{"hp":70,"atk":130,"def":100,"spa":55,"spd":80,"spe":65}},
-  {"id":"indeedee-f","name":"イエッサン♀","types":["エスパー","ノーマル"],"roles":["support"],"mega":false,"dex":876,"base":{"hp":70,"atk":55,"def":65,"spa":95,"spd":105,"spe":85}}
+  {
+    "id": "pyroar",
+    "name": "カエンジシ",
+    "nameEn": "Pyroar",
+    "types": [
+      "ほのお",
+      "ノーマル"
+    ],
+    "roles": [
+      "attacker",
+      "mega",
+      "fast"
+    ],
+    "mega": true,
+    "dex": 668,
+    "base": {
+      "hp": 86,
+      "atk": 68,
+      "def": 72,
+      "spa": 109,
+      "spd": 66,
+      "spe": 106
+    }
+  },
+  {
+    "id": "venusaur",
+    "name": "フシギバナ",
+    "nameEn": "Venusaur",
+    "types": [
+      "くさ",
+      "どく"
+    ],
+    "roles": [
+      "support",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 3,
+    "base": {
+      "hp": 80,
+      "atk": 82,
+      "def": 83,
+      "spa": 100,
+      "spd": 100,
+      "spe": 80
+    }
+  },
+  {
+    "id": "charizard",
+    "name": "リザードン",
+    "nameEn": "Charizard",
+    "types": [
+      "ほのお",
+      "ひこう"
+    ],
+    "roles": [
+      "fast",
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 6,
+    "base": {
+      "hp": 78,
+      "atk": 84,
+      "def": 78,
+      "spa": 109,
+      "spd": 85,
+      "spe": 100
+    }
+  },
+  {
+    "id": "blastoise",
+    "name": "カメックス",
+    "nameEn": "Blastoise",
+    "types": [
+      "みず"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 9,
+    "base": {
+      "hp": 79,
+      "atk": 83,
+      "def": 100,
+      "spa": 85,
+      "spd": 105,
+      "spe": 78
+    }
+  },
+  {
+    "id": "beedrill",
+    "name": "スピアー",
+    "nameEn": "Beedrill",
+    "types": [
+      "むし",
+      "どく"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 15,
+    "base": {
+      "hp": 65,
+      "atk": 90,
+      "def": 40,
+      "spa": 45,
+      "spd": 80,
+      "spe": 75
+    }
+  },
+  {
+    "id": "pidgeot",
+    "name": "ピジョット",
+    "nameEn": "Pidgeot",
+    "types": [
+      "ノーマル",
+      "ひこう"
+    ],
+    "roles": [
+      "fast",
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 18,
+    "base": {
+      "hp": 83,
+      "atk": 80,
+      "def": 75,
+      "spa": 70,
+      "spd": 70,
+      "spe": 101
+    }
+  },
+  {
+    "id": "arbok",
+    "name": "アーボック",
+    "nameEn": "Arbok",
+    "types": [
+      "どく"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 24,
+    "base": {
+      "hp": 60,
+      "atk": 95,
+      "def": 69,
+      "spa": 65,
+      "spd": 79,
+      "spe": 80
+    }
+  },
+  {
+    "id": "pikachu",
+    "name": "ピカチュウ",
+    "nameEn": "Pikachu",
+    "types": [
+      "でんき"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 25,
+    "base": {
+      "hp": 35,
+      "atk": 55,
+      "def": 40,
+      "spa": 50,
+      "spd": 50,
+      "spe": 90
+    }
+  },
+  {
+    "id": "raichu",
+    "name": "ライチュウ",
+    "nameEn": "Raichu",
+    "types": [
+      "でんき"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 26,
+    "base": {
+      "hp": 60,
+      "atk": 90,
+      "def": 55,
+      "spa": 90,
+      "spd": 80,
+      "spe": 110
+    }
+  },
+  {
+    "id": "clefable",
+    "name": "ピクシー",
+    "nameEn": "Clefable",
+    "types": [
+      "フェアリー"
+    ],
+    "roles": [
+      "support",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 36,
+    "base": {
+      "hp": 95,
+      "atk": 70,
+      "def": 73,
+      "spa": 95,
+      "spd": 90,
+      "spe": 60
+    }
+  },
+  {
+    "id": "ninetales",
+    "name": "キュウコン",
+    "nameEn": "Ninetales",
+    "types": [
+      "ほのお"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 38,
+    "base": {
+      "hp": 73,
+      "atk": 76,
+      "def": 75,
+      "spa": 81,
+      "spd": 100,
+      "spe": 100
+    }
+  },
+  {
+    "id": "vileplume",
+    "name": "ラフレシア",
+    "nameEn": "Vileplume",
+    "types": [
+      "くさ",
+      "どく"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 45,
+    "base": {
+      "hp": 75,
+      "atk": 80,
+      "def": 85,
+      "spa": 110,
+      "spd": 90,
+      "spe": 50
+    }
+  },
+  {
+    "id": "arcanine",
+    "name": "ウインディ",
+    "nameEn": "Arcanine",
+    "types": [
+      "ほのお"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 59,
+    "base": {
+      "hp": 90,
+      "atk": 110,
+      "def": 80,
+      "spa": 100,
+      "spd": 80,
+      "spe": 95
+    }
+  },
+  {
+    "id": "alakazam",
+    "name": "フーディン",
+    "nameEn": "Alakazam",
+    "types": [
+      "エスパー"
+    ],
+    "roles": [
+      "fast",
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 65,
+    "base": {
+      "hp": 55,
+      "atk": 50,
+      "def": 45,
+      "spa": 135,
+      "spd": 95,
+      "spe": 120
+    }
+  },
+  {
+    "id": "machamp",
+    "name": "カイリキー",
+    "nameEn": "Machamp",
+    "types": [
+      "かくとう"
+    ],
+    "roles": [
+      "attacker",
+      "support"
+    ],
+    "mega": false,
+    "dex": 68,
+    "base": {
+      "hp": 90,
+      "atk": 130,
+      "def": 80,
+      "spa": 65,
+      "spd": 85,
+      "spe": 55
+    }
+  },
+  {
+    "id": "victreebel",
+    "name": "ウツボット",
+    "nameEn": "Victreebel",
+    "types": [
+      "くさ",
+      "どく"
+    ],
+    "roles": [
+      "support",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 71,
+    "base": {
+      "hp": 80,
+      "atk": 105,
+      "def": 65,
+      "spa": 100,
+      "spd": 70,
+      "spe": 70
+    }
+  },
+  {
+    "id": "slowbro",
+    "name": "ヤドラン",
+    "nameEn": "Slowbro",
+    "types": [
+      "みず",
+      "エスパー"
+    ],
+    "roles": [
+      "wall",
+      "support",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 80,
+    "base": {
+      "hp": 95,
+      "atk": 75,
+      "def": 110,
+      "spa": 100,
+      "spd": 80,
+      "spe": 30
+    }
+  },
+  {
+    "id": "gengar",
+    "name": "ゲンガー",
+    "nameEn": "Gengar",
+    "types": [
+      "ゴースト",
+      "どく"
+    ],
+    "roles": [
+      "fast",
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 94,
+    "base": {
+      "hp": 60,
+      "atk": 65,
+      "def": 60,
+      "spa": 130,
+      "spd": 75,
+      "spe": 110
+    }
+  },
+  {
+    "id": "kangaskhan",
+    "name": "ガルーラ",
+    "nameEn": "Kangaskhan",
+    "types": [
+      "ノーマル"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 115,
+    "base": {
+      "hp": 105,
+      "atk": 95,
+      "def": 80,
+      "spa": 40,
+      "spd": 80,
+      "spe": 90
+    }
+  },
+  {
+    "id": "starmie",
+    "name": "スターミー",
+    "nameEn": "Starmie",
+    "types": [
+      "みず",
+      "エスパー"
+    ],
+    "roles": [
+      "fast",
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 121,
+    "base": {
+      "hp": 60,
+      "atk": 75,
+      "def": 85,
+      "spa": 100,
+      "spd": 85,
+      "spe": 115
+    }
+  },
+  {
+    "id": "pinsir",
+    "name": "カイロス",
+    "nameEn": "Pinsir",
+    "types": [
+      "むし"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 127,
+    "base": {
+      "hp": 65,
+      "atk": 125,
+      "def": 100,
+      "spa": 55,
+      "spd": 70,
+      "spe": 85
+    }
+  },
+  {
+    "id": "tauros",
+    "name": "ケンタロス",
+    "nameEn": "Tauros",
+    "types": [
+      "ノーマル"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 128,
+    "base": {
+      "hp": 75,
+      "atk": 100,
+      "def": 95,
+      "spa": 40,
+      "spd": 70,
+      "spe": 110
+    }
+  },
+  {
+    "id": "gyarados",
+    "name": "ギャラドス",
+    "nameEn": "Gyarados",
+    "types": [
+      "みず",
+      "ひこう"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 130,
+    "base": {
+      "hp": 95,
+      "atk": 125,
+      "def": 79,
+      "spa": 60,
+      "spd": 100,
+      "spe": 81
+    }
+  },
+  {
+    "id": "ditto",
+    "name": "メタモン",
+    "nameEn": "Ditto",
+    "types": [
+      "ノーマル"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 132,
+    "base": {
+      "hp": 48,
+      "atk": 48,
+      "def": 48,
+      "spa": 48,
+      "spd": 48,
+      "spe": 48
+    }
+  },
+  {
+    "id": "vaporeon",
+    "name": "シャワーズ",
+    "nameEn": "Vaporeon",
+    "types": [
+      "みず"
+    ],
+    "roles": [
+      "attacker",
+      "wall"
+    ],
+    "mega": false,
+    "dex": 134,
+    "base": {
+      "hp": 130,
+      "atk": 65,
+      "def": 60,
+      "spa": 110,
+      "spd": 95,
+      "spe": 65
+    }
+  },
+  {
+    "id": "jolteon",
+    "name": "サンダース",
+    "nameEn": "Jolteon",
+    "types": [
+      "でんき"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 135,
+    "base": {
+      "hp": 65,
+      "atk": 65,
+      "def": 60,
+      "spa": 110,
+      "spd": 95,
+      "spe": 130
+    }
+  },
+  {
+    "id": "flareon",
+    "name": "ブースター",
+    "nameEn": "Flareon",
+    "types": [
+      "ほのお"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 136,
+    "base": {
+      "hp": 65,
+      "atk": 130,
+      "def": 60,
+      "spa": 95,
+      "spd": 110,
+      "spe": 65
+    }
+  },
+  {
+    "id": "aerodactyl",
+    "name": "プテラ",
+    "nameEn": "Aerodactyl",
+    "types": [
+      "いわ",
+      "ひこう"
+    ],
+    "roles": [
+      "fast",
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 142,
+    "base": {
+      "hp": 80,
+      "atk": 105,
+      "def": 65,
+      "spa": 60,
+      "spd": 75,
+      "spe": 130
+    }
+  },
+  {
+    "id": "snorlax",
+    "name": "カビゴン",
+    "nameEn": "Snorlax",
+    "types": [
+      "ノーマル"
+    ],
+    "roles": [
+      "attacker",
+      "wall",
+      "support"
+    ],
+    "mega": false,
+    "dex": 143,
+    "base": {
+      "hp": 160,
+      "atk": 110,
+      "def": 65,
+      "spa": 65,
+      "spd": 110,
+      "spe": 30
+    }
+  },
+  {
+    "id": "dragonite",
+    "name": "カイリュー",
+    "nameEn": "Dragonite",
+    "types": [
+      "ドラゴン",
+      "ひこう"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 149,
+    "base": {
+      "hp": 91,
+      "atk": 134,
+      "def": 95,
+      "spa": 100,
+      "spd": 100,
+      "spe": 80
+    }
+  },
+  {
+    "id": "meganium",
+    "name": "メガニウム",
+    "nameEn": "Meganium",
+    "types": [
+      "くさ"
+    ],
+    "roles": [
+      "support",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 154,
+    "base": {
+      "hp": 80,
+      "atk": 82,
+      "def": 100,
+      "spa": 83,
+      "spd": 100,
+      "spe": 80
+    }
+  },
+  {
+    "id": "typhlosion",
+    "name": "バクフーン",
+    "nameEn": "Typhlosion",
+    "types": [
+      "ほのお"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 157,
+    "base": {
+      "hp": 78,
+      "atk": 84,
+      "def": 78,
+      "spa": 109,
+      "spd": 85,
+      "spe": 100
+    }
+  },
+  {
+    "id": "feraligatr",
+    "name": "オーダイル",
+    "nameEn": "Feraligatr",
+    "types": [
+      "みず"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 160,
+    "base": {
+      "hp": 85,
+      "atk": 105,
+      "def": 100,
+      "spa": 79,
+      "spd": 83,
+      "spe": 78
+    }
+  },
+  {
+    "id": "ariados",
+    "name": "アリアドス",
+    "nameEn": "Ariados",
+    "types": [
+      "むし",
+      "どく"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 168,
+    "base": {
+      "hp": 70,
+      "atk": 90,
+      "def": 70,
+      "spa": 60,
+      "spd": 70,
+      "spe": 40
+    }
+  },
+  {
+    "id": "ampharos",
+    "name": "デンリュウ",
+    "nameEn": "Ampharos",
+    "types": [
+      "でんき"
+    ],
+    "roles": [
+      "attacker",
+      "support",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 181,
+    "base": {
+      "hp": 90,
+      "atk": 75,
+      "def": 85,
+      "spa": 115,
+      "spd": 90,
+      "spe": 55
+    }
+  },
+  {
+    "id": "azumarill",
+    "name": "マリルリ",
+    "nameEn": "Azumarill",
+    "types": [
+      "みず",
+      "フェアリー"
+    ],
+    "roles": [
+      "support"
+    ],
+    "mega": false,
+    "dex": 184,
+    "base": {
+      "hp": 100,
+      "atk": 50,
+      "def": 80,
+      "spa": 60,
+      "spd": 80,
+      "spe": 50
+    }
+  },
+  {
+    "id": "politoed",
+    "name": "ニョロトノ",
+    "nameEn": "Politoed",
+    "types": [
+      "みず"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 186,
+    "base": {
+      "hp": 90,
+      "atk": 75,
+      "def": 75,
+      "spa": 90,
+      "spd": 100,
+      "spe": 70
+    }
+  },
+  {
+    "id": "espeon",
+    "name": "エーフィ",
+    "nameEn": "Espeon",
+    "types": [
+      "エスパー"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 196,
+    "base": {
+      "hp": 65,
+      "atk": 65,
+      "def": 60,
+      "spa": 130,
+      "spd": 95,
+      "spe": 110
+    }
+  },
+  {
+    "id": "umbreon",
+    "name": "ブラッキー",
+    "nameEn": "Umbreon",
+    "types": [
+      "あく"
+    ],
+    "roles": [
+      "wall"
+    ],
+    "mega": false,
+    "dex": 197,
+    "base": {
+      "hp": 95,
+      "atk": 65,
+      "def": 110,
+      "spa": 60,
+      "spd": 130,
+      "spe": 65
+    }
+  },
+  {
+    "id": "slowking",
+    "name": "ヤドキング",
+    "nameEn": "Slowking",
+    "types": [
+      "みず",
+      "エスパー"
+    ],
+    "roles": [
+      "wall",
+      "support"
+    ],
+    "mega": false,
+    "dex": 199,
+    "base": {
+      "hp": 95,
+      "atk": 75,
+      "def": 80,
+      "spa": 100,
+      "spd": 110,
+      "spe": 30
+    }
+  },
+  {
+    "id": "forretress",
+    "name": "フォレトス",
+    "nameEn": "Forretress",
+    "types": [
+      "むし",
+      "はがね"
+    ],
+    "roles": [
+      "wall"
+    ],
+    "mega": false,
+    "dex": 205,
+    "base": {
+      "hp": 75,
+      "atk": 90,
+      "def": 140,
+      "spa": 60,
+      "spd": 60,
+      "spe": 40
+    }
+  },
+  {
+    "id": "steelix",
+    "name": "ハガネール",
+    "nameEn": "Steelix",
+    "types": [
+      "はがね",
+      "じめん"
+    ],
+    "roles": [
+      "wall",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 208,
+    "base": {
+      "hp": 75,
+      "atk": 85,
+      "def": 200,
+      "spa": 55,
+      "spd": 65,
+      "spe": 30
+    }
+  },
+  {
+    "id": "qwilfish",
+    "name": "ハリーセン",
+    "nameEn": "Qwilfish",
+    "types": [
+      "みず",
+      "どく"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 211,
+    "base": {
+      "hp": 65,
+      "atk": 95,
+      "def": 85,
+      "spa": 55,
+      "spd": 55,
+      "spe": 85
+    }
+  },
+  {
+    "id": "scizor",
+    "name": "ハッサム",
+    "nameEn": "Scizor",
+    "types": [
+      "むし",
+      "はがね"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 212,
+    "base": {
+      "hp": 70,
+      "atk": 130,
+      "def": 100,
+      "spa": 55,
+      "spd": 80,
+      "spe": 65
+    }
+  },
+  {
+    "id": "heracross",
+    "name": "ヘラクロス",
+    "nameEn": "Heracross",
+    "types": [
+      "むし",
+      "かくとう"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 214,
+    "base": {
+      "hp": 80,
+      "atk": 125,
+      "def": 75,
+      "spa": 40,
+      "spd": 95,
+      "spe": 85
+    }
+  },
+  {
+    "id": "skarmory",
+    "name": "エアームド",
+    "nameEn": "Skarmory",
+    "types": [
+      "はがね",
+      "ひこう"
+    ],
+    "roles": [
+      "wall",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 227,
+    "base": {
+      "hp": 65,
+      "atk": 80,
+      "def": 140,
+      "spa": 40,
+      "spd": 70,
+      "spe": 70
+    }
+  },
+  {
+    "id": "houndoom",
+    "name": "ヘルガー",
+    "nameEn": "Houndoom",
+    "types": [
+      "あく",
+      "ほのお"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 229,
+    "base": {
+      "hp": 75,
+      "atk": 90,
+      "def": 50,
+      "spa": 110,
+      "spd": 80,
+      "spe": 95
+    }
+  },
+  {
+    "id": "tyranitar",
+    "name": "バンギラス",
+    "nameEn": "Tyranitar",
+    "types": [
+      "いわ",
+      "あく"
+    ],
+    "roles": [
+      "attacker",
+      "wall",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 248,
+    "base": {
+      "hp": 100,
+      "atk": 134,
+      "def": 110,
+      "spa": 95,
+      "spd": 100,
+      "spe": 61
+    }
+  },
+  {
+    "id": "sceptile",
+    "name": "ジュカイン",
+    "nameEn": "Sceptile",
+    "types": [
+      "くさ"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 254,
+    "base": {
+      "hp": 70,
+      "atk": 85,
+      "def": 65,
+      "spa": 105,
+      "spd": 85,
+      "spe": 120
+    }
+  },
+  {
+    "id": "blaziken",
+    "name": "バシャーモ",
+    "nameEn": "Blaziken",
+    "types": [
+      "ほのお",
+      "かくとう"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 257,
+    "base": {
+      "hp": 80,
+      "atk": 120,
+      "def": 70,
+      "spa": 110,
+      "spd": 70,
+      "spe": 80
+    }
+  },
+  {
+    "id": "swampert",
+    "name": "ラグラージ",
+    "nameEn": "Swampert",
+    "types": [
+      "みず",
+      "じめん"
+    ],
+    "roles": [
+      "attacker",
+      "support"
+    ],
+    "mega": false,
+    "dex": 260,
+    "base": {
+      "hp": 100,
+      "atk": 110,
+      "def": 90,
+      "spa": 85,
+      "spd": 90,
+      "spe": 60
+    }
+  },
+  {
+    "id": "pelipper",
+    "name": "ペリッパー",
+    "nameEn": "Pelipper",
+    "types": [
+      "みず",
+      "ひこう"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 279,
+    "base": {
+      "hp": 60,
+      "atk": 50,
+      "def": 100,
+      "spa": 95,
+      "spd": 70,
+      "spe": 65
+    }
+  },
+  {
+    "id": "gardevoir",
+    "name": "サーナイト",
+    "nameEn": "Gardevoir",
+    "types": [
+      "エスパー",
+      "フェアリー"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 282,
+    "base": {
+      "hp": 68,
+      "atk": 65,
+      "def": 65,
+      "spa": 125,
+      "spd": 115,
+      "spe": 80
+    }
+  },
+  {
+    "id": "sableye",
+    "name": "ヤミラミ",
+    "nameEn": "Sableye",
+    "types": [
+      "あく",
+      "ゴースト"
+    ],
+    "roles": [
+      "support",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 302,
+    "base": {
+      "hp": 50,
+      "atk": 75,
+      "def": 75,
+      "spa": 65,
+      "spd": 65,
+      "spe": 50
+    }
+  },
+  {
+    "id": "mawile",
+    "name": "クチート",
+    "nameEn": "Mawile",
+    "types": [
+      "はがね",
+      "フェアリー"
+    ],
+    "roles": [
+      "support"
+    ],
+    "mega": false,
+    "dex": 303,
+    "base": {
+      "hp": 50,
+      "atk": 85,
+      "def": 85,
+      "spa": 55,
+      "spd": 55,
+      "spe": 50
+    }
+  },
+  {
+    "id": "aggron",
+    "name": "ボスゴドラ",
+    "nameEn": "Aggron",
+    "types": [
+      "はがね",
+      "いわ"
+    ],
+    "roles": [
+      "attacker",
+      "wall",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 306,
+    "base": {
+      "hp": 70,
+      "atk": 110,
+      "def": 180,
+      "spa": 60,
+      "spd": 60,
+      "spe": 50
+    }
+  },
+  {
+    "id": "medicham",
+    "name": "チャーレム",
+    "nameEn": "Medicham",
+    "types": [
+      "かくとう",
+      "エスパー"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 308,
+    "base": {
+      "hp": 60,
+      "atk": 60,
+      "def": 75,
+      "spa": 60,
+      "spd": 75,
+      "spe": 80
+    }
+  },
+  {
+    "id": "manectric",
+    "name": "ライボルト",
+    "nameEn": "Manectric",
+    "types": [
+      "でんき"
+    ],
+    "roles": [
+      "fast",
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 310,
+    "base": {
+      "hp": 70,
+      "atk": 75,
+      "def": 60,
+      "spa": 105,
+      "spd": 60,
+      "spe": 105
+    }
+  },
+  {
+    "id": "sharpedo",
+    "name": "サメハダー",
+    "nameEn": "Sharpedo",
+    "types": [
+      "みず",
+      "あく"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 319,
+    "base": {
+      "hp": 70,
+      "atk": 120,
+      "def": 40,
+      "spa": 95,
+      "spd": 40,
+      "spe": 95
+    }
+  },
+  {
+    "id": "camerupt",
+    "name": "バクーダ",
+    "nameEn": "Camerupt",
+    "types": [
+      "ほのお",
+      "じめん"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 323,
+    "base": {
+      "hp": 70,
+      "atk": 100,
+      "def": 70,
+      "spa": 105,
+      "spd": 75,
+      "spe": 40
+    }
+  },
+  {
+    "id": "torkoal",
+    "name": "コータス",
+    "nameEn": "Torkoal",
+    "types": [
+      "ほのお"
+    ],
+    "roles": [
+      "wall"
+    ],
+    "mega": false,
+    "dex": 324,
+    "base": {
+      "hp": 70,
+      "atk": 85,
+      "def": 140,
+      "spa": 85,
+      "spd": 70,
+      "spe": 20
+    }
+  },
+  {
+    "id": "altaria",
+    "name": "チルタリス",
+    "nameEn": "Altaria",
+    "types": [
+      "ドラゴン",
+      "ひこう"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 334,
+    "base": {
+      "hp": 75,
+      "atk": 70,
+      "def": 90,
+      "spa": 70,
+      "spd": 105,
+      "spe": 80
+    }
+  },
+  {
+    "id": "milotic",
+    "name": "ミロカロス",
+    "nameEn": "Milotic",
+    "types": [
+      "みず"
+    ],
+    "roles": [
+      "wall"
+    ],
+    "mega": false,
+    "dex": 350,
+    "base": {
+      "hp": 95,
+      "atk": 60,
+      "def": 79,
+      "spa": 100,
+      "spd": 125,
+      "spe": 81
+    }
+  },
+  {
+    "id": "castform",
+    "name": "ポワルン",
+    "nameEn": "Castform",
+    "types": [
+      "ノーマル"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 351,
+    "base": {
+      "hp": 70,
+      "atk": 70,
+      "def": 70,
+      "spa": 70,
+      "spd": 70,
+      "spe": 70
+    }
+  },
+  {
+    "id": "banette",
+    "name": "ジュペッタ",
+    "nameEn": "Banette",
+    "types": [
+      "ゴースト"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 354,
+    "base": {
+      "hp": 64,
+      "atk": 115,
+      "def": 65,
+      "spa": 83,
+      "spd": 63,
+      "spe": 65
+    }
+  },
+  {
+    "id": "chimecho",
+    "name": "チリーン",
+    "nameEn": "Chimecho",
+    "types": [
+      "エスパー"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 358,
+    "base": {
+      "hp": 75,
+      "atk": 50,
+      "def": 80,
+      "spa": 95,
+      "spd": 90,
+      "spe": 65
+    }
+  },
+  {
+    "id": "absol",
+    "name": "アブソル",
+    "nameEn": "Absol",
+    "types": [
+      "あく"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 359,
+    "base": {
+      "hp": 65,
+      "atk": 130,
+      "def": 60,
+      "spa": 75,
+      "spd": 60,
+      "spe": 75
+    }
+  },
+  {
+    "id": "glalie",
+    "name": "オニゴーリ",
+    "nameEn": "Glalie",
+    "types": [
+      "こおり"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 362,
+    "base": {
+      "hp": 80,
+      "atk": 80,
+      "def": 80,
+      "spa": 80,
+      "spd": 80,
+      "spe": 80
+    }
+  },
+  {
+    "id": "metagross",
+    "name": "メタグロス",
+    "nameEn": "Metagross",
+    "types": [
+      "はがね",
+      "エスパー"
+    ],
+    "roles": [
+      "attacker",
+      "wall",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 376,
+    "base": {
+      "hp": 80,
+      "atk": 135,
+      "def": 130,
+      "spa": 95,
+      "spd": 90,
+      "spe": 70
+    }
+  },
+  {
+    "id": "torterra",
+    "name": "ドダイトス",
+    "nameEn": "Torterra",
+    "types": [
+      "くさ",
+      "じめん"
+    ],
+    "roles": [
+      "wall",
+      "support"
+    ],
+    "mega": false,
+    "dex": 389,
+    "base": {
+      "hp": 95,
+      "atk": 109,
+      "def": 105,
+      "spa": 75,
+      "spd": 85,
+      "spe": 56
+    }
+  },
+  {
+    "id": "infernape",
+    "name": "ゴウカザル",
+    "nameEn": "Infernape",
+    "types": [
+      "ほのお",
+      "かくとう"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 392,
+    "base": {
+      "hp": 76,
+      "atk": 104,
+      "def": 71,
+      "spa": 104,
+      "spd": 71,
+      "spe": 108
+    }
+  },
+  {
+    "id": "empoleon",
+    "name": "エンペルト",
+    "nameEn": "Empoleon",
+    "types": [
+      "みず",
+      "はがね"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 395,
+    "base": {
+      "hp": 84,
+      "atk": 86,
+      "def": 88,
+      "spa": 111,
+      "spd": 101,
+      "spe": 60
+    }
+  },
+  {
+    "id": "staraptor",
+    "name": "ムクホーク",
+    "nameEn": "Staraptor",
+    "types": [
+      "ノーマル",
+      "ひこう"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 398,
+    "base": {
+      "hp": 85,
+      "atk": 120,
+      "def": 70,
+      "spa": 50,
+      "spd": 60,
+      "spe": 100
+    }
+  },
+  {
+    "id": "luxray",
+    "name": "レントラー",
+    "nameEn": "Luxray",
+    "types": [
+      "でんき"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 405,
+    "base": {
+      "hp": 80,
+      "atk": 120,
+      "def": 79,
+      "spa": 95,
+      "spd": 79,
+      "spe": 70
+    }
+  },
+  {
+    "id": "roserade",
+    "name": "ロズレイド",
+    "nameEn": "Roserade",
+    "types": [
+      "くさ",
+      "どく"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 407,
+    "base": {
+      "hp": 60,
+      "atk": 70,
+      "def": 65,
+      "spa": 125,
+      "spd": 105,
+      "spe": 90
+    }
+  },
+  {
+    "id": "rampardos",
+    "name": "ラムパルド",
+    "nameEn": "Rampardos",
+    "types": [
+      "いわ"
+    ],
+    "roles": [
+      "attacker",
+      "support"
+    ],
+    "mega": false,
+    "dex": 409,
+    "base": {
+      "hp": 97,
+      "atk": 165,
+      "def": 60,
+      "spa": 65,
+      "spd": 50,
+      "spe": 58
+    }
+  },
+  {
+    "id": "bastiodon",
+    "name": "トリデプス",
+    "nameEn": "Bastiodon",
+    "types": [
+      "いわ",
+      "はがね"
+    ],
+    "roles": [
+      "wall"
+    ],
+    "mega": false,
+    "dex": 411,
+    "base": {
+      "hp": 60,
+      "atk": 52,
+      "def": 168,
+      "spa": 47,
+      "spd": 138,
+      "spe": 30
+    }
+  },
+  {
+    "id": "lopunny",
+    "name": "ミミロップ",
+    "nameEn": "Lopunny",
+    "types": [
+      "ノーマル"
+    ],
+    "roles": [
+      "fast",
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 428,
+    "base": {
+      "hp": 65,
+      "atk": 76,
+      "def": 84,
+      "spa": 54,
+      "spd": 96,
+      "spe": 105
+    }
+  },
+  {
+    "id": "spiritomb",
+    "name": "ミカルゲ",
+    "nameEn": "Spiritomb",
+    "types": [
+      "ゴースト",
+      "あく"
+    ],
+    "roles": [
+      "support"
+    ],
+    "mega": false,
+    "dex": 442,
+    "base": {
+      "hp": 50,
+      "atk": 92,
+      "def": 108,
+      "spa": 92,
+      "spd": 108,
+      "spe": 35
+    }
+  },
+  {
+    "id": "garchomp",
+    "name": "ガブリアス",
+    "nameEn": "Garchomp",
+    "types": [
+      "ドラゴン",
+      "じめん"
+    ],
+    "roles": [
+      "fast",
+      "attacker",
+      "wall",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 445,
+    "base": {
+      "hp": 108,
+      "atk": 130,
+      "def": 95,
+      "spa": 80,
+      "spd": 85,
+      "spe": 102
+    }
+  },
+  {
+    "id": "lucario",
+    "name": "ルカリオ",
+    "nameEn": "Lucario",
+    "types": [
+      "かくとう",
+      "はがね"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 448,
+    "base": {
+      "hp": 70,
+      "atk": 110,
+      "def": 70,
+      "spa": 115,
+      "spd": 70,
+      "spe": 90
+    }
+  },
+  {
+    "id": "hippowdon",
+    "name": "カバルドン",
+    "nameEn": "Hippowdon",
+    "types": [
+      "じめん"
+    ],
+    "roles": [
+      "attacker",
+      "wall",
+      "support"
+    ],
+    "mega": false,
+    "dex": 450,
+    "base": {
+      "hp": 108,
+      "atk": 112,
+      "def": 118,
+      "spa": 68,
+      "spd": 72,
+      "spe": 47
+    }
+  },
+  {
+    "id": "toxicroak",
+    "name": "ドクロッグ",
+    "nameEn": "Toxicroak",
+    "types": [
+      "どく",
+      "かくとう"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 454,
+    "base": {
+      "hp": 83,
+      "atk": 106,
+      "def": 65,
+      "spa": 86,
+      "spd": 65,
+      "spe": 85
+    }
+  },
+  {
+    "id": "abomasnow",
+    "name": "ユキノオー",
+    "nameEn": "Abomasnow",
+    "types": [
+      "くさ",
+      "こおり"
+    ],
+    "roles": [
+      "support",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 460,
+    "base": {
+      "hp": 90,
+      "atk": 92,
+      "def": 75,
+      "spa": 92,
+      "spd": 85,
+      "spe": 60
+    }
+  },
+  {
+    "id": "weavile",
+    "name": "マニューラ",
+    "nameEn": "Weavile",
+    "types": [
+      "あく",
+      "こおり"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 461,
+    "base": {
+      "hp": 70,
+      "atk": 120,
+      "def": 65,
+      "spa": 45,
+      "spd": 85,
+      "spe": 125
+    }
+  },
+  {
+    "id": "rhyperior",
+    "name": "ドサイドン",
+    "nameEn": "Rhyperior",
+    "types": [
+      "じめん",
+      "いわ"
+    ],
+    "roles": [
+      "attacker",
+      "wall",
+      "support"
+    ],
+    "mega": false,
+    "dex": 464,
+    "base": {
+      "hp": 115,
+      "atk": 140,
+      "def": 130,
+      "spa": 55,
+      "spd": 55,
+      "spe": 40
+    }
+  },
+  {
+    "id": "leafeon",
+    "name": "リーフィア",
+    "nameEn": "Leafeon",
+    "types": [
+      "くさ"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 470,
+    "base": {
+      "hp": 65,
+      "atk": 110,
+      "def": 130,
+      "spa": 60,
+      "spd": 65,
+      "spe": 95
+    }
+  },
+  {
+    "id": "glaceon",
+    "name": "グレイシア",
+    "nameEn": "Glaceon",
+    "types": [
+      "こおり"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 471,
+    "base": {
+      "hp": 65,
+      "atk": 60,
+      "def": 110,
+      "spa": 130,
+      "spd": 95,
+      "spe": 65
+    }
+  },
+  {
+    "id": "gliscor",
+    "name": "グライオン",
+    "nameEn": "Gliscor",
+    "types": [
+      "じめん",
+      "ひこう"
+    ],
+    "roles": [
+      "attacker",
+      "wall"
+    ],
+    "mega": false,
+    "dex": 472,
+    "base": {
+      "hp": 75,
+      "atk": 95,
+      "def": 125,
+      "spa": 45,
+      "spd": 75,
+      "spe": 95
+    }
+  },
+  {
+    "id": "mamoswine",
+    "name": "マンムー",
+    "nameEn": "Mamoswine",
+    "types": [
+      "こおり",
+      "じめん"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 473,
+    "base": {
+      "hp": 110,
+      "atk": 130,
+      "def": 80,
+      "spa": 70,
+      "spd": 60,
+      "spe": 80
+    }
+  },
+  {
+    "id": "gallade",
+    "name": "エルレイド",
+    "nameEn": "Gallade",
+    "types": [
+      "エスパー",
+      "かくとう"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 475,
+    "base": {
+      "hp": 68,
+      "atk": 125,
+      "def": 65,
+      "spa": 65,
+      "spd": 115,
+      "spe": 80
+    }
+  },
+  {
+    "id": "froslass",
+    "name": "ユキメノコ",
+    "nameEn": "Froslass",
+    "types": [
+      "こおり",
+      "ゴースト"
+    ],
+    "roles": [
+      "fast",
+      "support",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 478,
+    "base": {
+      "hp": 70,
+      "atk": 80,
+      "def": 70,
+      "spa": 80,
+      "spd": 70,
+      "spe": 110
+    }
+  },
+  {
+    "id": "rotom",
+    "name": "ロトム",
+    "nameEn": "Rotom",
+    "types": [
+      "でんき",
+      "ゴースト"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 479,
+    "base": {
+      "hp": 50,
+      "atk": 50,
+      "def": 77,
+      "spa": 95,
+      "spd": 77,
+      "spe": 91
+    }
+  },
+  {
+    "id": "serperior",
+    "name": "ジャローダ",
+    "nameEn": "Serperior",
+    "types": [
+      "くさ"
+    ],
+    "roles": [
+      "fast",
+      "support"
+    ],
+    "mega": false,
+    "dex": 497,
+    "base": {
+      "hp": 75,
+      "atk": 75,
+      "def": 95,
+      "spa": 75,
+      "spd": 95,
+      "spe": 113
+    }
+  },
+  {
+    "id": "emboar",
+    "name": "エンブオー",
+    "nameEn": "Emboar",
+    "types": [
+      "ほのお",
+      "かくとう"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 500,
+    "base": {
+      "hp": 110,
+      "atk": 123,
+      "def": 65,
+      "spa": 100,
+      "spd": 65,
+      "spe": 65
+    }
+  },
+  {
+    "id": "samurott",
+    "name": "ダイケンキ",
+    "nameEn": "Samurott",
+    "types": [
+      "みず"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 503,
+    "base": {
+      "hp": 95,
+      "atk": 100,
+      "def": 85,
+      "spa": 108,
+      "spd": 70,
+      "spe": 70
+    }
+  },
+  {
+    "id": "watchog",
+    "name": "ミルホッグ",
+    "nameEn": "Watchog",
+    "types": [
+      "ノーマル"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 505,
+    "base": {
+      "hp": 60,
+      "atk": 85,
+      "def": 69,
+      "spa": 60,
+      "spd": 69,
+      "spe": 77
+    }
+  },
+  {
+    "id": "liepard",
+    "name": "レパルダス",
+    "nameEn": "Liepard",
+    "types": [
+      "あく"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 510,
+    "base": {
+      "hp": 64,
+      "atk": 88,
+      "def": 50,
+      "spa": 88,
+      "spd": 50,
+      "spe": 106
+    }
+  },
+  {
+    "id": "simisage",
+    "name": "ヤナッキー",
+    "nameEn": "Simisage",
+    "types": [
+      "くさ"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 512,
+    "base": {
+      "hp": 75,
+      "atk": 98,
+      "def": 63,
+      "spa": 98,
+      "spd": 63,
+      "spe": 101
+    }
+  },
+  {
+    "id": "simisear",
+    "name": "バオッキー",
+    "nameEn": "Simisear",
+    "types": [
+      "ほのお"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 514,
+    "base": {
+      "hp": 75,
+      "atk": 98,
+      "def": 63,
+      "spa": 98,
+      "spd": 63,
+      "spe": 101
+    }
+  },
+  {
+    "id": "simipour",
+    "name": "ヒヤッキー",
+    "nameEn": "Simipour",
+    "types": [
+      "みず"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 516,
+    "base": {
+      "hp": 75,
+      "atk": 98,
+      "def": 63,
+      "spa": 98,
+      "spd": 63,
+      "spe": 101
+    }
+  },
+  {
+    "id": "musharna",
+    "name": "ムシャーナ",
+    "nameEn": "Musharna",
+    "types": [
+      "エスパー"
+    ],
+    "roles": [
+      "wall",
+      "support"
+    ],
+    "mega": false,
+    "dex": 518,
+    "base": {
+      "hp": 116,
+      "atk": 55,
+      "def": 85,
+      "spa": 107,
+      "spd": 95,
+      "spe": 29
+    }
+  },
+  {
+    "id": "excadrill",
+    "name": "ドリュウズ",
+    "nameEn": "Excadrill",
+    "types": [
+      "じめん",
+      "はがね"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 530,
+    "base": {
+      "hp": 110,
+      "atk": 135,
+      "def": 60,
+      "spa": 50,
+      "spd": 65,
+      "spe": 88
+    }
+  },
+  {
+    "id": "audino",
+    "name": "タブンネ",
+    "nameEn": "Audino",
+    "types": [
+      "ノーマル"
+    ],
+    "roles": [
+      "support",
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 531,
+    "base": {
+      "hp": 103,
+      "atk": 60,
+      "def": 86,
+      "spa": 60,
+      "spd": 86,
+      "spe": 50
+    }
+  },
+  {
+    "id": "conkeldurr",
+    "name": "ローブシン",
+    "nameEn": "Conkeldurr",
+    "types": [
+      "かくとう"
+    ],
+    "roles": [
+      "attacker",
+      "wall",
+      "support"
+    ],
+    "mega": false,
+    "dex": 534,
+    "base": {
+      "hp": 105,
+      "atk": 140,
+      "def": 95,
+      "spa": 55,
+      "spd": 65,
+      "spe": 45
+    }
+  },
+  {
+    "id": "scolipede",
+    "name": "ペンドラー",
+    "nameEn": "Scolipede",
+    "types": [
+      "むし",
+      "どく"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 545,
+    "base": {
+      "hp": 60,
+      "atk": 100,
+      "def": 89,
+      "spa": 55,
+      "spd": 69,
+      "spe": 112
+    }
+  },
+  {
+    "id": "whimsicott",
+    "name": "エルフーン",
+    "nameEn": "Whimsicott",
+    "types": [
+      "くさ",
+      "フェアリー"
+    ],
+    "roles": [
+      "fast",
+      "support"
+    ],
+    "mega": false,
+    "dex": 547,
+    "base": {
+      "hp": 60,
+      "atk": 67,
+      "def": 85,
+      "spa": 77,
+      "spd": 75,
+      "spe": 116
+    }
+  },
+  {
+    "id": "krookodile",
+    "name": "ワルビアル",
+    "nameEn": "Krookodile",
+    "types": [
+      "じめん",
+      "あく"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 553,
+    "base": {
+      "hp": 95,
+      "atk": 117,
+      "def": 80,
+      "spa": 65,
+      "spd": 70,
+      "spe": 92
+    }
+  },
+  {
+    "id": "scrafty",
+    "name": "ズルズキン",
+    "nameEn": "Scrafty",
+    "types": [
+      "あく",
+      "かくとう"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 560,
+    "base": {
+      "hp": 65,
+      "atk": 90,
+      "def": 115,
+      "spa": 45,
+      "spd": 115,
+      "spe": 58
+    }
+  },
+  {
+    "id": "cofagrigus",
+    "name": "デスカーン",
+    "nameEn": "Cofagrigus",
+    "types": [
+      "ゴースト"
+    ],
+    "roles": [
+      "wall"
+    ],
+    "mega": false,
+    "dex": 563,
+    "base": {
+      "hp": 58,
+      "atk": 50,
+      "def": 145,
+      "spa": 95,
+      "spd": 105,
+      "spe": 30
+    }
+  },
+  {
+    "id": "garbodor",
+    "name": "ダストダス",
+    "nameEn": "Garbodor",
+    "types": [
+      "どく"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 569,
+    "base": {
+      "hp": 80,
+      "atk": 95,
+      "def": 82,
+      "spa": 60,
+      "spd": 82,
+      "spe": 75
+    }
+  },
+  {
+    "id": "zoroark",
+    "name": "ゾロアーク",
+    "nameEn": "Zoroark",
+    "types": [
+      "あく"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 571,
+    "base": {
+      "hp": 60,
+      "atk": 105,
+      "def": 60,
+      "spa": 120,
+      "spd": 60,
+      "spe": 105
+    }
+  },
+  {
+    "id": "reuniclus",
+    "name": "ランクルス",
+    "nameEn": "Reuniclus",
+    "types": [
+      "エスパー"
+    ],
+    "roles": [
+      "attacker",
+      "support"
+    ],
+    "mega": false,
+    "dex": 579,
+    "base": {
+      "hp": 110,
+      "atk": 65,
+      "def": 75,
+      "spa": 125,
+      "spd": 85,
+      "spe": 30
+    }
+  },
+  {
+    "id": "vanilluxe",
+    "name": "バイバニラ",
+    "nameEn": "Vanilluxe",
+    "types": [
+      "こおり"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 584,
+    "base": {
+      "hp": 71,
+      "atk": 95,
+      "def": 85,
+      "spa": 110,
+      "spd": 95,
+      "spe": 79
+    }
+  },
+  {
+    "id": "emolga",
+    "name": "エモンガ",
+    "nameEn": "Emolga",
+    "types": [
+      "でんき",
+      "ひこう"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 587,
+    "base": {
+      "hp": 55,
+      "atk": 75,
+      "def": 60,
+      "spa": 75,
+      "spd": 60,
+      "spe": 103
+    }
+  },
+  {
+    "id": "eelektross",
+    "name": "シビルドン",
+    "nameEn": "Eelektross",
+    "types": [
+      "でんき"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 604,
+    "base": {
+      "hp": 85,
+      "atk": 115,
+      "def": 80,
+      "spa": 105,
+      "spd": 80,
+      "spe": 50
+    }
+  },
+  {
+    "id": "chandelure",
+    "name": "シャンデラ",
+    "nameEn": "Chandelure",
+    "types": [
+      "ゴースト",
+      "ほのお"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 609,
+    "base": {
+      "hp": 60,
+      "atk": 55,
+      "def": 90,
+      "spa": 145,
+      "spd": 90,
+      "spe": 80
+    }
+  },
+  {
+    "id": "beartic",
+    "name": "ツンベアー",
+    "nameEn": "Beartic",
+    "types": [
+      "こおり"
+    ],
+    "roles": [
+      "attacker",
+      "support"
+    ],
+    "mega": false,
+    "dex": 614,
+    "base": {
+      "hp": 95,
+      "atk": 130,
+      "def": 80,
+      "spa": 70,
+      "spd": 80,
+      "spe": 50
+    }
+  },
+  {
+    "id": "stunfisk",
+    "name": "マッギョ",
+    "nameEn": "Stunfisk",
+    "types": [
+      "じめん",
+      "でんき"
+    ],
+    "roles": [
+      "wall",
+      "support"
+    ],
+    "mega": false,
+    "dex": 618,
+    "base": {
+      "hp": 109,
+      "atk": 66,
+      "def": 84,
+      "spa": 81,
+      "spd": 99,
+      "spe": 32
+    }
+  },
+  {
+    "id": "golurk",
+    "name": "ゴルーグ",
+    "nameEn": "Golurk",
+    "types": [
+      "じめん",
+      "ゴースト"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 623,
+    "base": {
+      "hp": 89,
+      "atk": 124,
+      "def": 80,
+      "spa": 55,
+      "spd": 80,
+      "spe": 55
+    }
+  },
+  {
+    "id": "hydreigon",
+    "name": "サザンドラ",
+    "nameEn": "Hydreigon",
+    "types": [
+      "あく",
+      "ドラゴン"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 635,
+    "base": {
+      "hp": 92,
+      "atk": 105,
+      "def": 90,
+      "spa": 125,
+      "spd": 90,
+      "spe": 98
+    }
+  },
+  {
+    "id": "volcarona",
+    "name": "ウルガモス",
+    "nameEn": "Volcarona",
+    "types": [
+      "むし",
+      "ほのお"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 637,
+    "base": {
+      "hp": 85,
+      "atk": 60,
+      "def": 65,
+      "spa": 135,
+      "spd": 105,
+      "spe": 100
+    }
+  },
+  {
+    "id": "chesnaught",
+    "name": "ブリガロン",
+    "nameEn": "Chesnaught",
+    "types": [
+      "くさ",
+      "かくとう"
+    ],
+    "roles": [
+      "wall",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 652,
+    "base": {
+      "hp": 88,
+      "atk": 107,
+      "def": 122,
+      "spa": 74,
+      "spd": 75,
+      "spe": 64
+    }
+  },
+  {
+    "id": "delphox",
+    "name": "マフォクシー",
+    "nameEn": "Delphox",
+    "types": [
+      "ほのお",
+      "エスパー"
+    ],
+    "roles": [
+      "fast",
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 655,
+    "base": {
+      "hp": 75,
+      "atk": 69,
+      "def": 72,
+      "spa": 114,
+      "spd": 100,
+      "spe": 104
+    }
+  },
+  {
+    "id": "greninja",
+    "name": "ゲッコウガ",
+    "nameEn": "Greninja",
+    "types": [
+      "みず",
+      "あく"
+    ],
+    "roles": [
+      "fast",
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 658,
+    "base": {
+      "hp": 72,
+      "atk": 95,
+      "def": 67,
+      "spa": 103,
+      "spd": 71,
+      "spe": 122
+    }
+  },
+  {
+    "id": "diggersby",
+    "name": "ホルード",
+    "nameEn": "Diggersby",
+    "types": [
+      "ノーマル",
+      "じめん"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 660,
+    "base": {
+      "hp": 85,
+      "atk": 56,
+      "def": 77,
+      "spa": 50,
+      "spd": 77,
+      "spe": 78
+    }
+  },
+  {
+    "id": "talonflame",
+    "name": "ファイアロー",
+    "nameEn": "Talonflame",
+    "types": [
+      "ほのお",
+      "ひこう"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 663,
+    "base": {
+      "hp": 78,
+      "atk": 81,
+      "def": 71,
+      "spa": 74,
+      "spd": 69,
+      "spe": 126
+    }
+  },
+  {
+    "id": "vivillon",
+    "name": "ビビヨン",
+    "nameEn": "Vivillon",
+    "types": [
+      "むし",
+      "ひこう"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 666,
+    "base": {
+      "hp": 80,
+      "atk": 52,
+      "def": 50,
+      "spa": 90,
+      "spd": 50,
+      "spe": 89
+    }
+  },
+  {
+    "id": "floette",
+    "name": "フラエッテ(えいえんのはな)",
+    "nameEn": "Floette",
+    "types": [
+      "フェアリー"
+    ],
+    "roles": [
+      "attacker",
+      "mega",
+      "fast"
+    ],
+    "mega": true,
+    "dex": 10061,
+    "base": {
+      "hp": 74,
+      "atk": 65,
+      "def": 67,
+      "spa": 125,
+      "spd": 128,
+      "spe": 92
+    }
+  },
+  {
+    "id": "florges",
+    "name": "フラージェス",
+    "nameEn": "Florges",
+    "types": [
+      "フェアリー"
+    ],
+    "roles": [
+      "attacker",
+      "wall"
+    ],
+    "mega": false,
+    "dex": 671,
+    "base": {
+      "hp": 78,
+      "atk": 65,
+      "def": 68,
+      "spa": 112,
+      "spd": 154,
+      "spe": 75
+    }
+  },
+  {
+    "id": "pangoro",
+    "name": "ゴロンダ",
+    "nameEn": "Pangoro",
+    "types": [
+      "かくとう",
+      "あく"
+    ],
+    "roles": [
+      "attacker",
+      "support"
+    ],
+    "mega": false,
+    "dex": 675,
+    "base": {
+      "hp": 95,
+      "atk": 124,
+      "def": 78,
+      "spa": 69,
+      "spd": 71,
+      "spe": 58
+    }
+  },
+  {
+    "id": "furfrou",
+    "name": "トリミアン",
+    "nameEn": "Furfrou",
+    "types": [
+      "ノーマル"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 676,
+    "base": {
+      "hp": 75,
+      "atk": 80,
+      "def": 60,
+      "spa": 65,
+      "spd": 90,
+      "spe": 102
+    }
+  },
+  {
+    "id": "meowstic",
+    "name": "ニャオニクス",
+    "nameEn": "Meowstic",
+    "types": [
+      "エスパー"
+    ],
+    "roles": [
+      "fast",
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 678,
+    "base": {
+      "hp": 74,
+      "atk": 48,
+      "def": 76,
+      "spa": 83,
+      "spd": 81,
+      "spe": 104
+    }
+  },
+  {
+    "id": "aegislash",
+    "name": "ギルガルド",
+    "nameEn": "Aegislash",
+    "types": [
+      "はがね",
+      "ゴースト"
+    ],
+    "roles": [
+      "wall"
+    ],
+    "mega": false,
+    "dex": 681,
+    "base": {
+      "hp": 60,
+      "atk": 50,
+      "def": 140,
+      "spa": 50,
+      "spd": 140,
+      "spe": 60
+    }
+  },
+  {
+    "id": "aromatisse",
+    "name": "フレフワン",
+    "nameEn": "Aromatisse",
+    "types": [
+      "フェアリー"
+    ],
+    "roles": [
+      "support"
+    ],
+    "mega": false,
+    "dex": 683,
+    "base": {
+      "hp": 101,
+      "atk": 72,
+      "def": 72,
+      "spa": 99,
+      "spd": 89,
+      "spe": 29
+    }
+  },
+  {
+    "id": "slurpuff",
+    "name": "ペロリーム",
+    "nameEn": "Slurpuff",
+    "types": [
+      "フェアリー"
+    ],
+    "roles": [
+      "support"
+    ],
+    "mega": false,
+    "dex": 685,
+    "base": {
+      "hp": 82,
+      "atk": 80,
+      "def": 86,
+      "spa": 85,
+      "spd": 75,
+      "spe": 72
+    }
+  },
+  {
+    "id": "malamar",
+    "name": "カラマネロ",
+    "nameEn": "Malamar",
+    "types": [
+      "あく",
+      "エスパー"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 687,
+    "base": {
+      "hp": 86,
+      "atk": 92,
+      "def": 88,
+      "spa": 68,
+      "spd": 75,
+      "spe": 73
+    }
+  },
+  {
+    "id": "barbaracle",
+    "name": "ガメノデス",
+    "nameEn": "Barbaracle",
+    "types": [
+      "いわ",
+      "みず"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 689,
+    "base": {
+      "hp": 72,
+      "atk": 105,
+      "def": 115,
+      "spa": 54,
+      "spd": 86,
+      "spe": 68
+    }
+  },
+  {
+    "id": "dragalge",
+    "name": "ドラミドロ",
+    "nameEn": "Dragalge",
+    "types": [
+      "どく",
+      "ドラゴン"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 691,
+    "base": {
+      "hp": 65,
+      "atk": 75,
+      "def": 90,
+      "spa": 97,
+      "spd": 123,
+      "spe": 44
+    }
+  },
+  {
+    "id": "clawitzer",
+    "name": "ブロスター",
+    "nameEn": "Clawitzer",
+    "types": [
+      "みず"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 693,
+    "base": {
+      "hp": 71,
+      "atk": 73,
+      "def": 88,
+      "spa": 120,
+      "spd": 89,
+      "spe": 59
+    }
+  },
+  {
+    "id": "heliolisk",
+    "name": "エレザード",
+    "nameEn": "Heliolisk",
+    "types": [
+      "でんき",
+      "ノーマル"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 695,
+    "base": {
+      "hp": 62,
+      "atk": 55,
+      "def": 52,
+      "spa": 109,
+      "spd": 94,
+      "spe": 109
+    }
+  },
+  {
+    "id": "tyrantrum",
+    "name": "ガチゴラス",
+    "nameEn": "Tyrantrum",
+    "types": [
+      "いわ",
+      "ドラゴン"
+    ],
+    "roles": [
+      "attacker",
+      "wall"
+    ],
+    "mega": false,
+    "dex": 697,
+    "base": {
+      "hp": 82,
+      "atk": 121,
+      "def": 119,
+      "spa": 69,
+      "spd": 59,
+      "spe": 71
+    }
+  },
+  {
+    "id": "aurorus",
+    "name": "アマルルガ",
+    "nameEn": "Aurorus",
+    "types": [
+      "いわ",
+      "こおり"
+    ],
+    "roles": [
+      "wall",
+      "support"
+    ],
+    "mega": false,
+    "dex": 699,
+    "base": {
+      "hp": 123,
+      "atk": 77,
+      "def": 72,
+      "spa": 99,
+      "spd": 92,
+      "spe": 58
+    }
+  },
+  {
+    "id": "sylveon",
+    "name": "ニンフィア",
+    "nameEn": "Sylveon",
+    "types": [
+      "フェアリー"
+    ],
+    "roles": [
+      "attacker",
+      "wall",
+      "support"
+    ],
+    "mega": false,
+    "dex": 700,
+    "base": {
+      "hp": 95,
+      "atk": 65,
+      "def": 65,
+      "spa": 110,
+      "spd": 130,
+      "spe": 60
+    }
+  },
+  {
+    "id": "hawlucha",
+    "name": "ルチャブル",
+    "nameEn": "Hawlucha",
+    "types": [
+      "かくとう",
+      "ひこう"
+    ],
+    "roles": [
+      "fast",
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 701,
+    "base": {
+      "hp": 78,
+      "atk": 92,
+      "def": 75,
+      "spa": 74,
+      "spd": 63,
+      "spe": 118
+    }
+  },
+  {
+    "id": "dedenne",
+    "name": "デデンネ",
+    "nameEn": "Dedenne",
+    "types": [
+      "でんき",
+      "フェアリー"
+    ],
+    "roles": [
+      "fast",
+      "support"
+    ],
+    "mega": false,
+    "dex": 702,
+    "base": {
+      "hp": 67,
+      "atk": 58,
+      "def": 57,
+      "spa": 81,
+      "spd": 67,
+      "spe": 101
+    }
+  },
+  {
+    "id": "goodra",
+    "name": "ヌメルゴン",
+    "nameEn": "Goodra",
+    "types": [
+      "ドラゴン"
+    ],
+    "roles": [
+      "attacker",
+      "wall",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 706,
+    "base": {
+      "hp": 90,
+      "atk": 100,
+      "def": 70,
+      "spa": 110,
+      "spd": 150,
+      "spe": 80
+    }
+  },
+  {
+    "id": "klefki",
+    "name": "クレッフィ",
+    "nameEn": "Klefki",
+    "types": [
+      "はがね",
+      "フェアリー"
+    ],
+    "roles": [
+      "support"
+    ],
+    "mega": false,
+    "dex": 707,
+    "base": {
+      "hp": 57,
+      "atk": 80,
+      "def": 91,
+      "spa": 80,
+      "spd": 87,
+      "spe": 75
+    }
+  },
+  {
+    "id": "trevenant",
+    "name": "オーロット",
+    "nameEn": "Trevenant",
+    "types": [
+      "ゴースト",
+      "くさ"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 709,
+    "base": {
+      "hp": 85,
+      "atk": 110,
+      "def": 76,
+      "spa": 65,
+      "spd": 82,
+      "spe": 56
+    }
+  },
+  {
+    "id": "gourgeist",
+    "name": "パンプジン",
+    "nameEn": "Gourgeist",
+    "types": [
+      "ゴースト",
+      "くさ"
+    ],
+    "roles": [
+      "support"
+    ],
+    "mega": false,
+    "dex": 711,
+    "base": {
+      "hp": 65,
+      "atk": 90,
+      "def": 122,
+      "spa": 58,
+      "spd": 75,
+      "spe": 84
+    }
+  },
+  {
+    "id": "avalugg",
+    "name": "クレベース",
+    "nameEn": "Avalugg",
+    "types": [
+      "こおり"
+    ],
+    "roles": [
+      "attacker",
+      "wall",
+      "support"
+    ],
+    "mega": false,
+    "dex": 713,
+    "base": {
+      "hp": 95,
+      "atk": 117,
+      "def": 184,
+      "spa": 44,
+      "spd": 46,
+      "spe": 28
+    }
+  },
+  {
+    "id": "noivern",
+    "name": "オンバーン",
+    "nameEn": "Noivern",
+    "types": [
+      "ひこう",
+      "ドラゴン"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 715,
+    "base": {
+      "hp": 85,
+      "atk": 70,
+      "def": 80,
+      "spa": 97,
+      "spd": 80,
+      "spe": 123
+    }
+  },
+  {
+    "id": "decidueye",
+    "name": "ジュナイパー",
+    "nameEn": "Decidueye",
+    "types": [
+      "くさ",
+      "ゴースト"
+    ],
+    "roles": [
+      "support"
+    ],
+    "mega": false,
+    "dex": 724,
+    "base": {
+      "hp": 78,
+      "atk": 107,
+      "def": 75,
+      "spa": 100,
+      "spd": 100,
+      "spe": 70
+    }
+  },
+  {
+    "id": "incineroar",
+    "name": "ガオガエン",
+    "nameEn": "Incineroar",
+    "types": [
+      "ほのお",
+      "あく"
+    ],
+    "roles": [
+      "attacker",
+      "support"
+    ],
+    "mega": false,
+    "dex": 727,
+    "base": {
+      "hp": 95,
+      "atk": 115,
+      "def": 90,
+      "spa": 80,
+      "spd": 90,
+      "spe": 60
+    }
+  },
+  {
+    "id": "primarina",
+    "name": "アシレーヌ",
+    "nameEn": "Primarina",
+    "types": [
+      "みず",
+      "フェアリー"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 730,
+    "base": {
+      "hp": 80,
+      "atk": 74,
+      "def": 74,
+      "spa": 126,
+      "spd": 116,
+      "spe": 60
+    }
+  },
+  {
+    "id": "toucannon",
+    "name": "ドデカバシ",
+    "nameEn": "Toucannon",
+    "types": [
+      "ノーマル",
+      "ひこう"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 733,
+    "base": {
+      "hp": 80,
+      "atk": 120,
+      "def": 75,
+      "spa": 75,
+      "spd": 75,
+      "spe": 60
+    }
+  },
+  {
+    "id": "crabominable",
+    "name": "ケケンカニ",
+    "nameEn": "Crabominable",
+    "types": [
+      "かくとう",
+      "こおり"
+    ],
+    "roles": [
+      "attacker",
+      "support",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 740,
+    "base": {
+      "hp": 97,
+      "atk": 132,
+      "def": 77,
+      "spa": 62,
+      "spd": 67,
+      "spe": 43
+    }
+  },
+  {
+    "id": "lycanroc",
+    "name": "ルガルガン",
+    "nameEn": "Lycanroc",
+    "types": [
+      "いわ"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 745,
+    "base": {
+      "hp": 75,
+      "atk": 115,
+      "def": 65,
+      "spa": 55,
+      "spd": 65,
+      "spe": 112
+    }
+  },
+  {
+    "id": "toxapex",
+    "name": "ドヒドイデ",
+    "nameEn": "Toxapex",
+    "types": [
+      "どく",
+      "みず"
+    ],
+    "roles": [
+      "wall"
+    ],
+    "mega": false,
+    "dex": 748,
+    "base": {
+      "hp": 50,
+      "atk": 63,
+      "def": 152,
+      "spa": 53,
+      "spd": 142,
+      "spe": 35
+    }
+  },
+  {
+    "id": "mudsdale",
+    "name": "バンバドロ",
+    "nameEn": "Mudsdale",
+    "types": [
+      "じめん"
+    ],
+    "roles": [
+      "attacker",
+      "wall",
+      "support"
+    ],
+    "mega": false,
+    "dex": 750,
+    "base": {
+      "hp": 100,
+      "atk": 125,
+      "def": 100,
+      "spa": 55,
+      "spd": 85,
+      "spe": 35
+    }
+  },
+  {
+    "id": "araquanid",
+    "name": "オニシズクモ",
+    "nameEn": "Araquanid",
+    "types": [
+      "みず",
+      "むし"
+    ],
+    "roles": [
+      "wall"
+    ],
+    "mega": false,
+    "dex": 752,
+    "base": {
+      "hp": 68,
+      "atk": 70,
+      "def": 92,
+      "spa": 50,
+      "spd": 132,
+      "spe": 42
+    }
+  },
+  {
+    "id": "salazzle",
+    "name": "エンニュート",
+    "nameEn": "Salazzle",
+    "types": [
+      "どく",
+      "ほのお"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 758,
+    "base": {
+      "hp": 68,
+      "atk": 64,
+      "def": 60,
+      "spa": 111,
+      "spd": 60,
+      "spe": 117
+    }
+  },
+  {
+    "id": "tsareena",
+    "name": "アマージョ",
+    "nameEn": "Tsareena",
+    "types": [
+      "くさ"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 763,
+    "base": {
+      "hp": 72,
+      "atk": 120,
+      "def": 98,
+      "spa": 50,
+      "spd": 98,
+      "spe": 72
+    }
+  },
+  {
+    "id": "oranguru",
+    "name": "ヤレユータン",
+    "nameEn": "Oranguru",
+    "types": [
+      "ノーマル",
+      "エスパー"
+    ],
+    "roles": [
+      "wall",
+      "support"
+    ],
+    "mega": false,
+    "dex": 765,
+    "base": {
+      "hp": 90,
+      "atk": 60,
+      "def": 80,
+      "spa": 90,
+      "spd": 110,
+      "spe": 60
+    }
+  },
+  {
+    "id": "passimian",
+    "name": "ナゲツケサル",
+    "nameEn": "Passimian",
+    "types": [
+      "かくとう"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 766,
+    "base": {
+      "hp": 100,
+      "atk": 120,
+      "def": 90,
+      "spa": 40,
+      "spd": 60,
+      "spe": 80
+    }
+  },
+  {
+    "id": "mimikyu",
+    "name": "ミミッキュ",
+    "nameEn": "Mimikyu",
+    "types": [
+      "ゴースト",
+      "フェアリー"
+    ],
+    "roles": [
+      "support"
+    ],
+    "mega": false,
+    "dex": 778,
+    "base": {
+      "hp": 55,
+      "atk": 90,
+      "def": 80,
+      "spa": 50,
+      "spd": 105,
+      "spe": 96
+    }
+  },
+  {
+    "id": "drampa",
+    "name": "ジジーロン",
+    "nameEn": "Drampa",
+    "types": [
+      "ノーマル",
+      "ドラゴン"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 780,
+    "base": {
+      "hp": 78,
+      "atk": 60,
+      "def": 85,
+      "spa": 135,
+      "spd": 91,
+      "spe": 36
+    }
+  },
+  {
+    "id": "kommo-o",
+    "name": "ジャラランガ",
+    "nameEn": "Kommo-o",
+    "types": [
+      "ドラゴン",
+      "かくとう"
+    ],
+    "roles": [
+      "attacker",
+      "wall",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 784,
+    "base": {
+      "hp": 75,
+      "atk": 110,
+      "def": 125,
+      "spa": 100,
+      "spd": 105,
+      "spe": 85
+    }
+  },
+  {
+    "id": "corviknight",
+    "name": "アーマーガア",
+    "nameEn": "Corviknight",
+    "types": [
+      "ひこう",
+      "はがね"
+    ],
+    "roles": [
+      "wall"
+    ],
+    "mega": false,
+    "dex": 823,
+    "base": {
+      "hp": 98,
+      "atk": 87,
+      "def": 105,
+      "spa": 53,
+      "spd": 85,
+      "spe": 67
+    }
+  },
+  {
+    "id": "flapple",
+    "name": "アップリュー",
+    "nameEn": "Flapple",
+    "types": [
+      "くさ",
+      "ドラゴン"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 841,
+    "base": {
+      "hp": 70,
+      "atk": 110,
+      "def": 80,
+      "spa": 95,
+      "spd": 60,
+      "spe": 70
+    }
+  },
+  {
+    "id": "appletun",
+    "name": "タルップル",
+    "nameEn": "Appletun",
+    "types": [
+      "くさ",
+      "ドラゴン"
+    ],
+    "roles": [
+      "support"
+    ],
+    "mega": false,
+    "dex": 842,
+    "base": {
+      "hp": 110,
+      "atk": 85,
+      "def": 80,
+      "spa": 100,
+      "spd": 80,
+      "spe": 30
+    }
+  },
+  {
+    "id": "sandaconda",
+    "name": "サダイジャ",
+    "nameEn": "Sandaconda",
+    "types": [
+      "じめん"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 844,
+    "base": {
+      "hp": 72,
+      "atk": 107,
+      "def": 125,
+      "spa": 65,
+      "spd": 70,
+      "spe": 71
+    }
+  },
+  {
+    "id": "polteageist",
+    "name": "ポットデス",
+    "nameEn": "Polteageist",
+    "types": [
+      "ゴースト"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 855,
+    "base": {
+      "hp": 60,
+      "atk": 65,
+      "def": 65,
+      "spa": 134,
+      "spd": 114,
+      "spe": 70
+    }
+  },
+  {
+    "id": "hatterene",
+    "name": "ブリムオン",
+    "nameEn": "Hatterene",
+    "types": [
+      "エスパー",
+      "フェアリー"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 858,
+    "base": {
+      "hp": 57,
+      "atk": 90,
+      "def": 95,
+      "spa": 136,
+      "spd": 103,
+      "spe": 29
+    }
+  },
+  {
+    "id": "grimmsnarl",
+    "name": "オーロンゲ",
+    "nameEn": "Grimmsnarl",
+    "types": [
+      "あく",
+      "フェアリー"
+    ],
+    "roles": [
+      "attacker",
+      "support"
+    ],
+    "mega": false,
+    "dex": 861,
+    "base": {
+      "hp": 95,
+      "atk": 120,
+      "def": 65,
+      "spa": 95,
+      "spd": 75,
+      "spe": 60
+    }
+  },
+  {
+    "id": "runerigus",
+    "name": "デスバーン",
+    "nameEn": "Runerigus",
+    "types": [
+      "じめん",
+      "ゴースト"
+    ],
+    "roles": [
+      "wall"
+    ],
+    "mega": false,
+    "dex": 867,
+    "base": {
+      "hp": 58,
+      "atk": 95,
+      "def": 145,
+      "spa": 50,
+      "spd": 105,
+      "spe": 30
+    }
+  },
+  {
+    "id": "alcremie",
+    "name": "マホイップ",
+    "nameEn": "Alcremie",
+    "types": [
+      "フェアリー"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 869,
+    "base": {
+      "hp": 65,
+      "atk": 60,
+      "def": 75,
+      "spa": 110,
+      "spd": 121,
+      "spe": 64
+    }
+  },
+  {
+    "id": "falinks",
+    "name": "タイレーツ",
+    "nameEn": "Falinks",
+    "types": [
+      "かくとう"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 870,
+    "base": {
+      "hp": 65,
+      "atk": 100,
+      "def": 100,
+      "spa": 70,
+      "spd": 60,
+      "spe": 75
+    }
+  },
+  {
+    "id": "morpeko",
+    "name": "モルペコ",
+    "nameEn": "Morpeko",
+    "types": [
+      "でんき",
+      "あく"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 877,
+    "base": {
+      "hp": 58,
+      "atk": 95,
+      "def": 58,
+      "spa": 70,
+      "spd": 58,
+      "spe": 97
+    }
+  },
+  {
+    "id": "dragapult",
+    "name": "ドラパルト",
+    "nameEn": "Dragapult",
+    "types": [
+      "ドラゴン",
+      "ゴースト"
+    ],
+    "roles": [
+      "fast",
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 887,
+    "base": {
+      "hp": 88,
+      "atk": 120,
+      "def": 75,
+      "spa": 100,
+      "spd": 75,
+      "spe": 142
+    }
+  },
+  {
+    "id": "wyrdeer",
+    "name": "アヤシシ",
+    "nameEn": "Wyrdeer",
+    "types": [
+      "ノーマル",
+      "エスパー"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 899,
+    "base": {
+      "hp": 103,
+      "atk": 105,
+      "def": 72,
+      "spa": 105,
+      "spd": 75,
+      "spe": 65
+    }
+  },
+  {
+    "id": "kleavor",
+    "name": "バサギリ",
+    "nameEn": "Kleavor",
+    "types": [
+      "むし",
+      "いわ"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 900,
+    "base": {
+      "hp": 70,
+      "atk": 135,
+      "def": 95,
+      "spa": 45,
+      "spd": 70,
+      "spe": 85
+    }
+  },
+  {
+    "id": "basculegion",
+    "name": "イダイトウ",
+    "nameEn": "Basculegion",
+    "types": [
+      "みず",
+      "ゴースト"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 902,
+    "base": {
+      "hp": 120,
+      "atk": 112,
+      "def": 65,
+      "spa": 80,
+      "spd": 75,
+      "spe": 78
+    }
+  },
+  {
+    "id": "sneasler",
+    "name": "オオニューラ",
+    "nameEn": "Sneasler",
+    "types": [
+      "かくとう",
+      "どく"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 903,
+    "base": {
+      "hp": 80,
+      "atk": 130,
+      "def": 60,
+      "spa": 40,
+      "spd": 80,
+      "spe": 120
+    }
+  },
+  {
+    "id": "overqwil",
+    "name": "ハリーマン",
+    "nameEn": "Overqwil",
+    "types": [
+      "あく",
+      "どく"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 904,
+    "base": {
+      "hp": 85,
+      "atk": 115,
+      "def": 95,
+      "spa": 65,
+      "spd": 65,
+      "spe": 85
+    }
+  },
+  {
+    "id": "meowscarada",
+    "name": "マスカーニャ",
+    "nameEn": "Meowscarada",
+    "types": [
+      "くさ",
+      "あく"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 908,
+    "base": {
+      "hp": 76,
+      "atk": 110,
+      "def": 70,
+      "spa": 81,
+      "spd": 70,
+      "spe": 123
+    }
+  },
+  {
+    "id": "skeledirge",
+    "name": "ラウドボーン",
+    "nameEn": "Skeledirge",
+    "types": [
+      "ほのお",
+      "ゴースト"
+    ],
+    "roles": [
+      "attacker",
+      "wall"
+    ],
+    "mega": false,
+    "dex": 911,
+    "base": {
+      "hp": 104,
+      "atk": 75,
+      "def": 100,
+      "spa": 110,
+      "spd": 75,
+      "spe": 66
+    }
+  },
+  {
+    "id": "quaquaval",
+    "name": "ウェーニバル",
+    "nameEn": "Quaquaval",
+    "types": [
+      "みず",
+      "かくとう"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 914,
+    "base": {
+      "hp": 85,
+      "atk": 120,
+      "def": 80,
+      "spa": 85,
+      "spd": 75,
+      "spe": 85
+    }
+  },
+  {
+    "id": "maushold",
+    "name": "イッカネズミ",
+    "nameEn": "Maushold",
+    "types": [
+      "ノーマル"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 925,
+    "base": {
+      "hp": 74,
+      "atk": 75,
+      "def": 70,
+      "spa": 65,
+      "spd": 75,
+      "spe": 111
+    }
+  },
+  {
+    "id": "garganacl",
+    "name": "キョジオーン",
+    "nameEn": "Garganacl",
+    "types": [
+      "いわ"
+    ],
+    "roles": [
+      "wall",
+      "support"
+    ],
+    "mega": false,
+    "dex": 934,
+    "base": {
+      "hp": 100,
+      "atk": 100,
+      "def": 130,
+      "spa": 45,
+      "spd": 90,
+      "spe": 35
+    }
+  },
+  {
+    "id": "armarouge",
+    "name": "グレンアルマ",
+    "nameEn": "Armarouge",
+    "types": [
+      "ほのお",
+      "エスパー"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 936,
+    "base": {
+      "hp": 85,
+      "atk": 60,
+      "def": 100,
+      "spa": 125,
+      "spd": 80,
+      "spe": 75
+    }
+  },
+  {
+    "id": "ceruledge",
+    "name": "ソウブレイズ",
+    "nameEn": "Ceruledge",
+    "types": [
+      "ほのお",
+      "ゴースト"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 937,
+    "base": {
+      "hp": 75,
+      "atk": 125,
+      "def": 80,
+      "spa": 60,
+      "spd": 100,
+      "spe": 85
+    }
+  },
+  {
+    "id": "bellibolt",
+    "name": "ハラバリー",
+    "nameEn": "Bellibolt",
+    "types": [
+      "でんき"
+    ],
+    "roles": [
+      "wall",
+      "support"
+    ],
+    "mega": false,
+    "dex": 939,
+    "base": {
+      "hp": 109,
+      "atk": 64,
+      "def": 91,
+      "spa": 103,
+      "spd": 83,
+      "spe": 45
+    }
+  },
+  {
+    "id": "scovillain",
+    "name": "スコヴィラン",
+    "nameEn": "Scovillain",
+    "types": [
+      "くさ",
+      "ほのお"
+    ],
+    "roles": [
+      "support",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 952,
+    "base": {
+      "hp": 65,
+      "atk": 108,
+      "def": 65,
+      "spa": 108,
+      "spd": 65,
+      "spe": 75
+    }
+  },
+  {
+    "id": "espathra",
+    "name": "クエスパトラ",
+    "nameEn": "Espathra",
+    "types": [
+      "エスパー"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 956,
+    "base": {
+      "hp": 95,
+      "atk": 60,
+      "def": 60,
+      "spa": 101,
+      "spd": 60,
+      "spe": 105
+    }
+  },
+  {
+    "id": "tinkaton",
+    "name": "デカヌチャン",
+    "nameEn": "Tinkaton",
+    "types": [
+      "フェアリー",
+      "はがね"
+    ],
+    "roles": [
+      "support"
+    ],
+    "mega": false,
+    "dex": 959,
+    "base": {
+      "hp": 85,
+      "atk": 75,
+      "def": 77,
+      "spa": 70,
+      "spd": 105,
+      "spe": 94
+    }
+  },
+  {
+    "id": "palafin",
+    "name": "イルカマン",
+    "nameEn": "Palafin",
+    "types": [
+      "みず"
+    ],
+    "roles": [
+      "fast",
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 964,
+    "base": {
+      "hp": 100,
+      "atk": 70,
+      "def": 72,
+      "spa": 53,
+      "spd": 62,
+      "spe": 100
+    }
+  },
+  {
+    "id": "orthworm",
+    "name": "ミミズズ",
+    "nameEn": "Orthworm",
+    "types": [
+      "はがね"
+    ],
+    "roles": [
+      "wall"
+    ],
+    "mega": false,
+    "dex": 968,
+    "base": {
+      "hp": 70,
+      "atk": 85,
+      "def": 145,
+      "spa": 60,
+      "spd": 55,
+      "spe": 65
+    }
+  },
+  {
+    "id": "glimmora",
+    "name": "キラフロル",
+    "nameEn": "Glimmora",
+    "types": [
+      "いわ",
+      "どく"
+    ],
+    "roles": [
+      "attacker",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 970,
+    "base": {
+      "hp": 83,
+      "atk": 55,
+      "def": 90,
+      "spa": 130,
+      "spd": 81,
+      "spe": 86
+    }
+  },
+  {
+    "id": "houndstone",
+    "name": "ハカドッグ",
+    "nameEn": "Houndstone",
+    "types": [
+      "ゴースト"
+    ],
+    "roles": [
+      "support"
+    ],
+    "mega": false,
+    "dex": 972,
+    "base": {
+      "hp": 72,
+      "atk": 101,
+      "def": 100,
+      "spa": 50,
+      "spd": 97,
+      "spe": 68
+    }
+  },
+  {
+    "id": "annihilape",
+    "name": "コノヨザル",
+    "nameEn": "Annihilape",
+    "types": [
+      "かくとう",
+      "ゴースト"
+    ],
+    "roles": [
+      "attacker",
+      "wall"
+    ],
+    "mega": false,
+    "dex": 979,
+    "base": {
+      "hp": 110,
+      "atk": 115,
+      "def": 80,
+      "spa": 50,
+      "spd": 90,
+      "spe": 90
+    }
+  },
+  {
+    "id": "farigiraf",
+    "name": "リキキリン",
+    "nameEn": "Farigiraf",
+    "types": [
+      "ノーマル",
+      "エスパー"
+    ],
+    "roles": [
+      "attacker",
+      "support"
+    ],
+    "mega": false,
+    "dex": 981,
+    "base": {
+      "hp": 120,
+      "atk": 90,
+      "def": 70,
+      "spa": 110,
+      "spd": 70,
+      "spe": 60
+    }
+  },
+  {
+    "id": "kingambit",
+    "name": "ドドゲザン",
+    "nameEn": "Kingambit",
+    "types": [
+      "あく",
+      "はがね"
+    ],
+    "roles": [
+      "attacker",
+      "wall",
+      "support"
+    ],
+    "mega": false,
+    "dex": 983,
+    "base": {
+      "hp": 100,
+      "atk": 135,
+      "def": 120,
+      "spa": 60,
+      "spd": 85,
+      "spe": 50
+    }
+  },
+  {
+    "id": "gholdengo",
+    "name": "サーフゴー",
+    "nameEn": "Gholdengo",
+    "types": [
+      "はがね",
+      "ゴースト"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 1000,
+    "base": {
+      "hp": 87,
+      "atk": 60,
+      "def": 95,
+      "spa": 133,
+      "spd": 91,
+      "spe": 84
+    }
+  },
+  {
+    "id": "sinistcha",
+    "name": "ヤバソチャ",
+    "nameEn": "Sinistcha",
+    "types": [
+      "くさ",
+      "ゴースト"
+    ],
+    "roles": [
+      "attacker"
+    ],
+    "mega": false,
+    "dex": 1013,
+    "base": {
+      "hp": 71,
+      "atk": 60,
+      "def": 106,
+      "spa": 121,
+      "spd": 80,
+      "spe": 70
+    }
+  },
+  {
+    "id": "archaludon",
+    "name": "ブリジュラス",
+    "nameEn": "Archaludon",
+    "types": [
+      "はがね",
+      "ドラゴン"
+    ],
+    "roles": [
+      "attacker",
+      "wall",
+      "mega"
+    ],
+    "mega": true,
+    "dex": 1018,
+    "base": {
+      "hp": 90,
+      "atk": 105,
+      "def": 130,
+      "spa": 125,
+      "spd": 65,
+      "spe": 85
+    }
+  },
+  {
+    "id": "hydrapple",
+    "name": "カミツオロチ",
+    "nameEn": "Hydrapple",
+    "types": [
+      "くさ",
+      "ドラゴン"
+    ],
+    "roles": [
+      "attacker",
+      "wall",
+      "support"
+    ],
+    "mega": false,
+    "dex": 1019,
+    "base": {
+      "hp": 106,
+      "atk": 80,
+      "def": 110,
+      "spa": 120,
+      "spd": 80,
+      "spe": 44
+    }
+  }
 ]
