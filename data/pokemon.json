@@ -21,7 +21,24 @@
       "spa": 109,
       "spd": 66,
       "spe": 106
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "とうそうしん",
+        "nameEn": "Rivalry"
+      },
+      {
+        "slot": "特性2",
+        "name": "きんちょうかん",
+        "nameEn": "Unnerve"
+      },
+      {
+        "slot": "隠れ",
+        "name": "じしんかじょう",
+        "nameEn": "Moxie"
+      }
+    ]
   },
   {
     "id": "venusaur",
@@ -44,7 +61,19 @@
       "spa": 100,
       "spd": 100,
       "spe": 80
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "しんりょく",
+        "nameEn": "Overgrow"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ようりょくそ",
+        "nameEn": "Chlorophyll"
+      }
+    ]
   },
   {
     "id": "charizard",
@@ -68,7 +97,19 @@
       "spa": 109,
       "spd": 85,
       "spe": 100
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "もうか",
+        "nameEn": "Blaze"
+      },
+      {
+        "slot": "隠れ",
+        "name": "サンパワー",
+        "nameEn": "Solar Power"
+      }
+    ]
   },
   {
     "id": "blastoise",
@@ -90,7 +131,19 @@
       "spa": 85,
       "spd": 105,
       "spe": 78
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "げきりゅう",
+        "nameEn": "Torrent"
+      },
+      {
+        "slot": "隠れ",
+        "name": "あめうけざら",
+        "nameEn": "Rain Dish"
+      }
+    ]
   },
   {
     "id": "beedrill",
@@ -113,7 +166,19 @@
       "spa": 45,
       "spd": 80,
       "spe": 75
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "むしのしらせ",
+        "nameEn": "Swarm"
+      },
+      {
+        "slot": "隠れ",
+        "name": "スナイパー",
+        "nameEn": "Sniper"
+      }
+    ]
   },
   {
     "id": "pidgeot",
@@ -137,7 +202,24 @@
       "spa": 70,
       "spd": 70,
       "spe": 101
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "するどいめ",
+        "nameEn": "Keen Eye"
+      },
+      {
+        "slot": "特性2",
+        "name": "ちどりあし",
+        "nameEn": "Tangled Feet"
+      },
+      {
+        "slot": "隠れ",
+        "name": "はとむね",
+        "nameEn": "Big Pecks"
+      }
+    ]
   },
   {
     "id": "arbok",
@@ -158,7 +240,24 @@
       "spa": 65,
       "spd": 79,
       "spe": 80
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "いかく",
+        "nameEn": "Intimidate"
+      },
+      {
+        "slot": "特性2",
+        "name": "だっぴ",
+        "nameEn": "Shed Skin"
+      },
+      {
+        "slot": "隠れ",
+        "name": "きんちょうかん",
+        "nameEn": "Unnerve"
+      }
+    ]
   },
   {
     "id": "pikachu",
@@ -179,7 +278,19 @@
       "spa": 50,
       "spd": 50,
       "spe": 90
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "せいでんき",
+        "nameEn": "Static"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ひらいしん",
+        "nameEn": "Lightning Rod"
+      }
+    ]
   },
   {
     "id": "raichu",
@@ -201,7 +312,19 @@
       "spa": 90,
       "spd": 80,
       "spe": 110
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "せいでんき",
+        "nameEn": "Static"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ひらいしん",
+        "nameEn": "Lightning Rod"
+      }
+    ]
   },
   {
     "id": "clefable",
@@ -223,7 +346,24 @@
       "spa": 95,
       "spd": 90,
       "spe": 60
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "メロメロボディ",
+        "nameEn": "Cute Charm"
+      },
+      {
+        "slot": "特性2",
+        "name": "マジックガード",
+        "nameEn": "Magic Guard"
+      },
+      {
+        "slot": "隠れ",
+        "name": "てんねん",
+        "nameEn": "Unaware"
+      }
+    ]
   },
   {
     "id": "ninetales",
@@ -245,7 +385,19 @@
       "spa": 81,
       "spd": 100,
       "spe": 100
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "もらいび",
+        "nameEn": "Flash Fire"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ひでり",
+        "nameEn": "Drought"
+      }
+    ]
   },
   {
     "id": "vileplume",
@@ -267,7 +419,19 @@
       "spa": 110,
       "spd": 90,
       "spe": 50
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ようりょくそ",
+        "nameEn": "Chlorophyll"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ほうし",
+        "nameEn": "Effect Spore"
+      }
+    ]
   },
   {
     "id": "arcanine",
@@ -288,7 +452,24 @@
       "spa": 100,
       "spd": 80,
       "spe": 95
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "いかく",
+        "nameEn": "Intimidate"
+      },
+      {
+        "slot": "特性2",
+        "name": "もらいび",
+        "nameEn": "Flash Fire"
+      },
+      {
+        "slot": "隠れ",
+        "name": "せいぎのこころ",
+        "nameEn": "Justified"
+      }
+    ]
   },
   {
     "id": "alakazam",
@@ -311,7 +492,24 @@
       "spa": 135,
       "spd": 95,
       "spe": 120
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "シンクロ",
+        "nameEn": "Synchronize"
+      },
+      {
+        "slot": "特性2",
+        "name": "せいしんりょく",
+        "nameEn": "Inner Focus"
+      },
+      {
+        "slot": "隠れ",
+        "name": "マジックガード",
+        "nameEn": "Magic Guard"
+      }
+    ]
   },
   {
     "id": "machamp",
@@ -333,7 +531,24 @@
       "spa": 65,
       "spd": 85,
       "spe": 55
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "こんじょう",
+        "nameEn": "Guts"
+      },
+      {
+        "slot": "特性2",
+        "name": "ノーガード",
+        "nameEn": "No Guard"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ふくつのこころ",
+        "nameEn": "Steadfast"
+      }
+    ]
   },
   {
     "id": "victreebel",
@@ -356,7 +571,19 @@
       "spa": 100,
       "spd": 70,
       "spe": 70
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ようりょくそ",
+        "nameEn": "Chlorophyll"
+      },
+      {
+        "slot": "隠れ",
+        "name": "くいしんぼう",
+        "nameEn": "Gluttony"
+      }
+    ]
   },
   {
     "id": "slowbro",
@@ -380,7 +607,24 @@
       "spa": 100,
       "spd": 80,
       "spe": 30
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "どんかん",
+        "nameEn": "Oblivious"
+      },
+      {
+        "slot": "特性2",
+        "name": "マイペース",
+        "nameEn": "Own Tempo"
+      },
+      {
+        "slot": "隠れ",
+        "name": "さいせいりょく",
+        "nameEn": "Regenerator"
+      }
+    ]
   },
   {
     "id": "gengar",
@@ -404,7 +648,14 @@
       "spa": 130,
       "spd": 75,
       "spe": 110
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "のろわれボディ",
+        "nameEn": "Cursed Body"
+      }
+    ]
   },
   {
     "id": "kangaskhan",
@@ -426,7 +677,24 @@
       "spa": 40,
       "spd": 80,
       "spe": 90
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "はやおき",
+        "nameEn": "Early Bird"
+      },
+      {
+        "slot": "特性2",
+        "name": "きもったま",
+        "nameEn": "Scrappy"
+      },
+      {
+        "slot": "隠れ",
+        "name": "せいしんりょく",
+        "nameEn": "Inner Focus"
+      }
+    ]
   },
   {
     "id": "starmie",
@@ -450,7 +718,24 @@
       "spa": 100,
       "spd": 85,
       "spe": 115
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "はっこう",
+        "nameEn": "Illuminate"
+      },
+      {
+        "slot": "特性2",
+        "name": "しぜんかいふく",
+        "nameEn": "Natural Cure"
+      },
+      {
+        "slot": "隠れ",
+        "name": "アナライズ",
+        "nameEn": "Analytic"
+      }
+    ]
   },
   {
     "id": "pinsir",
@@ -472,7 +757,24 @@
       "spa": 55,
       "spd": 70,
       "spe": 85
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "かいりきバサミ",
+        "nameEn": "Hyper Cutter"
+      },
+      {
+        "slot": "特性2",
+        "name": "かたやぶり",
+        "nameEn": "Mold Breaker"
+      },
+      {
+        "slot": "隠れ",
+        "name": "じしんかじょう",
+        "nameEn": "Moxie"
+      }
+    ]
   },
   {
     "id": "tauros",
@@ -494,7 +796,24 @@
       "spa": 40,
       "spd": 70,
       "spe": 110
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "いかく",
+        "nameEn": "Intimidate"
+      },
+      {
+        "slot": "特性2",
+        "name": "いかりのつぼ",
+        "nameEn": "Anger Point"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ちからずく",
+        "nameEn": "Sheer Force"
+      }
+    ]
   },
   {
     "id": "gyarados",
@@ -517,7 +836,19 @@
       "spa": 60,
       "spd": 100,
       "spe": 81
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "いかく",
+        "nameEn": "Intimidate"
+      },
+      {
+        "slot": "隠れ",
+        "name": "じしんかじょう",
+        "nameEn": "Moxie"
+      }
+    ]
   },
   {
     "id": "ditto",
@@ -538,7 +869,19 @@
       "spa": 48,
       "spd": 48,
       "spe": 48
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "じゅうなん",
+        "nameEn": "Limber"
+      },
+      {
+        "slot": "隠れ",
+        "name": "かわりもの",
+        "nameEn": "Imposter"
+      }
+    ]
   },
   {
     "id": "vaporeon",
@@ -560,7 +903,19 @@
       "spa": 110,
       "spd": 95,
       "spe": 65
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ちょすい",
+        "nameEn": "Water Absorb"
+      },
+      {
+        "slot": "隠れ",
+        "name": "うるおいボディ",
+        "nameEn": "Hydration"
+      }
+    ]
   },
   {
     "id": "jolteon",
@@ -582,7 +937,19 @@
       "spa": 110,
       "spd": 95,
       "spe": 130
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ちくでん",
+        "nameEn": "Volt Absorb"
+      },
+      {
+        "slot": "隠れ",
+        "name": "はやあし",
+        "nameEn": "Quick Feet"
+      }
+    ]
   },
   {
     "id": "flareon",
@@ -603,7 +970,19 @@
       "spa": 95,
       "spd": 110,
       "spe": 65
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "もらいび",
+        "nameEn": "Flash Fire"
+      },
+      {
+        "slot": "隠れ",
+        "name": "こんじょう",
+        "nameEn": "Guts"
+      }
+    ]
   },
   {
     "id": "aerodactyl",
@@ -627,7 +1006,24 @@
       "spa": 60,
       "spd": 75,
       "spe": 130
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "いしあたま",
+        "nameEn": "Rock Head"
+      },
+      {
+        "slot": "特性2",
+        "name": "プレッシャー",
+        "nameEn": "Pressure"
+      },
+      {
+        "slot": "隠れ",
+        "name": "きんちょうかん",
+        "nameEn": "Unnerve"
+      }
+    ]
   },
   {
     "id": "snorlax",
@@ -650,7 +1046,24 @@
       "spa": 65,
       "spd": 110,
       "spe": 30
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "めんえき",
+        "nameEn": "Immunity"
+      },
+      {
+        "slot": "特性2",
+        "name": "あついしぼう",
+        "nameEn": "Thick Fat"
+      },
+      {
+        "slot": "隠れ",
+        "name": "くいしんぼう",
+        "nameEn": "Gluttony"
+      }
+    ]
   },
   {
     "id": "dragonite",
@@ -673,7 +1086,19 @@
       "spa": 100,
       "spd": 100,
       "spe": 80
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "せいしんりょく",
+        "nameEn": "Inner Focus"
+      },
+      {
+        "slot": "隠れ",
+        "name": "マルチスケイル",
+        "nameEn": "Multiscale"
+      }
+    ]
   },
   {
     "id": "meganium",
@@ -695,7 +1120,19 @@
       "spa": 83,
       "spd": 100,
       "spe": 80
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "しんりょく",
+        "nameEn": "Overgrow"
+      },
+      {
+        "slot": "隠れ",
+        "name": "リーフガード",
+        "nameEn": "Leaf Guard"
+      }
+    ]
   },
   {
     "id": "typhlosion",
@@ -717,7 +1154,19 @@
       "spa": 109,
       "spd": 85,
       "spe": 100
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "もうか",
+        "nameEn": "Blaze"
+      },
+      {
+        "slot": "隠れ",
+        "name": "もらいび",
+        "nameEn": "Flash Fire"
+      }
+    ]
   },
   {
     "id": "feraligatr",
@@ -739,7 +1188,19 @@
       "spa": 79,
       "spd": 83,
       "spe": 78
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "げきりゅう",
+        "nameEn": "Torrent"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ちからずく",
+        "nameEn": "Sheer Force"
+      }
+    ]
   },
   {
     "id": "ariados",
@@ -761,7 +1222,24 @@
       "spa": 60,
       "spd": 70,
       "spe": 40
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "むしのしらせ",
+        "nameEn": "Swarm"
+      },
+      {
+        "slot": "特性2",
+        "name": "ふみん",
+        "nameEn": "Insomnia"
+      },
+      {
+        "slot": "隠れ",
+        "name": "スナイパー",
+        "nameEn": "Sniper"
+      }
+    ]
   },
   {
     "id": "ampharos",
@@ -784,7 +1262,19 @@
       "spa": 115,
       "spd": 90,
       "spe": 55
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "せいでんき",
+        "nameEn": "Static"
+      },
+      {
+        "slot": "隠れ",
+        "name": "プラス",
+        "nameEn": "Plus"
+      }
+    ]
   },
   {
     "id": "azumarill",
@@ -806,7 +1296,24 @@
       "spa": 60,
       "spd": 80,
       "spe": 50
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "あついしぼう",
+        "nameEn": "Thick Fat"
+      },
+      {
+        "slot": "特性2",
+        "name": "ちからもち",
+        "nameEn": "Huge Power"
+      },
+      {
+        "slot": "隠れ",
+        "name": "そうしょく",
+        "nameEn": "Sap Sipper"
+      }
+    ]
   },
   {
     "id": "politoed",
@@ -827,7 +1334,24 @@
       "spa": 90,
       "spd": 100,
       "spe": 70
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ちょすい",
+        "nameEn": "Water Absorb"
+      },
+      {
+        "slot": "特性2",
+        "name": "しめりけ",
+        "nameEn": "Damp"
+      },
+      {
+        "slot": "隠れ",
+        "name": "あめふらし",
+        "nameEn": "Drizzle"
+      }
+    ]
   },
   {
     "id": "espeon",
@@ -849,7 +1373,19 @@
       "spa": 130,
       "spd": 95,
       "spe": 110
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "シンクロ",
+        "nameEn": "Synchronize"
+      },
+      {
+        "slot": "隠れ",
+        "name": "マジックミラー",
+        "nameEn": "Magic Bounce"
+      }
+    ]
   },
   {
     "id": "umbreon",
@@ -870,7 +1406,19 @@
       "spa": 60,
       "spd": 130,
       "spe": 65
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "シンクロ",
+        "nameEn": "Synchronize"
+      },
+      {
+        "slot": "隠れ",
+        "name": "せいしんりょく",
+        "nameEn": "Inner Focus"
+      }
+    ]
   },
   {
     "id": "slowking",
@@ -893,7 +1441,24 @@
       "spa": 100,
       "spd": 110,
       "spe": 30
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "どんかん",
+        "nameEn": "Oblivious"
+      },
+      {
+        "slot": "特性2",
+        "name": "マイペース",
+        "nameEn": "Own Tempo"
+      },
+      {
+        "slot": "隠れ",
+        "name": "さいせいりょく",
+        "nameEn": "Regenerator"
+      }
+    ]
   },
   {
     "id": "forretress",
@@ -915,7 +1480,19 @@
       "spa": 60,
       "spd": 60,
       "spe": 40
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "がんじょう",
+        "nameEn": "Sturdy"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ぼうじん",
+        "nameEn": "Overcoat"
+      }
+    ]
   },
   {
     "id": "steelix",
@@ -938,7 +1515,24 @@
       "spa": 55,
       "spd": 65,
       "spe": 30
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "いしあたま",
+        "nameEn": "Rock Head"
+      },
+      {
+        "slot": "特性2",
+        "name": "がんじょう",
+        "nameEn": "Sturdy"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ちからずく",
+        "nameEn": "Sheer Force"
+      }
+    ]
   },
   {
     "id": "qwilfish",
@@ -960,7 +1554,24 @@
       "spa": 55,
       "spd": 55,
       "spe": 85
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "どくのトゲ",
+        "nameEn": "Poison Point"
+      },
+      {
+        "slot": "特性2",
+        "name": "すいすい",
+        "nameEn": "Swift Swim"
+      },
+      {
+        "slot": "隠れ",
+        "name": "いかく",
+        "nameEn": "Intimidate"
+      }
+    ]
   },
   {
     "id": "scizor",
@@ -983,7 +1594,24 @@
       "spa": 55,
       "spd": 80,
       "spe": 65
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "むしのしらせ",
+        "nameEn": "Swarm"
+      },
+      {
+        "slot": "特性2",
+        "name": "テクニシャン",
+        "nameEn": "Technician"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ライトメタル",
+        "nameEn": "Light Metal"
+      }
+    ]
   },
   {
     "id": "heracross",
@@ -1006,7 +1634,24 @@
       "spa": 40,
       "spd": 95,
       "spe": 85
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "むしのしらせ",
+        "nameEn": "Swarm"
+      },
+      {
+        "slot": "特性2",
+        "name": "こんじょう",
+        "nameEn": "Guts"
+      },
+      {
+        "slot": "隠れ",
+        "name": "じしんかじょう",
+        "nameEn": "Moxie"
+      }
+    ]
   },
   {
     "id": "skarmory",
@@ -1029,7 +1674,24 @@
       "spa": 40,
       "spd": 70,
       "spe": 70
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "するどいめ",
+        "nameEn": "Keen Eye"
+      },
+      {
+        "slot": "特性2",
+        "name": "がんじょう",
+        "nameEn": "Sturdy"
+      },
+      {
+        "slot": "隠れ",
+        "name": "くだけるよろい",
+        "nameEn": "Weak Armor"
+      }
+    ]
   },
   {
     "id": "houndoom",
@@ -1052,7 +1714,24 @@
       "spa": 110,
       "spd": 80,
       "spe": 95
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "はやおき",
+        "nameEn": "Early Bird"
+      },
+      {
+        "slot": "特性2",
+        "name": "もらいび",
+        "nameEn": "Flash Fire"
+      },
+      {
+        "slot": "隠れ",
+        "name": "きんちょうかん",
+        "nameEn": "Unnerve"
+      }
+    ]
   },
   {
     "id": "tyranitar",
@@ -1076,7 +1755,19 @@
       "spa": 95,
       "spd": 100,
       "spe": 61
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "すなおこし",
+        "nameEn": "Sand Stream"
+      },
+      {
+        "slot": "隠れ",
+        "name": "きんちょうかん",
+        "nameEn": "Unnerve"
+      }
+    ]
   },
   {
     "id": "sceptile",
@@ -1098,7 +1789,19 @@
       "spa": 105,
       "spd": 85,
       "spe": 120
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "しんりょく",
+        "nameEn": "Overgrow"
+      },
+      {
+        "slot": "隠れ",
+        "name": "かるわざ",
+        "nameEn": "Unburden"
+      }
+    ]
   },
   {
     "id": "blaziken",
@@ -1120,7 +1823,19 @@
       "spa": 110,
       "spd": 70,
       "spe": 80
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "もうか",
+        "nameEn": "Blaze"
+      },
+      {
+        "slot": "隠れ",
+        "name": "かそく",
+        "nameEn": "Speed Boost"
+      }
+    ]
   },
   {
     "id": "swampert",
@@ -1143,7 +1858,19 @@
       "spa": 85,
       "spd": 90,
       "spe": 60
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "げきりゅう",
+        "nameEn": "Torrent"
+      },
+      {
+        "slot": "隠れ",
+        "name": "しめりけ",
+        "nameEn": "Damp"
+      }
+    ]
   },
   {
     "id": "pelipper",
@@ -1165,7 +1892,24 @@
       "spa": 95,
       "spd": 70,
       "spe": 65
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "するどいめ",
+        "nameEn": "Keen Eye"
+      },
+      {
+        "slot": "特性2",
+        "name": "あめふらし",
+        "nameEn": "Drizzle"
+      },
+      {
+        "slot": "隠れ",
+        "name": "あめうけざら",
+        "nameEn": "Rain Dish"
+      }
+    ]
   },
   {
     "id": "gardevoir",
@@ -1188,7 +1932,24 @@
       "spa": 125,
       "spd": 115,
       "spe": 80
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "シンクロ",
+        "nameEn": "Synchronize"
+      },
+      {
+        "slot": "特性2",
+        "name": "トレース",
+        "nameEn": "Trace"
+      },
+      {
+        "slot": "隠れ",
+        "name": "テレパシー",
+        "nameEn": "Telepathy"
+      }
+    ]
   },
   {
     "id": "sableye",
@@ -1211,7 +1972,24 @@
       "spa": 65,
       "spd": 65,
       "spe": 50
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "するどいめ",
+        "nameEn": "Keen Eye"
+      },
+      {
+        "slot": "特性2",
+        "name": "あとだし",
+        "nameEn": "Stall"
+      },
+      {
+        "slot": "隠れ",
+        "name": "いたずらごころ",
+        "nameEn": "Prankster"
+      }
+    ]
   },
   {
     "id": "mawile",
@@ -1233,7 +2011,24 @@
       "spa": 55,
       "spd": 55,
       "spe": 50
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "かいりきバサミ",
+        "nameEn": "Hyper Cutter"
+      },
+      {
+        "slot": "特性2",
+        "name": "いかく",
+        "nameEn": "Intimidate"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ちからずく",
+        "nameEn": "Sheer Force"
+      }
+    ]
   },
   {
     "id": "aggron",
@@ -1257,7 +2052,24 @@
       "spa": 60,
       "spd": 60,
       "spe": 50
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "がんじょう",
+        "nameEn": "Sturdy"
+      },
+      {
+        "slot": "特性2",
+        "name": "いしあたま",
+        "nameEn": "Rock Head"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ヘヴィメタル",
+        "nameEn": "Heavy Metal"
+      }
+    ]
   },
   {
     "id": "medicham",
@@ -1280,7 +2092,19 @@
       "spa": 60,
       "spd": 75,
       "spe": 80
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ヨガパワー",
+        "nameEn": "Pure Power"
+      },
+      {
+        "slot": "隠れ",
+        "name": "テレパシー",
+        "nameEn": "Telepathy"
+      }
+    ]
   },
   {
     "id": "manectric",
@@ -1303,7 +2127,24 @@
       "spa": 105,
       "spd": 60,
       "spe": 105
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "せいでんき",
+        "nameEn": "Static"
+      },
+      {
+        "slot": "特性2",
+        "name": "ひらいしん",
+        "nameEn": "Lightning Rod"
+      },
+      {
+        "slot": "隠れ",
+        "name": "マイナス",
+        "nameEn": "Minus"
+      }
+    ]
   },
   {
     "id": "sharpedo",
@@ -1326,7 +2167,19 @@
       "spa": 95,
       "spd": 40,
       "spe": 95
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "さめはだ",
+        "nameEn": "Rough Skin"
+      },
+      {
+        "slot": "隠れ",
+        "name": "かそく",
+        "nameEn": "Speed Boost"
+      }
+    ]
   },
   {
     "id": "camerupt",
@@ -1349,7 +2202,24 @@
       "spa": 105,
       "spd": 75,
       "spe": 40
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "マグマのよろい",
+        "nameEn": "Magma Armor"
+      },
+      {
+        "slot": "特性2",
+        "name": "ハードロック",
+        "nameEn": "Solid Rock"
+      },
+      {
+        "slot": "隠れ",
+        "name": "いかりのつぼ",
+        "nameEn": "Anger Point"
+      }
+    ]
   },
   {
     "id": "torkoal",
@@ -1370,7 +2240,24 @@
       "spa": 85,
       "spd": 70,
       "spe": 20
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "しろいけむり",
+        "nameEn": "White Smoke"
+      },
+      {
+        "slot": "特性2",
+        "name": "ひでり",
+        "nameEn": "Drought"
+      },
+      {
+        "slot": "隠れ",
+        "name": "シェルアーマー",
+        "nameEn": "Shell Armor"
+      }
+    ]
   },
   {
     "id": "altaria",
@@ -1393,7 +2280,19 @@
       "spa": 70,
       "spd": 105,
       "spe": 80
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "しぜんかいふく",
+        "nameEn": "Natural Cure"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ノーてんき",
+        "nameEn": "Cloud Nine"
+      }
+    ]
   },
   {
     "id": "milotic",
@@ -1414,7 +2313,24 @@
       "spa": 100,
       "spd": 125,
       "spe": 81
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ふしぎなうろこ",
+        "nameEn": "Marvel Scale"
+      },
+      {
+        "slot": "特性2",
+        "name": "かちき",
+        "nameEn": "Competitive"
+      },
+      {
+        "slot": "隠れ",
+        "name": "メロメロボディ",
+        "nameEn": "Cute Charm"
+      }
+    ]
   },
   {
     "id": "castform",
@@ -1435,7 +2351,14 @@
       "spa": 70,
       "spd": 70,
       "spe": 70
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "てんきや",
+        "nameEn": "Forecast"
+      }
+    ]
   },
   {
     "id": "banette",
@@ -1457,7 +2380,24 @@
       "spa": 83,
       "spd": 63,
       "spe": 65
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ふみん",
+        "nameEn": "Insomnia"
+      },
+      {
+        "slot": "特性2",
+        "name": "おみとおし",
+        "nameEn": "Frisk"
+      },
+      {
+        "slot": "隠れ",
+        "name": "のろわれボディ",
+        "nameEn": "Cursed Body"
+      }
+    ]
   },
   {
     "id": "chimecho",
@@ -1479,7 +2419,14 @@
       "spa": 95,
       "spd": 90,
       "spe": 65
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ふゆう",
+        "nameEn": "Levitate"
+      }
+    ]
   },
   {
     "id": "absol",
@@ -1501,7 +2448,24 @@
       "spa": 75,
       "spd": 60,
       "spe": 75
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "プレッシャー",
+        "nameEn": "Pressure"
+      },
+      {
+        "slot": "特性2",
+        "name": "きょううん",
+        "nameEn": "Super Luck"
+      },
+      {
+        "slot": "隠れ",
+        "name": "せいぎのこころ",
+        "nameEn": "Justified"
+      }
+    ]
   },
   {
     "id": "glalie",
@@ -1523,7 +2487,24 @@
       "spa": 80,
       "spd": 80,
       "spe": 80
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "せいしんりょく",
+        "nameEn": "Inner Focus"
+      },
+      {
+        "slot": "特性2",
+        "name": "アイスボディ",
+        "nameEn": "Ice Body"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ムラっけ",
+        "nameEn": "Moody"
+      }
+    ]
   },
   {
     "id": "metagross",
@@ -1547,7 +2528,19 @@
       "spa": 95,
       "spd": 90,
       "spe": 70
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "クリアボディ",
+        "nameEn": "Clear Body"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ライトメタル",
+        "nameEn": "Light Metal"
+      }
+    ]
   },
   {
     "id": "torterra",
@@ -1570,7 +2563,19 @@
       "spa": 75,
       "spd": 85,
       "spe": 56
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "しんりょく",
+        "nameEn": "Overgrow"
+      },
+      {
+        "slot": "隠れ",
+        "name": "シェルアーマー",
+        "nameEn": "Shell Armor"
+      }
+    ]
   },
   {
     "id": "infernape",
@@ -1593,7 +2598,19 @@
       "spa": 104,
       "spd": 71,
       "spe": 108
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "もうか",
+        "nameEn": "Blaze"
+      },
+      {
+        "slot": "隠れ",
+        "name": "てつのこぶし",
+        "nameEn": "Iron Fist"
+      }
+    ]
   },
   {
     "id": "empoleon",
@@ -1615,7 +2632,19 @@
       "spa": 111,
       "spd": 101,
       "spe": 60
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "げきりゅう",
+        "nameEn": "Torrent"
+      },
+      {
+        "slot": "隠れ",
+        "name": "かちき",
+        "nameEn": "Competitive"
+      }
+    ]
   },
   {
     "id": "staraptor",
@@ -1638,7 +2667,19 @@
       "spa": 50,
       "spd": 60,
       "spe": 100
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "いかく",
+        "nameEn": "Intimidate"
+      },
+      {
+        "slot": "隠れ",
+        "name": "すてみ",
+        "nameEn": "Reckless"
+      }
+    ]
   },
   {
     "id": "luxray",
@@ -1659,7 +2700,24 @@
       "spa": 95,
       "spd": 79,
       "spe": 70
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "とうそうしん",
+        "nameEn": "Rivalry"
+      },
+      {
+        "slot": "特性2",
+        "name": "いかく",
+        "nameEn": "Intimidate"
+      },
+      {
+        "slot": "隠れ",
+        "name": "こんじょう",
+        "nameEn": "Guts"
+      }
+    ]
   },
   {
     "id": "roserade",
@@ -1681,7 +2739,24 @@
       "spa": 125,
       "spd": 105,
       "spe": 90
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "しぜんかいふく",
+        "nameEn": "Natural Cure"
+      },
+      {
+        "slot": "特性2",
+        "name": "どくのトゲ",
+        "nameEn": "Poison Point"
+      },
+      {
+        "slot": "隠れ",
+        "name": "テクニシャン",
+        "nameEn": "Technician"
+      }
+    ]
   },
   {
     "id": "rampardos",
@@ -1703,7 +2778,19 @@
       "spa": 65,
       "spd": 50,
       "spe": 58
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "かたやぶり",
+        "nameEn": "Mold Breaker"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ちからずく",
+        "nameEn": "Sheer Force"
+      }
+    ]
   },
   {
     "id": "bastiodon",
@@ -1725,7 +2812,19 @@
       "spa": 47,
       "spd": 138,
       "spe": 30
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "がんじょう",
+        "nameEn": "Sturdy"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ぼうおん",
+        "nameEn": "Soundproof"
+      }
+    ]
   },
   {
     "id": "lopunny",
@@ -1748,7 +2847,24 @@
       "spa": 54,
       "spd": 96,
       "spe": 105
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "メロメロボディ",
+        "nameEn": "Cute Charm"
+      },
+      {
+        "slot": "特性2",
+        "name": "ぶきよう",
+        "nameEn": "Klutz"
+      },
+      {
+        "slot": "隠れ",
+        "name": "じゅうなん",
+        "nameEn": "Limber"
+      }
+    ]
   },
   {
     "id": "spiritomb",
@@ -1770,7 +2886,19 @@
       "spa": 92,
       "spd": 108,
       "spe": 35
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "プレッシャー",
+        "nameEn": "Pressure"
+      },
+      {
+        "slot": "隠れ",
+        "name": "すりぬけ",
+        "nameEn": "Infiltrator"
+      }
+    ]
   },
   {
     "id": "garchomp",
@@ -1795,7 +2923,19 @@
       "spa": 80,
       "spd": 85,
       "spe": 102
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "すながくれ",
+        "nameEn": "Sand Veil"
+      },
+      {
+        "slot": "隠れ",
+        "name": "さめはだ",
+        "nameEn": "Rough Skin"
+      }
+    ]
   },
   {
     "id": "lucario",
@@ -1818,7 +2958,24 @@
       "spa": 115,
       "spd": 70,
       "spe": 90
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ふくつのこころ",
+        "nameEn": "Steadfast"
+      },
+      {
+        "slot": "特性2",
+        "name": "せいしんりょく",
+        "nameEn": "Inner Focus"
+      },
+      {
+        "slot": "隠れ",
+        "name": "せいぎのこころ",
+        "nameEn": "Justified"
+      }
+    ]
   },
   {
     "id": "hippowdon",
@@ -1841,7 +2998,19 @@
       "spa": 68,
       "spd": 72,
       "spe": 47
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "すなおこし",
+        "nameEn": "Sand Stream"
+      },
+      {
+        "slot": "隠れ",
+        "name": "すなのちから",
+        "nameEn": "Sand Force"
+      }
+    ]
   },
   {
     "id": "toxicroak",
@@ -1863,7 +3032,24 @@
       "spa": 86,
       "spd": 65,
       "spe": 85
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "きけんよち",
+        "nameEn": "Anticipation"
+      },
+      {
+        "slot": "特性2",
+        "name": "かんそうはだ",
+        "nameEn": "Dry Skin"
+      },
+      {
+        "slot": "隠れ",
+        "name": "どくしゅ",
+        "nameEn": "Poison Touch"
+      }
+    ]
   },
   {
     "id": "abomasnow",
@@ -1886,7 +3072,19 @@
       "spa": 92,
       "spd": 85,
       "spe": 60
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ゆきふらし",
+        "nameEn": "Snow Warning"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ぼうおん",
+        "nameEn": "Soundproof"
+      }
+    ]
   },
   {
     "id": "weavile",
@@ -1909,7 +3107,19 @@
       "spa": 45,
       "spd": 85,
       "spe": 125
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "プレッシャー",
+        "nameEn": "Pressure"
+      },
+      {
+        "slot": "隠れ",
+        "name": "わるいてぐせ",
+        "nameEn": "Pickpocket"
+      }
+    ]
   },
   {
     "id": "rhyperior",
@@ -1933,7 +3143,24 @@
       "spa": 55,
       "spd": 55,
       "spe": 40
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ひらいしん",
+        "nameEn": "Lightning Rod"
+      },
+      {
+        "slot": "特性2",
+        "name": "ハードロック",
+        "nameEn": "Solid Rock"
+      },
+      {
+        "slot": "隠れ",
+        "name": "すてみ",
+        "nameEn": "Reckless"
+      }
+    ]
   },
   {
     "id": "leafeon",
@@ -1954,7 +3181,19 @@
       "spa": 60,
       "spd": 65,
       "spe": 95
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "リーフガード",
+        "nameEn": "Leaf Guard"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ようりょくそ",
+        "nameEn": "Chlorophyll"
+      }
+    ]
   },
   {
     "id": "glaceon",
@@ -1975,7 +3214,19 @@
       "spa": 130,
       "spd": 95,
       "spe": 65
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ゆきがくれ",
+        "nameEn": "Snow Cloak"
+      },
+      {
+        "slot": "隠れ",
+        "name": "アイスボディ",
+        "nameEn": "Ice Body"
+      }
+    ]
   },
   {
     "id": "gliscor",
@@ -1998,7 +3249,24 @@
       "spa": 45,
       "spd": 75,
       "spe": 95
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "かいりきバサミ",
+        "nameEn": "Hyper Cutter"
+      },
+      {
+        "slot": "特性2",
+        "name": "すながくれ",
+        "nameEn": "Sand Veil"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ポイズンヒール",
+        "nameEn": "Poison Heal"
+      }
+    ]
   },
   {
     "id": "mamoswine",
@@ -2020,7 +3288,24 @@
       "spa": 70,
       "spd": 60,
       "spe": 80
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "どんかん",
+        "nameEn": "Oblivious"
+      },
+      {
+        "slot": "特性2",
+        "name": "ゆきがくれ",
+        "nameEn": "Snow Cloak"
+      },
+      {
+        "slot": "隠れ",
+        "name": "あついしぼう",
+        "nameEn": "Thick Fat"
+      }
+    ]
   },
   {
     "id": "gallade",
@@ -2043,7 +3328,24 @@
       "spa": 65,
       "spd": 115,
       "spe": 80
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ふくつのこころ",
+        "nameEn": "Steadfast"
+      },
+      {
+        "slot": "特性2",
+        "name": "きれあじ",
+        "nameEn": "Sharpness"
+      },
+      {
+        "slot": "隠れ",
+        "name": "せいぎのこころ",
+        "nameEn": "Justified"
+      }
+    ]
   },
   {
     "id": "froslass",
@@ -2067,7 +3369,19 @@
       "spa": 80,
       "spd": 70,
       "spe": 110
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ゆきがくれ",
+        "nameEn": "Snow Cloak"
+      },
+      {
+        "slot": "隠れ",
+        "name": "のろわれボディ",
+        "nameEn": "Cursed Body"
+      }
+    ]
   },
   {
     "id": "rotom",
@@ -2089,7 +3403,14 @@
       "spa": 95,
       "spd": 77,
       "spe": 91
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ふゆう",
+        "nameEn": "Levitate"
+      }
+    ]
   },
   {
     "id": "serperior",
@@ -2111,7 +3432,19 @@
       "spa": 75,
       "spd": 95,
       "spe": 113
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "しんりょく",
+        "nameEn": "Overgrow"
+      },
+      {
+        "slot": "隠れ",
+        "name": "あまのじゃく",
+        "nameEn": "Contrary"
+      }
+    ]
   },
   {
     "id": "emboar",
@@ -2134,7 +3467,19 @@
       "spa": 100,
       "spd": 65,
       "spe": 65
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "もうか",
+        "nameEn": "Blaze"
+      },
+      {
+        "slot": "隠れ",
+        "name": "すてみ",
+        "nameEn": "Reckless"
+      }
+    ]
   },
   {
     "id": "samurott",
@@ -2155,7 +3500,19 @@
       "spa": 108,
       "spd": 70,
       "spe": 70
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "げきりゅう",
+        "nameEn": "Torrent"
+      },
+      {
+        "slot": "隠れ",
+        "name": "シェルアーマー",
+        "nameEn": "Shell Armor"
+      }
+    ]
   },
   {
     "id": "watchog",
@@ -2176,7 +3533,24 @@
       "spa": 60,
       "spd": 69,
       "spe": 77
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "はっこう",
+        "nameEn": "Illuminate"
+      },
+      {
+        "slot": "特性2",
+        "name": "するどいめ",
+        "nameEn": "Keen Eye"
+      },
+      {
+        "slot": "隠れ",
+        "name": "アナライズ",
+        "nameEn": "Analytic"
+      }
+    ]
   },
   {
     "id": "liepard",
@@ -2198,7 +3572,24 @@
       "spa": 88,
       "spd": 50,
       "spe": 106
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "じゅうなん",
+        "nameEn": "Limber"
+      },
+      {
+        "slot": "特性2",
+        "name": "かるわざ",
+        "nameEn": "Unburden"
+      },
+      {
+        "slot": "隠れ",
+        "name": "いたずらごころ",
+        "nameEn": "Prankster"
+      }
+    ]
   },
   {
     "id": "simisage",
@@ -2220,7 +3611,19 @@
       "spa": 98,
       "spd": 63,
       "spe": 101
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "くいしんぼう",
+        "nameEn": "Gluttony"
+      },
+      {
+        "slot": "隠れ",
+        "name": "しんりょく",
+        "nameEn": "Overgrow"
+      }
+    ]
   },
   {
     "id": "simisear",
@@ -2242,7 +3645,19 @@
       "spa": 98,
       "spd": 63,
       "spe": 101
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "くいしんぼう",
+        "nameEn": "Gluttony"
+      },
+      {
+        "slot": "隠れ",
+        "name": "もうか",
+        "nameEn": "Blaze"
+      }
+    ]
   },
   {
     "id": "simipour",
@@ -2264,7 +3679,19 @@
       "spa": 98,
       "spd": 63,
       "spe": 101
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "くいしんぼう",
+        "nameEn": "Gluttony"
+      },
+      {
+        "slot": "隠れ",
+        "name": "げきりゅう",
+        "nameEn": "Torrent"
+      }
+    ]
   },
   {
     "id": "musharna",
@@ -2286,7 +3713,24 @@
       "spa": 107,
       "spd": 95,
       "spe": 29
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "よちむ",
+        "nameEn": "Forewarn"
+      },
+      {
+        "slot": "特性2",
+        "name": "シンクロ",
+        "nameEn": "Synchronize"
+      },
+      {
+        "slot": "隠れ",
+        "name": "テレパシー",
+        "nameEn": "Telepathy"
+      }
+    ]
   },
   {
     "id": "excadrill",
@@ -2309,7 +3753,24 @@
       "spa": 50,
       "spd": 65,
       "spe": 88
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "すなかき",
+        "nameEn": "Sand Rush"
+      },
+      {
+        "slot": "特性2",
+        "name": "すなのちから",
+        "nameEn": "Sand Force"
+      },
+      {
+        "slot": "隠れ",
+        "name": "かたやぶり",
+        "nameEn": "Mold Breaker"
+      }
+    ]
   },
   {
     "id": "audino",
@@ -2332,7 +3793,24 @@
       "spa": 60,
       "spd": 86,
       "spe": 50
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "いやしのこころ",
+        "nameEn": "Healer"
+      },
+      {
+        "slot": "特性2",
+        "name": "さいせいりょく",
+        "nameEn": "Regenerator"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ぶきよう",
+        "nameEn": "Klutz"
+      }
+    ]
   },
   {
     "id": "conkeldurr",
@@ -2355,7 +3833,24 @@
       "spa": 55,
       "spd": 65,
       "spe": 45
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "こんじょう",
+        "nameEn": "Guts"
+      },
+      {
+        "slot": "特性2",
+        "name": "ちからずく",
+        "nameEn": "Sheer Force"
+      },
+      {
+        "slot": "隠れ",
+        "name": "てつのこぶし",
+        "nameEn": "Iron Fist"
+      }
+    ]
   },
   {
     "id": "scolipede",
@@ -2378,7 +3873,24 @@
       "spa": 55,
       "spd": 69,
       "spe": 112
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "どくのトゲ",
+        "nameEn": "Poison Point"
+      },
+      {
+        "slot": "特性2",
+        "name": "むしのしらせ",
+        "nameEn": "Swarm"
+      },
+      {
+        "slot": "隠れ",
+        "name": "かそく",
+        "nameEn": "Speed Boost"
+      }
+    ]
   },
   {
     "id": "whimsicott",
@@ -2401,7 +3913,24 @@
       "spa": 77,
       "spd": 75,
       "spe": 116
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "いたずらごころ",
+        "nameEn": "Prankster"
+      },
+      {
+        "slot": "特性2",
+        "name": "すりぬけ",
+        "nameEn": "Infiltrator"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ようりょくそ",
+        "nameEn": "Chlorophyll"
+      }
+    ]
   },
   {
     "id": "krookodile",
@@ -2423,7 +3952,24 @@
       "spa": 65,
       "spd": 70,
       "spe": 92
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "いかく",
+        "nameEn": "Intimidate"
+      },
+      {
+        "slot": "特性2",
+        "name": "じしんかじょう",
+        "nameEn": "Moxie"
+      },
+      {
+        "slot": "隠れ",
+        "name": "いかりのつぼ",
+        "nameEn": "Anger Point"
+      }
+    ]
   },
   {
     "id": "scrafty",
@@ -2445,7 +3991,24 @@
       "spa": 45,
       "spd": 115,
       "spe": 58
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "だっぴ",
+        "nameEn": "Shed Skin"
+      },
+      {
+        "slot": "特性2",
+        "name": "じしんかじょう",
+        "nameEn": "Moxie"
+      },
+      {
+        "slot": "隠れ",
+        "name": "いかく",
+        "nameEn": "Intimidate"
+      }
+    ]
   },
   {
     "id": "cofagrigus",
@@ -2466,7 +4029,14 @@
       "spa": 95,
       "spd": 105,
       "spe": 30
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ミイラ",
+        "nameEn": "Mummy"
+      }
+    ]
   },
   {
     "id": "garbodor",
@@ -2487,7 +4057,24 @@
       "spa": 60,
       "spd": 82,
       "spe": 75
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "あくしゅう",
+        "nameEn": "Stench"
+      },
+      {
+        "slot": "特性2",
+        "name": "くだけるよろい",
+        "nameEn": "Weak Armor"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ゆうばく",
+        "nameEn": "Aftermath"
+      }
+    ]
   },
   {
     "id": "zoroark",
@@ -2509,7 +4096,14 @@
       "spa": 120,
       "spd": 60,
       "spe": 105
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "イリュージョン",
+        "nameEn": "Illusion"
+      }
+    ]
   },
   {
     "id": "reuniclus",
@@ -2531,7 +4125,24 @@
       "spa": 125,
       "spd": 85,
       "spe": 30
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ぼうじん",
+        "nameEn": "Overcoat"
+      },
+      {
+        "slot": "特性2",
+        "name": "マジックガード",
+        "nameEn": "Magic Guard"
+      },
+      {
+        "slot": "隠れ",
+        "name": "さいせいりょく",
+        "nameEn": "Regenerator"
+      }
+    ]
   },
   {
     "id": "vanilluxe",
@@ -2552,7 +4163,24 @@
       "spa": 110,
       "spd": 95,
       "spe": 79
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "アイスボディ",
+        "nameEn": "Ice Body"
+      },
+      {
+        "slot": "特性2",
+        "name": "ゆきふらし",
+        "nameEn": "Snow Warning"
+      },
+      {
+        "slot": "隠れ",
+        "name": "くだけるよろい",
+        "nameEn": "Weak Armor"
+      }
+    ]
   },
   {
     "id": "emolga",
@@ -2575,7 +4203,19 @@
       "spa": 75,
       "spd": 60,
       "spe": 103
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "せいでんき",
+        "nameEn": "Static"
+      },
+      {
+        "slot": "隠れ",
+        "name": "でんきエンジン",
+        "nameEn": "Motor Drive"
+      }
+    ]
   },
   {
     "id": "eelektross",
@@ -2596,7 +4236,14 @@
       "spa": 105,
       "spd": 80,
       "spe": 50
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ふゆう",
+        "nameEn": "Levitate"
+      }
+    ]
   },
   {
     "id": "chandelure",
@@ -2619,7 +4266,24 @@
       "spa": 145,
       "spd": 90,
       "spe": 80
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "もらいび",
+        "nameEn": "Flash Fire"
+      },
+      {
+        "slot": "特性2",
+        "name": "ほのおのからだ",
+        "nameEn": "Flame Body"
+      },
+      {
+        "slot": "隠れ",
+        "name": "すりぬけ",
+        "nameEn": "Infiltrator"
+      }
+    ]
   },
   {
     "id": "beartic",
@@ -2641,7 +4305,24 @@
       "spa": 70,
       "spd": 80,
       "spe": 50
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ゆきがくれ",
+        "nameEn": "Snow Cloak"
+      },
+      {
+        "slot": "特性2",
+        "name": "ゆきかき",
+        "nameEn": "Slush Rush"
+      },
+      {
+        "slot": "隠れ",
+        "name": "すいすい",
+        "nameEn": "Swift Swim"
+      }
+    ]
   },
   {
     "id": "stunfisk",
@@ -2664,7 +4345,24 @@
       "spa": 81,
       "spd": 99,
       "spe": 32
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "せいでんき",
+        "nameEn": "Static"
+      },
+      {
+        "slot": "特性2",
+        "name": "じゅうなん",
+        "nameEn": "Limber"
+      },
+      {
+        "slot": "隠れ",
+        "name": "すながくれ",
+        "nameEn": "Sand Veil"
+      }
+    ]
   },
   {
     "id": "golurk",
@@ -2687,7 +4385,24 @@
       "spa": 55,
       "spd": 80,
       "spe": 55
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "てつのこぶし",
+        "nameEn": "Iron Fist"
+      },
+      {
+        "slot": "特性2",
+        "name": "ぶきよう",
+        "nameEn": "Klutz"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ノーガード",
+        "nameEn": "No Guard"
+      }
+    ]
   },
   {
     "id": "hydreigon",
@@ -2710,7 +4425,14 @@
       "spa": 125,
       "spd": 90,
       "spe": 98
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ふゆう",
+        "nameEn": "Levitate"
+      }
+    ]
   },
   {
     "id": "volcarona",
@@ -2733,7 +4455,19 @@
       "spa": 135,
       "spd": 105,
       "spe": 100
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ほのおのからだ",
+        "nameEn": "Flame Body"
+      },
+      {
+        "slot": "隠れ",
+        "name": "むしのしらせ",
+        "nameEn": "Swarm"
+      }
+    ]
   },
   {
     "id": "chesnaught",
@@ -2756,7 +4490,19 @@
       "spa": 74,
       "spd": 75,
       "spe": 64
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "しんりょく",
+        "nameEn": "Overgrow"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ぼうだん",
+        "nameEn": "Bulletproof"
+      }
+    ]
   },
   {
     "id": "delphox",
@@ -2780,7 +4526,19 @@
       "spa": 114,
       "spd": 100,
       "spe": 104
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "もうか",
+        "nameEn": "Blaze"
+      },
+      {
+        "slot": "隠れ",
+        "name": "マジシャン",
+        "nameEn": "Magician"
+      }
+    ]
   },
   {
     "id": "greninja",
@@ -2804,7 +4562,19 @@
       "spa": 103,
       "spd": 71,
       "spe": 122
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "げきりゅう",
+        "nameEn": "Torrent"
+      },
+      {
+        "slot": "隠れ",
+        "name": "へんげんじざい",
+        "nameEn": "Protean"
+      }
+    ]
   },
   {
     "id": "diggersby",
@@ -2826,7 +4596,24 @@
       "spa": 50,
       "spd": 77,
       "spe": 78
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ものひろい",
+        "nameEn": "Pickup"
+      },
+      {
+        "slot": "特性2",
+        "name": "ほおぶくろ",
+        "nameEn": "Cheek Pouch"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ちからもち",
+        "nameEn": "Huge Power"
+      }
+    ]
   },
   {
     "id": "talonflame",
@@ -2849,7 +4636,19 @@
       "spa": 74,
       "spd": 69,
       "spe": 126
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ほのおのからだ",
+        "nameEn": "Flame Body"
+      },
+      {
+        "slot": "隠れ",
+        "name": "はやてのつばさ",
+        "nameEn": "Gale Wings"
+      }
+    ]
   },
   {
     "id": "vivillon",
@@ -2871,7 +4670,24 @@
       "spa": 90,
       "spd": 50,
       "spe": 89
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "りんぷん",
+        "nameEn": "Shield Dust"
+      },
+      {
+        "slot": "特性2",
+        "name": "ふくがん",
+        "nameEn": "Compound Eyes"
+      },
+      {
+        "slot": "隠れ",
+        "name": "フレンドガード",
+        "nameEn": "Friend Guard"
+      }
+    ]
   },
   {
     "id": "floette",
@@ -2894,7 +4710,19 @@
       "spa": 125,
       "spd": 128,
       "spe": 92
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "フラワーベール",
+        "nameEn": "Flower Veil"
+      },
+      {
+        "slot": "隠れ",
+        "name": "きょうせい",
+        "nameEn": "Symbiosis"
+      }
+    ]
   },
   {
     "id": "florges",
@@ -2916,7 +4744,19 @@
       "spa": 112,
       "spd": 154,
       "spe": 75
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "フラワーベール",
+        "nameEn": "Flower Veil"
+      },
+      {
+        "slot": "隠れ",
+        "name": "きょうせい",
+        "nameEn": "Symbiosis"
+      }
+    ]
   },
   {
     "id": "pangoro",
@@ -2939,7 +4779,24 @@
       "spa": 69,
       "spd": 71,
       "spe": 58
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "てつのこぶし",
+        "nameEn": "Iron Fist"
+      },
+      {
+        "slot": "特性2",
+        "name": "かたやぶり",
+        "nameEn": "Mold Breaker"
+      },
+      {
+        "slot": "隠れ",
+        "name": "きもったま",
+        "nameEn": "Scrappy"
+      }
+    ]
   },
   {
     "id": "furfrou",
@@ -2961,7 +4818,14 @@
       "spa": 65,
       "spd": 90,
       "spe": 102
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ファーコート",
+        "nameEn": "Fur Coat"
+      }
+    ]
   },
   {
     "id": "meowstic",
@@ -2984,7 +4848,24 @@
       "spa": 83,
       "spd": 81,
       "spe": 104
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "するどいめ",
+        "nameEn": "Keen Eye"
+      },
+      {
+        "slot": "特性2",
+        "name": "すりぬけ",
+        "nameEn": "Infiltrator"
+      },
+      {
+        "slot": "隠れ",
+        "name": "いたずらごころ",
+        "nameEn": "Prankster"
+      }
+    ]
   },
   {
     "id": "aegislash",
@@ -3006,7 +4887,14 @@
       "spa": 50,
       "spd": 140,
       "spe": 60
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "バトルスイッチ",
+        "nameEn": "Stance Change"
+      }
+    ]
   },
   {
     "id": "aromatisse",
@@ -3027,7 +4915,19 @@
       "spa": 99,
       "spd": 89,
       "spe": 29
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "いやしのこころ",
+        "nameEn": "Healer"
+      },
+      {
+        "slot": "隠れ",
+        "name": "アロマベール",
+        "nameEn": "Aroma Veil"
+      }
+    ]
   },
   {
     "id": "slurpuff",
@@ -3048,7 +4948,19 @@
       "spa": 85,
       "spd": 75,
       "spe": 72
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "スイートベール",
+        "nameEn": "Sweet Veil"
+      },
+      {
+        "slot": "隠れ",
+        "name": "かるわざ",
+        "nameEn": "Unburden"
+      }
+    ]
   },
   {
     "id": "malamar",
@@ -3070,7 +4982,24 @@
       "spa": 68,
       "spd": 75,
       "spe": 73
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "あまのじゃく",
+        "nameEn": "Contrary"
+      },
+      {
+        "slot": "特性2",
+        "name": "きゅうばん",
+        "nameEn": "Suction Cups"
+      },
+      {
+        "slot": "隠れ",
+        "name": "すりぬけ",
+        "nameEn": "Infiltrator"
+      }
+    ]
   },
   {
     "id": "barbaracle",
@@ -3092,7 +5021,24 @@
       "spa": 54,
       "spd": 86,
       "spe": 68
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "かたいツメ",
+        "nameEn": "Tough Claws"
+      },
+      {
+        "slot": "特性2",
+        "name": "スナイパー",
+        "nameEn": "Sniper"
+      },
+      {
+        "slot": "隠れ",
+        "name": "わるいてぐせ",
+        "nameEn": "Pickpocket"
+      }
+    ]
   },
   {
     "id": "dragalge",
@@ -3114,7 +5060,24 @@
       "spa": 97,
       "spd": 123,
       "spe": 44
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "どくのトゲ",
+        "nameEn": "Poison Point"
+      },
+      {
+        "slot": "特性2",
+        "name": "どくしゅ",
+        "nameEn": "Poison Touch"
+      },
+      {
+        "slot": "隠れ",
+        "name": "てきおうりょく",
+        "nameEn": "Adaptability"
+      }
+    ]
   },
   {
     "id": "clawitzer",
@@ -3135,7 +5098,14 @@
       "spa": 120,
       "spd": 89,
       "spe": 59
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "メガランチャー",
+        "nameEn": "Mega Launcher"
+      }
+    ]
   },
   {
     "id": "heliolisk",
@@ -3158,7 +5128,24 @@
       "spa": 109,
       "spd": 94,
       "spe": 109
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "かんそうはだ",
+        "nameEn": "Dry Skin"
+      },
+      {
+        "slot": "特性2",
+        "name": "すながくれ",
+        "nameEn": "Sand Veil"
+      },
+      {
+        "slot": "隠れ",
+        "name": "サンパワー",
+        "nameEn": "Solar Power"
+      }
+    ]
   },
   {
     "id": "tyrantrum",
@@ -3181,7 +5168,19 @@
       "spa": 69,
       "spd": 59,
       "spe": 71
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "がんじょうあご",
+        "nameEn": "Strong Jaw"
+      },
+      {
+        "slot": "隠れ",
+        "name": "いしあたま",
+        "nameEn": "Rock Head"
+      }
+    ]
   },
   {
     "id": "aurorus",
@@ -3204,7 +5203,19 @@
       "spa": 99,
       "spd": 92,
       "spe": 58
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "フリーズスキン",
+        "nameEn": "Refrigerate"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ゆきふらし",
+        "nameEn": "Snow Warning"
+      }
+    ]
   },
   {
     "id": "sylveon",
@@ -3227,7 +5238,19 @@
       "spa": 110,
       "spd": 130,
       "spe": 60
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "メロメロボディ",
+        "nameEn": "Cute Charm"
+      },
+      {
+        "slot": "隠れ",
+        "name": "フェアリースキン",
+        "nameEn": "Pixilate"
+      }
+    ]
   },
   {
     "id": "hawlucha",
@@ -3251,7 +5274,24 @@
       "spa": 74,
       "spd": 63,
       "spe": 118
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "じゅうなん",
+        "nameEn": "Limber"
+      },
+      {
+        "slot": "特性2",
+        "name": "かるわざ",
+        "nameEn": "Unburden"
+      },
+      {
+        "slot": "隠れ",
+        "name": "かたやぶり",
+        "nameEn": "Mold Breaker"
+      }
+    ]
   },
   {
     "id": "dedenne",
@@ -3274,7 +5314,24 @@
       "spa": 81,
       "spd": 67,
       "spe": 101
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ほおぶくろ",
+        "nameEn": "Cheek Pouch"
+      },
+      {
+        "slot": "特性2",
+        "name": "ものひろい",
+        "nameEn": "Pickup"
+      },
+      {
+        "slot": "隠れ",
+        "name": "プラス",
+        "nameEn": "Plus"
+      }
+    ]
   },
   {
     "id": "goodra",
@@ -3297,7 +5354,24 @@
       "spa": 110,
       "spd": 150,
       "spe": 80
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "そうしょく",
+        "nameEn": "Sap Sipper"
+      },
+      {
+        "slot": "特性2",
+        "name": "うるおいボディ",
+        "nameEn": "Hydration"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ぬめぬめ",
+        "nameEn": "Gooey"
+      }
+    ]
   },
   {
     "id": "klefki",
@@ -3319,7 +5393,19 @@
       "spa": 80,
       "spd": 87,
       "spe": 75
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "いたずらごころ",
+        "nameEn": "Prankster"
+      },
+      {
+        "slot": "隠れ",
+        "name": "マジシャン",
+        "nameEn": "Magician"
+      }
+    ]
   },
   {
     "id": "trevenant",
@@ -3341,7 +5427,24 @@
       "spa": 65,
       "spd": 82,
       "spe": 56
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "しぜんかいふく",
+        "nameEn": "Natural Cure"
+      },
+      {
+        "slot": "特性2",
+        "name": "おみとおし",
+        "nameEn": "Frisk"
+      },
+      {
+        "slot": "隠れ",
+        "name": "しゅうかく",
+        "nameEn": "Harvest"
+      }
+    ]
   },
   {
     "id": "gourgeist",
@@ -3363,7 +5466,24 @@
       "spa": 58,
       "spd": 75,
       "spe": 84
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ものひろい",
+        "nameEn": "Pickup"
+      },
+      {
+        "slot": "特性2",
+        "name": "おみとおし",
+        "nameEn": "Frisk"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ふみん",
+        "nameEn": "Insomnia"
+      }
+    ]
   },
   {
     "id": "avalugg",
@@ -3386,7 +5506,24 @@
       "spa": 44,
       "spd": 46,
       "spe": 28
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "マイペース",
+        "nameEn": "Own Tempo"
+      },
+      {
+        "slot": "特性2",
+        "name": "アイスボディ",
+        "nameEn": "Ice Body"
+      },
+      {
+        "slot": "隠れ",
+        "name": "がんじょう",
+        "nameEn": "Sturdy"
+      }
+    ]
   },
   {
     "id": "noivern",
@@ -3409,7 +5546,24 @@
       "spa": 97,
       "spd": 80,
       "spe": 123
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "おみとおし",
+        "nameEn": "Frisk"
+      },
+      {
+        "slot": "特性2",
+        "name": "すりぬけ",
+        "nameEn": "Infiltrator"
+      },
+      {
+        "slot": "隠れ",
+        "name": "テレパシー",
+        "nameEn": "Telepathy"
+      }
+    ]
   },
   {
     "id": "decidueye",
@@ -3431,7 +5585,19 @@
       "spa": 100,
       "spd": 100,
       "spe": 70
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "しんりょく",
+        "nameEn": "Overgrow"
+      },
+      {
+        "slot": "隠れ",
+        "name": "えんかく",
+        "nameEn": "Long Reach"
+      }
+    ]
   },
   {
     "id": "incineroar",
@@ -3454,7 +5620,19 @@
       "spa": 80,
       "spd": 90,
       "spe": 60
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "もうか",
+        "nameEn": "Blaze"
+      },
+      {
+        "slot": "隠れ",
+        "name": "いかく",
+        "nameEn": "Intimidate"
+      }
+    ]
   },
   {
     "id": "primarina",
@@ -3476,7 +5654,19 @@
       "spa": 126,
       "spd": 116,
       "spe": 60
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "げきりゅう",
+        "nameEn": "Torrent"
+      },
+      {
+        "slot": "隠れ",
+        "name": "うるおいボイス",
+        "nameEn": "Liquid Voice"
+      }
+    ]
   },
   {
     "id": "toucannon",
@@ -3498,7 +5688,24 @@
       "spa": 75,
       "spd": 75,
       "spe": 60
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "するどいめ",
+        "nameEn": "Keen Eye"
+      },
+      {
+        "slot": "特性2",
+        "name": "スキルリンク",
+        "nameEn": "Skill Link"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ちからずく",
+        "nameEn": "Sheer Force"
+      }
+    ]
   },
   {
     "id": "crabominable",
@@ -3522,7 +5729,24 @@
       "spa": 62,
       "spd": 67,
       "spe": 43
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "かいりきバサミ",
+        "nameEn": "Hyper Cutter"
+      },
+      {
+        "slot": "特性2",
+        "name": "てつのこぶし",
+        "nameEn": "Iron Fist"
+      },
+      {
+        "slot": "隠れ",
+        "name": "いかりのつぼ",
+        "nameEn": "Anger Point"
+      }
+    ]
   },
   {
     "id": "lycanroc",
@@ -3544,7 +5768,24 @@
       "spa": 55,
       "spd": 65,
       "spe": 112
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "するどいめ",
+        "nameEn": "Keen Eye"
+      },
+      {
+        "slot": "特性2",
+        "name": "すなかき",
+        "nameEn": "Sand Rush"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ふくつのこころ",
+        "nameEn": "Steadfast"
+      }
+    ]
   },
   {
     "id": "toxapex",
@@ -3566,7 +5807,24 @@
       "spa": 53,
       "spd": 142,
       "spe": 35
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ひとでなし",
+        "nameEn": "Merciless"
+      },
+      {
+        "slot": "特性2",
+        "name": "じゅうなん",
+        "nameEn": "Limber"
+      },
+      {
+        "slot": "隠れ",
+        "name": "さいせいりょく",
+        "nameEn": "Regenerator"
+      }
+    ]
   },
   {
     "id": "mudsdale",
@@ -3589,7 +5847,24 @@
       "spa": 55,
       "spd": 85,
       "spe": 35
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "マイペース",
+        "nameEn": "Own Tempo"
+      },
+      {
+        "slot": "特性2",
+        "name": "じきゅうりょく",
+        "nameEn": "Stamina"
+      },
+      {
+        "slot": "隠れ",
+        "name": "せいしんりょく",
+        "nameEn": "Inner Focus"
+      }
+    ]
   },
   {
     "id": "araquanid",
@@ -3611,7 +5886,19 @@
       "spa": 50,
       "spd": 132,
       "spe": 42
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "すいほう",
+        "nameEn": "Water Bubble"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ちょすい",
+        "nameEn": "Water Absorb"
+      }
+    ]
   },
   {
     "id": "salazzle",
@@ -3634,7 +5921,19 @@
       "spa": 111,
       "spd": 60,
       "spe": 117
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ふしょく",
+        "nameEn": "Corrosion"
+      },
+      {
+        "slot": "隠れ",
+        "name": "どんかん",
+        "nameEn": "Oblivious"
+      }
+    ]
   },
   {
     "id": "tsareena",
@@ -3655,7 +5954,24 @@
       "spa": 50,
       "spd": 98,
       "spe": 72
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "リーフガード",
+        "nameEn": "Leaf Guard"
+      },
+      {
+        "slot": "特性2",
+        "name": "じょおうのいげん",
+        "nameEn": "Queenly Majesty"
+      },
+      {
+        "slot": "隠れ",
+        "name": "スイートベール",
+        "nameEn": "Sweet Veil"
+      }
+    ]
   },
   {
     "id": "oranguru",
@@ -3678,7 +5994,24 @@
       "spa": 90,
       "spd": 110,
       "spe": 60
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "せいしんりょく",
+        "nameEn": "Inner Focus"
+      },
+      {
+        "slot": "特性2",
+        "name": "テレパシー",
+        "nameEn": "Telepathy"
+      },
+      {
+        "slot": "隠れ",
+        "name": "きょうせい",
+        "nameEn": "Symbiosis"
+      }
+    ]
   },
   {
     "id": "passimian",
@@ -3699,7 +6032,19 @@
       "spa": 40,
       "spd": 60,
       "spe": 80
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "レシーバー",
+        "nameEn": "Receiver"
+      },
+      {
+        "slot": "隠れ",
+        "name": "まけんき",
+        "nameEn": "Defiant"
+      }
+    ]
   },
   {
     "id": "mimikyu",
@@ -3721,7 +6066,14 @@
       "spa": 50,
       "spd": 105,
       "spe": 96
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ばけのかわ",
+        "nameEn": "Disguise"
+      }
+    ]
   },
   {
     "id": "drampa",
@@ -3744,7 +6096,24 @@
       "spa": 135,
       "spd": 91,
       "spe": 36
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ぎゃくじょう",
+        "nameEn": "Berserk"
+      },
+      {
+        "slot": "特性2",
+        "name": "そうしょく",
+        "nameEn": "Sap Sipper"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ノーてんき",
+        "nameEn": "Cloud Nine"
+      }
+    ]
   },
   {
     "id": "kommo-o",
@@ -3768,7 +6137,24 @@
       "spa": 100,
       "spd": 105,
       "spe": 85
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ぼうだん",
+        "nameEn": "Bulletproof"
+      },
+      {
+        "slot": "特性2",
+        "name": "ぼうおん",
+        "nameEn": "Soundproof"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ぼうじん",
+        "nameEn": "Overcoat"
+      }
+    ]
   },
   {
     "id": "corviknight",
@@ -3790,7 +6176,24 @@
       "spa": 53,
       "spd": 85,
       "spe": 67
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "プレッシャー",
+        "nameEn": "Pressure"
+      },
+      {
+        "slot": "特性2",
+        "name": "きんちょうかん",
+        "nameEn": "Unnerve"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ミラーアーマー",
+        "nameEn": "Mirror Armor"
+      }
+    ]
   },
   {
     "id": "flapple",
@@ -3812,7 +6215,24 @@
       "spa": 95,
       "spd": 60,
       "spe": 70
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "じゅくせい",
+        "nameEn": "Ripen"
+      },
+      {
+        "slot": "特性2",
+        "name": "くいしんぼう",
+        "nameEn": "Gluttony"
+      },
+      {
+        "slot": "隠れ",
+        "name": "はりきり",
+        "nameEn": "Hustle"
+      }
+    ]
   },
   {
     "id": "appletun",
@@ -3834,7 +6254,24 @@
       "spa": 100,
       "spd": 80,
       "spe": 30
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "じゅくせい",
+        "nameEn": "Ripen"
+      },
+      {
+        "slot": "特性2",
+        "name": "くいしんぼう",
+        "nameEn": "Gluttony"
+      },
+      {
+        "slot": "隠れ",
+        "name": "あついしぼう",
+        "nameEn": "Thick Fat"
+      }
+    ]
   },
   {
     "id": "sandaconda",
@@ -3855,7 +6292,24 @@
       "spa": 65,
       "spd": 70,
       "spe": 71
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "すなはき",
+        "nameEn": "Sand Spit"
+      },
+      {
+        "slot": "特性2",
+        "name": "だっぴ",
+        "nameEn": "Shed Skin"
+      },
+      {
+        "slot": "隠れ",
+        "name": "すながくれ",
+        "nameEn": "Sand Veil"
+      }
+    ]
   },
   {
     "id": "polteageist",
@@ -3876,7 +6330,19 @@
       "spa": 134,
       "spd": 114,
       "spe": 70
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "くだけるよろい",
+        "nameEn": "Weak Armor"
+      },
+      {
+        "slot": "隠れ",
+        "name": "のろわれボディ",
+        "nameEn": "Cursed Body"
+      }
+    ]
   },
   {
     "id": "hatterene",
@@ -3898,7 +6364,24 @@
       "spa": 136,
       "spd": 103,
       "spe": 29
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "いやしのこころ",
+        "nameEn": "Healer"
+      },
+      {
+        "slot": "特性2",
+        "name": "きけんよち",
+        "nameEn": "Anticipation"
+      },
+      {
+        "slot": "隠れ",
+        "name": "マジックミラー",
+        "nameEn": "Magic Bounce"
+      }
+    ]
   },
   {
     "id": "grimmsnarl",
@@ -3921,7 +6404,24 @@
       "spa": 95,
       "spd": 75,
       "spe": 60
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "いたずらごころ",
+        "nameEn": "Prankster"
+      },
+      {
+        "slot": "特性2",
+        "name": "おみとおし",
+        "nameEn": "Frisk"
+      },
+      {
+        "slot": "隠れ",
+        "name": "わるいてぐせ",
+        "nameEn": "Pickpocket"
+      }
+    ]
   },
   {
     "id": "runerigus",
@@ -3943,7 +6443,14 @@
       "spa": 50,
       "spd": 105,
       "spe": 30
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "さまようたましい",
+        "nameEn": "Wandering Spirit"
+      }
+    ]
   },
   {
     "id": "alcremie",
@@ -3964,7 +6471,19 @@
       "spa": 110,
       "spd": 121,
       "spe": 64
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "スイートベール",
+        "nameEn": "Sweet Veil"
+      },
+      {
+        "slot": "隠れ",
+        "name": "アロマベール",
+        "nameEn": "Aroma Veil"
+      }
+    ]
   },
   {
     "id": "falinks",
@@ -3985,7 +6504,19 @@
       "spa": 70,
       "spd": 60,
       "spe": 75
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "カブトアーマー",
+        "nameEn": "Battle Armor"
+      },
+      {
+        "slot": "隠れ",
+        "name": "まけんき",
+        "nameEn": "Defiant"
+      }
+    ]
   },
   {
     "id": "morpeko",
@@ -4007,7 +6538,14 @@
       "spa": 70,
       "spd": 58,
       "spe": 97
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "はらぺこスイッチ",
+        "nameEn": "Hunger Switch"
+      }
+    ]
   },
   {
     "id": "dragapult",
@@ -4031,7 +6569,24 @@
       "spa": 100,
       "spd": 75,
       "spe": 142
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "クリアボディ",
+        "nameEn": "Clear Body"
+      },
+      {
+        "slot": "特性2",
+        "name": "すりぬけ",
+        "nameEn": "Infiltrator"
+      },
+      {
+        "slot": "隠れ",
+        "name": "のろわれボディ",
+        "nameEn": "Cursed Body"
+      }
+    ]
   },
   {
     "id": "wyrdeer",
@@ -4053,7 +6608,24 @@
       "spa": 105,
       "spd": 75,
       "spe": 65
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "いかく",
+        "nameEn": "Intimidate"
+      },
+      {
+        "slot": "特性2",
+        "name": "おみとおし",
+        "nameEn": "Frisk"
+      },
+      {
+        "slot": "隠れ",
+        "name": "そうしょく",
+        "nameEn": "Sap Sipper"
+      }
+    ]
   },
   {
     "id": "kleavor",
@@ -4075,7 +6647,24 @@
       "spa": 45,
       "spd": 70,
       "spe": 85
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "むしのしらせ",
+        "nameEn": "Swarm"
+      },
+      {
+        "slot": "特性2",
+        "name": "ちからずく",
+        "nameEn": "Sheer Force"
+      },
+      {
+        "slot": "隠れ",
+        "name": "きれあじ",
+        "nameEn": "Sharpness"
+      }
+    ]
   },
   {
     "id": "basculegion",
@@ -4097,7 +6686,24 @@
       "spa": 80,
       "spd": 75,
       "spe": 78
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "すいすい",
+        "nameEn": "Swift Swim"
+      },
+      {
+        "slot": "特性2",
+        "name": "てきおうりょく",
+        "nameEn": "Adaptability"
+      },
+      {
+        "slot": "隠れ",
+        "name": "かたやぶり",
+        "nameEn": "Mold Breaker"
+      }
+    ]
   },
   {
     "id": "sneasler",
@@ -4120,7 +6726,24 @@
       "spa": 40,
       "spd": 80,
       "spe": 120
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "プレッシャー",
+        "nameEn": "Pressure"
+      },
+      {
+        "slot": "特性2",
+        "name": "かるわざ",
+        "nameEn": "Unburden"
+      },
+      {
+        "slot": "隠れ",
+        "name": "どくしゅ",
+        "nameEn": "Poison Touch"
+      }
+    ]
   },
   {
     "id": "overqwil",
@@ -4142,7 +6765,24 @@
       "spa": 65,
       "spd": 65,
       "spe": 85
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "どくのトゲ",
+        "nameEn": "Poison Point"
+      },
+      {
+        "slot": "特性2",
+        "name": "すいすい",
+        "nameEn": "Swift Swim"
+      },
+      {
+        "slot": "隠れ",
+        "name": "いかく",
+        "nameEn": "Intimidate"
+      }
+    ]
   },
   {
     "id": "meowscarada",
@@ -4165,7 +6805,19 @@
       "spa": 81,
       "spd": 70,
       "spe": 123
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "しんりょく",
+        "nameEn": "Overgrow"
+      },
+      {
+        "slot": "隠れ",
+        "name": "へんげんじざい",
+        "nameEn": "Protean"
+      }
+    ]
   },
   {
     "id": "skeledirge",
@@ -4188,7 +6840,19 @@
       "spa": 110,
       "spd": 75,
       "spe": 66
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "もうか",
+        "nameEn": "Blaze"
+      },
+      {
+        "slot": "隠れ",
+        "name": "てんねん",
+        "nameEn": "Unaware"
+      }
+    ]
   },
   {
     "id": "quaquaval",
@@ -4210,7 +6874,19 @@
       "spa": 85,
       "spd": 75,
       "spe": 85
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "げきりゅう",
+        "nameEn": "Torrent"
+      },
+      {
+        "slot": "隠れ",
+        "name": "じしんかじょう",
+        "nameEn": "Moxie"
+      }
+    ]
   },
   {
     "id": "maushold",
@@ -4232,7 +6908,24 @@
       "spa": 65,
       "spd": 75,
       "spe": 111
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "フレンドガード",
+        "nameEn": "Friend Guard"
+      },
+      {
+        "slot": "特性2",
+        "name": "ほおぶくろ",
+        "nameEn": "Cheek Pouch"
+      },
+      {
+        "slot": "隠れ",
+        "name": "テクニシャン",
+        "nameEn": "Technician"
+      }
+    ]
   },
   {
     "id": "garganacl",
@@ -4254,7 +6947,24 @@
       "spa": 45,
       "spd": 90,
       "spe": 35
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "きよめのしお",
+        "nameEn": "Purifying Salt"
+      },
+      {
+        "slot": "特性2",
+        "name": "がんじょう",
+        "nameEn": "Sturdy"
+      },
+      {
+        "slot": "隠れ",
+        "name": "クリアボディ",
+        "nameEn": "Clear Body"
+      }
+    ]
   },
   {
     "id": "armarouge",
@@ -4276,7 +6986,19 @@
       "spa": 125,
       "spd": 80,
       "spe": 75
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "もらいび",
+        "nameEn": "Flash Fire"
+      },
+      {
+        "slot": "隠れ",
+        "name": "くだけるよろい",
+        "nameEn": "Weak Armor"
+      }
+    ]
   },
   {
     "id": "ceruledge",
@@ -4298,7 +7020,19 @@
       "spa": 60,
       "spd": 100,
       "spe": 85
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "もらいび",
+        "nameEn": "Flash Fire"
+      },
+      {
+        "slot": "隠れ",
+        "name": "くだけるよろい",
+        "nameEn": "Weak Armor"
+      }
+    ]
   },
   {
     "id": "bellibolt",
@@ -4320,7 +7054,24 @@
       "spa": 103,
       "spd": 83,
       "spe": 45
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "でんきにかえる",
+        "nameEn": "Electromorphosis"
+      },
+      {
+        "slot": "特性2",
+        "name": "せいでんき",
+        "nameEn": "Static"
+      },
+      {
+        "slot": "隠れ",
+        "name": "しめりけ",
+        "nameEn": "Damp"
+      }
+    ]
   },
   {
     "id": "scovillain",
@@ -4343,7 +7094,24 @@
       "spa": 108,
       "spd": 65,
       "spe": 75
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "ようりょくそ",
+        "nameEn": "Chlorophyll"
+      },
+      {
+        "slot": "特性2",
+        "name": "ふみん",
+        "nameEn": "Insomnia"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ムラっけ",
+        "nameEn": "Moody"
+      }
+    ]
   },
   {
     "id": "espathra",
@@ -4365,7 +7133,24 @@
       "spa": 101,
       "spd": 60,
       "spe": 105
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "びんじょう",
+        "nameEn": "Opportunist"
+      },
+      {
+        "slot": "特性2",
+        "name": "おみとおし",
+        "nameEn": "Frisk"
+      },
+      {
+        "slot": "隠れ",
+        "name": "かそく",
+        "nameEn": "Speed Boost"
+      }
+    ]
   },
   {
     "id": "tinkaton",
@@ -4387,7 +7172,24 @@
       "spa": 70,
       "spd": 105,
       "spe": 94
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "かたやぶり",
+        "nameEn": "Mold Breaker"
+      },
+      {
+        "slot": "特性2",
+        "name": "マイペース",
+        "nameEn": "Own Tempo"
+      },
+      {
+        "slot": "隠れ",
+        "name": "わるいてぐせ",
+        "nameEn": "Pickpocket"
+      }
+    ]
   },
   {
     "id": "palafin",
@@ -4409,7 +7211,14 @@
       "spa": 53,
       "spd": 62,
       "spe": 100
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "マイティチェンジ",
+        "nameEn": "Zero to Hero"
+      }
+    ]
   },
   {
     "id": "orthworm",
@@ -4430,7 +7239,19 @@
       "spa": 60,
       "spd": 55,
       "spe": 65
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "どしょく",
+        "nameEn": "Earth Eater"
+      },
+      {
+        "slot": "隠れ",
+        "name": "すながくれ",
+        "nameEn": "Sand Veil"
+      }
+    ]
   },
   {
     "id": "glimmora",
@@ -4453,7 +7274,19 @@
       "spa": 130,
       "spd": 81,
       "spe": 86
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "どくげしょう",
+        "nameEn": "Toxic Debris"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ふしょく",
+        "nameEn": "Corrosion"
+      }
+    ]
   },
   {
     "id": "houndstone",
@@ -4474,7 +7307,19 @@
       "spa": 50,
       "spd": 97,
       "spe": 68
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "すなかき",
+        "nameEn": "Sand Rush"
+      },
+      {
+        "slot": "隠れ",
+        "name": "もふもふ",
+        "nameEn": "Fluffy"
+      }
+    ]
   },
   {
     "id": "annihilape",
@@ -4497,7 +7342,24 @@
       "spa": 50,
       "spd": 90,
       "spe": 90
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "やるき",
+        "nameEn": "Vital Spirit"
+      },
+      {
+        "slot": "特性2",
+        "name": "せいしんりょく",
+        "nameEn": "Inner Focus"
+      },
+      {
+        "slot": "隠れ",
+        "name": "まけんき",
+        "nameEn": "Defiant"
+      }
+    ]
   },
   {
     "id": "farigiraf",
@@ -4520,7 +7382,24 @@
       "spa": 110,
       "spd": 70,
       "spe": 60
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "はんすう",
+        "nameEn": "Cud Chew"
+      },
+      {
+        "slot": "特性2",
+        "name": "テイルアーマー",
+        "nameEn": "Armor Tail"
+      },
+      {
+        "slot": "隠れ",
+        "name": "そうしょく",
+        "nameEn": "Sap Sipper"
+      }
+    ]
   },
   {
     "id": "kingambit",
@@ -4544,7 +7423,24 @@
       "spa": 60,
       "spd": 85,
       "spe": 50
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "まけんき",
+        "nameEn": "Defiant"
+      },
+      {
+        "slot": "特性2",
+        "name": "そうだいしょう",
+        "nameEn": "Supreme Overlord"
+      },
+      {
+        "slot": "隠れ",
+        "name": "プレッシャー",
+        "nameEn": "Pressure"
+      }
+    ]
   },
   {
     "id": "gholdengo",
@@ -4566,7 +7462,14 @@
       "spa": 133,
       "spd": 91,
       "spe": 84
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "おうごんのからだ",
+        "nameEn": "Good as Gold"
+      }
+    ]
   },
   {
     "id": "sinistcha",
@@ -4588,7 +7491,19 @@
       "spa": 121,
       "spd": 80,
       "spe": 70
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "おもてなし",
+        "nameEn": "Hospitality"
+      },
+      {
+        "slot": "隠れ",
+        "name": "たいねつ",
+        "nameEn": "Heatproof"
+      }
+    ]
   },
   {
     "id": "archaludon",
@@ -4612,7 +7527,24 @@
       "spa": 125,
       "spd": 65,
       "spe": 85
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "じきゅうりょく",
+        "nameEn": "Stamina"
+      },
+      {
+        "slot": "特性2",
+        "name": "がんじょう",
+        "nameEn": "Sturdy"
+      },
+      {
+        "slot": "隠れ",
+        "name": "すじがねいり",
+        "nameEn": "Stalwart"
+      }
+    ]
   },
   {
     "id": "hydrapple",
@@ -4636,6 +7568,23 @@
       "spa": 120,
       "spd": 80,
       "spe": 44
-    }
+    },
+    "abilities": [
+      {
+        "slot": "特性1",
+        "name": "かんろなミツ",
+        "nameEn": "Supersweet Syrup"
+      },
+      {
+        "slot": "特性2",
+        "name": "さいせいりょく",
+        "nameEn": "Regenerator"
+      },
+      {
+        "slot": "隠れ",
+        "name": "ねんちゃく",
+        "nameEn": "Sticky Hold"
+      }
+    ]
   }
 ]

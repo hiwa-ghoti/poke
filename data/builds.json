@@ -24,7 +24,12 @@
       "up": "atk",
       "down": "spa"
     },
-    "note": "Reg M-B使用率1位帯の定番。ダブルで岩雪崩＋地震の範囲技。"
+    "note": "Reg M-B使用率1位帯の定番。ダブルで岩雪崩＋地震の範囲技。",
+    "itemEffect": "技の威力1.3倍。攻撃するたび最大HPの1/10ダメージ。",
+    "abilityOptions": [
+      "すながくれ",
+      "さめはだ"
+    ]
   },
   "garchomp-scarf": {
     "pokemonId": "garchomp",
@@ -51,7 +56,12 @@
       "up": "spe",
       "down": "spa"
     },
-    "note": "上から押すスカーフ型。おいかぜ無しでも速度を確保。"
+    "note": "上から押すスカーフ型。おいかぜ無しでも速度を確保。",
+    "itemEffect": "素早さ1.5倍。同じ技しか出せない。",
+    "abilityOptions": [
+      "すながくれ",
+      "さめはだ"
+    ]
   },
   "sinistcha-support": {
     "pokemonId": "sinistcha",
@@ -78,7 +88,12 @@
       "up": "spd",
       "down": "atk"
     },
-    "note": "使用率上位のサポート。交代時回復＋いかりのこな／トリル。"
+    "note": "使用率上位のサポート。交代時回復＋いかりのこな／トリル。",
+    "itemEffect": "HPが半分以下で最大HPの1/4回復。",
+    "abilityOptions": [
+      "おもてなし",
+      "たいねつ"
+    ]
   },
   "sinistcha-kasib": {
     "pokemonId": "sinistcha",
@@ -105,7 +120,12 @@
       "up": "def",
       "down": "atk"
     },
-    "note": "ゴースト弱点を半減。耐久支援寄り。"
+    "note": "ゴースト弱点を半減。耐久支援寄り。",
+    "itemEffect": "こうかはばつぐんのゴースト技のダメージ半減。",
+    "abilityOptions": [
+      "おもてなし",
+      "たいねつ"
+    ]
   },
   "basculegion-lo": {
     "pokemonId": "basculegion",
@@ -132,7 +152,13 @@
       "up": "atk",
       "down": "spa"
     },
-    "note": "適応力＋おはかまいりで削り勝ち。環境上位アタッカー。"
+    "note": "適応力＋おはかまいりで削り勝ち。環境上位アタッカー。",
+    "itemEffect": "技の威力1.3倍。攻撃するたび最大HPの1/10ダメージ。",
+    "abilityOptions": [
+      "すいすい",
+      "てきおうりょく",
+      "かたやぶり"
+    ]
   },
   "basculegion-mystic": {
     "pokemonId": "basculegion",
@@ -159,7 +185,13 @@
       "up": "atk",
       "down": "spa"
     },
-    "note": "水技強化。スカーフ枠と持ち物を分けたいときの選択肢。"
+    "note": "水技強化。スカーフ枠と持ち物を分けたいときの選択肢。",
+    "itemEffect": "みず技の威力1.2倍。",
+    "abilityOptions": [
+      "すいすい",
+      "てきおうりょく",
+      "かたやぶり"
+    ]
   },
   "whimsicott-tailwind": {
     "pokemonId": "whimsicott",
@@ -186,7 +218,13 @@
       "up": "spe",
       "down": "atk"
     },
-    "note": "いたずご先制おいかぜがほぼ必須。ダブルの速度支配役。"
+    "note": "いたずご先制おいかぜがほぼ必須。ダブルの速度支配役。",
+    "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
+    "abilityOptions": [
+      "いたずらごころ",
+      "すりぬけ",
+      "ようりょくそ"
+    ]
   },
   "whimsicott-mental": {
     "pokemonId": "whimsicott",
@@ -213,7 +251,13 @@
       "up": "spe",
       "down": "atk"
     },
-    "note": "タスキが他と被るときのおいかぜ型。"
+    "note": "タスキが他と被るときのおいかぜ型。",
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "いたずらごころ",
+      "すりぬけ",
+      "ようりょくそ"
+    ]
   },
   "kingambit-glasses": {
     "pokemonId": "kingambit",
@@ -240,7 +284,13 @@
       "up": "atk",
       "down": "spa"
     },
-    "note": "大将＋ふいうちで詰め。威嚇を受けても攻撃が上がる。"
+    "note": "大将＋ふいうちで詰め。威嚇を受けても攻撃が上がる。",
+    "itemEffect": "あく技の威力1.2倍。",
+    "abilityOptions": [
+      "まけんき",
+      "そうだいしょう",
+      "プレッシャー"
+    ]
   },
   "kingambit-lo": {
     "pokemonId": "kingambit",
@@ -267,7 +317,13 @@
       "up": "atk",
       "down": "spa"
     },
-    "note": "火力重視。メガネ枠が他にいるときの型。"
+    "note": "火力重視。メガネ枠が他にいるときの型。",
+    "itemEffect": "技の威力1.3倍。攻撃するたび最大HPの1/10ダメージ。",
+    "abilityOptions": [
+      "まけんき",
+      "そうだいしょう",
+      "プレッシャー"
+    ]
   },
   "staraptor-mega": {
     "pokemonId": "staraptor",
@@ -294,7 +350,12 @@
       "up": "spe",
       "down": "spa"
     },
-    "note": "Reg M-B新メガ。威嚇＋高速物理＋おいかぜも可能。"
+    "note": "Reg M-B新メガ。威嚇＋高速物理＋おいかぜも可能。",
+    "itemEffect": "メガシンカ用メガストーン（ムクホーク）。",
+    "abilityOptions": [
+      "いかく",
+      "すてみ"
+    ]
   },
   "incineroar-support": {
     "pokemonId": "incineroar",
@@ -321,7 +382,12 @@
       "up": "spd",
       "down": "spa"
     },
-    "note": "ダブル定番。ねこだまし＋すてゼリフ＋威嚇の三点セット。"
+    "note": "ダブル定番。ねこだまし＋すてゼリフ＋威嚇の三点セット。",
+    "itemEffect": "HPが半分以下で最大HPの1/4回復。",
+    "abilityOptions": [
+      "もうか",
+      "いかく"
+    ]
   },
   "charizard-y": {
     "pokemonId": "charizard",
@@ -348,7 +414,12 @@
       "up": "spe",
       "down": "atk"
     },
-    "note": "メガYで日照り。ガブリアスと並ぶ最頻出コア。"
+    "note": "メガYで日照り。ガブリアスと並ぶ最頻出コア。",
+    "itemEffect": "メガシンカ用メガストーン（リザードンY）。",
+    "abilityOptions": [
+      "もうか",
+      "サンパワー"
+    ]
   },
   "raichu-y": {
     "pokemonId": "raichu",
@@ -375,7 +446,12 @@
       "up": "spe",
       "down": "atk"
     },
-    "note": "メガライチュウY。電＋格闘＋草の特殊エース。"
+    "note": "メガライチュウY。電＋格闘＋草の特殊エース。",
+    "itemEffect": "メガシンカ用メガストーン（ライチュウY）。",
+    "abilityOptions": [
+      "せいでんき",
+      "ひらいしん"
+    ]
   },
   "pelipper-rain": {
     "pokemonId": "pelipper",
@@ -402,7 +478,13 @@
       "up": "spa",
       "down": "atk"
     },
-    "note": "雨パの軸。しめったいわで雨ターン延長。"
+    "note": "雨パの軸。しめったいわで雨ターン延長。",
+    "itemEffect": "あめのターンを延長。",
+    "abilityOptions": [
+      "するどいめ",
+      "あめふらし",
+      "あめうけざら"
+    ]
   },
   "pelipper-sitrus": {
     "pokemonId": "pelipper",
@@ -429,7 +511,13 @@
       "up": "def",
       "down": "atk"
     },
-    "note": "耐久寄り。岩が他で使われているときの型。"
+    "note": "耐久寄り。岩が他で使われているときの型。",
+    "itemEffect": "HPが半分以下で最大HPの1/4回復。",
+    "abilityOptions": [
+      "するどいめ",
+      "あめふらし",
+      "あめうけざら"
+    ]
   },
   "sneasler-sash": {
     "pokemonId": "sneasler",
@@ -456,7 +544,13 @@
       "up": "spe",
       "down": "spa"
     },
-    "note": "高速物理。毒手で接触技に毒を付与。"
+    "note": "高速物理。毒手で接触技に毒を付与。",
+    "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
+    "abilityOptions": [
+      "プレッシャー",
+      "かるわざ",
+      "どくしゅ"
+    ]
   },
   "archaludon-rain": {
     "pokemonId": "archaludon",
@@ -483,7 +577,13 @@
       "up": "spa",
       "down": "atk"
     },
-    "note": "雨下でエレクトロショットが強化。ペリッパーと最頻出コア。"
+    "note": "雨下でエレクトロショットが強化。ペリッパーと最頻出コア。",
+    "itemEffect": "毎ターン最大HPの1/16回復。",
+    "abilityOptions": [
+      "じきゅうりょく",
+      "がんじょう",
+      "すじがねいり"
+    ]
   },
   "grimmsnarl-screens": {
     "pokemonId": "grimmsnarl",
@@ -510,7 +610,13 @@
       "up": "spd",
       "down": "spa"
     },
-    "note": "先制壁＋すてゼリフ。メガエースを通す定番。"
+    "note": "先制壁＋すてゼリフ。メガエースを通す定番。",
+    "itemEffect": "リフレクター／ひかりのかべのターン延長。",
+    "abilityOptions": [
+      "いたずらごころ",
+      "おみとおし",
+      "わるいてぐせ"
+    ]
   },
   "sylveon-pixilate": {
     "pokemonId": "sylveon",
@@ -537,7 +643,12 @@
       "up": "spa",
       "down": "atk"
     },
-    "note": "ハイボで範囲フェアリー。ガブ・リザ軸の補完に多い。"
+    "note": "ハイボで範囲フェアリー。ガブ・リザ軸の補完に多い。",
+    "itemEffect": "フェアリー技の威力1.2倍。",
+    "abilityOptions": [
+      "メロメロボディ",
+      "フェアリースキン"
+    ]
   },
   "swampert-mega": {
     "pokemonId": "swampert",
@@ -564,7 +675,12 @@
       "up": "atk",
       "down": "spa"
     },
-    "note": "雨下すいすい（メガ後）で最速級。雨パの主砲。"
+    "note": "雨下すいすい（メガ後）で最速級。雨パの主砲。",
+    "itemEffect": "メガシンカ用メガストーン（ラグラージ）。",
+    "abilityOptions": [
+      "げきりゅう",
+      "しめりけ"
+    ]
   },
   "metagross-mega": {
     "pokemonId": "metagross",
@@ -591,7 +707,12 @@
       "up": "spe",
       "down": "spa"
     },
-    "note": "硬い爪メガ。雨パの二枚目メガとしても採用。"
+    "note": "硬い爪メガ。雨パの二枚目メガとしても採用。",
+    "itemEffect": "メガシンカ用メガストーン（メタグロス）。",
+    "abilityOptions": [
+      "クリアボディ",
+      "ライトメタル"
+    ]
   },
   "farigiraf-tr": {
     "pokemonId": "farigiraf",
@@ -618,7 +739,13 @@
       "up": "spa",
       "down": "spe"
     },
-    "note": "ねこだまし無効＋トリル／てだすけ。サポートの要。"
+    "note": "ねこだまし無効＋トリル／てだすけ。サポートの要。",
+    "itemEffect": "こうかはばつぐんのあく技のダメージ半減。",
+    "abilityOptions": [
+      "はんすう",
+      "テイルアーマー",
+      "そうしょく"
+    ]
   },
   "floette-mega": {
     "pokemonId": "floette",
@@ -645,7 +772,12 @@
       "up": "spe",
       "down": "atk"
     },
-    "note": "はめつのうた高火力フェアリー。おいかぜと相性良し。"
+    "note": "はめつのうた高火力フェアリー。おいかぜと相性良し。",
+    "itemEffect": "メガシンカ用メガストーン（フラエッテ）。",
+    "abilityOptions": [
+      "フラワーベール",
+      "きょうせい"
+    ]
   },
   "gholdengo-lo": {
     "pokemonId": "gholdengo",
@@ -672,7 +804,11 @@
       "up": "spe",
       "down": "atk"
     },
-    "note": "状態異常無効の特殊枠。砂パ・バランスに入る。"
+    "note": "状態異常無効の特殊枠。砂パ・バランスに入る。",
+    "itemEffect": "技の威力1.3倍。攻撃するたび最大HPの1/10ダメージ。",
+    "abilityOptions": [
+      "おうごんのからだ"
+    ]
   },
   "aerodactyl-mega": {
     "pokemonId": "aerodactyl",
@@ -699,7 +835,13 @@
       "up": "spe",
       "down": "spa"
     },
-    "note": "高速岩雪崩＋おいかぜ。リザY軸のサポートメガにも。"
+    "note": "高速岩雪崩＋おいかぜ。リザY軸のサポートメガにも。",
+    "itemEffect": "メガシンカ用メガストーン（プテラ）。",
+    "abilityOptions": [
+      "いしあたま",
+      "プレッシャー",
+      "きんちょうかん"
+    ]
   },
   "excadrill-sand": {
     "pokemonId": "excadrill",
@@ -726,7 +868,13 @@
       "up": "atk",
       "down": "spa"
     },
-    "note": "砂下最速級。メガバンギとセット。"
+    "note": "砂下最速級。メガバンギとセット。",
+    "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
+    "abilityOptions": [
+      "すなかき",
+      "すなのちから",
+      "かたやぶり"
+    ]
   },
   "tyranitar-mega": {
     "pokemonId": "tyranitar",
@@ -753,7 +901,12 @@
       "up": "atk",
       "down": "spa"
     },
-    "note": "砂起動兼攻撃。ドリュウズと砂パの軸。"
+    "note": "砂起動兼攻撃。ドリュウズと砂パの軸。",
+    "itemEffect": "メガシンカ用メガストーン（バンギラス）。",
+    "abilityOptions": [
+      "すなおこし",
+      "きんちょうかん"
+    ]
   },
   "milotic-bulk": {
     "pokemonId": "milotic",
@@ -780,7 +933,13 @@
       "up": "spd",
       "down": "atk"
     },
-    "note": "威嚇を受けて特攻上昇。砂・バランスの受け枠。"
+    "note": "威嚇を受けて特攻上昇。砂・バランスの受け枠。",
+    "itemEffect": "毎ターン最大HPの1/16回復。",
+    "abilityOptions": [
+      "ふしぎなうろこ",
+      "かちき",
+      "メロメロボディ"
+    ]
   },
   "venusaur-mega": {
     "pokemonId": "venusaur",
@@ -807,7 +966,12 @@
       "up": "spa",
       "down": "atk"
     },
-    "note": "厚い脂肪メガ。雨・サイクルのくさ枠。"
+    "note": "厚い脂肪メガ。雨・サイクルのくさ枠。",
+    "itemEffect": "メガシンカ用メガストーン（フシギバナ）。",
+    "abilityOptions": [
+      "しんりょく",
+      "ようりょくそ"
+    ]
   },
   "venusaur-sash": {
     "pokemonId": "venusaur",
@@ -834,7 +998,12 @@
       "up": "spe",
       "down": "atk"
     },
-    "note": "晴れ下ようりょくそ。リザY軸のくさ打点。"
+    "note": "晴れ下ようりょくそ。リザY軸のくさ打点。",
+    "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
+    "abilityOptions": [
+      "しんりょく",
+      "ようりょくそ"
+    ]
   },
   "hydreigon-scarf": {
     "pokemonId": "hydreigon",
@@ -861,7 +1030,11 @@
       "up": "spe",
       "down": "atk"
     },
-    "note": "雨パのスカーフ枠。上からあく／ドラゴン。"
+    "note": "雨パのスカーフ枠。上からあく／ドラゴン。",
+    "itemEffect": "素早さ1.5倍。同じ技しか出せない。",
+    "abilityOptions": [
+      "ふゆう"
+    ]
   },
   "mawile-mega": {
     "pokemonId": "mawile",
@@ -888,7 +1061,13 @@
       "up": "atk",
       "down": "spa"
     },
-    "note": "メガでヒュージパワー級。リザYとの二枚メガも。"
+    "note": "メガでヒュージパワー級。リザYとの二枚メガも。",
+    "itemEffect": "メガシンカ用メガストーン（クチート）。",
+    "abilityOptions": [
+      "かいりきバサミ",
+      "いかく",
+      "ちからずく"
+    ]
   },
   "torkoal-sun": {
     "pokemonId": "torkoal",
@@ -915,7 +1094,13 @@
       "up": "spa",
       "down": "spe"
     },
-    "note": "晴れ始動。トリル・カエンジシ軸で使用。"
+    "note": "晴れ始動。トリル・カエンジシ軸で使用。",
+    "itemEffect": "ひざしの強いターンを延長。",
+    "abilityOptions": [
+      "しろいけむり",
+      "ひでり",
+      "シェルアーマー"
+    ]
   },
   "ninetales-sun": {
     "pokemonId": "ninetales",
@@ -942,7 +1127,12 @@
       "up": "spe",
       "down": "atk"
     },
-    "note": "カントーキュウコンの日照り。晴れパの起動役。"
+    "note": "カントーキュウコンの日照り。晴れパの起動役。",
+    "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
+    "abilityOptions": [
+      "もらいび",
+      "ひでり"
+    ]
   },
   "pyroar-mega": {
     "pokemonId": "pyroar",
@@ -969,7 +1159,13 @@
       "up": "spe",
       "down": "atk"
     },
-    "note": "晴れ特殊エース。キュウコンとセットで使われる。"
+    "note": "晴れ特殊エース。キュウコンとセットで使われる。",
+    "itemEffect": "メガシンカ用メガストーン（カエンジシ）。",
+    "abilityOptions": [
+      "とうそうしん",
+      "きんちょうかん",
+      "じしんかじょう"
+    ]
   },
   "ceruledge-lo": {
     "pokemonId": "ceruledge",
@@ -996,7 +1192,12 @@
       "up": "spe",
       "down": "spa"
     },
-    "note": "火力重視。リザY・ニンフィアへの回答枠。"
+    "note": "火力重視。リザY・ニンフィアへの回答枠。",
+    "itemEffect": "技の威力1.3倍。攻撃するたび最大HPの1/10ダメージ。",
+    "abilityOptions": [
+      "もらいび",
+      "くだけるよろい"
+    ]
   },
   "ceruledge-bulk": {
     "pokemonId": "ceruledge",
@@ -1023,7 +1224,12 @@
       "up": "atk",
       "down": "spa"
     },
-    "note": "リザY・ニンフィアへの回答枠として採用例あり。"
+    "note": "リザY・ニンフィアへの回答枠として採用例あり。",
+    "itemEffect": "HPが半分以下で最大HPの1/4回復。",
+    "abilityOptions": [
+      "もらいび",
+      "くだけるよろい"
+    ]
   },
   "glimmora-lead": {
     "pokemonId": "glimmora",
@@ -1050,7 +1256,12 @@
       "up": "spe",
       "down": "atk"
     },
-    "note": "シングル寄りだがダブルでも設置・範囲技で採用。"
+    "note": "シングル寄りだがダブルでも設置・範囲技で採用。",
+    "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
+    "abilityOptions": [
+      "どくげしょう",
+      "ふしょく"
+    ]
   },
   "hippowdon-sitrus": {
     "pokemonId": "hippowdon",
@@ -1077,7 +1288,12 @@
       "up": "def",
       "down": "spa"
     },
-    "note": "たべのこしが被るときのカバルドン。"
+    "note": "たべのこしが被るときのカバルドン。",
+    "itemEffect": "HPが半分以下で最大HPの1/4回復。",
+    "abilityOptions": [
+      "すなおこし",
+      "すなのちから"
+    ]
   },
   "hippowdon-sand": {
     "pokemonId": "hippowdon",
@@ -1104,7 +1320,12 @@
       "up": "def",
       "down": "spa"
     },
-    "note": "シングル砂・ステロ展開の定番。ダブルでも砂起動可。"
+    "note": "シングル砂・ステロ展開の定番。ダブルでも砂起動可。",
+    "itemEffect": "毎ターン最大HPの1/16回復。",
+    "abilityOptions": [
+      "すなおこし",
+      "すなのちから"
+    ]
   },
   "dragapult-lo": {
     "pokemonId": "dragapult",
@@ -1131,7 +1352,13 @@
       "up": "spe",
       "down": "atk"
     },
-    "note": "スカーフが被るときの高速特殊。"
+    "note": "スカーフが被るときの高速特殊。",
+    "itemEffect": "技の威力1.3倍。攻撃するたび最大HPの1/10ダメージ。",
+    "abilityOptions": [
+      "クリアボディ",
+      "すりぬけ",
+      "のろわれボディ"
+    ]
   },
   "dragapult-scarf": {
     "pokemonId": "dragapult",
@@ -1158,7 +1385,13 @@
       "up": "spe",
       "down": "atk"
     },
-    "note": "高速特殊。おにび型もシングルで人気。"
+    "note": "高速特殊。おにび型もシングルで人気。",
+    "itemEffect": "素早さ1.5倍。同じ技しか出せない。",
+    "abilityOptions": [
+      "クリアボディ",
+      "すりぬけ",
+      "のろわれボディ"
+    ]
   },
   "corviknight-bulk": {
     "pokemonId": "corviknight",
@@ -1185,7 +1418,13 @@
       "up": "def",
       "down": "spa"
     },
-    "note": "物理クッション。シングルサイクル向け。"
+    "note": "物理クッション。シングルサイクル向け。",
+    "itemEffect": "毎ターン最大HPの1/16回復。",
+    "abilityOptions": [
+      "プレッシャー",
+      "きんちょうかん",
+      "ミラーアーマー"
+    ]
   },
   "annihilape-bulk": {
     "pokemonId": "annihilape",
@@ -1212,7 +1451,13 @@
       "up": "atk",
       "down": "spa"
     },
-    "note": "削り勝ち型。トリル・サイクルに入る。"
+    "note": "削り勝ち型。トリル・サイクルに入る。",
+    "itemEffect": "毎ターン最大HPの1/16回復。",
+    "abilityOptions": [
+      "やるき",
+      "せいしんりょく",
+      "まけんき"
+    ]
   },
   "blaziken-mega": {
     "pokemonId": "blaziken",
@@ -1239,7 +1484,12 @@
       "up": "spe",
       "down": "spa"
     },
-    "note": "メガで速度上昇。シングル展開エースとしても強い。"
+    "note": "メガで速度上昇。シングル展開エースとしても強い。",
+    "itemEffect": "メガシンカ用メガストーン（バシャーモ）。",
+    "abilityOptions": [
+      "もうか",
+      "かそく"
+    ]
   },
   "scizor-mega": {
     "pokemonId": "scizor",
@@ -1266,13 +1516,19 @@
       "up": "atk",
       "down": "spa"
     },
-    "note": "先制バレットで詰め。サイクル・対面の鋼枠。"
+    "note": "先制バレットで詰め。サイクル・対面の鋼枠。",
+    "itemEffect": "メガシンカ用メガストーン（ハッサム）。",
+    "abilityOptions": [
+      "むしのしらせ",
+      "テクニシャン",
+      "ライトメタル"
+    ]
   },
   "blastoise-auto": {
     "pokemonId": "blastoise",
     "label": "自動提案",
     "item": "たべのこし",
-    "ability": "Torrent",
+    "ability": "げきりゅう",
     "role": "アタッカー",
     "moves": [
       "シャドーボール",
@@ -1294,13 +1550,18 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "毎ターン最大HPの1/16回復。",
+    "abilityOptions": [
+      "げきりゅう",
+      "あめうけざら"
+    ]
   },
   "beedrill-auto": {
     "pokemonId": "beedrill",
     "label": "自動提案",
     "item": "きあいのタスキ",
-    "ability": "Swarm",
+    "ability": "むしのしらせ",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -1322,13 +1583,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
+    "abilityOptions": [
+      "むしのしらせ",
+      "スナイパー"
+    ]
   },
   "pidgeot-auto": {
     "pokemonId": "pidgeot",
     "label": "自動提案",
     "item": "いのちのたま",
-    "ability": "Keen Eye",
+    "ability": "するどいめ",
     "role": "高速アタッカー",
     "moves": [
       "じしん",
@@ -1350,13 +1616,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "技の威力1.3倍。攻撃するたび最大HPの1/10ダメージ。",
+    "abilityOptions": [
+      "するどいめ",
+      "ちどりあし",
+      "はとむね"
+    ]
   },
   "arbok-auto": {
     "pokemonId": "arbok",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Intimidate",
+    "ability": "いかく",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -1378,13 +1650,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "いかく",
+      "だっぴ",
+      "きんちょうかん"
+    ]
   },
   "pikachu-auto": {
     "pokemonId": "pikachu",
     "label": "自動提案",
     "item": "クリアチャーム",
-    "ability": "Static",
+    "ability": "せいでんき",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -1406,13 +1684,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "相手の能力ダウン効果を受けない。",
+    "abilityOptions": [
+      "せいでんき",
+      "ひらいしん"
+    ]
   },
   "clefable-auto": {
     "pokemonId": "clefable",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Cute Charm",
+    "ability": "メロメロボディ",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -1434,13 +1717,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "メロメロボディ",
+      "マジックガード",
+      "てんねん"
+    ]
   },
   "vileplume-auto": {
     "pokemonId": "vileplume",
     "label": "自動提案",
     "item": "しんぴのしずく",
-    "ability": "—",
+    "ability": "ようりょくそ",
     "role": "アタッカー",
     "moves": [
       "シャドーボール",
@@ -1462,13 +1751,18 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "みず技の威力1.2倍。",
+    "abilityOptions": [
+      "ようりょくそ",
+      "ほうし"
+    ]
   },
   "arcanine-auto": {
     "pokemonId": "arcanine",
     "label": "自動提案",
     "item": "もくたん",
-    "ability": "Intimidate",
+    "ability": "いかく",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -1490,13 +1784,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "ほのお技の威力1.2倍。",
+    "abilityOptions": [
+      "いかく",
+      "もらいび",
+      "せいぎのこころ"
+    ]
   },
   "alakazam-auto": {
     "pokemonId": "alakazam",
     "label": "自動提案",
     "item": "しんぴのしずく",
-    "ability": "Synchronize",
+    "ability": "シンクロ",
     "role": "高速アタッカー",
     "moves": [
       "シャドーボール",
@@ -1518,13 +1818,19 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "みず技の威力1.2倍。",
+    "abilityOptions": [
+      "シンクロ",
+      "せいしんりょく",
+      "マジックガード"
+    ]
   },
   "machamp-auto": {
     "pokemonId": "machamp",
     "label": "自動提案",
     "item": "オボンのみ",
-    "ability": "Guts",
+    "ability": "こんじょう",
     "role": "サポート",
     "moves": [
       "じしん",
@@ -1546,13 +1852,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HPが半分以下で最大HPの1/4回復。",
+    "abilityOptions": [
+      "こんじょう",
+      "ノーガード",
+      "ふくつのこころ"
+    ]
   },
   "victreebel-auto": {
     "pokemonId": "victreebel",
     "label": "自動提案",
     "item": "じしゃく",
-    "ability": "Chlorophyll",
+    "ability": "ようりょくそ",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -1574,13 +1886,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "でんき技の威力1.2倍。",
+    "abilityOptions": [
+      "ようりょくそ",
+      "くいしんぼう"
+    ]
   },
   "slowbro-auto": {
     "pokemonId": "slowbro",
     "label": "自動提案",
     "item": "りゅうのキバ",
-    "ability": "Oblivious",
+    "ability": "どんかん",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -1602,13 +1919,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "ドラゴン技の威力1.2倍。",
+    "abilityOptions": [
+      "どんかん",
+      "マイペース",
+      "さいせいりょく"
+    ]
   },
   "gengar-auto": {
     "pokemonId": "gengar",
     "label": "自動提案",
     "item": "きせきのたね",
-    "ability": "Cursed Body",
+    "ability": "のろわれボディ",
     "role": "高速アタッカー",
     "moves": [
       "シャドーボール",
@@ -1630,13 +1953,17 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "くさ技の威力1.2倍。",
+    "abilityOptions": [
+      "のろわれボディ"
+    ]
   },
   "kangaskhan-auto": {
     "pokemonId": "kangaskhan",
     "label": "自動提案",
     "item": "やわらかいすな",
-    "ability": "Early Bird",
+    "ability": "はやおき",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -1658,13 +1985,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "じめん技の威力1.2倍。",
+    "abilityOptions": [
+      "はやおき",
+      "きもったま",
+      "せいしんりょく"
+    ]
   },
   "starmie-auto": {
     "pokemonId": "starmie",
     "label": "自動提案",
     "item": "カシブのみ",
-    "ability": "Illuminate",
+    "ability": "はっこう",
     "role": "高速アタッカー",
     "moves": [
       "シャドーボール",
@@ -1686,13 +2019,19 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "こうかはばつぐんのゴースト技のダメージ半減。",
+    "abilityOptions": [
+      "はっこう",
+      "しぜんかいふく",
+      "アナライズ"
+    ]
   },
   "pinsir-auto": {
     "pokemonId": "pinsir",
     "label": "自動提案",
     "item": "ナモのみ",
-    "ability": "Hyper Cutter",
+    "ability": "かいりきバサミ",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -1714,13 +2053,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "こうかはばつぐんのあく技のダメージ半減。",
+    "abilityOptions": [
+      "かいりきバサミ",
+      "かたやぶり",
+      "じしんかじょう"
+    ]
   },
   "tauros-auto": {
     "pokemonId": "tauros",
     "label": "自動提案",
     "item": "きあいのタスキ",
-    "ability": "Intimidate",
+    "ability": "いかく",
     "role": "高速アタッカー",
     "moves": [
       "じしん",
@@ -1742,13 +2087,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
+    "abilityOptions": [
+      "いかく",
+      "いかりのつぼ",
+      "ちからずく"
+    ]
   },
   "gyarados-auto": {
     "pokemonId": "gyarados",
     "label": "自動提案",
     "item": "バコウのみ",
-    "ability": "Intimidate",
+    "ability": "いかく",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -1770,13 +2121,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "こうかはばつぐんのひこう技のダメージ半減。",
+    "abilityOptions": [
+      "いかく",
+      "じしんかじょう"
+    ]
   },
   "ditto-auto": {
     "pokemonId": "ditto",
     "label": "自動提案",
     "item": "たべのこし",
-    "ability": "Limber",
+    "ability": "じゅうなん",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -1798,13 +2154,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "毎ターン最大HPの1/16回復。",
+    "abilityOptions": [
+      "じゅうなん",
+      "かわりもの"
+    ]
   },
   "vaporeon-auto": {
     "pokemonId": "vaporeon",
     "label": "自動提案",
     "item": "たべのこし",
-    "ability": "Water Absorb",
+    "ability": "ちょすい",
     "role": "耐久",
     "moves": [
       "シャドーボール",
@@ -1826,13 +2187,18 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "毎ターン最大HPの1/16回復。",
+    "abilityOptions": [
+      "ちょすい",
+      "うるおいボディ"
+    ]
   },
   "jolteon-auto": {
     "pokemonId": "jolteon",
     "label": "自動提案",
     "item": "きあいのタスキ",
-    "ability": "Volt Absorb",
+    "ability": "ちくでん",
     "role": "高速アタッカー",
     "moves": [
       "シャドーボール",
@@ -1854,13 +2220,18 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
+    "abilityOptions": [
+      "ちくでん",
+      "はやあし"
+    ]
   },
   "flareon-auto": {
     "pokemonId": "flareon",
     "label": "自動提案",
     "item": "こだわりスカーフ",
-    "ability": "Flash Fire",
+    "ability": "もらいび",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -1882,13 +2253,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "素早さ1.5倍。同じ技しか出せない。",
+    "abilityOptions": [
+      "もらいび",
+      "こんじょう"
+    ]
   },
   "snorlax-auto": {
     "pokemonId": "snorlax",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Immunity",
+    "ability": "めんえき",
     "role": "サポート",
     "moves": [
       "じしん",
@@ -1910,13 +2286,19 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "めんえき",
+      "あついしぼう",
+      "くいしんぼう"
+    ]
   },
   "dragonite-auto": {
     "pokemonId": "dragonite",
     "label": "自動提案",
     "item": "こだわりスカーフ",
-    "ability": "Inner Focus",
+    "ability": "せいしんりょく",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -1938,13 +2320,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "素早さ1.5倍。同じ技しか出せない。",
+    "abilityOptions": [
+      "せいしんりょく",
+      "マルチスケイル"
+    ]
   },
   "meganium-auto": {
     "pokemonId": "meganium",
     "label": "自動提案",
     "item": "とつげきチョッキ",
-    "ability": "Overgrow",
+    "ability": "しんりょく",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -1966,13 +2353,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "特防1.5倍。変化技が出せない。",
+    "abilityOptions": [
+      "しんりょく",
+      "リーフガード"
+    ]
   },
   "typhlosion-auto": {
     "pokemonId": "typhlosion",
     "label": "自動提案",
     "item": "いのちのたま",
-    "ability": "Blaze",
+    "ability": "もうか",
     "role": "高速アタッカー",
     "moves": [
       "シャドーボール",
@@ -1994,13 +2386,18 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "技の威力1.3倍。攻撃するたび最大HPの1/10ダメージ。",
+    "abilityOptions": [
+      "もうか",
+      "もらいび"
+    ]
   },
   "feraligatr-auto": {
     "pokemonId": "feraligatr",
     "label": "自動提案",
     "item": "クリアチャーム",
-    "ability": "Torrent",
+    "ability": "げきりゅう",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -2022,13 +2419,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "相手の能力ダウン効果を受けない。",
+    "abilityOptions": [
+      "げきりゅう",
+      "ちからずく"
+    ]
   },
   "ariados-auto": {
     "pokemonId": "ariados",
     "label": "自動提案",
     "item": "もくたん",
-    "ability": "Swarm",
+    "ability": "むしのしらせ",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -2050,13 +2452,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "ほのお技の威力1.2倍。",
+    "abilityOptions": [
+      "むしのしらせ",
+      "ふみん",
+      "スナイパー"
+    ]
   },
   "ampharos-auto": {
     "pokemonId": "ampharos",
     "label": "自動提案",
     "item": "しんぴのしずく",
-    "ability": "Static",
+    "ability": "せいでんき",
     "role": "サポート",
     "moves": [
       "シャドーボール",
@@ -2078,13 +2486,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "みず技の威力1.2倍。",
+    "abilityOptions": [
+      "せいでんき",
+      "プラス"
+    ]
   },
   "azumarill-auto": {
     "pokemonId": "azumarill",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Thick Fat",
+    "ability": "あついしぼう",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -2106,13 +2519,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "あついしぼう",
+      "ちからもち",
+      "そうしょく"
+    ]
   },
   "politoed-auto": {
     "pokemonId": "politoed",
     "label": "自動提案",
     "item": "きせきのたね",
-    "ability": "Water Absorb",
+    "ability": "ちょすい",
     "role": "アタッカー",
     "moves": [
       "シャドーボール",
@@ -2134,13 +2553,19 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "くさ技の威力1.2倍。",
+    "abilityOptions": [
+      "ちょすい",
+      "しめりけ",
+      "あめふらし"
+    ]
   },
   "espeon-auto": {
     "pokemonId": "espeon",
     "label": "自動提案",
     "item": "いのちのたま",
-    "ability": "Synchronize",
+    "ability": "シンクロ",
     "role": "高速アタッカー",
     "moves": [
       "シャドーボール",
@@ -2162,13 +2587,18 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "技の威力1.3倍。攻撃するたび最大HPの1/10ダメージ。",
+    "abilityOptions": [
+      "シンクロ",
+      "マジックミラー"
+    ]
   },
   "umbreon-auto": {
     "pokemonId": "umbreon",
     "label": "自動提案",
     "item": "たべのこし",
-    "ability": "Synchronize",
+    "ability": "シンクロ",
     "role": "耐久",
     "moves": [
       "まもる",
@@ -2190,13 +2620,18 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "毎ターン最大HPの1/16回復。",
+    "abilityOptions": [
+      "シンクロ",
+      "せいしんりょく"
+    ]
   },
   "slowking-auto": {
     "pokemonId": "slowking",
     "label": "自動提案",
     "item": "オボンのみ",
-    "ability": "Oblivious",
+    "ability": "どんかん",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -2218,13 +2653,19 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HPが半分以下で最大HPの1/4回復。",
+    "abilityOptions": [
+      "どんかん",
+      "マイペース",
+      "さいせいりょく"
+    ]
   },
   "forretress-auto": {
     "pokemonId": "forretress",
     "label": "自動提案",
     "item": "たべのこし",
-    "ability": "Sturdy",
+    "ability": "がんじょう",
     "role": "耐久",
     "moves": [
       "まもる",
@@ -2246,13 +2687,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "毎ターン最大HPの1/16回復。",
+    "abilityOptions": [
+      "がんじょう",
+      "ぼうじん"
+    ]
   },
   "steelix-auto": {
     "pokemonId": "steelix",
     "label": "自動提案",
     "item": "ナモのみ",
-    "ability": "Rock Head",
+    "ability": "いしあたま",
     "role": "耐久",
     "moves": [
       "まもる",
@@ -2274,13 +2720,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "こうかはばつぐんのあく技のダメージ半減。",
+    "abilityOptions": [
+      "いしあたま",
+      "がんじょう",
+      "ちからずく"
+    ]
   },
   "qwilfish-auto": {
     "pokemonId": "qwilfish",
     "label": "自動提案",
     "item": "イトケのみ",
-    "ability": "—",
+    "ability": "どくのトゲ",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -2302,13 +2754,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "こうかはばつぐんのみず技のダメージ半減。",
+    "abilityOptions": [
+      "どくのトゲ",
+      "すいすい",
+      "いかく"
+    ]
   },
   "heracross-auto": {
     "pokemonId": "heracross",
     "label": "自動提案",
     "item": "バコウのみ",
-    "ability": "Swarm",
+    "ability": "むしのしらせ",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -2330,13 +2788,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "こうかはばつぐんのひこう技のダメージ半減。",
+    "abilityOptions": [
+      "むしのしらせ",
+      "こんじょう",
+      "じしんかじょう"
+    ]
   },
   "skarmory-auto": {
     "pokemonId": "skarmory",
     "label": "自動提案",
     "item": "イトケのみ",
-    "ability": "Keen Eye",
+    "ability": "するどいめ",
     "role": "耐久",
     "moves": [
       "まもる",
@@ -2358,13 +2822,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "こうかはばつぐんのみず技のダメージ半減。",
+    "abilityOptions": [
+      "するどいめ",
+      "がんじょう",
+      "くだけるよろい"
+    ]
   },
   "houndoom-auto": {
     "pokemonId": "houndoom",
     "label": "自動提案",
     "item": "オボンのみ",
-    "ability": "Early Bird",
+    "ability": "はやおき",
     "role": "アタッカー",
     "moves": [
       "シャドーボール",
@@ -2386,13 +2856,19 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HPが半分以下で最大HPの1/4回復。",
+    "abilityOptions": [
+      "はやおき",
+      "もらいび",
+      "きんちょうかん"
+    ]
   },
   "sceptile-auto": {
     "pokemonId": "sceptile",
     "label": "自動提案",
     "item": "きあいのタスキ",
-    "ability": "—",
+    "ability": "しんりょく",
     "role": "高速アタッカー",
     "moves": [
       "シャドーボール",
@@ -2414,13 +2890,18 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
+    "abilityOptions": [
+      "しんりょく",
+      "かるわざ"
+    ]
   },
   "gardevoir-auto": {
     "pokemonId": "gardevoir",
     "label": "自動提案",
     "item": "きあいのタスキ",
-    "ability": "Synchronize",
+    "ability": "シンクロ",
     "role": "アタッカー",
     "moves": [
       "シャドーボール",
@@ -2442,13 +2923,19 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
+    "abilityOptions": [
+      "シンクロ",
+      "トレース",
+      "テレパシー"
+    ]
   },
   "sableye-auto": {
     "pokemonId": "sableye",
     "label": "自動提案",
     "item": "いのちのたま",
-    "ability": "Keen Eye",
+    "ability": "するどいめ",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -2470,13 +2957,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "技の威力1.3倍。攻撃するたび最大HPの1/10ダメージ。",
+    "abilityOptions": [
+      "するどいめ",
+      "あとだし",
+      "いたずらごころ"
+    ]
   },
   "aggron-auto": {
     "pokemonId": "aggron",
     "label": "自動提案",
     "item": "こだわりスカーフ",
-    "ability": "Sturdy",
+    "ability": "がんじょう",
     "role": "耐久",
     "moves": [
       "じしん",
@@ -2498,13 +2991,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "素早さ1.5倍。同じ技しか出せない。",
+    "abilityOptions": [
+      "がんじょう",
+      "いしあたま",
+      "ヘヴィメタル"
+    ]
   },
   "medicham-auto": {
     "pokemonId": "medicham",
     "label": "自動提案",
     "item": "とつげきチョッキ",
-    "ability": "Pure Power",
+    "ability": "ヨガパワー",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -2526,13 +3025,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "特防1.5倍。変化技が出せない。",
+    "abilityOptions": [
+      "ヨガパワー",
+      "テレパシー"
+    ]
   },
   "manectric-auto": {
     "pokemonId": "manectric",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Static",
+    "ability": "せいでんき",
     "role": "高速アタッカー",
     "moves": [
       "シャドーボール",
@@ -2554,13 +3058,19 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "せいでんき",
+      "ひらいしん",
+      "マイナス"
+    ]
   },
   "sharpedo-auto": {
     "pokemonId": "sharpedo",
     "label": "自動提案",
     "item": "クリアチャーム",
-    "ability": "Rough Skin",
+    "ability": "さめはだ",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -2582,13 +3092,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "相手の能力ダウン効果を受けない。",
+    "abilityOptions": [
+      "さめはだ",
+      "かそく"
+    ]
   },
   "camerupt-auto": {
     "pokemonId": "camerupt",
     "label": "自動提案",
     "item": "くろいメガネ",
-    "ability": "Magma Armor",
+    "ability": "マグマのよろい",
     "role": "アタッカー",
     "moves": [
       "シャドーボール",
@@ -2610,13 +3125,19 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "あく技の威力1.2倍。",
+    "abilityOptions": [
+      "マグマのよろい",
+      "ハードロック",
+      "いかりのつぼ"
+    ]
   },
   "altaria-auto": {
     "pokemonId": "altaria",
     "label": "自動提案",
     "item": "しんぴのしずく",
-    "ability": "Natural Cure",
+    "ability": "しぜんかいふく",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -2638,13 +3159,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "みず技の威力1.2倍。",
+    "abilityOptions": [
+      "しぜんかいふく",
+      "ノーてんき"
+    ]
   },
   "castform-auto": {
     "pokemonId": "castform",
     "label": "自動提案",
     "item": "りゅうのキバ",
-    "ability": "Forecast",
+    "ability": "てんきや",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -2666,13 +3192,17 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "ドラゴン技の威力1.2倍。",
+    "abilityOptions": [
+      "てんきや"
+    ]
   },
   "banette-auto": {
     "pokemonId": "banette",
     "label": "自動提案",
     "item": "じしゃく",
-    "ability": "Insomnia",
+    "ability": "ふみん",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -2694,13 +3224,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "でんき技の威力1.2倍。",
+    "abilityOptions": [
+      "ふみん",
+      "おみとおし",
+      "のろわれボディ"
+    ]
   },
   "chimecho-auto": {
     "pokemonId": "chimecho",
     "label": "自動提案",
     "item": "りゅうのキバ",
-    "ability": "Levitate",
+    "ability": "ふゆう",
     "role": "アタッカー",
     "moves": [
       "シャドーボール",
@@ -2722,13 +3258,17 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "ドラゴン技の威力1.2倍。",
+    "abilityOptions": [
+      "ふゆう"
+    ]
   },
   "absol-auto": {
     "pokemonId": "absol",
     "label": "自動提案",
     "item": "きせきのたね",
-    "ability": "Pressure",
+    "ability": "プレッシャー",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -2750,13 +3290,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "くさ技の威力1.2倍。",
+    "abilityOptions": [
+      "プレッシャー",
+      "きょううん",
+      "せいぎのこころ"
+    ]
   },
   "glalie-auto": {
     "pokemonId": "glalie",
     "label": "自動提案",
     "item": "やわらかいすな",
-    "ability": "Inner Focus",
+    "ability": "せいしんりょく",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -2778,13 +3324,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "じめん技の威力1.2倍。",
+    "abilityOptions": [
+      "せいしんりょく",
+      "アイスボディ",
+      "ムラっけ"
+    ]
   },
   "torterra-auto": {
     "pokemonId": "torterra",
     "label": "自動提案",
     "item": "オボンのみ",
-    "ability": "Overgrow",
+    "ability": "しんりょく",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -2806,13 +3358,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HPが半分以下で最大HPの1/4回復。",
+    "abilityOptions": [
+      "しんりょく",
+      "シェルアーマー"
+    ]
   },
   "infernape-auto": {
     "pokemonId": "infernape",
     "label": "自動提案",
     "item": "いのちのたま",
-    "ability": "Blaze",
+    "ability": "もうか",
     "role": "高速アタッカー",
     "moves": [
       "じしん",
@@ -2834,13 +3391,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "技の威力1.3倍。攻撃するたび最大HPの1/10ダメージ。",
+    "abilityOptions": [
+      "もうか",
+      "てつのこぶし"
+    ]
   },
   "empoleon-auto": {
     "pokemonId": "empoleon",
     "label": "自動提案",
     "item": "イトケのみ",
-    "ability": "Torrent",
+    "ability": "げきりゅう",
     "role": "アタッカー",
     "moves": [
       "シャドーボール",
@@ -2862,13 +3424,18 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "こうかはばつぐんのみず技のダメージ半減。",
+    "abilityOptions": [
+      "げきりゅう",
+      "かちき"
+    ]
   },
   "luxray-auto": {
     "pokemonId": "luxray",
     "label": "自動提案",
     "item": "オボンのみ",
-    "ability": "Rivalry",
+    "ability": "とうそうしん",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -2890,13 +3457,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HPが半分以下で最大HPの1/4回復。",
+    "abilityOptions": [
+      "とうそうしん",
+      "いかく",
+      "こんじょう"
+    ]
   },
   "roserade-auto": {
     "pokemonId": "roserade",
     "label": "自動提案",
     "item": "たべのこし",
-    "ability": "Natural Cure",
+    "ability": "しぜんかいふく",
     "role": "アタッカー",
     "moves": [
       "シャドーボール",
@@ -2918,13 +3491,19 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "毎ターン最大HPの1/16回復。",
+    "abilityOptions": [
+      "しぜんかいふく",
+      "どくのトゲ",
+      "テクニシャン"
+    ]
   },
   "rampardos-auto": {
     "pokemonId": "rampardos",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Mold Breaker",
+    "ability": "かたやぶり",
     "role": "サポート",
     "moves": [
       "じしん",
@@ -2946,13 +3525,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "かたやぶり",
+      "ちからずく"
+    ]
   },
   "bastiodon-auto": {
     "pokemonId": "bastiodon",
     "label": "自動提案",
     "item": "たべのこし",
-    "ability": "Sturdy",
+    "ability": "がんじょう",
     "role": "耐久",
     "moves": [
       "まもる",
@@ -2974,13 +3558,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "毎ターン最大HPの1/16回復。",
+    "abilityOptions": [
+      "がんじょう",
+      "ぼうおん"
+    ]
   },
   "lopunny-auto": {
     "pokemonId": "lopunny",
     "label": "自動提案",
     "item": "きあいのタスキ",
-    "ability": "Cute Charm",
+    "ability": "メロメロボディ",
     "role": "高速アタッカー",
     "moves": [
       "じしん",
@@ -3002,13 +3591,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
+    "abilityOptions": [
+      "メロメロボディ",
+      "ぶきよう",
+      "じゅうなん"
+    ]
   },
   "spiritomb-auto": {
     "pokemonId": "spiritomb",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Pressure",
+    "ability": "プレッシャー",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -3030,13 +3625,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "プレッシャー",
+      "すりぬけ"
+    ]
   },
   "lucario-auto": {
     "pokemonId": "lucario",
     "label": "自動提案",
     "item": "こだわりスカーフ",
-    "ability": "Steadfast",
+    "ability": "ふくつのこころ",
     "role": "アタッカー",
     "moves": [
       "シャドーボール",
@@ -3058,13 +3658,19 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "素早さ1.5倍。同じ技しか出せない。",
+    "abilityOptions": [
+      "ふくつのこころ",
+      "せいしんりょく",
+      "せいぎのこころ"
+    ]
   },
   "toxicroak-auto": {
     "pokemonId": "toxicroak",
     "label": "自動提案",
     "item": "クリアチャーム",
-    "ability": "Anticipation",
+    "ability": "きけんよち",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -3086,13 +3692,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "相手の能力ダウン効果を受けない。",
+    "abilityOptions": [
+      "きけんよち",
+      "かんそうはだ",
+      "どくしゅ"
+    ]
   },
   "abomasnow-auto": {
     "pokemonId": "abomasnow",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Snow Warning",
+    "ability": "ゆきふらし",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -3114,13 +3726,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "ゆきふらし",
+      "ぼうおん"
+    ]
   },
   "weavile-auto": {
     "pokemonId": "weavile",
     "label": "自動提案",
     "item": "きあいのタスキ",
-    "ability": "Pressure",
+    "ability": "プレッシャー",
     "role": "高速アタッカー",
     "moves": [
       "じしん",
@@ -3142,13 +3759,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
+    "abilityOptions": [
+      "プレッシャー",
+      "わるいてぐせ"
+    ]
   },
   "rhyperior-auto": {
     "pokemonId": "rhyperior",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Lightning Rod",
+    "ability": "ひらいしん",
     "role": "サポート",
     "moves": [
       "じしん",
@@ -3170,13 +3792,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "ひらいしん",
+      "ハードロック",
+      "すてみ"
+    ]
   },
   "leafeon-auto": {
     "pokemonId": "leafeon",
     "label": "自動提案",
     "item": "じしゃく",
-    "ability": "Leaf Guard",
+    "ability": "リーフガード",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -3198,13 +3826,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "でんき技の威力1.2倍。",
+    "abilityOptions": [
+      "リーフガード",
+      "ようりょくそ"
+    ]
   },
   "glaceon-auto": {
     "pokemonId": "glaceon",
     "label": "自動提案",
     "item": "りゅうのキバ",
-    "ability": "Snow Cloak",
+    "ability": "ゆきがくれ",
     "role": "アタッカー",
     "moves": [
       "シャドーボール",
@@ -3226,13 +3859,18 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "ドラゴン技の威力1.2倍。",
+    "abilityOptions": [
+      "ゆきがくれ",
+      "アイスボディ"
+    ]
   },
   "gliscor-auto": {
     "pokemonId": "gliscor",
     "label": "自動提案",
     "item": "たべのこし",
-    "ability": "Hyper Cutter",
+    "ability": "かいりきバサミ",
     "role": "耐久",
     "moves": [
       "じしん",
@@ -3254,13 +3892,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "毎ターン最大HPの1/16回復。",
+    "abilityOptions": [
+      "かいりきバサミ",
+      "すながくれ",
+      "ポイズンヒール"
+    ]
   },
   "mamoswine-auto": {
     "pokemonId": "mamoswine",
     "label": "自動提案",
     "item": "やわらかいすな",
-    "ability": "Oblivious",
+    "ability": "どんかん",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -3282,13 +3926,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "じめん技の威力1.2倍。",
+    "abilityOptions": [
+      "どんかん",
+      "ゆきがくれ",
+      "あついしぼう"
+    ]
   },
   "gallade-auto": {
     "pokemonId": "gallade",
     "label": "自動提案",
     "item": "きせきのたね",
-    "ability": "Steadfast",
+    "ability": "ふくつのこころ",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -3310,13 +3960,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "くさ技の威力1.2倍。",
+    "abilityOptions": [
+      "ふくつのこころ",
+      "きれあじ",
+      "せいぎのこころ"
+    ]
   },
   "froslass-auto": {
     "pokemonId": "froslass",
     "label": "自動提案",
     "item": "やわらかいすな",
-    "ability": "Snow Cloak",
+    "ability": "ゆきがくれ",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -3338,13 +3994,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "じめん技の威力1.2倍。",
+    "abilityOptions": [
+      "ゆきがくれ",
+      "のろわれボディ"
+    ]
   },
   "rotom-auto": {
     "pokemonId": "rotom",
     "label": "自動提案",
     "item": "ヨプのみ",
-    "ability": "Levitate",
+    "ability": "ふゆう",
     "role": "アタッカー",
     "moves": [
       "シャドーボール",
@@ -3366,13 +4027,17 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "こうかはばつぐんのかくとう技のダメージ半減。",
+    "abilityOptions": [
+      "ふゆう"
+    ]
   },
   "serperior-auto": {
     "pokemonId": "serperior",
     "label": "自動提案",
     "item": "オボンのみ",
-    "ability": "Overgrow",
+    "ability": "しんりょく",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -3394,13 +4059,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HPが半分以下で最大HPの1/4回復。",
+    "abilityOptions": [
+      "しんりょく",
+      "あまのじゃく"
+    ]
   },
   "emboar-auto": {
     "pokemonId": "emboar",
     "label": "自動提案",
     "item": "ヨプのみ",
-    "ability": "Blaze",
+    "ability": "もうか",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -3422,13 +4092,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "こうかはばつぐんのかくとう技のダメージ半減。",
+    "abilityOptions": [
+      "もうか",
+      "すてみ"
+    ]
   },
   "samurott-auto": {
     "pokemonId": "samurott",
     "label": "自動提案",
     "item": "オボンのみ",
-    "ability": "Torrent",
+    "ability": "げきりゅう",
     "role": "アタッカー",
     "moves": [
       "シャドーボール",
@@ -3450,13 +4125,18 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HPが半分以下で最大HPの1/4回復。",
+    "abilityOptions": [
+      "げきりゅう",
+      "シェルアーマー"
+    ]
   },
   "watchog-auto": {
     "pokemonId": "watchog",
     "label": "自動提案",
     "item": "たべのこし",
-    "ability": "Illuminate",
+    "ability": "はっこう",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -3478,13 +4158,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "毎ターン最大HPの1/16回復。",
+    "abilityOptions": [
+      "はっこう",
+      "するどいめ",
+      "アナライズ"
+    ]
   },
   "liepard-auto": {
     "pokemonId": "liepard",
     "label": "自動提案",
     "item": "いのちのたま",
-    "ability": "Limber",
+    "ability": "じゅうなん",
     "role": "高速アタッカー",
     "moves": [
       "じしん",
@@ -3506,13 +4192,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "技の威力1.3倍。攻撃するたび最大HPの1/10ダメージ。",
+    "abilityOptions": [
+      "じゅうなん",
+      "かるわざ",
+      "いたずらごころ"
+    ]
   },
   "simisage-auto": {
     "pokemonId": "simisage",
     "label": "自動提案",
     "item": "きあいのタスキ",
-    "ability": "Gluttony",
+    "ability": "くいしんぼう",
     "role": "高速アタッカー",
     "moves": [
       "じしん",
@@ -3534,13 +4226,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
+    "abilityOptions": [
+      "くいしんぼう",
+      "しんりょく"
+    ]
   },
   "simisear-auto": {
     "pokemonId": "simisear",
     "label": "自動提案",
     "item": "いのちのたま",
-    "ability": "Gluttony",
+    "ability": "くいしんぼう",
     "role": "高速アタッカー",
     "moves": [
       "じしん",
@@ -3562,13 +4259,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "技の威力1.3倍。攻撃するたび最大HPの1/10ダメージ。",
+    "abilityOptions": [
+      "くいしんぼう",
+      "もうか"
+    ]
   },
   "simipour-auto": {
     "pokemonId": "simipour",
     "label": "自動提案",
     "item": "きあいのタスキ",
-    "ability": "Gluttony",
+    "ability": "くいしんぼう",
     "role": "高速アタッカー",
     "moves": [
       "じしん",
@@ -3590,13 +4292,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
+    "abilityOptions": [
+      "くいしんぼう",
+      "げきりゅう"
+    ]
   },
   "musharna-auto": {
     "pokemonId": "musharna",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "—",
+    "ability": "よちむ",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -3618,13 +4325,19 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "よちむ",
+      "シンクロ",
+      "テレパシー"
+    ]
   },
   "audino-auto": {
     "pokemonId": "audino",
     "label": "自動提案",
     "item": "とつげきチョッキ",
-    "ability": "Healer",
+    "ability": "いやしのこころ",
     "role": "サポート",
     "moves": [
       "じしん",
@@ -3646,13 +4359,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "特防1.5倍。変化技が出せない。",
+    "abilityOptions": [
+      "いやしのこころ",
+      "さいせいりょく",
+      "ぶきよう"
+    ]
   },
   "conkeldurr-auto": {
     "pokemonId": "conkeldurr",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Guts",
+    "ability": "こんじょう",
     "role": "サポート",
     "moves": [
       "じしん",
@@ -3674,13 +4393,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "こんじょう",
+      "ちからずく",
+      "てつのこぶし"
+    ]
   },
   "scolipede-auto": {
     "pokemonId": "scolipede",
     "label": "自動提案",
     "item": "きあいのタスキ",
-    "ability": "—",
+    "ability": "どくのトゲ",
     "role": "高速アタッカー",
     "moves": [
       "じしん",
@@ -3702,13 +4427,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
+    "abilityOptions": [
+      "どくのトゲ",
+      "むしのしらせ",
+      "かそく"
+    ]
   },
   "krookodile-auto": {
     "pokemonId": "krookodile",
     "label": "自動提案",
     "item": "もくたん",
-    "ability": "Intimidate",
+    "ability": "いかく",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -3730,13 +4461,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "ほのお技の威力1.2倍。",
+    "abilityOptions": [
+      "いかく",
+      "じしんかじょう",
+      "いかりのつぼ"
+    ]
   },
   "scrafty-auto": {
     "pokemonId": "scrafty",
     "label": "自動提案",
     "item": "じしゃく",
-    "ability": "—",
+    "ability": "だっぴ",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -3758,13 +4495,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "でんき技の威力1.2倍。",
+    "abilityOptions": [
+      "だっぴ",
+      "じしんかじょう",
+      "いかく"
+    ]
   },
   "cofagrigus-auto": {
     "pokemonId": "cofagrigus",
     "label": "自動提案",
     "item": "たべのこし",
-    "ability": "Mummy",
+    "ability": "ミイラ",
     "role": "耐久",
     "moves": [
       "まもる",
@@ -3786,13 +4529,17 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "毎ターン最大HPの1/16回復。",
+    "abilityOptions": [
+      "ミイラ"
+    ]
   },
   "garbodor-auto": {
     "pokemonId": "garbodor",
     "label": "自動提案",
     "item": "きせきのたね",
-    "ability": "Stench",
+    "ability": "あくしゅう",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -3814,13 +4561,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "くさ技の威力1.2倍。",
+    "abilityOptions": [
+      "あくしゅう",
+      "くだけるよろい",
+      "ゆうばく"
+    ]
   },
   "zoroark-auto": {
     "pokemonId": "zoroark",
     "label": "自動提案",
     "item": "いのちのたま",
-    "ability": "Illusion",
+    "ability": "イリュージョン",
     "role": "高速アタッカー",
     "moves": [
       "シャドーボール",
@@ -3842,13 +4595,17 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "技の威力1.3倍。攻撃するたび最大HPの1/10ダメージ。",
+    "abilityOptions": [
+      "イリュージョン"
+    ]
   },
   "reuniclus-auto": {
     "pokemonId": "reuniclus",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Overcoat",
+    "ability": "ぼうじん",
     "role": "サポート",
     "moves": [
       "シャドーボール",
@@ -3870,13 +4627,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "ぼうじん",
+      "マジックガード",
+      "さいせいりょく"
+    ]
   },
   "vanilluxe-auto": {
     "pokemonId": "vanilluxe",
     "label": "自動提案",
     "item": "ナモのみ",
-    "ability": "Ice Body",
+    "ability": "アイスボディ",
     "role": "アタッカー",
     "moves": [
       "シャドーボール",
@@ -3898,13 +4661,19 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "こうかはばつぐんのあく技のダメージ半減。",
+    "abilityOptions": [
+      "アイスボディ",
+      "ゆきふらし",
+      "くだけるよろい"
+    ]
   },
   "emolga-auto": {
     "pokemonId": "emolga",
     "label": "自動提案",
     "item": "きあいのタスキ",
-    "ability": "Static",
+    "ability": "せいでんき",
     "role": "高速アタッカー",
     "moves": [
       "じしん",
@@ -3926,13 +4695,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
+    "abilityOptions": [
+      "せいでんき",
+      "でんきエンジン"
+    ]
   },
   "eelektross-auto": {
     "pokemonId": "eelektross",
     "label": "自動提案",
     "item": "バコウのみ",
-    "ability": "—",
+    "ability": "ふゆう",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -3954,13 +4728,17 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "こうかはばつぐんのひこう技のダメージ半減。",
+    "abilityOptions": [
+      "ふゆう"
+    ]
   },
   "chandelure-auto": {
     "pokemonId": "chandelure",
     "label": "自動提案",
     "item": "ヨプのみ",
-    "ability": "Flash Fire",
+    "ability": "もらいび",
     "role": "アタッカー",
     "moves": [
       "シャドーボール",
@@ -3982,13 +4760,19 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "こうかはばつぐんのかくとう技のダメージ半減。",
+    "abilityOptions": [
+      "もらいび",
+      "ほのおのからだ",
+      "すりぬけ"
+    ]
   },
   "beartic-auto": {
     "pokemonId": "beartic",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Snow Cloak",
+    "ability": "ゆきがくれ",
     "role": "サポート",
     "moves": [
       "じしん",
@@ -4010,13 +4794,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "ゆきがくれ",
+      "ゆきかき",
+      "すいすい"
+    ]
   },
   "stunfisk-auto": {
     "pokemonId": "stunfisk",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Static",
+    "ability": "せいでんき",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -4038,13 +4828,19 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "せいでんき",
+      "じゅうなん",
+      "すながくれ"
+    ]
   },
   "golurk-auto": {
     "pokemonId": "golurk",
     "label": "自動提案",
     "item": "オボンのみ",
-    "ability": "Iron Fist",
+    "ability": "てつのこぶし",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -4066,13 +4862,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HPが半分以下で最大HPの1/4回復。",
+    "abilityOptions": [
+      "てつのこぶし",
+      "ぶきよう",
+      "ノーガード"
+    ]
   },
   "volcarona-auto": {
     "pokemonId": "volcarona",
     "label": "自動提案",
     "item": "きあいのタスキ",
-    "ability": "Flame Body",
+    "ability": "ほのおのからだ",
     "role": "高速アタッカー",
     "moves": [
       "シャドーボール",
@@ -4094,13 +4896,18 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
+    "abilityOptions": [
+      "ほのおのからだ",
+      "むしのしらせ"
+    ]
   },
   "chesnaught-auto": {
     "pokemonId": "chesnaught",
     "label": "自動提案",
     "item": "きあいのタスキ",
-    "ability": "Overgrow",
+    "ability": "しんりょく",
     "role": "耐久",
     "moves": [
       "まもる",
@@ -4122,13 +4929,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
+    "abilityOptions": [
+      "しんりょく",
+      "ぼうだん"
+    ]
   },
   "delphox-auto": {
     "pokemonId": "delphox",
     "label": "自動提案",
     "item": "いのちのたま",
-    "ability": "Blaze",
+    "ability": "もうか",
     "role": "高速アタッカー",
     "moves": [
       "シャドーボール",
@@ -4150,13 +4962,18 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "技の威力1.3倍。攻撃するたび最大HPの1/10ダメージ。",
+    "abilityOptions": [
+      "もうか",
+      "マジシャン"
+    ]
   },
   "greninja-auto": {
     "pokemonId": "greninja",
     "label": "自動提案",
     "item": "こだわりスカーフ",
-    "ability": "Torrent",
+    "ability": "げきりゅう",
     "role": "高速アタッカー",
     "moves": [
       "シャドーボール",
@@ -4178,13 +4995,18 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "素早さ1.5倍。同じ技しか出せない。",
+    "abilityOptions": [
+      "げきりゅう",
+      "へんげんじざい"
+    ]
   },
   "diggersby-auto": {
     "pokemonId": "diggersby",
     "label": "自動提案",
     "item": "クリアチャーム",
-    "ability": "Pickup",
+    "ability": "ものひろい",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -4206,13 +5028,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "相手の能力ダウン効果を受けない。",
+    "abilityOptions": [
+      "ものひろい",
+      "ほおぶくろ",
+      "ちからもち"
+    ]
   },
   "talonflame-auto": {
     "pokemonId": "talonflame",
     "label": "自動提案",
     "item": "いのちのたま",
-    "ability": "Flame Body",
+    "ability": "ほのおのからだ",
     "role": "高速アタッカー",
     "moves": [
       "じしん",
@@ -4234,13 +5062,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "技の威力1.3倍。攻撃するたび最大HPの1/10ダメージ。",
+    "abilityOptions": [
+      "ほのおのからだ",
+      "はやてのつばさ"
+    ]
   },
   "vivillon-auto": {
     "pokemonId": "vivillon",
     "label": "自動提案",
     "item": "しんぴのしずく",
-    "ability": "Shield Dust",
+    "ability": "りんぷん",
     "role": "アタッカー",
     "moves": [
       "シャドーボール",
@@ -4262,13 +5095,19 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "みず技の威力1.2倍。",
+    "abilityOptions": [
+      "りんぷん",
+      "ふくがん",
+      "フレンドガード"
+    ]
   },
   "floette-auto": {
     "pokemonId": "floette",
     "label": "自動提案",
     "item": "くろいメガネ",
-    "ability": "Flower Veil",
+    "ability": "フラワーベール",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -4290,13 +5129,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "あく技の威力1.2倍。",
+    "abilityOptions": [
+      "フラワーベール",
+      "きょうせい"
+    ]
   },
   "florges-auto": {
     "pokemonId": "florges",
     "label": "自動提案",
     "item": "たべのこし",
-    "ability": "Flower Veil",
+    "ability": "フラワーベール",
     "role": "耐久",
     "moves": [
       "シャドーボール",
@@ -4318,13 +5162,18 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "毎ターン最大HPの1/16回復。",
+    "abilityOptions": [
+      "フラワーベール",
+      "きょうせい"
+    ]
   },
   "pangoro-auto": {
     "pokemonId": "pangoro",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Iron Fist",
+    "ability": "てつのこぶし",
     "role": "サポート",
     "moves": [
       "じしん",
@@ -4346,13 +5195,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "てつのこぶし",
+      "かたやぶり",
+      "きもったま"
+    ]
   },
   "furfrou-auto": {
     "pokemonId": "furfrou",
     "label": "自動提案",
     "item": "きあいのタスキ",
-    "ability": "Fur Coat",
+    "ability": "ファーコート",
     "role": "高速アタッカー",
     "moves": [
       "じしん",
@@ -4374,13 +5229,17 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
+    "abilityOptions": [
+      "ファーコート"
+    ]
   },
   "meowstic-auto": {
     "pokemonId": "meowstic",
     "label": "自動提案",
     "item": "りゅうのキバ",
-    "ability": "Keen Eye",
+    "ability": "するどいめ",
     "role": "高速アタッカー",
     "moves": [
       "シャドーボール",
@@ -4402,13 +5261,19 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "ドラゴン技の威力1.2倍。",
+    "abilityOptions": [
+      "するどいめ",
+      "すりぬけ",
+      "いたずらごころ"
+    ]
   },
   "aegislash-auto": {
     "pokemonId": "aegislash",
     "label": "自動提案",
     "item": "たべのこし",
-    "ability": "Stance Change",
+    "ability": "バトルスイッチ",
     "role": "耐久",
     "moves": [
       "まもる",
@@ -4430,13 +5295,17 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "毎ターン最大HPの1/16回復。",
+    "abilityOptions": [
+      "バトルスイッチ"
+    ]
   },
   "aromatisse-auto": {
     "pokemonId": "aromatisse",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Healer",
+    "ability": "いやしのこころ",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -4458,13 +5327,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "いやしのこころ",
+      "アロマベール"
+    ]
   },
   "slurpuff-auto": {
     "pokemonId": "slurpuff",
     "label": "自動提案",
     "item": "オボンのみ",
-    "ability": "Sweet Veil",
+    "ability": "スイートベール",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -4486,13 +5360,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HPが半分以下で最大HPの1/4回復。",
+    "abilityOptions": [
+      "スイートベール",
+      "かるわざ"
+    ]
   },
   "malamar-auto": {
     "pokemonId": "malamar",
     "label": "自動提案",
     "item": "バコウのみ",
-    "ability": "—",
+    "ability": "あまのじゃく",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -4514,13 +5393,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "こうかはばつぐんのひこう技のダメージ半減。",
+    "abilityOptions": [
+      "あまのじゃく",
+      "きゅうばん",
+      "すりぬけ"
+    ]
   },
   "barbaracle-auto": {
     "pokemonId": "barbaracle",
     "label": "自動提案",
     "item": "イトケのみ",
-    "ability": "—",
+    "ability": "かたいツメ",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -4542,13 +5427,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "こうかはばつぐんのみず技のダメージ半減。",
+    "abilityOptions": [
+      "かたいツメ",
+      "スナイパー",
+      "わるいてぐせ"
+    ]
   },
   "dragalge-auto": {
     "pokemonId": "dragalge",
     "label": "自動提案",
     "item": "オボンのみ",
-    "ability": "—",
+    "ability": "どくのトゲ",
     "role": "アタッカー",
     "moves": [
       "シャドーボール",
@@ -4570,13 +5461,19 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HPが半分以下で最大HPの1/4回復。",
+    "abilityOptions": [
+      "どくのトゲ",
+      "どくしゅ",
+      "てきおうりょく"
+    ]
   },
   "clawitzer-auto": {
     "pokemonId": "clawitzer",
     "label": "自動提案",
     "item": "たべのこし",
-    "ability": "Mega Launcher",
+    "ability": "メガランチャー",
     "role": "アタッカー",
     "moves": [
       "シャドーボール",
@@ -4598,13 +5495,17 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "毎ターン最大HPの1/16回復。",
+    "abilityOptions": [
+      "メガランチャー"
+    ]
   },
   "heliolisk-auto": {
     "pokemonId": "heliolisk",
     "label": "自動提案",
     "item": "いのちのたま",
-    "ability": "Dry Skin",
+    "ability": "かんそうはだ",
     "role": "高速アタッカー",
     "moves": [
       "シャドーボール",
@@ -4626,13 +5527,19 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "技の威力1.3倍。攻撃するたび最大HPの1/10ダメージ。",
+    "abilityOptions": [
+      "かんそうはだ",
+      "すながくれ",
+      "サンパワー"
+    ]
   },
   "tyrantrum-auto": {
     "pokemonId": "tyrantrum",
     "label": "自動提案",
     "item": "たべのこし",
-    "ability": "Strong Jaw",
+    "ability": "がんじょうあご",
     "role": "耐久",
     "moves": [
       "じしん",
@@ -4654,13 +5561,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "毎ターン最大HPの1/16回復。",
+    "abilityOptions": [
+      "がんじょうあご",
+      "いしあたま"
+    ]
   },
   "aurorus-auto": {
     "pokemonId": "aurorus",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Refrigerate",
+    "ability": "フリーズスキン",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -4682,13 +5594,18 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "フリーズスキン",
+      "ゆきふらし"
+    ]
   },
   "hawlucha-auto": {
     "pokemonId": "hawlucha",
     "label": "自動提案",
     "item": "いのちのたま",
-    "ability": "Limber",
+    "ability": "じゅうなん",
     "role": "高速アタッカー",
     "moves": [
       "じしん",
@@ -4710,13 +5627,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "技の威力1.3倍。攻撃するたび最大HPの1/10ダメージ。",
+    "abilityOptions": [
+      "じゅうなん",
+      "かるわざ",
+      "かたやぶり"
+    ]
   },
   "dedenne-auto": {
     "pokemonId": "dedenne",
     "label": "自動提案",
     "item": "オボンのみ",
-    "ability": "Cheek Pouch",
+    "ability": "ほおぶくろ",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -4738,13 +5661,19 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HPが半分以下で最大HPの1/4回復。",
+    "abilityOptions": [
+      "ほおぶくろ",
+      "ものひろい",
+      "プラス"
+    ]
   },
   "goodra-auto": {
     "pokemonId": "goodra",
     "label": "自動提案",
     "item": "とつげきチョッキ",
-    "ability": "Sap Sipper",
+    "ability": "そうしょく",
     "role": "耐久",
     "moves": [
       "シャドーボール",
@@ -4766,13 +5695,19 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "特防1.5倍。変化技が出せない。",
+    "abilityOptions": [
+      "そうしょく",
+      "うるおいボディ",
+      "ぬめぬめ"
+    ]
   },
   "klefki-auto": {
     "pokemonId": "klefki",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Prankster",
+    "ability": "いたずらごころ",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -4794,13 +5729,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "いたずらごころ",
+      "マジシャン"
+    ]
   },
   "trevenant-auto": {
     "pokemonId": "trevenant",
     "label": "自動提案",
     "item": "しんぴのしずく",
-    "ability": "Natural Cure",
+    "ability": "しぜんかいふく",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -4822,13 +5762,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "みず技の威力1.2倍。",
+    "abilityOptions": [
+      "しぜんかいふく",
+      "おみとおし",
+      "しゅうかく"
+    ]
   },
   "gourgeist-auto": {
     "pokemonId": "gourgeist",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Pickup",
+    "ability": "ものひろい",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -4850,13 +5796,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "ものひろい",
+      "おみとおし",
+      "ふみん"
+    ]
   },
   "avalugg-auto": {
     "pokemonId": "avalugg",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Own Tempo",
+    "ability": "マイペース",
     "role": "サポート",
     "moves": [
       "じしん",
@@ -4878,13 +5830,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "マイペース",
+      "アイスボディ",
+      "がんじょう"
+    ]
   },
   "noivern-auto": {
     "pokemonId": "noivern",
     "label": "自動提案",
     "item": "いのちのたま",
-    "ability": "Frisk",
+    "ability": "おみとおし",
     "role": "高速アタッカー",
     "moves": [
       "シャドーボール",
@@ -4906,13 +5864,19 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "技の威力1.3倍。攻撃するたび最大HPの1/10ダメージ。",
+    "abilityOptions": [
+      "おみとおし",
+      "すりぬけ",
+      "テレパシー"
+    ]
   },
   "decidueye-auto": {
     "pokemonId": "decidueye",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Overgrow",
+    "ability": "しんりょく",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -4934,13 +5898,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "しんりょく",
+      "えんかく"
+    ]
   },
   "primarina-auto": {
     "pokemonId": "primarina",
     "label": "自動提案",
     "item": "やわらかいすな",
-    "ability": "Torrent",
+    "ability": "げきりゅう",
     "role": "アタッカー",
     "moves": [
       "シャドーボール",
@@ -4962,13 +5931,18 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "じめん技の威力1.2倍。",
+    "abilityOptions": [
+      "げきりゅう",
+      "うるおいボイス"
+    ]
   },
   "toucannon-auto": {
     "pokemonId": "toucannon",
     "label": "自動提案",
     "item": "カシブのみ",
-    "ability": "Keen Eye",
+    "ability": "するどいめ",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -4990,13 +5964,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "こうかはばつぐんのゴースト技のダメージ半減。",
+    "abilityOptions": [
+      "するどいめ",
+      "スキルリンク",
+      "ちからずく"
+    ]
   },
   "crabominable-auto": {
     "pokemonId": "crabominable",
     "label": "自動提案",
     "item": "やわらかいすな",
-    "ability": "Hyper Cutter",
+    "ability": "かいりきバサミ",
     "role": "サポート",
     "moves": [
       "じしん",
@@ -5018,13 +5998,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "じめん技の威力1.2倍。",
+    "abilityOptions": [
+      "かいりきバサミ",
+      "てつのこぶし",
+      "いかりのつぼ"
+    ]
   },
   "lycanroc-auto": {
     "pokemonId": "lycanroc",
     "label": "自動提案",
     "item": "きあいのタスキ",
-    "ability": "Keen Eye",
+    "ability": "するどいめ",
     "role": "高速アタッカー",
     "moves": [
       "じしん",
@@ -5046,13 +6032,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
+    "abilityOptions": [
+      "するどいめ",
+      "すなかき",
+      "ふくつのこころ"
+    ]
   },
   "toxapex-auto": {
     "pokemonId": "toxapex",
     "label": "自動提案",
     "item": "たべのこし",
-    "ability": "Merciless",
+    "ability": "ひとでなし",
     "role": "耐久",
     "moves": [
       "まもる",
@@ -5074,13 +6066,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "毎ターン最大HPの1/16回復。",
+    "abilityOptions": [
+      "ひとでなし",
+      "じゅうなん",
+      "さいせいりょく"
+    ]
   },
   "mudsdale-auto": {
     "pokemonId": "mudsdale",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Own Tempo",
+    "ability": "マイペース",
     "role": "サポート",
     "moves": [
       "じしん",
@@ -5102,13 +6100,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "マイペース",
+      "じきゅうりょく",
+      "せいしんりょく"
+    ]
   },
   "araquanid-auto": {
     "pokemonId": "araquanid",
     "label": "自動提案",
     "item": "たべのこし",
-    "ability": "Water Bubble",
+    "ability": "すいほう",
     "role": "耐久",
     "moves": [
       "まもる",
@@ -5130,13 +6134,18 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "毎ターン最大HPの1/16回復。",
+    "abilityOptions": [
+      "すいほう",
+      "ちょすい"
+    ]
   },
   "salazzle-auto": {
     "pokemonId": "salazzle",
     "label": "自動提案",
     "item": "きあいのタスキ",
-    "ability": "Corrosion",
+    "ability": "ふしょく",
     "role": "高速アタッカー",
     "moves": [
       "シャドーボール",
@@ -5158,13 +6167,18 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
+    "abilityOptions": [
+      "ふしょく",
+      "どんかん"
+    ]
   },
   "tsareena-auto": {
     "pokemonId": "tsareena",
     "label": "自動提案",
     "item": "きあいのタスキ",
-    "ability": "Leaf Guard",
+    "ability": "リーフガード",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -5186,13 +6200,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
+    "abilityOptions": [
+      "リーフガード",
+      "じょおうのいげん",
+      "スイートベール"
+    ]
   },
   "oranguru-auto": {
     "pokemonId": "oranguru",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Inner Focus",
+    "ability": "せいしんりょく",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -5214,13 +6234,19 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "せいしんりょく",
+      "テレパシー",
+      "きょうせい"
+    ]
   },
   "passimian-auto": {
     "pokemonId": "passimian",
     "label": "自動提案",
     "item": "こだわりスカーフ",
-    "ability": "Receiver",
+    "ability": "レシーバー",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -5242,13 +6268,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "素早さ1.5倍。同じ技しか出せない。",
+    "abilityOptions": [
+      "レシーバー",
+      "まけんき"
+    ]
   },
   "mimikyu-auto": {
     "pokemonId": "mimikyu",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Disguise",
+    "ability": "ばけのかわ",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -5270,13 +6301,17 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "ばけのかわ"
+    ]
   },
   "drampa-auto": {
     "pokemonId": "drampa",
     "label": "自動提案",
     "item": "こだわりスカーフ",
-    "ability": "Berserk",
+    "ability": "ぎゃくじょう",
     "role": "アタッカー",
     "moves": [
       "シャドーボール",
@@ -5298,13 +6333,19 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "素早さ1.5倍。同じ技しか出せない。",
+    "abilityOptions": [
+      "ぎゃくじょう",
+      "そうしょく",
+      "ノーてんき"
+    ]
   },
   "kommo-o-auto": {
     "pokemonId": "kommo-o",
     "label": "自動提案",
     "item": "とつげきチョッキ",
-    "ability": "Bulletproof",
+    "ability": "ぼうだん",
     "role": "耐久",
     "moves": [
       "じしん",
@@ -5326,13 +6367,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "特防1.5倍。変化技が出せない。",
+    "abilityOptions": [
+      "ぼうだん",
+      "ぼうおん",
+      "ぼうじん"
+    ]
   },
   "flapple-auto": {
     "pokemonId": "flapple",
     "label": "自動提案",
     "item": "くろいメガネ",
-    "ability": "Ripen",
+    "ability": "じゅくせい",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -5354,13 +6401,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "あく技の威力1.2倍。",
+    "abilityOptions": [
+      "じゅくせい",
+      "くいしんぼう",
+      "はりきり"
+    ]
   },
   "appletun-auto": {
     "pokemonId": "appletun",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Ripen",
+    "ability": "じゅくせい",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -5382,13 +6435,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "じゅくせい",
+      "くいしんぼう",
+      "あついしぼう"
+    ]
   },
   "sandaconda-auto": {
     "pokemonId": "sandaconda",
     "label": "自動提案",
     "item": "もくたん",
-    "ability": "Sand Spit",
+    "ability": "すなはき",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -5410,13 +6469,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "ほのお技の威力1.2倍。",
+    "abilityOptions": [
+      "すなはき",
+      "だっぴ",
+      "すながくれ"
+    ]
   },
   "polteageist-auto": {
     "pokemonId": "polteageist",
     "label": "自動提案",
     "item": "じしゃく",
-    "ability": "Weak Armor",
+    "ability": "くだけるよろい",
     "role": "アタッカー",
     "moves": [
       "シャドーボール",
@@ -5438,13 +6503,18 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "でんき技の威力1.2倍。",
+    "abilityOptions": [
+      "くだけるよろい",
+      "のろわれボディ"
+    ]
   },
   "hatterene-auto": {
     "pokemonId": "hatterene",
     "label": "自動提案",
     "item": "りゅうのキバ",
-    "ability": "Healer",
+    "ability": "いやしのこころ",
     "role": "アタッカー",
     "moves": [
       "シャドーボール",
@@ -5466,13 +6536,19 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "ドラゴン技の威力1.2倍。",
+    "abilityOptions": [
+      "いやしのこころ",
+      "きけんよち",
+      "マジックミラー"
+    ]
   },
   "runerigus-auto": {
     "pokemonId": "runerigus",
     "label": "自動提案",
     "item": "たべのこし",
-    "ability": "Wandering Spirit",
+    "ability": "さまようたましい",
     "role": "耐久",
     "moves": [
       "まもる",
@@ -5494,13 +6570,17 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "毎ターン最大HPの1/16回復。",
+    "abilityOptions": [
+      "さまようたましい"
+    ]
   },
   "alcremie-auto": {
     "pokemonId": "alcremie",
     "label": "自動提案",
     "item": "やわらかいすな",
-    "ability": "Sweet Veil",
+    "ability": "スイートベール",
     "role": "アタッカー",
     "moves": [
       "シャドーボール",
@@ -5522,13 +6602,18 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "じめん技の威力1.2倍。",
+    "abilityOptions": [
+      "スイートベール",
+      "アロマベール"
+    ]
   },
   "falinks-auto": {
     "pokemonId": "falinks",
     "label": "自動提案",
     "item": "カシブのみ",
-    "ability": "—",
+    "ability": "カブトアーマー",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -5550,13 +6635,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "こうかはばつぐんのゴースト技のダメージ半減。",
+    "abilityOptions": [
+      "カブトアーマー",
+      "まけんき"
+    ]
   },
   "morpeko-auto": {
     "pokemonId": "morpeko",
     "label": "自動提案",
     "item": "ナモのみ",
-    "ability": "Hunger Switch",
+    "ability": "はらぺこスイッチ",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -5578,13 +6668,17 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "こうかはばつぐんのあく技のダメージ半減。",
+    "abilityOptions": [
+      "はらぺこスイッチ"
+    ]
   },
   "wyrdeer-auto": {
     "pokemonId": "wyrdeer",
     "label": "自動提案",
     "item": "ヨプのみ",
-    "ability": "Intimidate",
+    "ability": "いかく",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -5606,13 +6700,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "こうかはばつぐんのかくとう技のダメージ半減。",
+    "abilityOptions": [
+      "いかく",
+      "おみとおし",
+      "そうしょく"
+    ]
   },
   "kleavor-auto": {
     "pokemonId": "kleavor",
     "label": "自動提案",
     "item": "バコウのみ",
-    "ability": "Swarm",
+    "ability": "むしのしらせ",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -5634,13 +6734,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "こうかはばつぐんのひこう技のダメージ半減。",
+    "abilityOptions": [
+      "むしのしらせ",
+      "ちからずく",
+      "きれあじ"
+    ]
   },
   "overqwil-auto": {
     "pokemonId": "overqwil",
     "label": "自動提案",
     "item": "イトケのみ",
-    "ability": "—",
+    "ability": "どくのトゲ",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -5662,13 +6768,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "こうかはばつぐんのみず技のダメージ半減。",
+    "abilityOptions": [
+      "どくのトゲ",
+      "すいすい",
+      "いかく"
+    ]
   },
   "meowscarada-auto": {
     "pokemonId": "meowscarada",
     "label": "自動提案",
     "item": "いのちのたま",
-    "ability": "Overgrow",
+    "ability": "しんりょく",
     "role": "高速アタッカー",
     "moves": [
       "じしん",
@@ -5690,13 +6802,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "技の威力1.3倍。攻撃するたび最大HPの1/10ダメージ。",
+    "abilityOptions": [
+      "しんりょく",
+      "へんげんじざい"
+    ]
   },
   "skeledirge-auto": {
     "pokemonId": "skeledirge",
     "label": "自動提案",
     "item": "たべのこし",
-    "ability": "Blaze",
+    "ability": "もうか",
     "role": "耐久",
     "moves": [
       "シャドーボール",
@@ -5718,13 +6835,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "毎ターン最大HPの1/16回復。",
+    "abilityOptions": [
+      "もうか",
+      "てんねん"
+    ]
   },
   "quaquaval-auto": {
     "pokemonId": "quaquaval",
     "label": "自動提案",
     "item": "きあいのタスキ",
-    "ability": "Torrent",
+    "ability": "げきりゅう",
     "role": "アタッカー",
     "moves": [
       "じしん",
@@ -5746,13 +6868,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
+    "abilityOptions": [
+      "げきりゅう",
+      "じしんかじょう"
+    ]
   },
   "maushold-auto": {
     "pokemonId": "maushold",
     "label": "自動提案",
     "item": "きあいのタスキ",
-    "ability": "Friend Guard",
+    "ability": "フレンドガード",
     "role": "高速アタッカー",
     "moves": [
       "じしん",
@@ -5774,13 +6901,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "HP満タン時、ひんし技を1回耐えてHP1残し。",
+    "abilityOptions": [
+      "フレンドガード",
+      "ほおぶくろ",
+      "テクニシャン"
+    ]
   },
   "garganacl-auto": {
     "pokemonId": "garganacl",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Purifying Salt",
+    "ability": "きよめのしお",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -5802,13 +6935,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "きよめのしお",
+      "がんじょう",
+      "クリアボディ"
+    ]
   },
   "armarouge-auto": {
     "pokemonId": "armarouge",
     "label": "自動提案",
     "item": "とつげきチョッキ",
-    "ability": "Flash Fire",
+    "ability": "もらいび",
     "role": "アタッカー",
     "moves": [
       "シャドーボール",
@@ -5830,13 +6969,18 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "特防1.5倍。変化技が出せない。",
+    "abilityOptions": [
+      "もらいび",
+      "くだけるよろい"
+    ]
   },
   "bellibolt-auto": {
     "pokemonId": "bellibolt",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Electromorphosis",
+    "ability": "でんきにかえる",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -5858,13 +7002,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "でんきにかえる",
+      "せいでんき",
+      "しめりけ"
+    ]
   },
   "scovillain-auto": {
     "pokemonId": "scovillain",
     "label": "自動提案",
     "item": "とつげきチョッキ",
-    "ability": "Chlorophyll",
+    "ability": "ようりょくそ",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -5886,13 +7036,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "特防1.5倍。変化技が出せない。",
+    "abilityOptions": [
+      "ようりょくそ",
+      "ふみん",
+      "ムラっけ"
+    ]
   },
   "espathra-auto": {
     "pokemonId": "espathra",
     "label": "自動提案",
     "item": "いのちのたま",
-    "ability": "Opportunist",
+    "ability": "びんじょう",
     "role": "高速アタッカー",
     "moves": [
       "シャドーボール",
@@ -5914,13 +7070,19 @@
       "down": "atk"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "技の威力1.3倍。攻撃するたび最大HPの1/10ダメージ。",
+    "abilityOptions": [
+      "びんじょう",
+      "おみとおし",
+      "かそく"
+    ]
   },
   "tinkaton-auto": {
     "pokemonId": "tinkaton",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Mold Breaker",
+    "ability": "かたやぶり",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -5942,13 +7104,19 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "かたやぶり",
+      "マイペース",
+      "わるいてぐせ"
+    ]
   },
   "palafin-auto": {
     "pokemonId": "palafin",
     "label": "自動提案",
     "item": "いのちのたま",
-    "ability": "Zero to Hero",
+    "ability": "マイティチェンジ",
     "role": "高速アタッカー",
     "moves": [
       "じしん",
@@ -5970,13 +7138,17 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "技の威力1.3倍。攻撃するたび最大HPの1/10ダメージ。",
+    "abilityOptions": [
+      "マイティチェンジ"
+    ]
   },
   "orthworm-auto": {
     "pokemonId": "orthworm",
     "label": "自動提案",
     "item": "たべのこし",
-    "ability": "Earth Eater",
+    "ability": "どしょく",
     "role": "耐久",
     "moves": [
       "まもる",
@@ -5998,13 +7170,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "毎ターン最大HPの1/16回復。",
+    "abilityOptions": [
+      "どしょく",
+      "すながくれ"
+    ]
   },
   "houndstone-auto": {
     "pokemonId": "houndstone",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "—",
+    "ability": "すなかき",
     "role": "サポート",
     "moves": [
       "ねこだまし",
@@ -6026,13 +7203,18 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "すなかき",
+      "もふもふ"
+    ]
   },
   "hydrapple-auto": {
     "pokemonId": "hydrapple",
     "label": "自動提案",
     "item": "メンタルハーブ",
-    "ability": "Supersweet Syrup",
+    "ability": "かんろなミツ",
     "role": "サポート",
     "moves": [
       "シャドーボール",
@@ -6054,6 +7236,12 @@
       "down": "spa"
     },
     "note": "全参戦対応の自動型です。技・持ち物はゲーム内で調整してください。",
-    "auto": true
+    "auto": true,
+    "itemEffect": "メロメロ／アンコール等を1回解除。",
+    "abilityOptions": [
+      "かんろなミツ",
+      "さいせいりょく",
+      "ねんちゃく"
+    ]
   }
 }

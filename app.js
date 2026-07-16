@@ -66,14 +66,16 @@ let lastFocusedBeforeModal = null;
 const $ = (id) => document.getElementById(id);
 
 async function loadData() {
-  const [pokemon, builds, cores] = await Promise.all([
+  const [pokemon, builds, cores, itemEffects] = await Promise.all([
     fetch('data/pokemon.json').then((r) => r.json()),
     fetch('data/builds.json').then((r) => r.json()),
-    fetch('data/cores.json').then((r) => r.json())
+    fetch('data/cores.json').then((r) => r.json()),
+    fetch('data/item-effects.json').then((r) => r.json()).catch(() => ({}))
   ]);
   pokemonList = pokemon;
   buildsMap = builds;
   coresList = cores;
+  window.ITEM_EFFECTS = itemEffects;
   pokemonById = Object.fromEntries(pokemon.map((p) => [p.id, p]));
   const countEl = $('roster-count');
   if (countEl) countEl.textContent = String(pokemon.length);
@@ -150,7 +152,8 @@ function generateRuntimeBuild(pokemonId) {
     pokemonId,
     label: '自動提案',
     item: FALLBACK_ITEMS[Math.abs(pokemonId.length * 7) % FALLBACK_ITEMS.length],
-    ability: '—',
+    ability: poke.abilities?.[0]?.name || '—',
+    abilityOptions: (poke.abilities || []).map((a) => a.name),
     role: poke.roles.includes('support') ? 'サポート' : poke.roles.includes('wall') ? '耐久' : 'アタッカー',
     moves: phys
       ? ['じしん', 'インファイト', 'いわなだれ', 'まもる']
@@ -535,6 +538,19 @@ function renderTeamDetail(core) {
       ? `${nature.name}（${SP_SHORT[nature.up]}↑ / ${SP_SHORT[nature.down]}↓）`
       : '—';
 
+    const itemEffect = build.itemEffect
+      || (window.ITEM_EFFECTS && window.ITEM_EFFECTS[build.item])
+      || '効果はゲーム内で確認してください。';
+
+    const abilityOptions = (build.abilityOptions && build.abilityOptions.length
+      ? build.abilityOptions
+      : (poke.abilities || []).map((a) => a.name))
+      .filter(Boolean);
+    const otherAbilities = abilityOptions.filter((a) => a !== build.ability);
+    const abilitySlots = (poke.abilities || [])
+      .map((a) => `<span class="ability-chip${a.name === build.ability ? ' is-active' : ''}">${a.slot}: ${a.name}</span>`)
+      .join('');
+
     const trainRows = SP_ORDER.map((key) => {
       const sp = build.sp[key] || 0;
       const pct = (sp / 32) * 100;
@@ -568,14 +584,17 @@ function renderTeamDetail(core) {
           </div>
         </div>
       </div>
-      <div class="meta-row">
-        <div class="meta-block">
+      <div class="meta-row meta-row-stack">
+        <div class="meta-block meta-block-item">
           <p class="meta-label">持ち物</p>
           <p class="meta-value">${build.item}</p>
+          <p class="meta-desc">${itemEffect}</p>
         </div>
-        <div class="meta-block">
-          <p class="meta-label">特性</p>
+        <div class="meta-block meta-block-ability">
+          <p class="meta-label">特性（この型）</p>
           <p class="meta-value">${build.ability}</p>
+          <div class="ability-list">${abilitySlots || `<span class="ability-chip is-active">${build.ability}</span>`}</div>
+          ${otherAbilities.length ? `<p class="meta-desc">切替候補: ${otherAbilities.join(' / ')}</p>` : ''}
         </div>
       </div>
       <p class="meta-label" style="margin-bottom:6px">技</p>

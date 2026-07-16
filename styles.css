@@ -468,10 +468,18 @@ h1 {
   gap: 8px;
   margin-bottom: 10px;
 }
+.meta-row-stack {
+  grid-template-columns: 1fr;
+}
 .meta-block {
   background: var(--surface);
   border-radius: 12px;
   padding: 10px 12px;
+}
+.meta-block-item,
+.meta-block-ability {
+  background: #f7faf8;
+  border: 1px solid rgba(31, 157, 99, 0.18);
 }
 .meta-label {
   margin: 0 0 4px;
@@ -482,8 +490,38 @@ h1 {
 }
 .meta-value {
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 800;
+}
+.meta-desc {
+  margin: 6px 0 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+.ability-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+.ability-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid var(--border);
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--text-muted);
+}
+.ability-chip.is-active {
+  background: var(--accent-dim);
+  border-color: rgba(31, 157, 99, 0.35);
+  color: var(--accent);
 }
 
 .moves {
