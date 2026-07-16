@@ -415,6 +415,7 @@ function renderCoreList(list) {
         <span class="core-badge">${core.rating}${core.source === 'fallback' ? ' · 自動' : ''}</span>
       </div>
       <p class="core-desc">${core.concept}</p>
+      ${core.source && core.source !== 'fallback' ? `<p class="core-source">${core.source}${core.replicaCode ? ` · Replica: <code>${core.replicaCode}</code>` : ''}</p>` : ''}
       <div class="core-names">${core.slots.map((s) => {
         const poke = pokemonById[s.pokemonId];
         const n = poke?.name || s.pokemonId;

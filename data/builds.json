@@ -1,138 +1,14 @@
 {
-  "charizard-y": {
-    "pokemonId": "charizard",
-    "label": "メガY型",
-    "item": "リザードナイトY",
-    "ability": "日照り(メガ)",
-    "role": "特殊エース",
-    "moves": [
-      "熱風",
-      "ソーラービーム",
-      "フォーカスブラスト",
-      "守る"
-    ],
-    "sp": {
-      "hp": 4,
-      "atk": 0,
-      "def": 0,
-      "spa": 32,
-      "spd": 0,
-      "spe": 30
-    },
-    "note": "晴れ展開の特殊エース。メガYで火力と天候を両立。",
-    "nature": {
-      "name": "おくびょう",
-      "up": "spe",
-      "down": "atk"
-    }
-  },
-  "charizard-x": {
-    "pokemonId": "charizard",
-    "label": "メガX型",
-    "item": "リザードナイトX",
-    "ability": "硬い爪(メガ)",
+  "garchomp-lo": {
+    "pokemonId": "garchomp",
+    "label": "いのちのたま",
+    "item": "いのちのたま",
+    "ability": "さめはだ",
     "role": "物理エース",
-    "moves": [
-      "フレアドライブ",
-      "ドラゴンクロー",
-      "地震",
-      "守る"
-    ],
-    "sp": {
-      "hp": 4,
-      "atk": 32,
-      "def": 0,
-      "spa": 0,
-      "spd": 0,
-      "spe": 30
-    },
-    "note": "物理受け突破向け。ドラゴン打点で対面範囲を広げる。",
-    "nature": {
-      "name": "ようき",
-      "up": "spe",
-      "down": "spa"
-    }
-  },
-  "blastoise-mega": {
-    "pokemonId": "blastoise",
-    "label": "メガ砲台",
-    "item": "カメックスナイト",
-    "ability": "メガランチャー",
-    "role": "特殊砲台",
-    "moves": [
-      "ハイドロポンプ",
-      "悪の波動",
-      "アイスビーム",
-      "守る"
-    ],
-    "sp": {
-      "hp": 20,
-      "atk": 0,
-      "def": 4,
-      "spa": 32,
-      "spd": 0,
-      "spe": 10
-    },
-    "note": "波動技強化の砲台。遅いのでトリルや壁と相性良し。",
-    "nature": {
-      "name": "ひかえめ",
-      "up": "spa",
-      "down": "atk"
-    }
-  },
-  "venusaur-mega": {
-    "pokemonId": "venusaur",
-    "label": "メガ厚型",
-    "item": "フシギバナイト",
-    "ability": "厚い脂肪(メガ)",
-    "role": "特殊受け",
-    "moves": [
-      "ギガドレイン",
-      "ヘドロばくだん",
-      "眠り粉",
-      "守る"
-    ],
-    "sp": {
-      "hp": 32,
-      "atk": 0,
-      "def": 4,
-      "spa": 20,
-      "spd": 10,
-      "spe": 0
-    },
-    "note": "晴れ・雨どちらでも機能する耐久型。",
-    "nature": {
-      "name": "れいせい",
-      "up": "spa",
-      "down": "spe"
-    }
-  },
-  "gengar-mega": {
-    "pokemonId": "gengar",
-    "label": "メガ高速",
-    "item": "ゲンガーナイト",
-    "ability": "かげふみ(メガ)",
-    "role": "特殊エース",
-    "moves": [
-      "シャドーボール",
-      "ヘドロばくだん",
-      "気合玉",
-      "守る"
-    ],
-    "sp": {
-      "hp": 4,
-      "atk": 0,
-      "def": 0,
-      "spa": 32,
-      "spd": 0,
-      "spe": 30
-    },
-    "note": "影踏みで逃しを封じる高速エース。",
-    "nature": {
-      "name": "おくびょう",
-      "up": "spe",
-      "down": "atk"
-    }
+    "moves": ["じしん", "いわなだれ", "ドラゴンクロー", "まもる"],
+    "sp": {"hp": 4, "atk": 32, "def": 0, "spa": 0, "spd": 0, "spe": 30},
+    "nature": {"name": "いじっぱり", "up": "atk", "down": "spa"},
+    "note": "Reg M-B使用率1位帯の定番。ダブルで岩雪崩＋地震の範囲技。"
   },
   "garchomp-scarf": {
     "pokemonId": "garchomp",
@@ -140,242 +16,274 @@
     "item": "こだわりスカーフ",
     "ability": "さめはだ",
     "role": "高速物理",
-    "moves": [
-      "じしん",
-      "げきりゅう",
-      "ストーンエッジ",
-      "いわなだれ"
-    ],
-    "sp": {
-      "hp": 4,
-      "atk": 32,
-      "def": 0,
-      "spa": 0,
-      "spd": 0,
-      "spe": 30
-    },
-    "note": "上から押す汎用物理。ダブルなら岩雪崩も有効。",
-    "nature": {
-      "name": "ようき",
-      "up": "spe",
-      "down": "spa"
-    }
+    "moves": ["じしん", "げきりゅう", "いわなだれ", "どくづき"],
+    "sp": {"hp": 4, "atk": 32, "def": 0, "spa": 0, "spd": 0, "spe": 30},
+    "nature": {"name": "ようき", "up": "spe", "down": "spa"},
+    "note": "上から押すスカーフ型。おいかぜ無しでも速度を確保。"
   },
-  "garchomp-mega": {
-    "pokemonId": "garchomp",
-    "label": "メガ耐久",
-    "item": "ガブリアスナイト",
-    "ability": "すなかき(メガ)",
-    "role": "砂エース",
-    "moves": [
-      "じしん",
-      "ドラゴンクロー",
-      "つるぎのまい",
-      "守る"
-    ],
-    "sp": {
-      "hp": 20,
-      "atk": 32,
-      "def": 4,
-      "spa": 0,
-      "spd": 0,
-      "spe": 10
-    },
-    "note": "砂パのメインアタッカー。積みからの突破。",
-    "nature": {
-      "name": "いじっぱり",
-      "up": "atk",
-      "down": "spa"
-    }
+  "sinistcha-support": {
+    "pokemonId": "sinistcha",
+    "label": "おもてなし",
+    "item": "オボンのみ",
+    "ability": "おもてなし",
+    "role": "サポート",
+    "moves": ["ちゃかいほう", "いかりのこな", "トリックルーム", "まもる"],
+    "sp": {"hp": 32, "atk": 0, "def": 20, "spa": 4, "spd": 10, "spe": 0},
+    "nature": {"name": "おだやか", "up": "spd", "down": "atk"},
+    "note": "使用率上位のサポート。交代時回復＋いかりのこな／トリル。"
   },
-  "lucario-mega": {
-    "pokemonId": "lucario",
-    "label": "メガ積み",
-    "item": "ルカリオナイト",
-    "ability": "てきおうりょく(メガ)",
-    "role": "積みエース",
-    "moves": [
-      "インファイト",
-      "バレットパンチ",
-      "かみなりパンチ",
-      "つるぎのまい"
-    ],
-    "sp": {
-      "hp": 4,
-      "atk": 32,
-      "def": 0,
-      "spa": 0,
-      "spd": 0,
-      "spe": 30
-    },
-    "note": "剣舞＋先制技で詰め切る型。",
-    "nature": {
-      "name": "ようき",
-      "up": "spe",
-      "down": "spa"
-    }
+  "sinistcha-kasib": {
+    "pokemonId": "sinistcha",
+    "label": "カシブのみ",
+    "item": "カシブのみ",
+    "ability": "おもてなし",
+    "role": "サポート",
+    "moves": ["ちゃかいほう", "いかりのこな", "ライフデュー", "まもる"],
+    "sp": {"hp": 32, "atk": 0, "def": 14, "spa": 4, "spd": 16, "spe": 0},
+    "nature": {"name": "ずぶとい", "up": "def", "down": "atk"},
+    "note": "ゴースト弱点を半減。耐久支援寄り。"
   },
-  "tyranitar-sand": {
-    "pokemonId": "tyranitar",
-    "label": "砂始動",
-    "item": "バンギラスナイト",
-    "ability": "すなおこし",
-    "role": "天候始動",
-    "moves": [
-      "いわなだれ",
-      "かみくだく",
-      "こおりのキバ",
-      "守る"
-    ],
-    "sp": {
-      "hp": 28,
-      "atk": 32,
-      "def": 4,
-      "spa": 0,
-      "spd": 0,
-      "spe": 2
-    },
-    "note": "砂起動役兼アタッカー。メガで耐久も確保。",
-    "nature": {
-      "name": "ゆうかん",
-      "up": "atk",
-      "down": "spe"
-    }
-  },
-  "scizor-band": {
-    "pokemonId": "scizor",
-    "label": "バンド",
-    "item": "こだわりハチマキ",
-    "ability": "テクニシャン",
+  "basculegion-lo": {
+    "pokemonId": "basculegion",
+    "label": "いのちのたま",
+    "item": "いのちのたま",
+    "ability": "てきおうりょく",
     "role": "物理エース",
-    "moves": [
-      "バレットパンチ",
-      "はさむ",
-      "とんぼがえり",
-      "こおりのキバ"
-    ],
-    "sp": {
-      "hp": 20,
-      "atk": 32,
-      "def": 4,
-      "spa": 0,
-      "spd": 10,
-      "spe": 0
-    },
-    "note": "先制技で詰め。ハチマキが他と被る場合はいのちのたまに変更。",
-    "nature": {
-      "name": "いじっぱり",
-      "up": "atk",
-      "down": "spa"
-    }
+    "moves": ["ウェーブタックル", "おはかまいり", "アクアジェット", "まもる"],
+    "sp": {"hp": 4, "atk": 32, "def": 0, "spa": 0, "spd": 0, "spe": 30},
+    "nature": {"name": "いじっぱり", "up": "atk", "down": "spa"},
+    "note": "適応力＋おはかまいりで削り勝ち。環境上位アタッカー。"
   },
-  "scizor-mega": {
-    "pokemonId": "scizor",
+  "basculegion-mystic": {
+    "pokemonId": "basculegion",
+    "label": "しんぴのしずく",
+    "item": "しんぴのしずく",
+    "ability": "てきおうりょく",
+    "role": "物理エース",
+    "moves": ["ウェーブタックル", "おはかまいり", "アクアジェット", "まもる"],
+    "sp": {"hp": 20, "atk": 32, "def": 4, "spa": 0, "spd": 0, "spe": 10},
+    "nature": {"name": "いじっぱり", "up": "atk", "down": "spa"},
+    "note": "水技強化。スカーフ枠と持ち物を分けたいときの選択肢。"
+  },
+  "whimsicott-tailwind": {
+    "pokemonId": "whimsicott",
+    "label": "おいかぜ",
+    "item": "きあいのタスキ",
+    "ability": "いたずらごころ",
+    "role": "速度サポート",
+    "moves": ["おいかぜ", "ムーンフォース", "アンコール", "まもる"],
+    "sp": {"hp": 4, "atk": 0, "def": 0, "spa": 32, "spd": 0, "spe": 30},
+    "nature": {"name": "おくびょう", "up": "spe", "down": "atk"},
+    "note": "いたずご先制おいかぜがほぼ必須。ダブルの速度支配役。"
+  },
+  "whimsicott-mental": {
+    "pokemonId": "whimsicott",
+    "label": "メンタルハーブ",
+    "item": "メンタルハーブ",
+    "ability": "いたずらごころ",
+    "role": "速度サポート",
+    "moves": ["おいかぜ", "ムーンフォース", "アンコール", "まもる"],
+    "sp": {"hp": 4, "atk": 0, "def": 0, "spa": 32, "spd": 0, "spe": 30},
+    "nature": {"name": "おくびょう", "up": "spe", "down": "atk"},
+    "note": "タスキが他と被るときのおいかぜ型。"
+  },
+  "kingambit-glasses": {
+    "pokemonId": "kingambit",
+    "label": "くろいメガネ",
+    "item": "くろいメガネ",
+    "ability": "そうだいしょう",
+    "role": "物理エース",
+    "moves": ["どげざつき", "ふいうち", "アイアンヘッド", "まもる"],
+    "sp": {"hp": 28, "atk": 32, "def": 4, "spa": 0, "spd": 0, "spe": 2},
+    "nature": {"name": "いじっぱり", "up": "atk", "down": "spa"},
+    "note": "大将＋ふいうちで詰め。威嚇を受けても攻撃が上がる。"
+  },
+  "kingambit-lo": {
+    "pokemonId": "kingambit",
+    "label": "いのちのたま",
+    "item": "いのちのたま",
+    "ability": "そうだいしょう",
+    "role": "物理エース",
+    "moves": ["どげざつき", "ふいうち", "アイアンヘッド", "つるぎのまい"],
+    "sp": {"hp": 20, "atk": 32, "def": 4, "spa": 0, "spd": 0, "spe": 10},
+    "nature": {"name": "いじっぱり", "up": "atk", "down": "spa"},
+    "note": "火力重視。メガネ枠が他にいるときの型。"
+  },
+  "staraptor-mega": {
+    "pokemonId": "staraptor",
     "label": "メガ",
-    "item": "ハッサムナイト",
-    "ability": "テクニシャン(メガ)",
+    "item": "ムクホークナイト",
+    "ability": "いかく",
     "role": "物理エース",
-    "moves": [
-      "バレットパンチ",
-      "はさむ",
-      "とんぼがえり",
-      "つるぎのまい"
-    ],
-    "sp": {
-      "hp": 24,
-      "atk": 32,
-      "def": 4,
-      "spa": 0,
-      "spd": 6,
-      "spe": 0
-    },
-    "note": "メガで耐久火力両立。",
-    "nature": {
-      "name": "いじっぱり",
-      "up": "atk",
-      "down": "spa"
-    }
+    "moves": ["ブレイブバード", "インファイト", "おいかぜ", "まもる"],
+    "sp": {"hp": 4, "atk": 32, "def": 0, "spa": 0, "spd": 0, "spe": 30},
+    "nature": {"name": "ようき", "up": "spe", "down": "spa"},
+    "note": "Reg M-B新メガ。威嚇＋高速物理＋おいかぜも可能。"
   },
-  "dragonite-multi": {
-    "pokemonId": "dragonite",
-    "label": "マルチスケイル",
-    "item": "たべのこし",
-    "ability": "マルチスケイル",
-    "role": "耐久積み",
-    "moves": [
-      "エアスラッシュ",
-      "りゅうのまい",
-      "じしん",
-      "しんそく"
-    ],
-    "sp": {
-      "hp": 28,
-      "atk": 32,
-      "def": 4,
-      "spa": 0,
-      "spd": 0,
-      "spe": 2
-    },
-    "note": "舞積みからの突破。シングル向き。",
-    "nature": {
-      "name": "ゆうかん",
-      "up": "atk",
-      "down": "spe"
-    }
+  "incineroar-support": {
+    "pokemonId": "incineroar",
+    "label": "威嚇サポート",
+    "item": "オボンのみ",
+    "ability": "いかく",
+    "role": "サポート",
+    "moves": ["ねこだまし", "すてゼリフ", "フレアドライブ", "ＤＤラリアット"],
+    "sp": {"hp": 32, "atk": 4, "def": 20, "spa": 0, "spd": 10, "spe": 0},
+    "nature": {"name": "しんちょう", "up": "spd", "down": "spa"},
+    "note": "ダブル定番。ねこだまし＋すてゼリフ＋威嚇の三点セット。"
   },
-  "gardevoir-mega": {
-    "pokemonId": "gardevoir",
-    "label": "メガ特殊",
-    "item": "サーナイトナイト",
-    "ability": "トレース(メガ時強化)",
+  "charizard-y": {
+    "pokemonId": "charizard",
+    "label": "メガY",
+    "item": "リザードナイトY",
+    "ability": "もうか",
     "role": "特殊エース",
-    "moves": [
-      "ムーンフォース",
-      "サイコキネシス",
-      "かげぶんしん",
-      "守る"
-    ],
-    "sp": {
-      "hp": 4,
-      "atk": 0,
-      "def": 0,
-      "spa": 32,
-      "spd": 0,
-      "spe": 30
-    },
-    "note": "フェアリー打点の特殊エース。",
-    "nature": {
-      "name": "おくびょう",
-      "up": "spe",
-      "down": "atk"
-    }
+    "moves": ["ねっぷう", "ウェザーボール", "ソーラービーム", "まもる"],
+    "sp": {"hp": 4, "atk": 0, "def": 0, "spa": 32, "spd": 0, "spe": 30},
+    "nature": {"name": "おくびょう", "up": "spe", "down": "atk"},
+    "note": "メガYで日照り。ガブリアスと並ぶ最頻出コア。"
   },
-  "metagross-assault": {
+  "raichu-y": {
+    "pokemonId": "raichu",
+    "label": "メガY",
+    "item": "ライチュウナイトY",
+    "ability": "せいでんき",
+    "role": "特殊エース",
+    "moves": ["10まんボルト", "きあいだま", "くさむすび", "まもる"],
+    "sp": {"hp": 4, "atk": 0, "def": 0, "spa": 32, "spd": 0, "spe": 30},
+    "nature": {"name": "おくびょう", "up": "spe", "down": "atk"},
+    "note": "メガライチュウY。電＋格闘＋草の特殊エース。"
+  },
+  "pelipper-rain": {
+    "pokemonId": "pelipper",
+    "label": "雨始動",
+    "item": "しめったいわ",
+    "ability": "あめふらし",
+    "role": "天候始動",
+    "moves": ["ぼうふう", "ウェザーボール", "おいかぜ", "ワイドガード"],
+    "sp": {"hp": 32, "atk": 0, "def": 4, "spa": 28, "spd": 0, "spe": 2},
+    "nature": {"name": "ひかえめ", "up": "spa", "down": "atk"},
+    "note": "雨パの軸。しめったいわで雨ターン延長。"
+  },
+  "pelipper-sitrus": {
+    "pokemonId": "pelipper",
+    "label": "オボン",
+    "item": "オボンのみ",
+    "ability": "あめふらし",
+    "role": "天候始動",
+    "moves": ["ぼうふう", "ウェザーボール", "おいかぜ", "ワイドガード"],
+    "sp": {"hp": 32, "atk": 0, "def": 20, "spa": 12, "spd": 0, "spe": 2},
+    "nature": {"name": "ずぶとい", "up": "def", "down": "atk"},
+    "note": "耐久寄り。岩が他で使われているときの型。"
+  },
+  "sneasler-sash": {
+    "pokemonId": "sneasler",
+    "label": "タスキ",
+    "item": "きあいのタスキ",
+    "ability": "どくしゅ",
+    "role": "高速物理",
+    "moves": ["インファイト", "どくづき", "アクアカッター", "まもる"],
+    "sp": {"hp": 4, "atk": 32, "def": 0, "spa": 0, "spd": 0, "spe": 30},
+    "nature": {"name": "ようき", "up": "spe", "down": "spa"},
+    "note": "高速物理。毒手で接触技に毒を付与。"
+  },
+  "archaludon-rain": {
+    "pokemonId": "archaludon",
+    "label": "雨特殊",
+    "item": "たべのこし",
+    "ability": "じきゅうりょく",
+    "role": "特殊エース",
+    "moves": ["エレクトロショット", "りゅうのはどう", "ラスターカノン", "まもる"],
+    "sp": {"hp": 20, "atk": 0, "def": 4, "spa": 32, "spd": 0, "spe": 10},
+    "nature": {"name": "ひかえめ", "up": "spa", "down": "atk"},
+    "note": "雨下でエレクトロショットが強化。ペリッパーと最頻出コア。"
+  },
+  "grimmsnarl-screens": {
+    "pokemonId": "grimmsnarl",
+    "label": "壁",
+    "item": "ひかりのねんど",
+    "ability": "いたずらごころ",
+    "role": "壁張り",
+    "moves": ["リフレクター", "ひかりのかべ", "すてゼリフ", "ソウルクラッシュ"],
+    "sp": {"hp": 32, "atk": 0, "def": 20, "spa": 0, "spd": 14, "spe": 0},
+    "nature": {"name": "しんちょう", "up": "spd", "down": "spa"},
+    "note": "先制壁＋すてゼリフ。メガエースを通す定番。"
+  },
+  "sylveon-pixilate": {
+    "pokemonId": "sylveon",
+    "label": "フェアリースキン",
+    "item": "ようせいのハネ",
+    "ability": "フェアリースキン",
+    "role": "特殊エース",
+    "moves": ["ハイパーボイス", "ムーンフォース", "まもる", "でんこうせっか"],
+    "sp": {"hp": 32, "atk": 0, "def": 4, "spa": 28, "spd": 0, "spe": 2},
+    "nature": {"name": "ひかえめ", "up": "spa", "down": "atk"},
+    "note": "ハイボで範囲フェアリー。ガブ・リザ軸の補完に多い。"
+  },
+  "swampert-mega": {
+    "pokemonId": "swampert",
+    "label": "メガ",
+    "item": "ラグラージナイト",
+    "ability": "げきりゅう",
+    "role": "物理エース",
+    "moves": ["ウェーブタックル", "じしん", "れいとうパンチ", "まもる"],
+    "sp": {"hp": 4, "atk": 32, "def": 0, "spa": 0, "spd": 0, "spe": 30},
+    "nature": {"name": "いじっぱり", "up": "atk", "down": "spa"},
+    "note": "雨下すいすい（メガ後）で最速級。雨パの主砲。"
+  },
+  "metagross-mega": {
     "pokemonId": "metagross",
-    "label": "耐久",
-    "item": "とつげきチョッキ",
+    "label": "メガ",
+    "item": "メタグロスナイト",
     "ability": "クリアボディ",
-    "role": "物理受け兼攻撃",
-    "moves": [
-      "コメットパンチ",
-      "じしん",
-      "ばかぢから",
-      "かげうち"
-    ],
-    "sp": {
-      "hp": 32,
-      "atk": 28,
-      "def": 4,
-      "spa": 0,
-      "spd": 2,
-      "spe": 0
-    },
-    "note": "チョッキで特殊を受けつつ殴る。",
-    "nature": {
-      "name": "ゆうかん",
-      "up": "atk",
-      "down": "spe"
-    }
+    "role": "物理エース",
+    "moves": ["コメットパンチ", "バレットパンチ", "じしん", "まもる"],
+    "sp": {"hp": 4, "atk": 32, "def": 0, "spa": 0, "spd": 0, "spe": 30},
+    "nature": {"name": "ようき", "up": "spe", "down": "spa"},
+    "note": "硬い爪メガ。雨パの二枚目メガとしても採用。"
+  },
+  "farigiraf-tr": {
+    "pokemonId": "farigiraf",
+    "label": "トリル",
+    "item": "ナモのみ",
+    "ability": "アーマーテール",
+    "role": "サポート",
+    "moves": ["てだすけ", "サイコキネシス", "10まんボルト", "トリックルーム"],
+    "sp": {"hp": 32, "atk": 0, "def": 20, "spa": 4, "spd": 10, "spe": 0},
+    "nature": {"name": "れいせい", "up": "spa", "down": "spe"},
+    "note": "ねこだまし無効＋トリル／てだすけ。サポートの要。"
+  },
+  "floette-mega": {
+    "pokemonId": "floette-eternal",
+    "label": "メガ",
+    "item": "フラエッテナイト",
+    "ability": "フラワーベール",
+    "role": "特殊エース",
+    "moves": ["はめつのうた", "ムーンフォース", "マジカルシャイン", "まもる"],
+    "sp": {"hp": 4, "atk": 0, "def": 0, "spa": 32, "spd": 0, "spe": 30},
+    "nature": {"name": "おくびょう", "up": "spe", "down": "atk"},
+    "note": "はめつのうた高火力フェアリー。おいかぜと相性良し。"
+  },
+  "gholdengo-lo": {
+    "pokemonId": "gholdengo",
+    "label": "いのちのたま",
+    "item": "いのちのたま",
+    "ability": "おうごんのからだ",
+    "role": "特殊エース",
+    "moves": ["ゴールドラッシュ", "シャドーボール", "わるだくみ", "まもる"],
+    "sp": {"hp": 4, "atk": 0, "def": 0, "spa": 32, "spd": 0, "spe": 30},
+    "nature": {"name": "おくびょう", "up": "spe", "down": "atk"},
+    "note": "状態異常無効の特殊枠。砂パ・バランスに入る。"
+  },
+  "aerodactyl-mega": {
+    "pokemonId": "aerodactyl",
+    "label": "メガ",
+    "item": "プテラナイト",
+    "ability": "プレッシャー",
+    "role": "高速物理",
+    "moves": ["いわなだれ", "ダブルウイング", "こおりのキバ", "おいかぜ"],
+    "sp": {"hp": 4, "atk": 32, "def": 0, "spa": 0, "spd": 0, "spe": 30},
+    "nature": {"name": "ようき", "up": "spe", "down": "spa"},
+    "note": "高速岩雪崩＋おいかぜ。リザY軸のサポートメガにも。"
   },
   "excadrill-sand": {
     "pokemonId": "excadrill",
@@ -383,673 +291,262 @@
     "item": "きあいのタスキ",
     "ability": "すなかき",
     "role": "砂エース",
-    "moves": [
-      "じしん",
-      "アイアンヘッド",
-      "いわなだれ",
-      "守る"
-    ],
-    "sp": {
-      "hp": 4,
-      "atk": 32,
-      "def": 0,
-      "spa": 0,
-      "spd": 0,
-      "spe": 30
-    },
-    "note": "砂下最速級。タスキで起点回避。",
-    "nature": {
-      "name": "ようき",
-      "up": "spe",
-      "down": "spa"
-    }
+    "moves": ["10まんばりき", "アイアンヘッド", "いわなだれ", "まもる"],
+    "sp": {"hp": 4, "atk": 32, "def": 0, "spa": 0, "spd": 0, "spe": 30},
+    "nature": {"name": "いじっぱり", "up": "atk", "down": "spa"},
+    "note": "砂下最速級。メガバンギとセット。"
   },
-  "rotom-wash": {
-    "pokemonId": "rotom-wash",
-    "label": "洗ロト",
-    "item": "オボンのみ",
-    "ability": "ふゆう",
-    "role": "サポート",
-    "moves": [
-      "ハイドロポンプ",
-      "10まんボルト",
-      "ウィルオウィスプ",
-      "守る"
-    ],
-    "sp": {
-      "hp": 32,
-      "atk": 0,
-      "def": 4,
-      "spa": 20,
-      "spd": 10,
-      "spe": 0
-    },
-    "note": "耐久支援の定番。やけど＋水電。",
-    "nature": {
-      "name": "れいせい",
-      "up": "spa",
-      "down": "spe"
-    }
+  "tyranitar-mega": {
+    "pokemonId": "tyranitar",
+    "label": "メガ砂",
+    "item": "バンギラスナイト",
+    "ability": "すなおこし",
+    "role": "天候始動",
+    "moves": ["いわなだれ", "はたきおとす", "けたぐり", "まもる"],
+    "sp": {"hp": 28, "atk": 32, "def": 4, "spa": 0, "spd": 0, "spe": 2},
+    "nature": {"name": "いじっぱり", "up": "atk", "down": "spa"},
+    "note": "砂起動兼攻撃。ドリュウズと砂パの軸。"
   },
-  "amoonguss": {
-    "pokemonId": "amoonguss",
-    "label": "キノコの胞子",
-    "item": "オボンのみ",
-    "ability": "さいせいりょく",
-    "role": "サポート",
-    "moves": [
-      "キノコのほうし",
-      "クリアスモッグ",
-      "ギガドレイン",
-      "守る"
-    ],
-    "sp": {
-      "hp": 32,
-      "atk": 0,
-      "def": 20,
-      "spa": 0,
-      "spd": 14,
-      "spe": 0
-    },
-    "note": "ダブルの定番サポート。胞子で展開を止める。",
-    "nature": {
-      "name": "ゆうかん",
-      "up": "atk",
-      "down": "spe"
-    }
-  },
-  "incineroar": {
-    "pokemonId": "incineroar",
-    "label": "威嚇",
-    "item": "オボンのみ",
-    "ability": "いかく",
-    "role": "サポート",
-    "moves": [
-      "フレアドライブ",
-      "ノックオフ",
-      "うそなき",
-      "すてゼリフ"
-    ],
-    "sp": {
-      "hp": 32,
-      "atk": 4,
-      "def": 20,
-      "spa": 0,
-      "spd": 10,
-      "spe": 0
-    },
-    "note": "ダブルの万能サポート。アイテムは状況で替え可。",
-    "nature": {
-      "name": "ゆうかん",
-      "up": "atk",
-      "down": "spe"
-    }
-  },
-  "rillaboom": {
-    "pokemonId": "rillaboom",
-    "label": "グラスメイカー",
-    "item": "こんごうだま",
-    "ability": "グラスメイカー",
-    "role": "物理エース",
-    "moves": [
-      "グラススライダー",
-      "ウッドハンマー",
-      "ばかぢから",
-      "うつけのいっげき"
-    ],
-    "sp": {
-      "hp": 4,
-      "atk": 32,
-      "def": 0,
-      "spa": 0,
-      "spd": 0,
-      "spe": 30
-    },
-    "note": "草地展開＋グラスラ。場作り兼アタッカー。",
-    "nature": {
-      "name": "ようき",
-      "up": "spe",
-      "down": "spa"
-    }
-  },
-  "grimmsnarl": {
-    "pokemonId": "grimmsnarl",
-    "label": "壁",
-    "item": "ひかりのねんど",
-    "ability": "いたずらごころ",
-    "role": "壁張り",
-    "moves": [
-      "リフレクター",
-      "ひかりのかべ",
-      "あやしいかぜ",
-      "サンダーウェーブ"
-    ],
-    "sp": {
-      "hp": 32,
-      "atk": 0,
-      "def": 20,
-      "spa": 0,
-      "spd": 14,
-      "spe": 0
-    },
-    "note": "先制壁で味方を守る。積みパの相棒。",
-    "nature": {
-      "name": "ゆうかん",
-      "up": "atk",
-      "down": "spe"
-    }
-  },
-  "corviknight": {
-    "pokemonId": "corviknight",
-    "label": "鉄壁羽休め",
+  "milotic-bulk": {
+    "pokemonId": "milotic",
+    "label": "競争心",
     "item": "たべのこし",
-    "ability": "プレッシャー",
-    "role": "物理受け",
-    "moves": [
-      "アイアンヘッド",
-      "ボディプレス",
-      "てっぺき",
-      "はねやすめ"
-    ],
-    "sp": {
-      "hp": 32,
-      "atk": 0,
-      "def": 32,
-      "spa": 0,
-      "spd": 2,
-      "spe": 0
-    },
-    "note": "物理受けサイクルの要。",
-    "nature": {
-      "name": "ゆうかん",
-      "up": "atk",
-      "down": "spe"
-    }
+    "ability": "かちき",
+    "role": "特殊受け",
+    "moves": ["ねっとう", "れいとうビーム", "こごえるかぜ", "まもる"],
+    "sp": {"hp": 32, "atk": 0, "def": 4, "spa": 0, "spd": 28, "spe": 2},
+    "nature": {"name": "おだやか", "up": "spd", "down": "atk"},
+    "note": "威嚇を受けて特攻上昇。砂・バランスの受け枠。"
   },
-  "dragapult": {
-    "pokemonId": "dragapult",
+  "venusaur-mega": {
+    "pokemonId": "venusaur",
+    "label": "メガ",
+    "item": "フシギバナイト",
+    "ability": "しんりょく",
+    "role": "特殊エース",
+    "moves": ["ヘドロばくだん", "ギガドレイン", "だいちのちから", "まもる"],
+    "sp": {"hp": 20, "atk": 0, "def": 4, "spa": 32, "spd": 0, "spe": 10},
+    "nature": {"name": "ひかえめ", "up": "spa", "down": "atk"},
+    "note": "厚い脂肪メガ。雨・サイクルのくさ枠。"
+  },
+  "venusaur-sash": {
+    "pokemonId": "venusaur",
+    "label": "タスキ",
+    "item": "きあいのタスキ",
+    "ability": "ようりょくそ",
+    "role": "特殊エース",
+    "moves": ["リーフストーム", "ヘドロばくだん", "ねむりごな", "まもる"],
+    "sp": {"hp": 4, "atk": 0, "def": 0, "spa": 32, "spd": 0, "spe": 30},
+    "nature": {"name": "おくびょう", "up": "spe", "down": "atk"},
+    "note": "晴れ下ようりょくそ。リザY軸のくさ打点。"
+  },
+  "hydreigon-scarf": {
+    "pokemonId": "hydreigon",
     "label": "スカーフ",
     "item": "こだわりスカーフ",
-    "ability": "クリアボディ",
+    "ability": "ふゆう",
     "role": "高速特殊",
-    "moves": [
-      "ドラゴンアロー",
-      "シャドーボール",
-      "かえんほうしゃ",
-      "とんぼがえり"
-    ],
-    "sp": {
-      "hp": 4,
-      "atk": 0,
-      "def": 0,
-      "spa": 32,
-      "spd": 0,
-      "spe": 30
-    },
-    "note": "上から削る高速枠。物理矢の型も可。",
-    "nature": {
-      "name": "おくびょう",
-      "up": "spe",
-      "down": "atk"
-    }
+    "moves": ["あくのはどう", "りゅうせいぐん", "バークアウト", "とんぼがえり"],
+    "sp": {"hp": 4, "atk": 0, "def": 0, "spa": 32, "spd": 0, "spe": 30},
+    "nature": {"name": "おくびょう", "up": "spe", "down": "atk"},
+    "note": "雨パのスカーフ枠。上からあく／ドラゴン。"
   },
-  "toxapex": {
-    "pokemonId": "toxapex",
-    "label": "再生力",
-    "item": "くろいヘドロ",
-    "ability": "さいせいりょく",
-    "role": "特殊受け",
-    "moves": [
-      "どくどく",
-      "ヘドロウェーブ",
-      "ねっとう",
-      "じこさいせい"
-    ],
-    "sp": {
-      "hp": 32,
-      "atk": 0,
-      "def": 4,
-      "spa": 0,
-      "spd": 30,
-      "spe": 0
-    },
-    "note": "特殊受けの定番。",
-    "nature": {
-      "name": "ゆうかん",
-      "up": "atk",
-      "down": "spe"
-    }
+  "mawile-mega": {
+    "pokemonId": "mawile",
+    "label": "メガ",
+    "item": "クチートナイト",
+    "ability": "ちからずく",
+    "role": "物理エース",
+    "moves": ["じゃれつく", "アイアンヘッド", "ふいうち", "まもる"],
+    "sp": {"hp": 28, "atk": 32, "def": 4, "spa": 0, "spd": 0, "spe": 2},
+    "nature": {"name": "いじっぱり", "up": "atk", "down": "spa"},
+    "note": "メガでヒュージパワー級。リザYとの二枚メガも。"
   },
-  "pelipper": {
-    "pokemonId": "pelipper",
-    "label": "雨始動",
-    "item": "しめったいわ",
-    "ability": "あめふらし",
-    "role": "天候始動",
-    "moves": [
-      "ハイドロポンプ",
-      "ぼうふう",
-      "てだすけ",
-      "守る"
-    ],
-    "sp": {
-      "hp": 32,
-      "atk": 0,
-      "def": 4,
-      "spa": 28,
-      "spd": 0,
-      "spe": 2
-    },
-    "note": "雨パの軸。味方スイマーを支援。",
-    "nature": {
-      "name": "れいせい",
-      "up": "spa",
-      "down": "spe"
-    }
-  },
-  "torkoal": {
+  "torkoal-sun": {
     "pokemonId": "torkoal",
     "label": "日照り",
     "item": "あついいわ",
     "ability": "ひでり",
     "role": "天候始動",
-    "moves": [
-      "噴火",
-      "ソーラービーム",
-      "あくび",
-      "守る"
-    ],
-    "sp": {
-      "hp": 32,
-      "atk": 0,
-      "def": 4,
-      "spa": 28,
-      "spd": 0,
-      "spe": 2
-    },
-    "note": "晴れパの軸。噴火＋ソービー。",
-    "nature": {
-      "name": "れいせい",
-      "up": "spa",
-      "down": "spe"
-    }
+    "moves": ["ふんか", "ソーラービーム", "あくび", "まもる"],
+    "sp": {"hp": 32, "atk": 0, "def": 4, "spa": 28, "spd": 0, "spe": 2},
+    "nature": {"name": "れいせい", "up": "spa", "down": "spe"},
+    "note": "晴れ始動。トリル・カエンジシ軸で使用。"
   },
-  "indeedee-f": {
-    "pokemonId": "indeedee-f",
-    "label": "サイコメイカー",
+  "ninetales-sun": {
+    "pokemonId": "ninetales",
+    "label": "日照り",
     "item": "きあいのタスキ",
-    "ability": "サイコメイカー",
-    "role": "サポート",
-    "moves": [
-      "フォローミー",
-      "サイコショック",
-      "てだすけ",
-      "トリックルーム"
-    ],
-    "sp": {
-      "hp": 32,
-      "atk": 0,
-      "def": 20,
-      "spa": 4,
-      "spd": 10,
-      "spe": 0
-    },
-    "note": "サイコフィールド＋フォロミー。トリル起動も可。",
-    "nature": {
-      "name": "れいせい",
-      "up": "spa",
-      "down": "spe"
-    }
+    "ability": "ひでり",
+    "role": "天候始動",
+    "moves": ["ねっぷう", "エナジーボール", "あくび", "まもる"],
+    "sp": {"hp": 4, "atk": 0, "def": 0, "spa": 32, "spd": 0, "spe": 30},
+    "nature": {"name": "おくびょう", "up": "spe", "down": "atk"},
+    "note": "カントーキュウコンの日照り。晴れパの起動役。"
   },
-  "ursaluna": {
-    "pokemonId": "ursaluna",
-    "label": "トリル",
+  "pyroar-mega": {
+    "pokemonId": "pyroar",
+    "label": "メガ",
+    "item": "カエンジシナイト",
+    "ability": "とうそうしん",
+    "role": "特殊エース",
+    "moves": ["ねっぷう", "ハイパーボイス", "ソーラービーム", "まもる"],
+    "sp": {"hp": 4, "atk": 0, "def": 0, "spa": 32, "spd": 0, "spe": 30},
+    "nature": {"name": "おくびょう", "up": "spe", "down": "atk"},
+    "note": "晴れ特殊エース。キュウコンとセットで使われる。"
+  },
+  "ceruledge-lo": {
+    "pokemonId": "ceruledge",
+    "label": "いのちのたま",
     "item": "いのちのたま",
-    "ability": "こんじょう",
-    "role": "トリルエース",
-    "moves": [
-      "ヘッドロングプレス",
-      "じしん",
-      "かげうち",
-      "守る"
-    ],
-    "sp": {
-      "hp": 4,
-      "atk": 32,
-      "def": 0,
-      "spa": 0,
-      "spd": 0,
-      "spe": 30
-    },
-    "note": "トリル下の物理エース。素早さは最低寄りに調整可。",
-    "nature": {
-      "name": "ようき",
-      "up": "spe",
-      "down": "spa"
-    }
+    "ability": "くだけるよろい",
+    "role": "物理エース",
+    "moves": ["むねんのつるぎ", "シャドークロー", "つるぎのまい", "まもる"],
+    "sp": {"hp": 4, "atk": 32, "def": 0, "spa": 0, "spd": 0, "spe": 30},
+    "nature": {"name": "ようき", "up": "spe", "down": "spa"},
+    "note": "火力重視。リザY・ニンフィアへの回答枠。"
   },
-  "annihilape": {
+  "ceruledge-bulk": {
+    "pokemonId": "ceruledge",
+    "label": "物理エース",
+    "item": "オボンのみ",
+    "ability": "くだけるよろい",
+    "role": "物理エース",
+    "moves": ["むねんのつるぎ", "シャドークロー", "つるぎのまい", "まもる"],
+    "sp": {"hp": 20, "atk": 32, "def": 4, "spa": 0, "spd": 0, "spe": 10},
+    "nature": {"name": "いじっぱり", "up": "atk", "down": "spa"},
+    "note": "リザY・ニンフィアへの回答枠として採用例あり。"
+  },
+  "amoonguss-spore": {
+    "pokemonId": "amoonguss",
+    "label": "胞子",
+    "item": "オボンのみ",
+    "ability": "さいせいりょく",
+    "role": "サポート",
+    "moves": ["キノコのほうし", "いかりのこな", "クリアスモッグ", "まもる"],
+    "sp": {"hp": 32, "atk": 0, "def": 20, "spa": 0, "spd": 14, "spe": 0},
+    "nature": {"name": "ずぶとい", "up": "def", "down": "atk"},
+    "note": "ダブルの定番サポート。ヤバソチャと役割が近い。"
+  },
+  "rillaboom-grassy": {
+    "pokemonId": "rillaboom",
+    "label": "グラスラ",
+    "item": "いのちのたま",
+    "ability": "グラスメイカー",
+    "role": "物理エース",
+    "moves": ["グラススライダー", "ウッドハンマー", "ばかぢから", "まもる"],
+    "sp": {"hp": 4, "atk": 32, "def": 0, "spa": 0, "spd": 0, "spe": 30},
+    "nature": {"name": "いじっぱり", "up": "atk", "down": "spa"},
+    "note": "草地展開＋先制グラスラ。"
+  },
+  "glimmora-lead": {
+    "pokemonId": "glimmora",
+    "label": "設置",
+    "item": "きあいのタスキ",
+    "ability": "どくげしょう",
+    "role": "設置サポート",
+    "moves": ["ステルスロック", "パワージェム", "ヘドロウェーブ", "まもる"],
+    "sp": {"hp": 4, "atk": 0, "def": 0, "spa": 32, "spd": 0, "spe": 30},
+    "nature": {"name": "おくびょう", "up": "spe", "down": "atk"},
+    "note": "シングル寄りだがダブルでも設置・範囲技で採用。"
+  },
+  "hippowdon-sitrus": {
+    "pokemonId": "hippowdon",
+    "label": "砂あくび",
+    "item": "オボンのみ",
+    "ability": "すなおこし",
+    "role": "サポート",
+    "moves": ["じしん", "あくび", "ステルスロック", "まもる"],
+    "sp": {"hp": 32, "atk": 4, "def": 28, "spa": 0, "spd": 0, "spe": 2},
+    "nature": {"name": "わんぱく", "up": "def", "down": "spa"},
+    "note": "たべのこしが被るときのカバルドン。"
+  },
+  "hippowdon-sand": {
+    "pokemonId": "hippowdon",
+    "label": "砂あくび",
+    "item": "たべのこし",
+    "ability": "すなおこし",
+    "role": "サポート",
+    "moves": ["じしん", "あくび", "ステルスロック", "まもる"],
+    "sp": {"hp": 32, "atk": 4, "def": 28, "spa": 0, "spd": 0, "spe": 2},
+    "nature": {"name": "わんぱく", "up": "def", "down": "spa"},
+    "note": "シングル砂・ステロ展開の定番。ダブルでも砂起動可。"
+  },
+  "dragapult-lo": {
+    "pokemonId": "dragapult",
+    "label": "いのちのたま",
+    "item": "いのちのたま",
+    "ability": "クリアボディ",
+    "role": "高速特殊",
+    "moves": ["シャドーボール", "りゅうせいぐん", "かえんほうしゃ", "まもる"],
+    "sp": {"hp": 4, "atk": 0, "def": 0, "spa": 32, "spd": 0, "spe": 30},
+    "nature": {"name": "おくびょう", "up": "spe", "down": "atk"},
+    "note": "スカーフが被るときの高速特殊。"
+  },
+  "dragapult-scarf": {
+    "pokemonId": "dragapult",
+    "label": "スカーフ",
+    "item": "こだわりスカーフ",
+    "ability": "クリアボディ",
+    "role": "高速特殊",
+    "moves": ["シャドーボール", "りゅうせいぐん", "かえんほうしゃ", "とんぼがえり"],
+    "sp": {"hp": 4, "atk": 0, "def": 0, "spa": 32, "spd": 0, "spe": 30},
+    "nature": {"name": "おくびょう", "up": "spe", "down": "atk"},
+    "note": "高速特殊。おにび型もシングルで人気。"
+  },
+  "corviknight-bulk": {
+    "pokemonId": "corviknight",
+    "label": "物理受け",
+    "item": "たべのこし",
+    "ability": "プレッシャー",
+    "role": "物理受け",
+    "moves": ["アイアンヘッド", "ボディプレス", "てっぺき", "はねやすめ"],
+    "sp": {"hp": 32, "atk": 0, "def": 32, "spa": 0, "spd": 2, "spe": 0},
+    "nature": {"name": "わんぱく", "up": "def", "down": "spa"},
+    "note": "物理クッション。シングルサイクル向け。"
+  },
+  "annihilape-bulk": {
     "pokemonId": "annihilape",
     "label": "怒りの拳",
     "item": "たべのこし",
     "ability": "やるき",
     "role": "耐久アタッカー",
-    "moves": [
-      "いかりのコツ",
-      "ドレインパンチ",
-      "かげうち",
-      "みがわり"
-    ],
-    "sp": {
-      "hp": 32,
-      "atk": 20,
-      "def": 4,
-      "spa": 0,
-      "spd": 10,
-      "spe": 0
-    },
-    "note": "怒りの拳で削り勝ち。耐久寄り。",
-    "nature": {
-      "name": "ゆうかん",
-      "up": "atk",
-      "down": "spe"
-    }
+    "moves": ["いかりの拳", "ドレインパンチ", "かげうち", "まもる"],
+    "sp": {"hp": 32, "atk": 20, "def": 4, "spa": 0, "spd": 10, "spe": 0},
+    "nature": {"name": "いじっぱり", "up": "atk", "down": "spa"},
+    "note": "削り勝ち型。トリル・サイクルに入る。"
   },
-  "kingambit": {
-    "pokemonId": "kingambit",
-    "label": "王者の刃",
-    "item": "くろいメガネ",
-    "ability": "そうだいしょう",
-    "role": "後出しエース",
-    "moves": [
-      "アイアンヘッド",
-      "吸い打ち",
-      "すいりゅうれんだ",
-      "つるぎのまい"
-    ],
-    "sp": {
-      "hp": 28,
-      "atk": 32,
-      "def": 4,
-      "spa": 0,
-      "spd": 0,
-      "spe": 2
-    },
-    "note": "後出しから大将で火力上昇。",
-    "nature": {
-      "name": "ゆうかん",
-      "up": "atk",
-      "down": "spe"
-    }
-  },
-  "glimmora-mega": {
-    "pokemonId": "glimmora",
-    "label": "メガ設置",
-    "item": "キラフロルナイト",
-    "ability": "どくげしょう",
-    "role": "設置サポート",
-    "moves": [
-      "パワージェム",
-      "ヘドロウェーブ",
-      "ステルスロック",
-      "守る"
-    ],
-    "sp": {
-      "hp": 4,
-      "atk": 0,
-      "def": 0,
-      "spa": 32,
-      "spd": 0,
-      "spe": 30
-    },
-    "note": "メガ＋設置で展開を有利に。",
-    "nature": {
-      "name": "おくびょう",
-      "up": "spe",
-      "down": "atk"
-    }
-  },
-  "baxcalibur": {
-    "pokemonId": "baxcalibur",
-    "label": "積み",
-    "item": "クリアチャーム",
-    "ability": "ねつこうかん",
-    "role": "物理エース",
-    "moves": [
-      "つららばり",
-      "げきりゅう",
-      "じしん",
-      "つるぎのまい"
-    ],
-    "sp": {
-      "hp": 4,
-      "atk": 32,
-      "def": 0,
-      "spa": 0,
-      "spd": 0,
-      "spe": 30
-    },
-    "note": "氷ドラゴンの積みエース。",
-    "nature": {
-      "name": "ようき",
-      "up": "spe",
-      "down": "spa"
-    }
-  },
-  "gholdengo": {
-    "pokemonId": "gholdengo",
-    "label": "スペシャル",
-    "item": "オボンのみ",
-    "ability": "おうごんのからだ",
-    "role": "特殊エース",
-    "moves": [
-      "メイクアアップ",
-      "シャドーボール",
-      "きあいだま",
-      "守る"
-    ],
-    "sp": {
-      "hp": 20,
-      "atk": 0,
-      "def": 4,
-      "spa": 32,
-      "spd": 0,
-      "spe": 10
-    },
-    "note": "状態異常無効の特殊枠。",
-    "nature": {
-      "name": "ひかえめ",
-      "up": "spa",
-      "down": "atk"
-    }
-  },
-  "greninja-mega": {
-    "pokemonId": "greninja",
+  "blaziken-mega": {
+    "pokemonId": "blaziken",
     "label": "メガ",
-    "item": "ゲッコウガナイト",
-    "ability": "へんげんじざい",
-    "role": "高速特殊",
-    "moves": [
-      "ハイドロポンプ",
-      "あくのはどう",
-      "こごえるかぜ",
-      "うしろげり"
-    ],
-    "sp": {
-      "hp": 4,
-      "atk": 0,
-      "def": 0,
-      "spa": 32,
-      "spd": 0,
-      "spe": 30
-    },
-    "note": "高速特殊。メガで耐久と火力を補強。",
-    "nature": {
-      "name": "おくびょう",
-      "up": "spe",
-      "down": "atk"
-    }
+    "item": "バシャーモナイト",
+    "ability": "もうか",
+    "role": "物理エース",
+    "moves": ["フレアドライブ", "インファイト", "とびひざげり", "まもる"],
+    "sp": {"hp": 4, "atk": 32, "def": 0, "spa": 0, "spd": 0, "spe": 30},
+    "nature": {"name": "ようき", "up": "spe", "down": "spa"},
+    "note": "メガで速度上昇。シングル展開エースとしても強い。"
   },
-  "chandelure-mega": {
-    "pokemonId": "chandelure",
-    "label": "メガ特殊",
-    "item": "シャンデラナイト",
-    "ability": "かげふみ",
-    "role": "特殊エース",
-    "moves": [
-      "シャドーボール",
-      "かえんほうしゃ",
-      "エナジーボール",
-      "守る"
-    ],
-    "sp": {
-      "hp": 4,
-      "atk": 0,
-      "def": 0,
-      "spa": 32,
-      "spd": 0,
-      "spe": 30
-    },
-    "note": "高火力特殊。影踏みで逃がさない。",
-    "nature": {
-      "name": "おくびょう",
-      "up": "spe",
-      "down": "atk"
-    }
+  "scizor-mega": {
+    "pokemonId": "scizor",
+    "label": "メガ",
+    "item": "ハッサムナイト",
+    "ability": "テクニシャン",
+    "role": "物理エース",
+    "moves": ["バレットパンチ", "はさむ", "とんぼがえり", "まもる"],
+    "sp": {"hp": 24, "atk": 32, "def": 4, "spa": 0, "spd": 6, "spe": 0},
+    "nature": {"name": "いじっぱり", "up": "atk", "down": "spa"},
+    "note": "先制バレットで詰め。サイクル・対面の鋼枠。"
   },
-  "hawlucha-mega": {
-    "pokemonId": "hawlucha",
-    "label": "メガ積み",
-    "item": "ルチャブルナイト",
-    "ability": "かたやぶり",
-    "role": "積みエース",
-    "moves": [
-      "インファイト",
-      "アクアジェット",
-      "つばめがえし",
-      "つるぎのまい"
-    ],
-    "sp": {
-      "hp": 4,
-      "atk": 32,
-      "def": 0,
-      "spa": 0,
-      "spd": 0,
-      "spe": 30
-    },
-    "note": "積み＋先制で詰める。",
-    "nature": {
-      "name": "ようき",
-      "up": "spe",
-      "down": "spa"
-    }
-  },
-  "altaria-mega": {
-    "pokemonId": "altaria",
-    "label": "メガ壁",
-    "item": "チルタリスナイト",
-    "ability": "フェアリースキン",
+  "indeedee-f-tr": {
+    "pokemonId": "indeedee-f",
+    "label": "サイコメイカー",
+    "item": "きあいのタスキ",
+    "ability": "サイコメイカー",
     "role": "サポート",
-    "moves": [
-      "ハイパーボイス",
-      "コットンガード",
-      "ねむる",
-      "ねごと"
-    ],
-    "sp": {
-      "hp": 32,
-      "atk": 0,
-      "def": 20,
-      "spa": 4,
-      "spd": 10,
-      "spe": 0
-    },
-    "note": "メガでフェアリー化。耐久支援。",
-    "nature": {
-      "name": "れいせい",
-      "up": "spa",
-      "down": "spe"
-    }
-  },
-  "manectric-mega": {
-    "pokemonId": "manectric",
-    "label": "メガ高速",
-    "item": "ライボルトナイト",
-    "ability": "いかく",
-    "role": "高速特殊",
-    "moves": [
-      "ボルトチェンジ",
-      "かえんほうしゃ",
-      "ボルトストライク",
-      "守る"
-    ],
-    "sp": {
-      "hp": 4,
-      "atk": 0,
-      "def": 0,
-      "spa": 32,
-      "spd": 0,
-      "spe": 30
-    },
-    "note": "メガ威嚇＋電火の高速枠。",
-    "nature": {
-      "name": "おくびょう",
-      "up": "spe",
-      "down": "atk"
-    }
-  },
-  "metagross-band": {
-    "pokemonId": "metagross",
-    "label": "ハチマキ",
-    "item": "こだわりハチマキ",
-    "ability": "クリアボディ",
-    "role": "物理エース",
-    "moves": [
-      "コメットパンチ",
-      "じしん",
-      "ばかぢから",
-      "かげうち"
-    ],
-    "sp": {
-      "hp": 4,
-      "atk": 32,
-      "def": 0,
-      "spa": 0,
-      "spd": 0,
-      "spe": 30
-    },
-    "note": "物理で押し切るメタグロス。",
-    "nature": {
-      "name": "ようき",
-      "up": "spe",
-      "down": "spa"
-    }
-  },
-  "salamence": {
-    "pokemonId": "salamence",
-    "label": "威嚇",
-    "item": "いのちのたま",
-    "ability": "いかく",
-    "role": "物理エース",
-    "moves": [
-      "ダブルウイング",
-      "げきりゅう",
-      "じしん",
-      "守る"
-    ],
-    "sp": {
-      "hp": 4,
-      "atk": 32,
-      "def": 0,
-      "spa": 0,
-      "spd": 0,
-      "spe": 30
-    },
-    "note": "威嚇持ち物理。メガ無し運用。",
-    "nature": {
-      "name": "ようき",
-      "up": "spe",
-      "down": "spa"
-    }
+    "moves": ["フォローミー", "てだすけ", "サイコショック", "トリックルーム"],
+    "sp": {"hp": 32, "atk": 0, "def": 20, "spa": 4, "spd": 10, "spe": 0},
+    "nature": {"name": "れいせい", "up": "spa", "down": "spe"},
+    "note": "トリル起動＋フォロミー。リキキリンと役割が近い。"
   }
 }

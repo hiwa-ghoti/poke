@@ -376,11 +376,29 @@ h1 {
   padding: 4px 8px;
 }
 .core-desc {
-  margin: 0 0 10px;
+  margin: 0 0 8px;
   font-size: 13px;
   color: var(--text-muted);
   font-weight: 700;
   line-height: 1.45;
+}
+
+.core-source {
+  margin: 0 0 10px;
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.core-source code {
+  font-family: ui-monospace, monospace;
+  font-size: 11px;
+  background: var(--surface);
+  padding: 1px 6px;
+  border-radius: 6px;
+  color: var(--accent);
 }
 .core-names {
   display: flex;

@@ -1,194 +1,245 @@
 [
   {
-    "id": "core-garchomp-excadrill",
-    "name": "砂バランス",
-    "concept": "バンギで砂を起こし、ドリュ・ガブで押し切るバランス編成。",
-    "format": ["singles", "doubles"],
-    "requiresAny": [["garchomp"], ["excadrill"], ["tyranitar"], ["garchomp", "excadrill"]],
-    "rating": "おすすめ",
+    "id": "meta-charizard-garchomp",
+    "name": "リザY＋ガブ汎用",
+    "concept": "環境最多コア。メガリザYの晴れ火力とガブの地震で押し切る。",
+    "format": ["doubles"],
+    "requiresAny": [["charizard"], ["garchomp"], ["charizard", "garchomp"], ["whimsicott"], ["kingambit"], ["basculegion"]],
+    "rating": "環境テンプレ",
+    "source": "Pikalytics Reg M-B（最多2体コア）",
     "slots": [
-      {"pokemonId": "tyranitar", "buildId": "tyranitar-sand"},
-      {"pokemonId": "excadrill", "buildId": "excadrill-sand"},
-      {"pokemonId": "garchomp", "buildId": "garchomp-scarf"},
-      {"pokemonId": "rotom-wash", "buildId": "rotom-wash"},
-      {"pokemonId": "amoonguss", "buildId": "amoonguss"},
-      {"pokemonId": "corviknight", "buildId": "corviknight"}
-    ]
-  },
-  {
-    "id": "core-garchomp-mega",
-    "name": "砂積みエース",
-    "concept": "メガガブをエースに置き、砂下で積み切る編成。",
-    "format": ["singles", "doubles"],
-    "requiresAny": [["garchomp"], ["garchomp", "tyranitar"]],
-    "rating": "攻め",
-    "slots": [
-      {"pokemonId": "tyranitar", "buildId": "tyranitar-sand"},
-      {"pokemonId": "garchomp", "buildId": "garchomp-mega"},
-      {"pokemonId": "excadrill", "buildId": "excadrill-sand"},
-      {"pokemonId": "grimmsnarl", "buildId": "grimmsnarl"},
-      {"pokemonId": "toxapex", "buildId": "toxapex"},
-      {"pokemonId": "dragapult", "buildId": "dragapult"}
-    ]
-  },
-  {
-    "id": "core-charizard-sun",
-    "name": "晴れアタッカー",
-    "concept": "コータス起点の晴れ。メガリザYとくさ打点で押し切る。",
-    "format": ["singles", "doubles"],
-    "requiresAny": [["charizard"], ["torkoal"], ["charizard", "torkoal"], ["venusaur"]],
-    "rating": "おすすめ",
-    "slots": [
-      {"pokemonId": "torkoal", "buildId": "torkoal"},
       {"pokemonId": "charizard", "buildId": "charizard-y"},
+      {"pokemonId": "garchomp", "buildId": "garchomp-lo"},
+      {"pokemonId": "whimsicott", "buildId": "whimsicott-tailwind"},
+      {"pokemonId": "basculegion", "buildId": "basculegion-mystic"},
+      {"pokemonId": "kingambit", "buildId": "kingambit-glasses"},
+      {"pokemonId": "incineroar", "buildId": "incineroar-support"}
+    ]
+  },
+  {
+    "id": "meta-joe-stjude",
+    "name": "リザYグッドスタッフ",
+    "concept": "大会上位の並び。リザY＋ガブ＋ガオガエン＋ニンフィアのバランス。",
+    "format": ["doubles"],
+    "requiresAny": [["charizard"], ["farigiraf"], ["sylveon"], ["incineroar"], ["venusaur"]],
+    "rating": "大会実績",
+    "source": "JoeUX9 / St. Jude VGC（Pikalytics掲載）",
+    "slots": [
+      {"pokemonId": "charizard", "buildId": "charizard-y"},
+      {"pokemonId": "farigiraf", "buildId": "farigiraf-tr"},
+      {"pokemonId": "venusaur", "buildId": "venusaur-sash"},
+      {"pokemonId": "garchomp", "buildId": "garchomp-lo"},
+      {"pokemonId": "incineroar", "buildId": "incineroar-support"},
+      {"pokemonId": "sylveon", "buildId": "sylveon-pixilate"}
+    ]
+  },
+  {
+    "id": "meta-tailwind-garchomp",
+    "name": "おいかぜガブ軸",
+    "concept": "エルフーンでおいかぜを張り、ガブ・イダイトウ・ドドゲで削る。",
+    "format": ["doubles"],
+    "requiresAny": [["whimsicott"], ["garchomp", "whimsicott"], ["basculegion"], ["kingambit"]],
+    "rating": "環境テンプレ",
+    "source": "Pikalytics 頻出3〜4体コア",
+    "slots": [
+      {"pokemonId": "whimsicott", "buildId": "whimsicott-tailwind"},
+      {"pokemonId": "garchomp", "buildId": "garchomp-lo"},
+      {"pokemonId": "basculegion", "buildId": "basculegion-mystic"},
+      {"pokemonId": "kingambit", "buildId": "kingambit-glasses"},
+      {"pokemonId": "sinistcha", "buildId": "sinistcha-kasib"},
+      {"pokemonId": "incineroar", "buildId": "incineroar-support"}
+    ]
+  },
+  {
+    "id": "meta-rain-swampert",
+    "name": "雨ラグラージ",
+    "concept": "ペリッパー雨＋メガラグラージ＋ブリジュラスの最強雨コア。",
+    "format": ["doubles"],
+    "requiresAny": [["pelipper"], ["swampert"], ["archaludon"], ["pelipper", "swampert"], ["pelipper", "archaludon"]],
+    "rating": "環境テンプレ",
+    "source": "Pikalytics 最多3体コア / Replica QLT4D7LYSY 系",
+    "replicaCode": "QLT4D7LYSY",
+    "slots": [
+      {"pokemonId": "pelipper", "buildId": "pelipper-rain"},
+      {"pokemonId": "swampert", "buildId": "swampert-mega"},
+      {"pokemonId": "archaludon", "buildId": "archaludon-rain"},
+      {"pokemonId": "metagross", "buildId": "metagross-mega"},
+      {"pokemonId": "grimmsnarl", "buildId": "grimmsnarl-screens"},
+      {"pokemonId": "sinistcha", "buildId": "sinistcha-support"}
+    ]
+  },
+  {
+    "id": "meta-rain-hydreigon",
+    "name": "雨＋サザンドラ",
+    "concept": "雨下ラグラージにスカーフサザンドラを添えた大会型。",
+    "format": ["doubles"],
+    "requiresAny": [["hydreigon"], ["pelipper"], ["swampert"], ["venusaur"]],
+    "rating": "大会実績",
+    "source": "Force_India Pep_uni #1（Pikalytics）",
+    "slots": [
       {"pokemonId": "venusaur", "buildId": "venusaur-mega"},
-      {"pokemonId": "incineroar", "buildId": "incineroar"},
-      {"pokemonId": "rillaboom", "buildId": "rillaboom"},
-      {"pokemonId": "manectric", "buildId": "manectric-mega"}
+      {"pokemonId": "grimmsnarl", "buildId": "grimmsnarl-screens"},
+      {"pokemonId": "pelipper", "buildId": "pelipper-sitrus"},
+      {"pokemonId": "archaludon", "buildId": "archaludon-rain"},
+      {"pokemonId": "swampert", "buildId": "swampert-mega"},
+      {"pokemonId": "hydreigon", "buildId": "hydreigon-scarf"}
     ]
   },
   {
-    "id": "core-charizard-x",
-    "name": "物理晴れ寄り",
-    "concept": "メガリザX中心の物理突破。壁で起点を作る。",
-    "format": ["singles"],
-    "requiresAny": [["charizard"]],
-    "rating": "攻め",
+    "id": "meta-floette-offense",
+    "name": "メガフラエッテ攻め",
+    "concept": "はめつのうた＋おいかぜでフェアリーを通す高速アグロ。",
+    "format": ["doubles"],
+    "requiresAny": [["floette-eternal"], ["charizard"], ["whimsicott"], ["basculegion"]],
+    "rating": "大会実績",
+    "source": "burningblazer Smogon Major（Pikalytics）",
     "slots": [
-      {"pokemonId": "charizard", "buildId": "charizard-x"},
-      {"pokemonId": "grimmsnarl", "buildId": "grimmsnarl"},
-      {"pokemonId": "torkoal", "buildId": "torkoal"},
-      {"pokemonId": "metagross", "buildId": "metagross-band"},
-      {"pokemonId": "gholdengo", "buildId": "gholdengo"},
-      {"pokemonId": "rotom-wash", "buildId": "rotom-wash"}
-    ]
-  },
-  {
-    "id": "core-rain",
-    "name": "雨スイマー",
-    "concept": "ペリッパー雨展開。水エースとサポートで押し込む。",
-    "format": ["singles", "doubles"],
-    "requiresAny": [["pelipper"], ["blastoise"], ["greninja"], ["pelipper", "blastoise"]],
-    "rating": "おすすめ",
-    "slots": [
-      {"pokemonId": "pelipper", "buildId": "pelipper"},
-      {"pokemonId": "blastoise", "buildId": "blastoise-mega"},
-      {"pokemonId": "greninja", "buildId": "greninja-mega"},
-      {"pokemonId": "amoonguss", "buildId": "amoonguss"},
-      {"pokemonId": "incineroar", "buildId": "incineroar"},
+      {"pokemonId": "floette-eternal", "buildId": "floette-mega"},
+      {"pokemonId": "charizard", "buildId": "charizard-y"},
+      {"pokemonId": "kingambit", "buildId": "kingambit-glasses"},
+      {"pokemonId": "whimsicott", "buildId": "whimsicott-tailwind"},
+      {"pokemonId": "basculegion", "buildId": "basculegion-mystic"},
       {"pokemonId": "garchomp", "buildId": "garchomp-scarf"}
     ]
   },
   {
-    "id": "core-gengar-fast",
-    "name": "高速特殊",
-    "concept": "メガゲンガーと高速枠で上から削る。",
-    "format": ["singles", "doubles"],
-    "requiresAny": [["gengar"], ["dragapult"], ["gengar", "dragapult"]],
-    "rating": "攻め",
-    "slots": [
-      {"pokemonId": "gengar", "buildId": "gengar-mega"},
-      {"pokemonId": "dragapult", "buildId": "dragapult"},
-      {"pokemonId": "rotom-wash", "buildId": "rotom-wash"},
-      {"pokemonId": "amoonguss", "buildId": "amoonguss"},
-      {"pokemonId": "scizor", "buildId": "scizor-mega"},
-      {"pokemonId": "metagross", "buildId": "metagross-assault"}
-    ]
-  },
-  {
-    "id": "core-lucario-setup",
-    "name": "壁積み",
-    "concept": "壁展開からメガルカリオで積み切る。",
-    "format": ["singles", "doubles"],
-    "requiresAny": [["lucario"], ["grimmsnarl"], ["lucario", "grimmsnarl"], ["hawlucha"]],
-    "rating": "攻め",
-    "slots": [
-      {"pokemonId": "grimmsnarl", "buildId": "grimmsnarl"},
-      {"pokemonId": "lucario", "buildId": "lucario-mega"},
-      {"pokemonId": "hawlucha", "buildId": "hawlucha-mega"},
-      {"pokemonId": "incineroar", "buildId": "incineroar"},
-      {"pokemonId": "gholdengo", "buildId": "gholdengo"},
-      {"pokemonId": "rotom-wash", "buildId": "rotom-wash"}
-    ]
-  },
-  {
-    "id": "core-balance-incin",
-    "name": "ダブル汎用",
-    "concept": "ガオガエン＋モロバレルの定番サポート軸。",
+    "id": "meta-sand-staraptor",
+    "name": "砂＋メガムクホーク",
+    "concept": "メガバンギ砂＋ドリュウズ＋メガムクホークの物理砂。",
     "format": ["doubles"],
-    "requiresAny": [["incineroar"], ["amoonguss"], ["incineroar", "amoonguss"], ["rillaboom"]],
-    "rating": "おすすめ",
+    "requiresAny": [["excadrill"], ["tyranitar"], ["staraptor"], ["gholdengo"], ["sinistcha"]],
+    "rating": "大会実績",
+    "source": "Magnetman Yosh Tournament（Pikalytics） / Replica LYHCP78X4L 系",
+    "replicaCode": "LYHCP78X4L",
     "slots": [
-      {"pokemonId": "incineroar", "buildId": "incineroar"},
-      {"pokemonId": "amoonguss", "buildId": "amoonguss"},
-      {"pokemonId": "rillaboom", "buildId": "rillaboom"},
-      {"pokemonId": "gardevoir", "buildId": "gardevoir-mega"},
-      {"pokemonId": "dragonite", "buildId": "dragonite-multi"},
+      {"pokemonId": "excadrill", "buildId": "excadrill-sand"},
+      {"pokemonId": "tyranitar", "buildId": "tyranitar-mega"},
+      {"pokemonId": "sinistcha", "buildId": "sinistcha-support"},
+      {"pokemonId": "milotic", "buildId": "milotic-bulk"},
+      {"pokemonId": "gholdengo", "buildId": "gholdengo-lo"},
+      {"pokemonId": "staraptor", "buildId": "staraptor-mega"}
+    ]
+  },
+  {
+    "id": "meta-mawile-charizard",
+    "name": "リザY＋メガクチート",
+    "concept": "晴れ特殊とメガクチートの物理優先で二枚メガ圧力。",
+    "format": ["doubles"],
+    "requiresAny": [["mawile"], ["charizard"], ["mawile", "charizard"]],
+    "rating": "実戦テンプレ",
+    "source": "Replica GESXQDU369 系",
+    "replicaCode": "GESXQDU369",
+    "slots": [
+      {"pokemonId": "charizard", "buildId": "charizard-y"},
+      {"pokemonId": "mawile", "buildId": "mawile-mega"},
+      {"pokemonId": "incineroar", "buildId": "incineroar-support"},
+      {"pokemonId": "whimsicott", "buildId": "whimsicott-tailwind"},
+      {"pokemonId": "basculegion", "buildId": "basculegion-mystic"},
       {"pokemonId": "garchomp", "buildId": "garchomp-scarf"}
     ]
   },
   {
-    "id": "core-tr-ursaluna",
-    "name": "トリル崩し",
-    "concept": "イエッサンからトリルを張り、ガチグマで崩す。",
+    "id": "meta-raichu-y",
+    "name": "メガライチュウY",
+    "concept": "電火エースをガオ・ヤバソチャで守る耐久寄り特殊軸。",
     "format": ["doubles"],
-    "requiresAny": [["ursaluna"], ["indeedee-f"], ["ursaluna", "indeedee-f"]],
-    "rating": "受け・崩し",
+    "requiresAny": [["raichu"], ["ceruledge"], ["milotic"], ["sinistcha"]],
+    "rating": "実戦テンプレ",
+    "source": "Replica EN64QF69J 系",
+    "replicaCode": "EN64QF69J",
     "slots": [
-      {"pokemonId": "indeedee-f", "buildId": "indeedee-f"},
-      {"pokemonId": "ursaluna", "buildId": "ursaluna"},
-      {"pokemonId": "amoonguss", "buildId": "amoonguss"},
-      {"pokemonId": "kingambit", "buildId": "kingambit"},
-      {"pokemonId": "blastoise", "buildId": "blastoise-mega"},
-      {"pokemonId": "incineroar", "buildId": "incineroar"}
+      {"pokemonId": "raichu", "buildId": "raichu-y"},
+      {"pokemonId": "incineroar", "buildId": "incineroar-support"},
+      {"pokemonId": "sinistcha", "buildId": "sinistcha-kasib"},
+      {"pokemonId": "ceruledge", "buildId": "ceruledge-lo"},
+      {"pokemonId": "floette-eternal", "buildId": "floette-mega"},
+      {"pokemonId": "milotic", "buildId": "milotic-bulk"}
     ]
   },
   {
-    "id": "core-bulk",
-    "name": "受けサイクル",
-    "concept": "アーマーガアとドヒドでサイクルし、後続で切り返す。",
-    "format": ["singles"],
-    "requiresAny": [["corviknight"], ["toxapex"], ["corviknight", "toxapex"], ["annihilape"]],
-    "rating": "受け・崩し",
+    "id": "meta-sun-pyroar",
+    "name": "晴れカエンジシ",
+    "concept": "キュウコン日照り＋メガカエンジシの晴れ特殊。",
+    "format": ["doubles"],
+    "requiresAny": [["pyroar"], ["ninetales"], ["torkoal"], ["pyroar", "ninetales"]],
+    "rating": "実戦テンプレ",
+    "source": "Replica 69PKNEEC91 系",
+    "replicaCode": "69PKNEEC91",
     "slots": [
-      {"pokemonId": "corviknight", "buildId": "corviknight"},
-      {"pokemonId": "toxapex", "buildId": "toxapex"},
-      {"pokemonId": "annihilape", "buildId": "annihilape"},
-      {"pokemonId": "gholdengo", "buildId": "gholdengo"},
-      {"pokemonId": "dragonite", "buildId": "dragonite-multi"},
-      {"pokemonId": "rotom-wash", "buildId": "rotom-wash"}
+      {"pokemonId": "pyroar", "buildId": "pyroar-mega"},
+      {"pokemonId": "ninetales", "buildId": "ninetales-sun"},
+      {"pokemonId": "whimsicott", "buildId": "whimsicott-mental"},
+      {"pokemonId": "farigiraf", "buildId": "farigiraf-tr"},
+      {"pokemonId": "basculegion", "buildId": "basculegion-mystic"},
+      {"pokemonId": "floette-eternal", "buildId": "floette-mega"}
     ]
   },
   {
-    "id": "core-gardevoir",
-    "name": "フェアリー特殊",
-    "concept": "メガサーナイトを中心にフェアリー打点で通す。",
-    "format": ["singles", "doubles"],
-    "requiresAny": [["gardevoir"], ["altaria"], ["gardevoir", "altaria"]],
-    "rating": "おすすめ",
+    "id": "meta-sneasler-balance",
+    "name": "オオニューラバランス",
+    "concept": "高速オオニューラとドドゲ・サポートのバランス並び。",
+    "format": ["doubles"],
+    "requiresAny": [["sneasler"], ["kingambit"], ["sinistcha"]],
+    "rating": "環境テンプレ",
+    "source": "Pikalytics 使用率上位並び",
     "slots": [
-      {"pokemonId": "gardevoir", "buildId": "gardevoir-mega"},
-      {"pokemonId": "altaria", "buildId": "altaria-mega"},
-      {"pokemonId": "incineroar", "buildId": "incineroar"},
+      {"pokemonId": "incineroar", "buildId": "incineroar-support"},
+      {"pokemonId": "sinistcha", "buildId": "sinistcha-kasib"},
+      {"pokemonId": "sneasler", "buildId": "sneasler-sash"},
+      {"pokemonId": "kingambit", "buildId": "kingambit-lo"},
       {"pokemonId": "garchomp", "buildId": "garchomp-scarf"},
-      {"pokemonId": "amoonguss", "buildId": "amoonguss"},
-      {"pokemonId": "manectric", "buildId": "manectric-mega"}
+      {"pokemonId": "whimsicott", "buildId": "whimsicott-mental"}
     ]
   },
   {
-    "id": "core-chandelure",
-    "name": "ゴースト特殊",
-    "concept": "メガシャンデラの高火力で対面を割る。",
-    "format": ["singles", "doubles"],
-    "requiresAny": [["chandelure"], ["gengar"], ["chandelure", "gengar"]],
-    "rating": "攻め",
+    "id": "meta-singles-charizard",
+    "name": "シングル リザY展開",
+    "concept": "ステロ・あくびからリザYを通すシングル向け展開。",
+    "format": ["singles"],
+    "requiresAny": [["charizard"], ["hippowdon"], ["glimmora"], ["kingambit"], ["garchomp"]],
+    "rating": "実戦テンプレ",
+    "source": "日本語攻略のリザY軸をReg M-B用に整理",
     "slots": [
-      {"pokemonId": "chandelure", "buildId": "chandelure-mega"},
-      {"pokemonId": "gengar", "buildId": "gengar-mega"},
-      {"pokemonId": "rotom-wash", "buildId": "rotom-wash"},
-      {"pokemonId": "metagross", "buildId": "metagross-band"},
-      {"pokemonId": "grimmsnarl", "buildId": "grimmsnarl"},
-      {"pokemonId": "scizor", "buildId": "scizor-band"}
+      {"pokemonId": "glimmora", "buildId": "glimmora-lead"},
+      {"pokemonId": "hippowdon", "buildId": "hippowdon-sitrus"},
+      {"pokemonId": "charizard", "buildId": "charizard-y"},
+      {"pokemonId": "garchomp", "buildId": "garchomp-scarf"},
+      {"pokemonId": "kingambit", "buildId": "kingambit-glasses"},
+      {"pokemonId": "corviknight", "buildId": "corviknight-bulk"}
+    ]
+  },
+  {
+    "id": "meta-singles-blaziken",
+    "name": "シングル メガバシャーモ",
+    "concept": "設置後にメガバシャーモで全抜きを狙うシングル展開。",
+    "format": ["singles"],
+    "requiresAny": [["blaziken"], ["glimmora"], ["garchomp"], ["scizor"]],
+    "rating": "実戦テンプレ",
+    "source": "GameWith等のシングル強パーティ傾向",
+    "slots": [
+      {"pokemonId": "glimmora", "buildId": "glimmora-lead"},
+      {"pokemonId": "blaziken", "buildId": "blaziken-mega"},
+      {"pokemonId": "garchomp", "buildId": "garchomp-scarf"},
+      {"pokemonId": "scizor", "buildId": "scizor-mega"},
+      {"pokemonId": "dragapult", "buildId": "dragapult-lo"},
+      {"pokemonId": "corviknight", "buildId": "corviknight-bulk"}
+    ]
+  },
+  {
+    "id": "meta-tr-indeedee",
+    "name": "トリル崩し",
+    "concept": "イエッサン／リキキリンからトリルを張り低速火力で崩す。",
+    "format": ["doubles"],
+    "requiresAny": [["indeedee-f"], ["farigiraf"], ["annihilape"], ["mawile"], ["torkoal"]],
+    "rating": "実戦テンプレ",
+    "source": "トリルアーキタイプ（クチート・コータス系）",
+    "slots": [
+      {"pokemonId": "indeedee-f", "buildId": "indeedee-f-tr"},
+      {"pokemonId": "mawile", "buildId": "mawile-mega"},
+      {"pokemonId": "torkoal", "buildId": "torkoal-sun"},
+      {"pokemonId": "annihilape", "buildId": "annihilape-bulk"},
+      {"pokemonId": "sinistcha", "buildId": "sinistcha-kasib"},
+      {"pokemonId": "incineroar", "buildId": "incineroar-support"}
     ]
   }
 ]
