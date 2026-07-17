@@ -241,9 +241,10 @@ function defaultBuildId(pokemonId) {
   const list = buildsForPokemon(pokemonId);
   if (!list.length) return null;
   if (poke?.isMegaForm) {
-    const mega = list.find((b) => isMegaBuild(b) && (b.pokemonId === pokemonId || !b.auto))
-      || list.find((b) => isMegaBuild(b));
-    // 素体の自動型（たべのこし等）は使わない。メガストーン型が無ければ null → runtime 生成
+    // このメガ自身向けのメガストーン型だけ採用（素体のカシブのみ等は絶対に使わない）
+    const mega = list.find(
+      (b) => b.pokemonId === pokemonId && isMegaStoneItem(b.item)
+    );
     return mega ? mega.id : null;
   }
   const curated = list.find((b) => !b.auto && !isMegaBuild(b));
@@ -292,6 +293,34 @@ function generateRuntimeBuild(pokemonId) {
 
 function ensureBuildId(pokemonId) {
   return defaultBuildId(pokemonId) || generateRuntimeBuild(pokemonId);
+}
+
+/** メガ枠の持ち物をメガストーンに矯正する */
+function normalizeMegaSlot(slot) {
+  const poke = pokemonById[slot.pokemonId];
+  if (!poke?.isMegaForm) return slot;
+  const build = slot.buildOverride || buildsMap[slot.buildId];
+  const stone = megaStoneName(poke);
+  if (!stone) return slot;
+  if (build && isMegaStoneItem(build.item) && build.pokemonId === poke.id) {
+    return slot;
+  }
+  const buildId = ensureBuildId(poke.id);
+  const ensured = buildsMap[buildId];
+  if (ensured && isMegaStoneItem(ensured.item)) {
+    return { pokemonId: poke.id, buildId };
+  }
+  return {
+    pokemonId: poke.id,
+    buildId: buildId || slot.buildId,
+    buildOverride: {
+      ...(ensured || build || {}),
+      pokemonId: poke.id,
+      label: 'メガ',
+      item: stone,
+      itemEffect: `メガシンカ用メガストーン（${poke.name.replace(/^メガ/, '')}）。`
+    }
+  };
 }
 
 function requirementMatch(requiresAny, selected) {
@@ -434,7 +463,8 @@ function assignItemsWithoutDup(slots) {
   const usedItems = new Set();
   let itemIdx = 0;
   return slots.map((slot) => {
-    const build = buildsMap[slot.buildId];
+    slot = normalizeMegaSlot(slot);
+    const build = slot.buildOverride || buildsMap[slot.buildId];
     if (!build) return slot;
     let item = build.item;
     // メガストーンは差し替えない（重複時も警告に任せ、別の一般道具へ落とさない）
@@ -524,6 +554,7 @@ function suggestTeams(selected) {
 }
 
 function resolveSlot(slot) {
+  slot = normalizeMegaSlot(slot);
   const poke = pokemonById[slot.pokemonId];
   const build = slot.buildOverride || buildsMap[slot.buildId];
   return { poke, build, slot };
@@ -610,7 +641,7 @@ function renderSearchResults(query) {
       }
       return a.dex - b.dex || a.name.localeCompare(b.name, 'ja');
     })
-    .slice(0, 12);
+    .slice(0, 80);
   box.replaceChildren();
   if (!results.length) {
     box.classList.remove('is-open');
