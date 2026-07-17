@@ -70,6 +70,7 @@ let pokemonList = [];
 let buildsMap = {};
 let coresList = [];
 let pokemonById = {};
+let megaStoneById = {};
 
 let selectedIds = [];
 let battleFormat = 'singles';
@@ -84,16 +85,18 @@ let lastFocusedBeforeModal = null;
 const $ = (id) => document.getElementById(id);
 
 async function loadData() {
-  const [pokemon, builds, cores, itemEffects] = await Promise.all([
+  const [pokemon, builds, cores, itemEffects, megaStones] = await Promise.all([
     fetch('data/pokemon.json').then((r) => r.json()),
     fetch('data/builds.json').then((r) => r.json()),
     fetch('data/cores.json').then((r) => r.json()),
-    fetch('data/item-effects.json').then((r) => r.json()).catch(() => ({}))
+    fetch('data/item-effects.json').then((r) => r.json()).catch(() => ({})),
+    fetch('data/mega-stones.json').then((r) => r.json()).catch(() => ({}))
   ]);
   pokemonList = pokemon;
   buildsMap = builds;
   coresList = cores;
   window.ITEM_EFFECTS = itemEffects;
+  megaStoneById = megaStones;
   pokemonById = Object.fromEntries(pokemon.map((p) => [p.id, p]));
   const countEl = $('roster-count');
   if (countEl) countEl.textContent = String(pokemon.length);
@@ -177,10 +180,60 @@ function buildsForPokemon(pokemonId) {
     .map(([id, b]) => ({ id, ...b }));
 }
 
+function isMegaStoneItem(item) {
+  return /ナイト|メガストーン/.test(item || '');
+}
+
 function isMegaBuild(build) {
-  return /ナイト|メガストーン/.test(build.item || '')
-    || (build.label && build.label.includes('メガ'))
-    || (build.itemEffect && build.itemEffect.includes('メガシンカ'));
+  if (!build) return false;
+  if (isMegaStoneItem(build.item)) return true;
+  if (build.itemEffect && build.itemEffect.includes('メガシンカ')) return true;
+  // 「メガネ」等に誤爆しないよう、ラベルはメガ型のみ
+  return Boolean(build.label && /^メガ([XY]|$)/.test(build.label));
+}
+
+function megaFormsForBase(baseId) {
+  return pokemonList.filter((p) => p.baseFormId === baseId);
+}
+
+/** 選出軸がメガ進化可能なら、候補ではメガフォルムを優先する */
+function preferMegaAxisId(pokemonId) {
+  const poke = pokemonById[pokemonId];
+  if (!poke) return pokemonId;
+  if (poke.isMegaForm) return pokemonId;
+  const megas = megaFormsForBase(pokemonId);
+  if (!megas.length) return pokemonId;
+  const priority = META_PRIORITY[battleFormat] || META_PRIORITY.doubles;
+  const byMeta = megas.find((m) => priority.includes(m.id));
+  if (byMeta) return byMeta.id;
+  const y = megas.find((m) => / Y$/i.test(m.nameEn || ''));
+  if (y) return y.id;
+  return megas[0].id;
+}
+
+function megaStoneName(poke) {
+  if (!poke?.isMegaForm) return null;
+  if (megaStoneById[poke.id]) return megaStoneById[poke.id];
+  const curated = buildsForPokemon(poke.id).find(
+    (b) => b.pokemonId === poke.id && isMegaStoneItem(b.item)
+  );
+  if (curated) return curated.item;
+
+  // X/Y 片方だけキュレートされている場合は石名の末尾だけ差し替え
+  const variant = (poke.name.match(/[XY]$/) || [])[0];
+  if (variant) {
+    for (const sib of megaFormsForBase(poke.baseFormId)) {
+      const sibStone = megaStoneById[sib.id]
+        || buildsForPokemon(sib.id).find((b) => b.pokemonId === sib.id && isMegaStoneItem(b.item))?.item;
+      if (sibStone && /[XY]$/.test(sibStone)) {
+        return sibStone.replace(/[XY]$/, variant);
+      }
+    }
+  }
+
+  const baseJa = poke.name.replace(/^メガ/, '');
+  const stem = baseJa.replace(/[XY]$/, '');
+  return variant ? `${stem}ナイト${variant}` : `${baseJa}ナイト`;
 }
 
 function defaultBuildId(pokemonId) {
@@ -188,15 +241,14 @@ function defaultBuildId(pokemonId) {
   const list = buildsForPokemon(pokemonId);
   if (!list.length) return null;
   if (poke?.isMegaForm) {
-    const mega = list.find((b) => !b.auto && (b.pokemonId === pokemonId || isMegaBuild(b)));
-    if (mega) return mega.id;
+    const mega = list.find((b) => isMegaBuild(b) && (b.pokemonId === pokemonId || !b.auto))
+      || list.find((b) => isMegaBuild(b));
+    // 素体の自動型（たべのこし等）は使わない。メガストーン型が無ければ null → runtime 生成
+    return mega ? mega.id : null;
   }
   const curated = list.find((b) => !b.auto && !isMegaBuild(b));
   const nonMega = list.find((b) => !isMegaBuild(b));
-  const pick = poke?.isMegaForm
-    ? (list.find((b) => !b.auto && isMegaBuild(b)) || list.find((b) => isMegaBuild(b)))
-    : (curated || nonMega || list[0]);
-  return (pick || list[0]).id;
+  return (curated || nonMega || list[0]).id;
 }
 
 function generateRuntimeBuild(pokemonId) {
@@ -216,13 +268,14 @@ function generateRuntimeBuild(pokemonId) {
       : { hp: 4, atk: 0, def: 0, spa: 0, spd: 0, spe: 30, [offensive]: 32 };
   SP_ORDER.forEach((k) => { if (sp[k] == null) sp[k] = 0; });
   const id = `${pokemonId}-runtime`;
-  const item = poke.isMegaForm
-    ? `メガシンカ用メガストーン（${poke.name.replace(/^メガ/, '')}）`
-    : FALLBACK_ITEMS[Math.abs(pokemonId.length * 7) % FALLBACK_ITEMS.length];
+  const stone = poke.isMegaForm ? megaStoneName(poke) : null;
+  const item = stone
+    || FALLBACK_ITEMS[Math.abs(pokemonId.length * 7) % FALLBACK_ITEMS.length];
   buildsMap[id] = {
     pokemonId,
     label: poke.isMegaForm ? 'メガ' : '自動提案',
     item,
+    itemEffect: stone ? `メガシンカ用メガストーン（${poke.name.replace(/^メガ/, '')}）。` : undefined,
     ability: poke.abilities?.[0]?.name || '—',
     abilityOptions: (poke.abilities || []).map((a) => a.name),
     role: poke.roles.includes('support') ? 'サポート' : poke.roles.includes('wall') ? '耐久' : 'アタッカー',
@@ -321,9 +374,12 @@ function speciesKey(id) {
 function pickFallbackTeammates(selected, neededRoles) {
   const used = new Set(selected);
   const usedSpecies = new Set(selected.map(speciesKey));
+  const axisHasMega = selected.some((id) => isMegaFormId(id));
   const picks = [];
   const pool = [...pokemonList]
     .filter((p) => !used.has(p.id) && !usedSpecies.has(speciesKey(p.id)))
+    // 軸が既にメガなら、味方枠は素体を優先（パーティにメガを重ねない）
+    .filter((p) => !(axisHasMega && p.isMegaForm))
     .sort((a, b) => {
       const score = (p) =>
         metaPriorityScore(p.id) +
@@ -331,8 +387,8 @@ function pickFallbackTeammates(selected, neededRoles) {
         (p.roles.includes('wall') ? 2 : 0) +
         (p.roles.includes('attacker') ? 2 : 0) +
         (p.roles.includes('fast') ? 1 : 0) +
-        (p.mega ? 1 : 0) -
-        (p.isMegaForm ? 0.5 : 0);
+        (p.mega && !p.isMegaForm ? 1 : 0) -
+        (p.isMegaForm ? 8 : 0);
       return score(b) - score(a);
     });
 
@@ -381,6 +437,11 @@ function assignItemsWithoutDup(slots) {
     const build = buildsMap[slot.buildId];
     if (!build) return slot;
     let item = build.item;
+    // メガストーンは差し替えない（重複時も警告に任せ、別の一般道具へ落とさない）
+    if (isMegaStoneItem(item) || pokemonById[slot.pokemonId]?.isMegaForm) {
+      usedItems.add(item);
+      return slot;
+    }
     if (usedItems.has(item)) {
       while (itemIdx < FALLBACK_ITEMS.length && usedItems.has(FALLBACK_ITEMS[itemIdx])) {
         itemIdx += 1;
@@ -420,8 +481,10 @@ function buildFallbackTeams(selected) {
   ];
 
   return concepts.map((c, index) => {
-    const teammates = pickFallbackTeammates(selected, c.roles);
-    const order = [...selected, ...teammates].slice(0, 6);
+    // メガ進化可能な選出軸はメガフォルムとして候補に出す（人気コア以外も同じ扱い）
+    const axis = selected.map(preferMegaAxisId);
+    const teammates = pickFallbackTeammates(axis, c.roles);
+    const order = [...axis, ...teammates].slice(0, 6);
     let slots = order.map((pokemonId) => ({
       pokemonId,
       buildId: ensureBuildId(pokemonId)
