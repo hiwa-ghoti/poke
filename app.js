@@ -252,6 +252,106 @@ function defaultBuildId(pokemonId) {
   return (curated || nonMega || list[0]).id;
 }
 
+function hasCuratedBuild(pokemonId) {
+  if (pokemonById[pokemonId]?.isMegaForm) {
+    return buildsForPokemon(pokemonId).some(
+      (b) => b.pokemonId === pokemonId && isMegaStoneItem(b.item) && !b.auto
+    );
+  }
+  return buildsForPokemon(pokemonId).some(
+    (b) => !b.auto && !isMegaBuild(b) && b.pokemonId === pokemonId
+  );
+}
+
+/**
+ * 持ち物が空いている実戦型を優先して選ぶ。
+ * usedItems に無い item の curated build → なければ default。
+ */
+function pickBuildId(pokemonId, usedItems = new Set()) {
+  const poke = pokemonById[pokemonId];
+  if (poke?.isMegaForm) {
+    return ensureBuildId(pokemonId);
+  }
+  const curated = buildsForPokemon(pokemonId).filter(
+    (b) => !b.auto && !isMegaBuild(b) && b.pokemonId === pokemonId
+  );
+  const free = curated.find((b) => b.item && !usedItems.has(b.item));
+  if (free) return free.id;
+  if (curated.length) return curated[0].id;
+  return ensureBuildId(pokemonId);
+}
+
+/**
+ * 重複時は「別の実戦型」へ切替。それでも無理なら最低限の道具差し替え。
+ * 技・性格・SPがセットのまま残るので、盲目的な持ち物置換より実戦向き。
+ */
+function resolveTeamBuilds(slots) {
+  const usedItems = new Set();
+  let itemIdx = 0;
+  let remaps = 0;
+  let altBuilds = 0;
+  let curatedCount = 0;
+
+  const resolved = slots.map((slot) => {
+    slot = normalizeMegaSlot(slot);
+    const build = slot.buildOverride || buildsMap[slot.buildId];
+    if (!build) return slot;
+    const poke = pokemonById[slot.pokemonId];
+    if (!build.auto) curatedCount += 1;
+
+    if (poke?.isMegaForm || isMegaStoneItem(build.item)) {
+      usedItems.add(build.item);
+      return slot.buildOverride ? slot : { pokemonId: slot.pokemonId, buildId: slot.buildId };
+    }
+
+    if (!usedItems.has(build.item)) {
+      usedItems.add(build.item);
+      return { pokemonId: slot.pokemonId, buildId: slot.buildId };
+    }
+
+    // 同じポケモンの別キュレート型で空き持ち物を探す
+    const alts = buildsForPokemon(slot.pokemonId).filter(
+      (b) => !b.auto && !isMegaBuild(b)
+        && b.pokemonId === slot.pokemonId
+        && b.id !== slot.buildId
+        && b.item
+        && !usedItems.has(b.item)
+    );
+    if (alts.length) {
+      altBuilds += 1;
+      usedItems.add(alts[0].item);
+      const alt = buildsMap[alts[0].id] || alts[0];
+      return {
+        pokemonId: slot.pokemonId,
+        buildId: alts[0].id,
+        buildOverride: {
+          ...alt,
+          note: `${alt.note || ''} ※Item Clause回避のため「${alt.label || alt.item}」型に切替。`
+        }
+      };
+    }
+
+    // 最終手段: 持ち物だけ変更（型の整合は崩れるので件数を数える）
+    while (itemIdx < FALLBACK_ITEMS.length && usedItems.has(FALLBACK_ITEMS[itemIdx])) {
+      itemIdx += 1;
+    }
+    const item = FALLBACK_ITEMS[itemIdx] || `${build.item}（要変更）`;
+    itemIdx += 1;
+    remaps += 1;
+    usedItems.add(item);
+    return {
+      ...slot,
+      buildOverride: {
+        ...build,
+        item,
+        note: `${build.note || ''} ※持ち物重複のため仮変更。別型の検討を推奨。`
+      }
+    };
+  });
+
+  return { slots: resolved, remaps, altBuilds, curatedCount };
+}
+
 function generateRuntimeBuild(pokemonId) {
   const poke = pokemonById[pokemonId];
   if (!poke) return null;
@@ -412,6 +512,7 @@ function pickFallbackTeammates(selected, neededRoles) {
     .sort((a, b) => {
       const score = (p) =>
         metaPriorityScore(p.id) +
+        (hasCuratedBuild(p.id) ? 12 : 0) +
         (p.roles.includes('support') ? 3 : 0) +
         (p.roles.includes('wall') ? 2 : 0) +
         (p.roles.includes('attacker') ? 2 : 0) +
@@ -434,6 +535,8 @@ function pickFallbackTeammates(selected, neededRoles) {
     }
     const selTypeSet = new Set(selectedTypes.flat());
     candidates.sort((a, b) => {
+      const curated = (hasCuratedBuild(b.id) ? 1 : 0) - (hasCuratedBuild(a.id) ? 1 : 0);
+      if (curated !== 0) return curated;
       const meta = metaPriorityScore(b.id) - metaPriorityScore(a.id);
       if (meta !== 0) return meta;
       const ua = a.types.filter((t) => selTypeSet.has(t)).length;
@@ -460,74 +563,58 @@ function pickFallbackTeammates(selected, neededRoles) {
 }
 
 function assignItemsWithoutDup(slots) {
-  const usedItems = new Set();
-  let itemIdx = 0;
-  return slots.map((slot) => {
-    slot = normalizeMegaSlot(slot);
-    const build = slot.buildOverride || buildsMap[slot.buildId];
-    if (!build) return slot;
-    let item = build.item;
-    // メガストーンは差し替えない（重複時も警告に任せ、別の一般道具へ落とさない）
-    if (isMegaStoneItem(item) || pokemonById[slot.pokemonId]?.isMegaForm) {
-      usedItems.add(item);
-      return slot;
-    }
-    if (usedItems.has(item)) {
-      while (itemIdx < FALLBACK_ITEMS.length && usedItems.has(FALLBACK_ITEMS[itemIdx])) {
-        itemIdx += 1;
-      }
-      item = FALLBACK_ITEMS[itemIdx] || `${item}（要変更）`;
-      itemIdx += 1;
-      return {
-        ...slot,
-        buildOverride: { ...build, item, note: `${build.note || ''} ※持ち物重複回避のため変更案。` }
-      };
-    }
-    usedItems.add(item);
-    return slot;
-  });
+  return resolveTeamBuilds(slots).slots;
 }
 
 function buildFallbackTeams(selected) {
   const concepts = [
     {
-      name: 'バランス自動編成',
-      rating: '自動',
-      concept: '選出軸を残し、サポート／耐久／攻撃／速度で穴埋めした実戦用たたき台。',
+      name: 'バランス編成',
+      rating: '実戦案',
+      concept: '選出軸を残し、サポート／耐久／攻撃／速度で穴埋めした実戦寄りパーティ。',
       roles: ['support', 'wall', 'attacker', 'fast']
     },
     {
-      name: '攻め自動編成',
-      rating: '自動',
+      name: '攻め編成',
+      rating: '実戦案',
       concept: 'アタッカーを厚くした押し切り案。おいかぜ／ねこだまし役も確保。',
       roles: ['attacker', 'fast', 'support', 'attacker']
     },
     {
-      name: '耐久・崩し自動編成',
-      rating: '自動',
+      name: '耐久・崩し編成',
+      rating: '実戦案',
       concept: '耐久とサポートを厚くし、後続で崩す安定寄り案。',
       roles: ['wall', 'support', 'wall', 'attacker']
     }
   ];
 
   return concepts.map((c, index) => {
-    // メガ進化可能な選出軸はメガフォルムとして候補に出す（人気コア以外も同じ扱い）
     const axis = selected.map(preferMegaAxisId);
     const teammates = pickFallbackTeammates(axis, c.roles);
     const order = [...axis, ...teammates].slice(0, 6);
-    let slots = order.map((pokemonId) => ({
-      pokemonId,
-      buildId: ensureBuildId(pokemonId)
-    })).filter((s) => s.buildId);
-    slots = assignItemsWithoutDup(slots);
+    const usedItems = new Set();
+    let slots = order.map((pokemonId) => {
+      const buildId = pickBuildId(pokemonId, usedItems);
+      const build = buildsMap[buildId];
+      if (build?.item) usedItems.add(build.item);
+      return { pokemonId, buildId };
+    }).filter((s) => s.buildId);
+
+    const resolved = resolveTeamBuilds(slots);
+    slots = resolved.slots;
     const names = order.map((id) => pokemonById[id]?.name || id).join(' / ');
+    const allCurated = resolved.curatedCount >= slots.length && resolved.remaps === 0;
     return {
       id: `fallback-${index}-${order.join('-')}`,
       name: c.name,
       concept: `${c.concept}（${names}）`,
-      rating: c.rating,
+      rating: allCurated ? '実戦寄り' : c.rating,
       format: [battleFormat],
-      source: '役割・タイプ相性からの自動提案（要調整）',
+      source: allCurated
+        ? '使用率上位の実戦型を組み合わせた提案'
+        : (resolved.remaps
+          ? '役割・相性ベースの提案（一部持ち物は要調整）'
+          : '使用率上位＋実戦型を優先した自動提案'),
       slots
     };
   });
@@ -535,11 +622,16 @@ function buildFallbackTeams(selected) {
 
 function suggestTeams(selected) {
   if (!selected.length) return [];
-  const curated = findCuratedCores(selected).map((core) => ({
-    ...core,
-    slots: assignItemsWithoutDup(core.slots),
-    source: core.source && core.source !== 'curated' ? core.source : (core.source || '環境テンプレ')
-  }));
+  const curated = findCuratedCores(selected).map((core) => {
+    const resolved = resolveTeamBuilds(core.slots);
+    return {
+      ...core,
+      slots: resolved.slots,
+      source: core.source && core.source !== 'curated'
+        ? core.source
+        : (core.source || '環境テンプレ')
+    };
+  });
   const fallback = buildFallbackTeams(selected);
   const merged = [];
   const seen = new Set();
