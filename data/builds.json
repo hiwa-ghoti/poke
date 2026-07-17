@@ -63,6 +63,38 @@
       "さめはだ"
     ]
   },
+  "garchomp-support": {
+    "pokemonId": "garchomp",
+    "label": "サポート",
+    "item": "オボンのみ",
+    "ability": "さめはだ",
+    "role": "サポート",
+    "moves": [
+      "じしん",
+      "いわなだれ",
+      "ステルスロック",
+      "まもる"
+    ],
+    "sp": {
+      "hp": 32,
+      "atk": 20,
+      "def": 10,
+      "spa": 0,
+      "spd": 4,
+      "spe": 0
+    },
+    "nature": {
+      "name": "いじっぱり",
+      "up": "atk",
+      "down": "spa"
+    },
+    "note": "設置＋範囲技の耐久寄り。LO／スカーフと持ち物を分担しやすい。",
+    "itemEffect": "HPが半分以下で最大HPの1/4回復。",
+    "abilityOptions": [
+      "すながくれ",
+      "さめはだ"
+    ]
+  },
   "sinistcha-support": {
     "pokemonId": "sinistcha",
     "label": "おもてなし",
