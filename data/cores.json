@@ -845,5 +845,134 @@
         "buildId": "corviknight-bulk"
       }
     ]
+  },
+  {
+    "id": "meta-m4-singles-greninja",
+    "name": "シングル ゲッコウガ軸",
+    "concept": "へんげんじざいゲッコウガで崩し、設置とサイクルで通すシングル構築。",
+    "format": [
+      "singles"
+    ],
+    "requiresAny": [
+      [
+        "greninja"
+      ]
+    ],
+    "rating": "実戦テンプレ",
+    "source": "シングル使用率上位ゲッコウガ",
+    "slots": [
+      {
+        "pokemonId": "greninja",
+        "buildId": "greninja-sash"
+      },
+      {
+        "pokemonId": "glimmora",
+        "buildId": "glimmora-lead"
+      },
+      {
+        "pokemonId": "garchomp",
+        "buildId": "garchomp-scarf"
+      },
+      {
+        "pokemonId": "mimikyu",
+        "buildId": "mimikyu-sd"
+      },
+      {
+        "pokemonId": "corviknight",
+        "buildId": "corviknight-rocky"
+      },
+      {
+        "pokemonId": "primarina",
+        "buildId": "primarina-choice"
+      }
+    ]
+  },
+  {
+    "id": "meta-m4-singles-gholdengo",
+    "name": "シングル サーフゴー軸",
+    "concept": "状態異常無効のサーフゴーを軸に、砂・サイクルで押し切る。",
+    "format": [
+      "singles"
+    ],
+    "requiresAny": [
+      [
+        "gholdengo"
+      ],
+      [
+        "hippowdon"
+      ]
+    ],
+    "rating": "実戦テンプレ",
+    "source": "シングル使用率上位サーフゴー",
+    "slots": [
+      {
+        "pokemonId": "gholdengo",
+        "buildId": "gholdengo-lo"
+      },
+      {
+        "pokemonId": "hippowdon",
+        "buildId": "hippowdon-sand"
+      },
+      {
+        "pokemonId": "garchomp",
+        "buildId": "garchomp-scarf"
+      },
+      {
+        "pokemonId": "kingambit",
+        "buildId": "kingambit-glasses"
+      },
+      {
+        "pokemonId": "mimikyu",
+        "buildId": "mimikyu-sash"
+      },
+      {
+        "pokemonId": "corviknight",
+        "buildId": "corviknight-bulk"
+      }
+    ]
+  },
+  {
+    "id": "meta-m4-doubles-gholdengo",
+    "name": "ダブル サーフゴー＋ガブ",
+    "concept": "サーフゴーの特殊とガブの物理で押すバランス。ねこだまし・おいかぜで支える。",
+    "format": [
+      "doubles"
+    ],
+    "requiresAny": [
+      [
+        "gholdengo"
+      ],
+      [
+        "annihilape"
+      ]
+    ],
+    "rating": "実戦テンプレ",
+    "source": "ダブル使用率上位サーフゴー／コノヨザル",
+    "slots": [
+      {
+        "pokemonId": "gholdengo",
+        "buildId": "gholdengo-scarf"
+      },
+      {
+        "pokemonId": "garchomp",
+        "buildId": "garchomp-lo"
+      },
+      {
+        "pokemonId": "incineroar",
+        "buildId": "incineroar-support"
+      },
+      {
+        "pokemonId": "whimsicott",
+        "buildId": "whimsicott-tailwind"
+      },
+      {
+        "pokemonId": "annihilape",
+        "buildId": "annihilape-sash"
+      },
+      {
+        "pokemonId": "sinistcha",
+        "buildId": "sinistcha-kasib"
+      }
+    ]
   }
 ]
