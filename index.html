@@ -28,7 +28,7 @@
     <!-- ===== 編成ビュー ===== -->
     <section class="view" id="view-team" role="tabpanel" aria-labelledby="tab-team">
       <p class="rule-note">
-        Regulation Set <strong>M-B</strong>（Season M-4）全参戦 <span id="roster-count">—</span>体。使用率上位の並びを優先し、足りない軸は役割・相性から自動編成します。
+        Regulation Set <strong>M-B</strong>（Season M-4）全参戦 <span id="roster-count">—</span>体。使用率・ルール（メガ1／Item Clause／役割）で絞り、任意でAIが理由と組み直しを補足します。
       </p>
 
       <div class="panel">
@@ -47,7 +47,32 @@
 
       <div class="actions">
         <button type="button" class="btn btn-primary" id="suggest-btn" disabled>編成候補を見る</button>
+        <button type="button" class="btn btn-ghost" id="ai-refine-btn" disabled>AIで組み直す</button>
       </div>
+
+      <details class="panel ai-settings" id="ai-settings">
+        <summary class="field-label" style="cursor:pointer">AI設定（任意）</summary>
+        <p class="ai-help">
+          ルールエンジンで実践候補を出したあと、Gemini / OpenAI 互換APIで「なぜ強いか」「組み直し」を補足できます。
+          キーは端末内（localStorage）のみ保存します。ブラウザ直呼びが弾かれる場合はプロキシURLを設定してください。
+        </p>
+        <label class="field-label" for="ai-provider">プロバイダ</label>
+        <select id="ai-provider" class="search-input">
+          <option value="gemini">Gemini</option>
+          <option value="openai">OpenAI 互換</option>
+        </select>
+        <label class="field-label" for="ai-api-key">APIキー</label>
+        <input id="ai-api-key" class="search-input" type="password" placeholder="AIza... / sk-..." autocomplete="off">
+        <label class="field-label" for="ai-proxy-url">プロキシURL（任意）</label>
+        <input id="ai-proxy-url" class="search-input" type="url" placeholder="https://your-worker.example/chat" autocomplete="off">
+        <label class="field-label" for="ai-model">モデル（任意）</label>
+        <input id="ai-model" class="search-input" type="text" placeholder="gemini-2.0-flash / gpt-4o-mini" autocomplete="off">
+        <div class="actions" style="margin-top:10px">
+          <button type="button" class="btn btn-secondary" id="ai-save-settings">設定を保存</button>
+          <button type="button" class="btn btn-ghost" id="ai-clear-settings">クリア</button>
+        </div>
+        <p class="ai-status" id="ai-status" aria-live="polite"></p>
+      </details>
 
       <p class="section-title">編成候補</p>
       <div class="core-list" id="core-list">
@@ -57,6 +82,22 @@
       <div id="team-detail" hidden>
         <p class="section-title" id="detail-title">詳細</p>
         <p class="item-warn" id="item-warn" hidden></p>
+        <div class="panel ai-team-panel" id="ai-team-panel" hidden>
+          <p class="field-label">実践チェック（ルール）</p>
+          <p class="ai-rule-rationale" id="ai-rule-rationale"></p>
+          <div class="actions ai-actions">
+            <button type="button" class="btn btn-ghost" id="ai-explain-btn">AIに詳しく聞く</button>
+            <button type="button" class="btn btn-secondary" id="ai-copy-prompt-btn">プロンプトをコピー</button>
+          </div>
+          <p class="ai-explain-out" id="ai-explain-out" hidden></p>
+          <details class="ai-paste">
+            <summary>AI返答を貼り付けて反映</summary>
+            <textarea id="ai-paste-input" class="ai-textarea" rows="5" placeholder='説明文、または {"teams":[...]} のJSON'></textarea>
+            <div class="actions" style="margin-top:8px">
+              <button type="button" class="btn btn-secondary" id="ai-paste-apply">貼り付けを反映</button>
+            </div>
+          </details>
+        </div>
         <div class="member-list" id="member-list"></div>
       </div>
     </section>
@@ -106,5 +147,6 @@
   </div>
 
   <script src="app.js"></script>
+  <script src="ai.js"></script>
 </body>
 </html>

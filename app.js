@@ -285,21 +285,46 @@ function pickBuildId(pokemonId, usedItems = new Set()) {
  * 重複時は「別の実戦型」へ切替。それでも無理なら最低限の道具差し替え。
  * 技・性格・SPがセットのまま残るので、盲目的な持ち物置換より実戦向き。
  */
+function demoteMegaToBase(slot, usedItems) {
+  const poke = pokemonById[slot.pokemonId];
+  const baseId = poke?.baseFormId || slot.pokemonId;
+  const buildId = pickBuildId(baseId, usedItems);
+  const build = buildsMap[buildId];
+  if (build?.item) usedItems.add(build.item);
+  return {
+    pokemonId: baseId,
+    buildId,
+    buildOverride: build
+      ? {
+          ...build,
+          note: `${build.note || ''} ※メガは1体までのため素体型に変更。`
+        }
+      : undefined
+  };
+}
+
 function resolveTeamBuilds(slots) {
   const usedItems = new Set();
   let itemIdx = 0;
   let remaps = 0;
   let altBuilds = 0;
   let curatedCount = 0;
+  let megaKept = false;
 
   const resolved = slots.map((slot) => {
     slot = normalizeMegaSlot(slot);
-    const build = slot.buildOverride || buildsMap[slot.buildId];
+    let build = slot.buildOverride || buildsMap[slot.buildId];
     if (!build) return slot;
     const poke = pokemonById[slot.pokemonId];
     if (!build.auto) curatedCount += 1;
 
-    if (poke?.isMegaForm || isMegaStoneItem(build.item)) {
+    const isMegaSlot = Boolean(poke?.isMegaForm || isMegaStoneItem(build.item));
+    if (isMegaSlot) {
+      if (megaKept) {
+        remaps += 1;
+        return demoteMegaToBase(slot, usedItems);
+      }
+      megaKept = true;
       usedItems.add(build.item);
       return slot.buildOverride ? slot : { pokemonId: slot.pokemonId, buildId: slot.buildId };
     }
@@ -350,6 +375,101 @@ function resolveTeamBuilds(slots) {
   });
 
   return { slots: resolved, remaps, altBuilds, curatedCount };
+}
+
+/** 実践ルールでパーティを採点・説明する */
+function analyzeTeam(slots) {
+  const members = slots.map((slot) => {
+    const { poke, build } = resolveSlot(slot);
+    return { poke, build, slot };
+  }).filter((m) => m.poke && m.build);
+
+  const items = members.map((m) => m.build.item);
+  const itemDup = [...new Set(items.filter((x, i) => items.indexOf(x) !== i))];
+  const megaCount = members.filter((m) => m.poke.isMegaForm || isMegaBuild(m.build)).length;
+  const roles = new Set(members.flatMap((m) => m.poke.roles || []));
+  const typeLists = members.map((m) => m.poke.types || []);
+  const weakTo = weakTypesForTeam(typeLists).slice(0, 4);
+  const metaHits = members.filter((m) => metaPriorityScore(m.poke.id) > 0).length;
+  const curatedHits = members.filter((m) => !m.build.auto).length;
+  const hasSupport = members.some((m) =>
+    (m.poke.roles || []).includes('support')
+    || /サポート|壁|おいかぜ|ねこ/.test(`${m.build.role || ''}${m.build.label || ''}`)
+  );
+  const hasAttacker = members.some((m) =>
+    (m.poke.roles || []).includes('attacker')
+    || /エース|アタッカー|物理|特殊/.test(m.build.role || '')
+  );
+
+  const checks = [
+    {
+      id: 'mega',
+      ok: megaCount <= 1,
+      label: megaCount <= 1 ? `メガ ${megaCount}/1` : `メガ超過 ${megaCount}`
+    },
+    {
+      id: 'item',
+      ok: itemDup.length === 0,
+      label: itemDup.length === 0 ? '持ち物OK' : `重複: ${itemDup.join('・')}`
+    },
+    {
+      id: 'meta',
+      ok: metaHits >= 3,
+      label: `環境枠 ${metaHits}/6`
+    },
+    {
+      id: 'roles',
+      ok: hasSupport && hasAttacker,
+      label: hasSupport && hasAttacker ? '役割バランス' : '役割偏り'
+    }
+  ];
+
+  let score = metaHits * 3 + curatedHits * 2;
+  if (megaCount === 1) score += 4;
+  if (megaCount > 1) score -= 12;
+  if (!itemDup.length) score += 5;
+  else score -= itemDup.length * 4;
+  if (hasSupport) score += 3;
+  if (hasAttacker) score += 3;
+  if (weakTo.length <= 2) score += 2;
+
+  const notes = [];
+  if (megaCount === 1) {
+    const mega = members.find((m) => m.poke.isMegaForm || isMegaBuild(m.build));
+    notes.push(`メガ枠は${mega?.poke.name || '1体'}に集中。`);
+  } else if (megaCount === 0) {
+    notes.push('メガ未採用。素体＋道具のサイクル寄り。');
+  } else {
+    notes.push('メガは対戦中1体まで。余剰メガを素体へ落としました。');
+  }
+  if (!itemDup.length) notes.push('Item Clauseを満たす持ち物割当。');
+  else notes.push(`持ち物重複あり: ${itemDup.join('、')}。要調整。`);
+  if (metaHits >= 4) notes.push(`使用率上位を${metaHits}体採用。`);
+  else if (metaHits >= 2) notes.push(`環境ポケモンを${metaHits}体混ぜた実戦寄り案。`);
+  if (hasSupport && hasAttacker) notes.push('サポートとエースの役割が両立。');
+  if (weakTo.length) notes.push(`チーム弱点になりやすい技タイプ: ${weakTo.join(' / ')}。`);
+
+  return {
+    checks,
+    score,
+    notes,
+    weakTo,
+    megaCount,
+    metaHits,
+    curatedHits,
+    roles: [...roles],
+    rationale: notes.join(' ')
+  };
+}
+
+function enrichTeamSuggestion(team) {
+  const analysis = analyzeTeam(team.slots || []);
+  return {
+    ...team,
+    analysis,
+    rationale: team.rationale || analysis.rationale,
+    practicalScore: (team.score || 0) + analysis.score
+  };
 }
 
 function generateRuntimeBuild(pokemonId) {
@@ -604,7 +724,7 @@ function buildFallbackTeams(selected) {
     slots = resolved.slots;
     const names = order.map((id) => pokemonById[id]?.name || id).join(' / ');
     const allCurated = resolved.curatedCount >= slots.length && resolved.remaps === 0;
-    return {
+    return enrichTeamSuggestion({
       id: `fallback-${index}-${order.join('-')}`,
       name: c.name,
       concept: `${c.concept}（${names}）`,
@@ -613,10 +733,10 @@ function buildFallbackTeams(selected) {
       source: allCurated
         ? '使用率上位の実戦型を組み合わせた提案'
         : (resolved.remaps
-          ? '役割・相性ベースの提案（一部持ち物は要調整）'
+          ? '役割・相性ベースの提案（ルール補正済み・一部要調整）'
           : '使用率上位＋実戦型を優先した自動提案'),
       slots
-    };
+    });
   });
 }
 
@@ -624,18 +744,18 @@ function suggestTeams(selected) {
   if (!selected.length) return [];
   const curated = findCuratedCores(selected).map((core) => {
     const resolved = resolveTeamBuilds(core.slots);
-    return {
+    return enrichTeamSuggestion({
       ...core,
       slots: resolved.slots,
       source: core.source && core.source !== 'curated'
         ? core.source
         : (core.source || '環境テンプレ')
-    };
+    });
   });
   const fallback = buildFallbackTeams(selected);
   const merged = [];
   const seen = new Set();
-  for (const team of [...curated, ...fallback]) {
+  for (const team of [...curated, ...fallback].sort((a, b) => (b.practicalScore || 0) - (a.practicalScore || 0))) {
     const key = team.slots.map((s) => s.pokemonId).sort().join('|');
     if (seen.has(key)) continue;
     seen.add(key);
@@ -702,7 +822,10 @@ function renderSelected() {
 }
 
 function updateSuggestButton() {
-  $('suggest-btn').disabled = selectedIds.length === 0;
+  const disabled = selectedIds.length === 0;
+  $('suggest-btn').disabled = disabled;
+  const refine = $('ai-refine-btn');
+  if (refine) refine.disabled = disabled;
 }
 
 function clearSuggestions() {
@@ -710,6 +833,8 @@ function clearSuggestions() {
   activeCore = null;
   $('core-list').innerHTML = '<p class="empty-state">ポケモンを選んで候補を表示できます</p>';
   $('team-detail').hidden = true;
+  const aiBox = $('ai-team-panel');
+  if (aiBox) aiBox.hidden = true;
 }
 
 function renderSearchResults(query) {
@@ -781,18 +906,23 @@ function renderCoreList(list) {
     el.innerHTML = '<p class="empty-state">候補が見つかりませんでした</p>';
     return;
   }
-  list.forEach((core, index) => {
+  list.forEach((core) => {
     const card = document.createElement('button');
     card.type = 'button';
     card.className = 'core-card' + (activeCore === core.id ? ' is-active' : '');
+    const checks = (core.analysis?.checks || [])
+      .map((c) => `<span class="check-chip${c.ok ? '' : ' is-bad'}">${c.label}</span>`)
+      .join('');
 
     card.innerHTML = `
       <div class="core-card-top">
         <p class="core-name">${core.name}</p>
-        <span class="core-badge">${core.rating}${core.source === 'fallback' ? ' · 自動' : ''}</span>
+        <span class="core-badge">${core.rating}${core.ai ? ' · AI' : ''}</span>
       </div>
       <p class="core-desc">${core.concept}</p>
-      ${core.source ? `<p class="core-source">${core.source === 'fallback' ? '役割・タイプ相性からの自動提案（要調整）' : core.source}${core.replicaCode ? ` · Replica: <code>${core.replicaCode}</code>` : ''}</p>` : ''}
+      ${core.source ? `<p class="core-source">${core.source}${core.replicaCode ? ` · Replica: <code>${core.replicaCode}</code>` : ''}</p>` : ''}
+      ${checks ? `<div class="check-row">${checks}</div>` : ''}
+      ${core.rationale ? `<p class="core-rationale">${core.rationale}</p>` : ''}
       <div class="core-names">${core.slots.map((s) => {
         const poke = pokemonById[s.pokemonId];
         const n = poke?.name || s.pokemonId;
@@ -822,6 +952,21 @@ function renderTeamDetail(core) {
     warn.textContent = `持ち物が重複しています: ${dups.join('、')}（Item Clause違反）`;
   } else {
     warn.hidden = true;
+  }
+
+  const aiBox = $('ai-team-panel');
+  if (aiBox) {
+    aiBox.hidden = false;
+    const rationaleEl = $('ai-rule-rationale');
+    if (rationaleEl) {
+      rationaleEl.textContent = core.rationale || core.analysis?.rationale || 'ルールに基づく説明はありません。';
+    }
+    const explainOut = $('ai-explain-out');
+    if (explainOut) {
+      explainOut.textContent = core.aiExplain || '';
+      explainOut.hidden = !core.aiExplain;
+    }
+    aiBox.dataset.coreId = core.id;
   }
 
   list.replaceChildren();
@@ -1150,6 +1295,112 @@ function bindEvents() {
   });
 }
 
+function getActiveSuggestion() {
+  return currentSuggestions.find((c) => c.id === activeCore) || currentSuggestions[0] || null;
+}
+
+function applyAiExplain(text) {
+  const core = getActiveSuggestion();
+  if (!core) return;
+  core.aiExplain = text;
+  const out = $('ai-explain-out');
+  if (out) {
+    out.hidden = !text;
+    out.textContent = text || '';
+  }
+}
+
+function applyAiTeams(rawTeams) {
+  if (!Array.isArray(rawTeams) || !rawTeams.length) {
+    throw new Error('teams 配列が空です');
+  }
+  const axis = selectedIds.map(preferMegaAxisId);
+  const teams = rawTeams.slice(0, 3).map((raw, index) => {
+    const ids = (raw.pokemonIds || raw.members || [])
+      .map((x) => (typeof x === 'string' ? x : x.id || x.pokemonId))
+      .filter(Boolean);
+    // 軸を先頭に固定
+    const order = [...new Set([...axis, ...ids])].slice(0, 6);
+    while (order.length < 6) {
+      const filler = pickFallbackTeammates(order, ['support', 'attacker', 'wall', 'fast']);
+      filler.forEach((id) => {
+        if (order.length < 6 && !order.includes(id)) order.push(id);
+      });
+      if (filler.length === 0) break;
+    }
+    const usedItems = new Set();
+    let slots = order.map((pokemonId) => {
+      const buildId = pickBuildId(pokemonId, usedItems);
+      const build = buildsMap[buildId];
+      if (build?.item) usedItems.add(build.item);
+      return { pokemonId, buildId };
+    }).filter((s) => s.buildId);
+    slots = resolveTeamBuilds(slots).slots;
+    return enrichTeamSuggestion({
+      id: `ai-${Date.now()}-${index}`,
+      name: raw.name || `AI提案 ${index + 1}`,
+      concept: raw.concept || raw.rationale || 'AIが提案した実戦寄りパーティ。ルールで補正済み。',
+      rating: 'AI提案',
+      format: [battleFormat],
+      source: 'AI提案（ルールエンジンでメガ1・Item Clause補正）',
+      ai: true,
+      aiExplain: raw.explain || raw.rationale || '',
+      slots
+    });
+  });
+  currentSuggestions = teams;
+  activeCore = teams[0]?.id || null;
+  renderCoreList(currentSuggestions);
+  if (teams[0]) renderTeamDetail(teams[0]);
+  return teams;
+}
+
+function teamContextPayload(core) {
+  const axis = selectedIds.map((id) => pokemonById[id]?.name || id);
+  const members = (core?.slots || []).map((slot) => {
+    const { poke, build } = resolveSlot(slot);
+    if (!poke || !build) return null;
+    return {
+      id: poke.id,
+      name: poke.name,
+      types: poke.types,
+      roles: poke.roles,
+      item: build.item,
+      ability: build.ability,
+      role: build.role,
+      moves: build.moves,
+      nature: build.nature?.name,
+      sp: build.sp
+    };
+  }).filter(Boolean);
+  return {
+    regulation: 'M-B',
+    season: 'M-4',
+    format: battleFormat,
+    axis,
+    teamName: core?.name,
+    ruleRationale: core?.rationale || core?.analysis?.rationale || '',
+    checks: core?.analysis?.checks || [],
+    members,
+    metaPriority: (META_PRIORITY[battleFormat] || []).slice(0, 20)
+  };
+}
+
+window.PokeTeam = {
+  getSelectedIds: () => selectedIds.slice(),
+  getBattleFormat: () => battleFormat,
+  getSuggestions: () => currentSuggestions,
+  getActiveSuggestion,
+  applyAiExplain,
+  applyAiTeams,
+  teamContextPayload,
+  runSuggest,
+  setStatus: (msg) => {
+    const el = $('ai-status');
+    if (el) el.textContent = msg || '';
+  }
+};
+
 async function main() {
   try {
     await loadData();
@@ -1162,6 +1413,7 @@ async function main() {
   buildTypeChart();
   generateOpponentTypes();
   setTab('team');
+  if (window.TeamAI?.init) window.TeamAI.init();
 }
 
 main();
